@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
@@ -27,6 +26,26 @@ const PaginaProblemas = () => {
         setDatos(json);
       });
   }, []);
+
+  const generarTop3PorProvincia = () => {
+    const agrupado = {};
+
+    datos.forEach(({ Provincia, Categoria }) => {
+      if (!agrupado[Provincia]) agrupado[Provincia] = {};
+      agrupado[Provincia][Categoria] = (agrupado[Provincia][Categoria] || 0) + 1;
+    });
+
+    const resultado = {};
+    Object.entries(agrupado).forEach(([provincia, categorias]) => {
+      const top3 = Object.entries(categorias)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 3)
+        .map(([cat]) => cat);
+      resultado[provincia] = top3;
+    });
+
+    return resultado;
+  };
 
   const generarGrafico = (filtroFn, titulo) => {
     const conteo = {};
@@ -82,16 +101,18 @@ const PaginaProblemas = () => {
   };
 
   const todasProvincias = [...new Set(datos.map(d => d.Provincia))].sort();
+  const dataTooltip = generarTop3PorProvincia();
 
   return (
     <div style={{ padding: '2rem', maxWidth: '1000px', margin: '0 auto' }}>
       <h1 style={{ textAlign: 'center' }}>Problemas Rurales en el Ecuador</h1>
 
       <section style={{ marginBottom: '3rem' }}>
-        <EcuadorSVG />
+        <EcuadorSVG data={dataTooltip} />
       </section>
 
       {generarGrafico(() => true, <h1>Problemas a Nivel Nacional</h1>)}
+
 
       <section style={{ marginTop: '3rem' }}>
         <h1>🔍 Problemas por Región</h1>
