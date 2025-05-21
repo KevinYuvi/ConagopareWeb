@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"pages\\\\problemas.tsx -> ../components/PaginaProblemas\":{\"id\":\"pages\\\\problemas.tsx -> ../components/PaginaProblemas\",\"files\":[\"static/chunks/src_components_PaginaProblemas_tsx.js\"]}}"

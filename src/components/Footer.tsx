@@ -1,39 +1,30 @@
-import React from 'react';
-import logo from '../assets/logo.png';
-import { FaXTwitter, FaTiktok, FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa6';
+import Link from 'next/link';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-column">
-        <img src={logo} alt="Identidad Rural" className="footer-logo" />
-        <p>Hecho con ❤️ en Ecuador</p>
-        <p>Este sitio es de acceso libre y educativo</p>
-      </div>
-
-      <div className="footer-column">
-        <h4>Mapa del Sitio</h4>
-        <ul>
-          <li>Equipo</li>
-          <li>Metodología</li>
-          <li>Entrevistas</li>
-          <li>Difunde</li>
-          <li>Recursos</li>
-        </ul>
-      </div>
-
-      <div className="footer-column">
-        <h4>Redes Sociales</h4>
-        <ul className="social-icons">
-          <li><FaXTwitter /> X</li>
-          <li><FaTiktok /> TikTok</li>
-          <li><FaYoutube /> Youtube</li>
-          <li><FaFacebook /> Facebook</li>
-          <li><FaInstagram /> Instagram</li>
-        </ul>
+    <footer style={{ backgroundColor: '#144', padding: '2rem', color: 'white' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+        <div>
+          <p>Hecho con ❤️ en Ecuador</p>
+          <p>Este sitio es de acceso libre y educativo</p>
+        </div>
+        <div>
+          <strong>Mapa del Sitio</strong><br />
+          <Link href="/equipo">Equipo</Link><br />
+          <Link href="/metodologia">Metodología</Link><br />
+          <Link href="/entrevistas">Entrevistas</Link><br />
+          <Link href="/difunde">Difunde</Link><br />
+          <Link href="/recursos">Recursos</Link>
+        </div>
+        <div>
+          <strong>Redes Sociales</strong><br />
+          <p>Twitter</p>
+          <p>TikTok</p>
+          <p>Youtube</p>
+          <p>Facebook</p>
+          <p>Instagram</p>
+        </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
