@@ -82,7 +82,7 @@ export default function DatosRuralesPage() {
     <div className="px-4 py-12 max-w-7xl mx-auto">
       <h1 className="text-4xl font-bold text-center mb-4">Datos Rurales</h1>
       <p className="text-center text-lg max-w-3xl mx-auto mb-10">
-        La sección "Datos Rurales" ofrece visualizaciones interactivas en Power BI que muestran información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden explorar datos oficiales sobre vialidad, salud, educación, seguridad, servicios básicos, conectividad, empleo y más, segmentados por provincia, cantón y parroquia.
+          La sección &quot;Datos Rurales&quot; ofrece visualizaciones interactivas en Power BI que muestran información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden explorar datos oficiales sobre vialidad, salud, educación, seguridad, servicios básicos, conectividad, empleo y más, segmentados por provincia, cantón y parroquia.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {data.map((item, i) => (
