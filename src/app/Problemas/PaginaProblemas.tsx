@@ -1,10 +1,11 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
 import * as XLSX from 'xlsx';
-import EcuadorSVG from './EcuadorSVG'; // ✅ RUTA CORRECTA
+import EcuadorSVG from './EcuadorSVG';
 
-// Tipos
 type Region = 'Sierra' | 'Costa' | 'Amazonía' | 'Insular';
 
 interface FilaExcel {
@@ -30,7 +31,7 @@ const PaginaProblemas: React.FC = () => {
       .then(data => {
         const workbook = XLSX.read(data, { type: 'array' });
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
-        const json = XLSX.utils.sheet_to_json<FilaExcel>(sheet);
+        const json = XLSX.utils.sheet_to_json<FilaExcel>(sheet, { defval: "" });
         setDatos(json);
       });
   }, []);
@@ -101,8 +102,8 @@ const PaginaProblemas: React.FC = () => {
     };
 
     return (
-      <section style={{ marginTop: '3rem' }}>
-        <h3>{titulo}</h3>
+      <section className="mt-12">
+        <h3 className="text-xl font-semibold mb-4">{titulo}</h3>
         <Bar data={data} options={options} />
       </section>
     );
@@ -112,21 +113,21 @@ const PaginaProblemas: React.FC = () => {
   const dataTooltip = generarTop3PorProvincia();
 
   return (
-    <div style={{ padding: '2rem', maxWidth: '1000px', margin: '0 auto' }}>
-      <h1 style={{ textAlign: 'center' }}>Problemas Rurales en el Ecuador</h1>
+    <div className="px-4 py-12 max-w-6xl mx-auto">
+      <h1 className="text-4xl font-bold text-center mb-10">Problemas Rurales en el Ecuador</h1>
 
-      <section style={{ marginBottom: '3rem' }}>
+      <section className="mb-12">
         <EcuadorSVG data={dataTooltip} />
       </section>
 
-      {generarGrafico(() => true, "Problemas a Nivel Nacional")}
+      {generarGrafico(() => true, "📊 Problemas a Nivel Nacional")}
 
-      <section style={{ marginTop: '3rem' }}>
-        <h1>🔍 Problemas por Región</h1>
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold mb-4">🔍 Problemas por Región</h2>
         <select
           onChange={(e) => setRegionSeleccionada(e.target.value as Region)}
           value={regionSeleccionada}
-          style={{ padding: '0.5rem', fontSize: '1rem', marginBottom: '1rem' }}
+          className="w-full border border-gray-300 rounded px-3 py-2 mb-4"
         >
           {Object.keys(regionesMap).map((r) => (
             <option key={r} value={r}>{r}</option>
@@ -138,12 +139,12 @@ const PaginaProblemas: React.FC = () => {
         )}
       </section>
 
-      <section style={{ marginTop: '3rem' }}>
-        <h1>📍 Problemas por Provincia</h1>
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold mb-4">📍 Problemas por Provincia</h2>
         <select
           onChange={(e) => setProvinciaSeleccionada(e.target.value)}
           value={provinciaSeleccionada}
-          style={{ padding: '0.5rem', fontSize: '1rem', marginBottom: '1rem' }}
+          className="w-full border border-gray-300 rounded px-3 py-2 mb-4"
         >
           {todasProvincias.map((p) => (
             <option key={p} value={p}>{p}</option>
@@ -155,7 +156,7 @@ const PaginaProblemas: React.FC = () => {
         )}
       </section>
 
-      <p style={{ textAlign: 'center', marginTop: '2rem', fontStyle: 'italic' }}>
+      <p className="text-center mt-12 italic text-sm text-gray-600">
         Fuente: archivo_resumen.xlsx cargado dinámicamente.
       </p>
     </div>
