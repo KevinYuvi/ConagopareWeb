@@ -17,17 +17,17 @@ export default function Navbar() {
         </Link>
 
         <ul className="flex space-x-8 text-sm font-semibold">
-          <li><Link href="/" className="hover:text-blue-400">Inicio</Link></li>
-          <li><Link href="/Datos_Rurales" className="hover:text-blue-400">Datos Rurales</Link></li>
-          <li><Link href="/Problemas" className="hover:text-blue-400">Problemas</Link></li>
-          <li><Link href="/Voz_Rural" className="hover:text-blue-400">Voz Rural</Link></li>
-          <li><Link href="/Datos_Curiosos" className="hover:text-blue-400">Datos Curiosos</Link></li>
-          <li><Link href="/Metodologia" className="hover:text-blue-400">Metodología</Link></li>
-          <li><Link href="/Entrevistas" className="hover:text-blue-400">Entrevistas</Link></li>
-          <li><Link href="/Difunde" className="hover:text-blue-400">Difunde</Link></li>
-          <li><Link href="/Equipo" className="hover:text-blue-400">Equipo</Link></li>
-          <li><Link href="/Mujeres_Rurales" className="hover:text-blue-400">Mujeres Rurales</Link></li>
-          <li><Link href="/Taller_Periodismo" className="hover:text-blue-400">Taller de Periodismo</Link></li>
+          <li><Link href="/" className="hover:text-blue-900">Inicio</Link></li>
+          <li><Link href="/Datos_Rurales" className="hover:text-blue-900">Datos Rurales</Link></li>
+          <li><Link href="/Problemas" className="hover:text-blue-900">Problemas</Link></li>
+          <li><Link href="/Voz_Rural" className="hover:text-blue-900">Voz Rural</Link></li>
+          <li><Link href="/Datos_Curiosos" className="hover:text-blue-900">Datos Curiosos</Link></li>
+          <li><Link href="/Metodologia" className="hover:text-blue-900">Metodología</Link></li>
+          <li><Link href="/Entrevistas" className="hover:text-blue-900">Entrevistas</Link></li>
+          <li><Link href="/Difunde" className="hover:text-blue-900">Difunde</Link></li>
+          <li><Link href="/Equipo" className="hover:text-blue-900">Equipo</Link></li>
+          <li><Link href="/Mujeres_Rurales" className="hover:text-blue-900">Mujeres Rurales</Link></li>
+          <li><Link href="/Taller_Periodismo" className="hover:text-blue-900">Taller de Periodismo</Link></li>
         </ul>
       </div>
     </nav>
