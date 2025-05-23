@@ -2,6 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 
+interface EcuadorSVGProps {
+  data: Record<string, string[]>; // Ej: { "Pichincha": ["Problema1", "Problema2", "Problema3"] }
+}
+
 const provincias = [
   "Azuay", "Bolivar", "Cañar", "Carchi", "Chimborazo", "Cotopaxi",
   "El Oro", "Esmeraldas", "Galápagos", "Guayas", "Imbabura", "Loja",
@@ -10,7 +14,7 @@ const provincias = [
   "Sucumbios", "Tungurahua", "Zamora Chinchipe"
 ];
 
-const EcuadorSVG = ({ data }) => {
+const EcuadorSVG: React.FC<EcuadorSVGProps> = ({ data }) => {
   const [svgContent, setSvgContent] = useState('');
   const [tooltip, setTooltip] = useState({
     visible: false,
@@ -52,7 +56,7 @@ const EcuadorSVG = ({ data }) => {
     };
   }, [svgContent, data]);
 
-  const handleMouseEnter = (e, provincia) => {
+  const handleMouseEnter = (e: MouseEvent, provincia: string) => {
     const problemas = data[provincia] || ["(sin datos)", "-", "-"];
     const content = `<strong>${provincia}</strong><br/>
       1. ${problemas[0]}<br/>
@@ -70,7 +74,7 @@ const EcuadorSVG = ({ data }) => {
     setTooltip((prev) => ({ ...prev, visible: false }));
   };
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent) => {
     if (tooltip.visible) {
       setTooltip((prev) => ({ ...prev, x: e.clientX, y: e.clientY }));
     }
