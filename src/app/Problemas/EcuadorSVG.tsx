@@ -86,12 +86,23 @@ const EcuadorSVG = ({ data }: EcuadorSVGProps) => {
           handleMouseLeave();
         };
 
+        const touchStartHandler = (e: TouchEvent) => {
+          handleMouseEnter(e as unknown as MouseEvent, provincia);
+        };
+
+        const touchEndHandler = () => {
+          handleMouseLeave();
+        };
+
         element.addEventListener('mouseenter', enterHandler);
         element.addEventListener('mouseleave', leaveHandler);
+        element.addEventListener('touchstart', touchStartHandler);
+        element.addEventListener('touchend', touchEndHandler);
 
-        // Guardar los handlers para futura limpieza
-        (element as unknown as { _enterHandler: EventListener; _leaveHandler: EventListener })._enterHandler = enterHandler;
-        (element as unknown as { _enterHandler: EventListener; _leaveHandler: EventListener })._leaveHandler = leaveHandler;
+        (element as any)._enterHandler = enterHandler;
+        (element as any)._leaveHandler = leaveHandler;
+        (element as any)._touchStartHandler = touchStartHandler;
+        (element as any)._touchEndHandler = touchEndHandler;
       }
     });
 
@@ -99,13 +110,11 @@ const EcuadorSVG = ({ data }: EcuadorSVGProps) => {
       provincias.forEach((provincia) => {
         const element = document.getElementById(provincia);
         if (element instanceof SVGElement) {
-          const customElement = element as unknown as { _enterHandler?: EventListener; _leaveHandler?: EventListener };
-          if (customElement._enterHandler) {
-            element.removeEventListener('mouseenter', customElement._enterHandler);
-          }
-          if (customElement._leaveHandler) {
-            element.removeEventListener('mouseleave', customElement._leaveHandler);
-          }
+          const el = element as any;
+          if (el._enterHandler) element.removeEventListener('mouseenter', el._enterHandler);
+          if (el._leaveHandler) element.removeEventListener('mouseleave', el._leaveHandler);
+          if (el._touchStartHandler) element.removeEventListener('touchstart', el._touchStartHandler);
+          if (el._touchEndHandler) element.removeEventListener('touchend', el._touchEndHandler);
         }
       });
     };
@@ -128,7 +137,7 @@ const EcuadorSVG = ({ data }: EcuadorSVGProps) => {
             top: tooltip.y + 10,
             position: 'fixed',
             display: 'block',
-            zIndex: 1000
+            zIndex: 1000,
           }}
           dangerouslySetInnerHTML={{ __html: tooltip.content }}
         />
