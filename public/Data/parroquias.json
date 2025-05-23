@@ -1,0 +1,42 @@
+[
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Alangasí",
+    "lat": -0.30801156902450544,
+    "lng": -78.41373725767225,
+    "fecha": "12 de marzo de 1985"
+  },
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Lloa",
+    "lat": -0.292282,
+    "lng": -78.626171,
+    "fecha": "15 de abril de 1980"
+  },
+  {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Ayora",
+    "lat": 0.051703,
+    "lng": -78.101731,
+    "fecha": "20 de julio de 1986"
+  },
+  {
+    "provincia": "Loja",
+    "canton": "Loja",
+    "parroquia": "El Rosario",
+    "lat": -3.99384,
+    "lng": -79.20422,
+    "fecha": "01 de enero de 2010"
+  },
+  {
+    "provincia": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "parroquia": "Malchinguí",
+    "lat": 0.020349,
+    "lng": -78.140282,
+    "fecha": "18 de noviembre de 1984"
+  }
+]

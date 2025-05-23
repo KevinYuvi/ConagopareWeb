@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useState } from 'react';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image'
-import { image } from 'framer-motion/client';
+
 
 const data = [
   {
