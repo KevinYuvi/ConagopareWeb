@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const provincias = [
   "Azuay", "Bolivar", "Cañar", "Carchi", "Chimborazo", "Cotopaxi",
@@ -30,14 +31,27 @@ const EcuadorSVG = ({ data }) => {
 
     const container = document.getElementById('mapa-ecuador');
     if (!container) return;
+
     container.innerHTML = svgContent;
 
     provincias.forEach((provincia) => {
       const element = document.getElementById(provincia);
       if (element) {
         element.style.cursor = 'pointer';
-        element.addEventListener('mouseenter', (e) => handleMouseEnter(e, provincia));
-        element.addEventListener('mouseleave', handleMouseLeave);
+
+        // Inicial: color base
+        element.style.fill = "#077f01";
+        element.style.transition = "fill 0.3s";
+
+        element.addEventListener('mouseenter', (e) => {
+          element.style.fill = "#FF6B6B"; // rojo suave al pasar
+          handleMouseEnter(e, provincia);
+        });
+
+        element.addEventListener('mouseleave', () => {
+          element.style.fill = "#077f01"; // vuelve al color original
+          handleMouseLeave();
+        });
       }
     });
 
@@ -77,7 +91,13 @@ const EcuadorSVG = ({ data }) => {
   };
 
   return (
-    <div className="mapa-container" onMouseMove={handleMouseMove}>
+    <motion.div
+      className="mapa-container"
+      onMouseMove={handleMouseMove}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <div id="mapa-ecuador" className="mapa-svg" />
       {tooltip.visible && (
         <div
@@ -86,12 +106,13 @@ const EcuadorSVG = ({ data }) => {
             left: tooltip.x + 10,
             top: tooltip.y + 10,
             position: 'fixed',
-            display: 'block'
+            display: 'block',
+            zIndex: 1000
           }}
           dangerouslySetInnerHTML={{ __html: tooltip.content }}
         />
       )}
-    </div>
+    </motion.div>
   );
 };
 
