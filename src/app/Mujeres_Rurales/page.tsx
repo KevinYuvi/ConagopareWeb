@@ -35,7 +35,7 @@ const MujeresRuralesPage = () => {
   const [parroquia, setParroquia] = useState("");
 
   useEffect(() => {
-    fetch("/data/num_presidentas_parroquia.json")
+    fetch("/Data/num_presidentas_parroquia.json")
       .then((res) => res.json())
       .then(setData)
       .catch(console.error);
