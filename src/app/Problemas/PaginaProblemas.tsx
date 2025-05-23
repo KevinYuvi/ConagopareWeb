@@ -129,9 +129,12 @@ const PaginaProblemas = () => {
     <div className="px-4 py-12 max-w-6xl mx-auto">
       <h1 className="text-4xl font-bold text-center mb-6">Problemas Rurales en el Ecuador</h1>
 
-      <div className="mb-12">
-        <EcuadorSVG data={dataTooltip} />
+      <div className="mb-12 flex justify-center px-2">
+        <div className="w-full max-w-[500px]">
+          <EcuadorSVG data={dataTooltip} />
+        </div>
       </div>
+
 
       {generarGrafico(() => true, "Problemas a Nivel Nacional", 0)}
 
