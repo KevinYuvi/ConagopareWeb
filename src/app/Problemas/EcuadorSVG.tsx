@@ -122,7 +122,7 @@ const EcuadorSVG = ({ data }: EcuadorSVGProps) => {
 
   return (
     <motion.div
-      className="mapa-container"
+      className="mapa-container w-full"
       onMouseMove={handleMouseMove}
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
