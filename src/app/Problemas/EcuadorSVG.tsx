@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import styles from './MapaProblemas.module.css';
+"use client";
 
+import React, { useState, useEffect } from 'react';
 
 const provincias = [
   "Azuay", "Bolivar", "Cañar", "Carchi", "Chimborazo", "Cotopaxi",
@@ -86,8 +86,7 @@ const EcuadorSVG = ({ data }) => {
             left: tooltip.x + 10,
             top: tooltip.y + 10,
             position: 'fixed',
-            display: 'block',
-            zIndex: 1000
+            display: 'block'
           }}
           dangerouslySetInnerHTML={{ __html: tooltip.content }}
         />

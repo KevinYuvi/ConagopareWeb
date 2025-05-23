@@ -5,12 +5,22 @@ import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
 import * as XLSX from 'xlsx';
 import EcuadorSVG from './EcuadorSVG';
+import { motion } from 'framer-motion';
 
 const regionesMap = {
   Sierra: ["Carchi", "Imbabura", "Pichincha", "Cotopaxi", "Tungurahua", "Chimborazo", "Bolívar", "Cañar", "Azuay", "Loja"],
   Costa: ["Esmeraldas", "Manabí", "Guayas", "Santa Elena", "El Oro", "Los Ríos"],
   Amazonía: ["Sucumbíos", "Napo", "Orellana", "Pastaza", "Morona Santiago", "Zamora Chinchipe"],
   Insular: ["Galápagos"]
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' },
+  }),
 };
 
 const PaginaProblemas = () => {
@@ -49,7 +59,11 @@ const PaginaProblemas = () => {
     return resultado;
   };
 
-  const generarGrafico = (filtroFn: (row: any) => boolean, titulo: string) => {
+  const generarGrafico = (
+    filtroFn: (row: any) => boolean,
+    titulo: string,
+    index: number
+  ) => {
     const conteo: Record<string, number> = {};
     datos.filter(filtroFn).forEach((row: any) => {
       const categoria = row.Categoria;
@@ -83,22 +97,23 @@ const PaginaProblemas = () => {
         tooltip: { enabled: true }
       },
       scales: {
-        x: {
-          ticks: { color: '#444' },
-          grid: { display: false }
-        },
-        y: {
-          ticks: { color: '#444' },
-          grid: { display: false }
-        }
+        x: { ticks: { color: '#444' }, grid: { display: false } },
+        y: { ticks: { color: '#444' }, grid: { display: false } }
       }
     };
 
     return (
-      <section style={{ marginTop: '3rem' }}>
-        <h3>{titulo}</h3>
+      <motion.div
+        className="bg-white p-6 rounded-lg shadow-md"
+        custom={index}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeUp}
+      >
+        <h3 className="text-xl font-semibold mb-4">{titulo}</h3>
         <Bar data={data} options={options} />
-      </section>
+      </motion.div>
     );
   };
 
@@ -106,50 +121,58 @@ const PaginaProblemas = () => {
   const dataTooltip = generarTop3PorProvincia();
 
   return (
-    <div style={{ padding: '2rem', maxWidth: '1000px', margin: '0 auto' }}>
-      <h1 style={{ textAlign: 'center' }}>Problemas Rurales en el Ecuador</h1>
+    <div className="px-4 py-12 max-w-6xl mx-auto">
+      <h1 className="text-4xl font-bold text-center mb-6">Problemas Rurales en el Ecuador</h1>
 
-      <section style={{ marginBottom: '3rem' }}>
+      <div className="mb-12">
         <EcuadorSVG data={dataTooltip} />
-      </section>
+      </div>
 
-      {generarGrafico(() => true, "Problemas a Nivel Nacional")}
+      {/* Nacional */}
+      {generarGrafico(() => true, "Problemas a Nivel Nacional", 0)}
 
-      <section style={{ marginTop: '3rem' }}>
-        <h1>🔍 Problemas por Región</h1>
-        <select
-          onChange={(e) => setRegionSeleccionada(e.target.value)}
-          value={regionSeleccionada}
-          style={{ padding: '0.5rem', fontSize: '1rem', marginBottom: '1rem' }}
-        >
-          {Object.keys(regionesMap).map((r) => (
-            <option key={r} value={r}>{r}</option>
-          ))}
-        </select>
-        {generarGrafico(
-          (row: any) => regionesMap[regionSeleccionada]?.includes(row.Provincia),
-          `Problemas en la región ${regionSeleccionada}`
-        )}
-      </section>
+      {/* Región + Provincia en columnas */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+        {/* Región */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">🔍 Problemas por Región</h2>
+          <select
+            onChange={(e) => setRegionSeleccionada(e.target.value)}
+            value={regionSeleccionada}
+            className="w-full border border-gray-300 rounded px-3 py-2 mb-4"
+          >
+            {Object.keys(regionesMap).map((r) => (
+              <option key={r} value={r}>{r}</option>
+            ))}
+          </select>
+          {generarGrafico(
+            (row: any) => regionesMap[regionSeleccionada]?.includes(row.Provincia),
+            `Problemas en la región ${regionSeleccionada}`,
+            1
+          )}
+        </div>
 
-      <section style={{ marginTop: '3rem' }}>
-        <h1>📍 Problemas por Provincia</h1>
-        <select
-          onChange={(e) => setProvinciaSeleccionada(e.target.value)}
-          value={provinciaSeleccionada}
-          style={{ padding: '0.5rem', fontSize: '1rem', marginBottom: '1rem' }}
-        >
-          {todasProvincias.map((p) => (
-            <option key={p} value={p}>{p}</option>
-          ))}
-        </select>
-        {generarGrafico(
-          (row: any) => row.Provincia === provinciaSeleccionada,
-          `Problemas en la provincia ${provinciaSeleccionada}`
-        )}
-      </section>
+        {/* Provincia */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">📍 Problemas por Provincia</h2>
+          <select
+            onChange={(e) => setProvinciaSeleccionada(e.target.value)}
+            value={provinciaSeleccionada}
+            className="w-full border border-gray-300 rounded px-3 py-2 mb-4"
+          >
+            {todasProvincias.map((p) => (
+              <option key={p} value={p}>{p}</option>
+            ))}
+          </select>
+          {generarGrafico(
+            (row: any) => row.Provincia === provinciaSeleccionada,
+            `Problemas en la provincia ${provinciaSeleccionada}`,
+            2
+          )}
+        </div>
+      </div>
 
-      <p style={{ textAlign: 'center', marginTop: '2rem', fontStyle: 'italic' }}>
+      <p className="text-center mt-8 italic text-sm text-gray-600">
         Fuente: archivo_resumen.xlsx cargado dinámicamente.
       </p>
     </div>
