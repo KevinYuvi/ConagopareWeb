@@ -11,9 +11,20 @@ const provincias = [
   "Sucumbios", "Tungurahua", "Zamora Chinchipe"
 ];
 
-const EcuadorSVG = ({ data }: { data: Record<string, string[]> }) => {
-  const [svgContent, setSvgContent] = useState('');
-  const [tooltip, setTooltip] = useState({
+type TooltipState = {
+  visible: boolean;
+  x: number;
+  y: number;
+  content: string;
+};
+
+type EcuadorSVGProps = {
+  data: Record<string, string[]>;
+};
+
+const EcuadorSVG = ({ data }: EcuadorSVGProps) => {
+  const [svgContent, setSvgContent] = useState<string>('');
+  const [tooltip, setTooltip] = useState<TooltipState>({
     visible: false,
     x: 0,
     y: 0,
@@ -55,11 +66,12 @@ const EcuadorSVG = ({ data }: { data: Record<string, string[]> }) => {
 
     const container = document.getElementById('mapa-ecuador');
     if (!container) return;
+
     container.innerHTML = svgContent;
 
     provincias.forEach((provincia) => {
       const element = document.getElementById(provincia);
-      if (element) {
+      if (element instanceof SVGElement) {
         element.style.cursor = 'pointer';
         element.style.fill = "#077f01";
         element.style.transition = "fill 0.3s";
@@ -77,18 +89,23 @@ const EcuadorSVG = ({ data }: { data: Record<string, string[]> }) => {
         element.addEventListener('mouseenter', enterHandler);
         element.addEventListener('mouseleave', leaveHandler);
 
-        // Guardar los handlers en el elemento para removerlos luego
-        (element as any)._enterHandler = enterHandler;
-        (element as any)._leaveHandler = leaveHandler;
+        // Guardar los handlers para futura limpieza
+        (element as unknown as { _enterHandler: EventListener; _leaveHandler: EventListener })._enterHandler = enterHandler;
+        (element as unknown as { _enterHandler: EventListener; _leaveHandler: EventListener })._leaveHandler = leaveHandler;
       }
     });
 
     return () => {
       provincias.forEach((provincia) => {
         const element = document.getElementById(provincia);
-        if (element && (element as any)._enterHandler && (element as any)._leaveHandler) {
-          element.removeEventListener('mouseenter', (element as any)._enterHandler);
-          element.removeEventListener('mouseleave', (element as any)._leaveHandler);
+        if (element instanceof SVGElement) {
+          const customElement = element as unknown as { _enterHandler?: EventListener; _leaveHandler?: EventListener };
+          if (customElement._enterHandler) {
+            element.removeEventListener('mouseenter', customElement._enterHandler);
+          }
+          if (customElement._leaveHandler) {
+            element.removeEventListener('mouseleave', customElement._leaveHandler);
+          }
         }
       });
     };
