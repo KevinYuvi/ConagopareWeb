@@ -1,10 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-
-interface EcuadorSVGProps {
-  data: Record<string, string[]>; // Ej: { "Pichincha": ["Problema1", "Problema2", "Problema3"] }
-}
+import React, { useState, useEffect, useCallback } from 'react';
+import { motion } from 'framer-motion';
 
 const provincias = [
   "Azuay", "Bolivar", "Cañar", "Carchi", "Chimborazo", "Cotopaxi",
@@ -14,7 +11,7 @@ const provincias = [
   "Sucumbios", "Tungurahua", "Zamora Chinchipe"
 ];
 
-const EcuadorSVG: React.FC<EcuadorSVGProps> = ({ data }) => {
+const EcuadorSVG = ({ data }: { data: Record<string, string[]> }) => {
   const [svgContent, setSvgContent] = useState('');
   const [tooltip, setTooltip] = useState({
     visible: false,
@@ -29,34 +26,7 @@ const EcuadorSVG: React.FC<EcuadorSVGProps> = ({ data }) => {
       .then(setSvgContent);
   }, []);
 
-  useEffect(() => {
-    if (!svgContent) return;
-
-    const container = document.getElementById('mapa-ecuador');
-    if (!container) return;
-    container.innerHTML = svgContent;
-
-    provincias.forEach((provincia) => {
-      const element = document.getElementById(provincia);
-      if (element) {
-        element.style.cursor = 'pointer';
-        element.addEventListener('mouseenter', (e) => handleMouseEnter(e, provincia));
-        element.addEventListener('mouseleave', handleMouseLeave);
-      }
-    });
-
-    return () => {
-      provincias.forEach((provincia) => {
-        const element = document.getElementById(provincia);
-        if (element) {
-          element.removeEventListener('mouseenter', (e) => handleMouseEnter(e, provincia));
-          element.removeEventListener('mouseleave', handleMouseLeave);
-        }
-      });
-    };
-  }, [svgContent, data]);
-
-  const handleMouseEnter = (e: MouseEvent, provincia: string) => {
+  const handleMouseEnter = useCallback((e: MouseEvent, provincia: string) => {
     const problemas = data[provincia] || ["(sin datos)", "-", "-"];
     const content = `<strong>${provincia}</strong><br/>
       1. ${problemas[0]}<br/>
@@ -68,20 +38,70 @@ const EcuadorSVG: React.FC<EcuadorSVGProps> = ({ data }) => {
       y: e.clientY,
       content,
     });
-  };
+  }, [data]);
 
   const handleMouseLeave = () => {
     setTooltip((prev) => ({ ...prev, visible: false }));
   };
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (tooltip.visible) {
       setTooltip((prev) => ({ ...prev, x: e.clientX, y: e.clientY }));
     }
   };
 
+  useEffect(() => {
+    if (!svgContent) return;
+
+    const container = document.getElementById('mapa-ecuador');
+    if (!container) return;
+    container.innerHTML = svgContent;
+
+    provincias.forEach((provincia) => {
+      const element = document.getElementById(provincia);
+      if (element) {
+        element.style.cursor = 'pointer';
+        element.style.fill = "#077f01";
+        element.style.transition = "fill 0.3s";
+
+        const enterHandler = (e: MouseEvent) => {
+          element.style.fill = "#FF6B6B";
+          handleMouseEnter(e, provincia);
+        };
+
+        const leaveHandler = () => {
+          element.style.fill = "#077f01";
+          handleMouseLeave();
+        };
+
+        element.addEventListener('mouseenter', enterHandler);
+        element.addEventListener('mouseleave', leaveHandler);
+
+        // Guardar los handlers en el elemento para removerlos luego
+        (element as any)._enterHandler = enterHandler;
+        (element as any)._leaveHandler = leaveHandler;
+      }
+    });
+
+    return () => {
+      provincias.forEach((provincia) => {
+        const element = document.getElementById(provincia);
+        if (element && (element as any)._enterHandler && (element as any)._leaveHandler) {
+          element.removeEventListener('mouseenter', (element as any)._enterHandler);
+          element.removeEventListener('mouseleave', (element as any)._leaveHandler);
+        }
+      });
+    };
+  }, [svgContent, handleMouseEnter]);
+
   return (
-    <div className="mapa-container" onMouseMove={handleMouseMove}>
+    <motion.div
+      className="mapa-container"
+      onMouseMove={handleMouseMove}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <div id="mapa-ecuador" className="mapa-svg" />
       {tooltip.visible && (
         <div
@@ -90,12 +110,13 @@ const EcuadorSVG: React.FC<EcuadorSVGProps> = ({ data }) => {
             left: tooltip.x + 10,
             top: tooltip.y + 10,
             position: 'fixed',
-            display: 'block'
+            display: 'block',
+            zIndex: 1000
           }}
           dangerouslySetInnerHTML={{ __html: tooltip.content }}
         />
       )}
-    </div>
+    </motion.div>
   );
 };
 
