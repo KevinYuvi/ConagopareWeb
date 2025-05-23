@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 shadow-md z-50">
-      <div className="container mx-auto flex items-center justify-between p-3">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md shadow-md border-b border-white/20">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3">
         <Link href="/">
           <Image 
             src="/logo.png" 
@@ -13,21 +13,30 @@ export default function Navbar() {
             width={45} 
             height={45} 
             className="rounded-md cursor-pointer"
+            priority
           />
         </Link>
 
-        <ul className="flex space-x-8 text-sm font-semibold">
-          <li><Link href="/" className="hover:text-blue-900">Inicio</Link></li>
-          <li><Link href="/Datos_Rurales" className="hover:text-blue-900">Datos Rurales</Link></li>
-          <li><Link href="/Problemas" className="hover:text-blue-900">Problemas</Link></li>
-          <li><Link href="/Voz_Rural" className="hover:text-blue-900">Voz Rural</Link></li>
-          <li><Link href="/Datos_Curiosos" className="hover:text-blue-900">Datos Curiosos</Link></li>
-          <li><Link href="/Metodologia" className="hover:text-blue-900">Metodología</Link></li>
-          <li><Link href="/Entrevistas" className="hover:text-blue-900">Entrevistas</Link></li>
-          <li><Link href="/Difunde" className="hover:text-blue-900">Difunde</Link></li>
-          <li><Link href="/Equipo" className="hover:text-blue-900">Equipo</Link></li>
-          <li><Link href="/Mujeres_Rurales" className="hover:text-blue-900">Mujeres Rurales</Link></li>
-          <li><Link href="/Taller_Periodismo" className="hover:text-blue-900">Taller de Periodismo</Link></li>
+        <ul className="flex flex-wrap gap-4 md:gap-6 text-sm font-semibold text-gray-900">
+          {[
+            ["Inicio", "/"],
+            ["Datos Rurales", "/Datos_Rurales"],
+            ["Problemas", "/Problemas"],
+            ["Voz Rural", "/Voz_Rural"],
+            ["Datos Curiosos", "/Datos_Curiosos"],
+            ["Metodología", "/Metodologia"],
+            ["Entrevistas", "/Entrevistas"],
+            ["Difunde", "/Difunde"],
+            ["Equipo", "/Equipo"],
+            ["Mujeres Rurales", "/Mujeres_Rurales"],
+            ["Taller de Periodismo", "/Taller_Periodismo"],
+          ].map(([label, href]) => (
+            <li key={href}>
+              <Link href={href} className="hover:text-blue-500 transition-colors duration-200">
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

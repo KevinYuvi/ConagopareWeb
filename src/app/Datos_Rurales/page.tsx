@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useState } from 'react';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image'
-import { image } from 'framer-motion/client';
+
 
 const data = [
   {
@@ -80,9 +80,9 @@ const fadeUp = {
 export default function DatosRuralesPage() {
   return (
     <div className="px-4 py-12 max-w-7xl mx-auto">
-      <h1 className="text-3xl font-heading font-bold text-center mb-4">Datos Rurales</h1>
-      <p className="text-center text-base max-w-3xl mx-auto mb-2 pr-10 pl-10">
-        Esta seccion ofrece visualizaciones interactivas en Power BI que muestran información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden explorar datos oficiales segmentados por provincia, cantón y parroquia.
+      <h1 className="text-4xl font-bold text-center mb-4">Datos Rurales</h1>
+      <p className="text-center text-lg max-w-3xl mx-auto mb-10">
+          La sección &quot;Datos Rurales&quot; ofrece visualizaciones interactivas en Power BI que muestran información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden explorar datos oficiales sobre vialidad, salud, educación, seguridad, servicios básicos, conectividad, empleo y más, segmentados por provincia, cantón y parroquia.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
         {data.map((item, i) => (

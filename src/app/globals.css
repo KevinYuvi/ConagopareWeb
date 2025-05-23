@@ -21,6 +21,52 @@ body {
   font-family: var(--font-sans), sans-serif;
 }
 
+.mapa-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.mapa-svg {
+  width: 100%;
+  height: auto;
+}
+
+.tooltip {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  pointer-events: none;
+  max-width: 220px;
+  z-index: 1000;
+}
+
+.mapa-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.mapa-svg {
+  width: 100%;
+  height: auto;
+}
+
+.tooltip {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  pointer-events: none;
+  max-width: 220px;
+  z-index: 1000;
+}
+
 
 .font-heading {
   font-family: var(--font-heading), sans-serif;
