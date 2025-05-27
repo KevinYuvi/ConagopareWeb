@@ -34,7 +34,7 @@ export default function ParroquializacionLeaflet() {
   const [zoom, setZoom] = useState(6);
 
   useEffect(() => {
-    fetch("/data/parroquias.json")
+    fetch("/Data/parroquias.json")
       .then((res) => res.json())
       .then((data: Parroquia[]) => setParroquiasData(data));
   }, []);
