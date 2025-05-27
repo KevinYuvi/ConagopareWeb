@@ -1,5 +1,6 @@
 "use client";
 
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -9,26 +10,34 @@ import { FaFacebook, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function EquipoPage() {
   const equipo = [
-    { nombre: "Nombre Apellido", rol: "Coordinador General" },
-    { nombre: "Nombre Apellido", rol: "Analista de Datos" },
-    { nombre: "Nombre Apellido", rol: "Diseñador Gráfico" },
-    { nombre: "Nombre Apellido", rol: "Investigador" },
+    { nombre: "Nombre Apellido", rol: "Coordinador General", image: "avatar1.jpg" },
+    { nombre: "Nombre Apellido", rol: "Analista de Datos", image: "avatar1.jpg" },
+    { nombre: "Nombre Apellido", rol: "Diseñador Gráfico", image: "avatar1.jpg" },
+    { nombre: "Nombre Apellido", rol: "Investigador", image: "avatar1.jpg" },
   ];
 
+  const images = [
+  { src: '1.logo.webp', title: 'Conacopare Nacional' },
+  { src: '2.logo.webp', title: 'Universidad Central del Ecuador' },
+  { src: '3.logo', title: 'logo 3' },
+  { src: '4.logo', title: 'logo 4' },
+];
+
+
   return (
-    <div className="px-6 md:px-20 pt-28">
+    <div className="px-6 md:px-20 pt-10">
       {/* Sección de Equipo */}
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className=" grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Cuadros de integrantes */}
         <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {equipo.map((persona, index) => (
             <div
               key={index}
-              className="bg-gray-200 rounded-lg shadow-md p-6 flex flex-col items-center justify-between text-center"
+              className="bg-gray-200 rounded-lg  p-6 flex flex-col items-center justify-between text-center "
             >
-              <div className="w-24 h-24 border-4 border-blue-800 rounded-full overflow-hidden mb-4">
+              <div className="w-24 h-24 border-4 border-blue-500 rounded-full overflow-hidden mb-4">
                 <Image
-                  src="/avatar-placeholder.png"
+                  src={`/images/equipo/${persona.image}`}
                   alt="Foto de perfil"
                   width={96}
                   height={96}
@@ -37,16 +46,16 @@ export default function EquipoPage() {
               <h3 className="text-lg font-semibold">{persona.nombre}</h3>
               <p className="text-sm text-gray-600">{persona.rol}</p>
               <div className="flex gap-3 mt-4 text-xl text-gray-600">
-                <FaFacebook />
-                <FaXTwitter />
-                <FaInstagram />
+                <FaFacebook className="hover:text-blue-500"/>
+                <FaXTwitter className="hover:text-black" />
+                <FaInstagram className="hover:text-pink-500"/>
               </div>
             </div>
           ))}
         </div>
 
         {/* Texto fijo a la derecha */}
-        <div className="md:sticky md:top-28 h-fit">
+        <div className="md:sticky md:top-28 h-fit md:col-span-2 pl-10 pr-10">
           <h2 className="text-2xl font-heading font-bold mb-4">Nuestro Equipo</h2>
           <p className="text-gray-700">
             En CONAGOPARE, estamos comprometidos con visibilizar las realidades rurales
@@ -75,14 +84,14 @@ export default function EquipoPage() {
           }}
           modules={[Autoplay]}
         >
-          {[1, 2, 3, 4].map((i) => (
-            <SwiperSlide key={i}>
-              <div className="relative bg-gray-200 h-40 rounded-md shadow-md mb-15">
+          {images.map((imgSrc, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative bg-gray-200 aspect-[16/9]  h-40 rounded-md  mb-15">
                 <Image
-                  src={`/images/1.Vialidad.webp`}
-                  alt={`Logo ${i}`}
+                  src={`/images/logos/${imgSrc.src}`} 
+                  alt={imgSrc.title}
                   fill
-                  className="object-contain"
+                    className="object-contain"
                 />
               </div>
             </SwiperSlide>
