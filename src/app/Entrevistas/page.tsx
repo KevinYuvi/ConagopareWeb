@@ -1,26 +1,62 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, useEffect, FormEvent } from "react";
+import { videosMock, Video } from "@/data/videosMock";
 
-const videosMock = Array.from({ length: 10 }, (_, i) => ({
-  id: i + 1,
-  provincia: "Napo",
-  canton: "Tena",
-  parroquia: "Pano",
-  thumbnail: "https://img.youtube.com/vi/VIDEO_ID/default.jpg", // reemplaza VIDEO_ID con el real
-}));
+const VIDEOS_POR_PAGINA = 6;
 
 export default function Entrevistas() {
-  const [provinciaSeleccionada, setProvinciaSeleccionada] = useState("");
+  const [provincia, setProvincia] = useState("");
+  const [canton, setCanton] = useState("");
+  const [parroquia, setParroquia] = useState("");
+  const [busqueda, setBusqueda] = useState("");
   const [pagina, setPagina] = useState(1);
+  const [filtrar, setFiltrar] = useState(false);
+  const [videosAleatorios, setVideosAleatorios] = useState<Video[]>([]);
 
-  const handleConsulta = () => {
-    // Aquí va tu lógica para filtrar por provincia si conectas con la API
-    console.log("Consultando entrevistas de", provinciaSeleccionada);
+  // Filtros dependientes
+  const cantonesDisponibles = useMemo(() => {
+    return [...new Set(videosMock.filter(v => v.provincia === provincia).map(v => v.canton))];
+  }, [provincia]);
+
+  const parroquiasDisponibles = useMemo(() => {
+    return [...new Set(videosMock.filter(v => v.provincia === provincia && v.canton === canton).map(v => v.parroquia))];
+  }, [provincia, canton]);
+
+  // Videos aleatorios al inicio
+  useEffect(() => {
+    const copia = [...videosMock];
+    const aleatorios = copia.sort(() => 0.5 - Math.random()).slice(0, VIDEOS_POR_PAGINA);
+    setVideosAleatorios(aleatorios);
+  }, []);
+
+  const resultadosFiltrados = useMemo(() => {
+    if (!filtrar) return videosAleatorios;
+
+    return videosMock.filter((v) => {
+      const coincideProvincia = !provincia || v.provincia === provincia;
+      const coincideCanton = !canton || v.canton === canton;
+      const coincideParroquia = !parroquia || v.parroquia === parroquia;
+      const coincideBusqueda = v.titulo?.toLowerCase().includes(busqueda.toLowerCase());
+      return coincideProvincia && coincideCanton && coincideParroquia && coincideBusqueda;
+    });
+  }, [filtrar, provincia, canton, parroquia, busqueda, videosAleatorios]);
+
+  const totalPaginas = Math.ceil(resultadosFiltrados.length / VIDEOS_POR_PAGINA);
+
+  const videosPagina = useMemo(() => {
+    const inicio = (pagina - 1) * VIDEOS_POR_PAGINA;
+    return resultadosFiltrados.slice(inicio, inicio + VIDEOS_POR_PAGINA);
+  }, [pagina, resultadosFiltrados]);
+
+  const aplicarFiltros = () => {
+    setFiltrar(true);
+    setPagina(1);
   };
 
-  const handlePagina = (nuevaPagina: number) => {
-    setPagina(nuevaPagina);
+  const manejarEnvio = (e: FormEvent) => {
+    e.preventDefault();
+    aplicarFiltros();
   };
 
   return (
@@ -32,71 +68,83 @@ export default function Entrevistas() {
         Historias de quienes trabajan por el desarrollo de sus comunidades
       </p>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4">
-        <label htmlFor="provincia" className="text-gray-700">
-          Seleccione una provincia:
-        </label>
-        <select
-          id="provincia"
-          className="border rounded px-2 py-1"
-          onChange={(e) => setProvinciaSeleccionada(e.target.value)}
-        >
-          <option>Provincia</option>
-          <option value="Napo">Napo</option>
-          <option value="Chimborazo">Chimborazo</option>
-          {/* Agrega más provincias aquí */}
+      {/* Formulario de filtros */}
+      <form onSubmit={manejarEnvio} className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
+        <select className="border px-2 py-1 rounded" onChange={(e) => setProvincia(e.target.value)}>
+          <option value="">Provincia</option>
+          {[...new Set(videosMock.map(v => v.provincia))].map(p => (
+            <option key={p} value={p}>{p}</option>
+          ))}
         </select>
+
+        <select className="border px-2 py-1 rounded" onChange={(e) => setCanton(e.target.value)} disabled={!provincia}>
+          <option value="">Cantón</option>
+          {cantonesDisponibles.map(c => (
+            <option key={c} value={c}>{c}</option>
+          ))}
+        </select>
+
+        <select className="border px-2 py-1 rounded" onChange={(e) => setParroquia(e.target.value)} disabled={!canton}>
+          <option value="">Parroquia</option>
+          {parroquiasDisponibles.map(p => (
+            <option key={p} value={p}>{p}</option>
+          ))}
+        </select>
+
+        <input
+          type="text"
+          placeholder="Buscar por título"
+          className="border px-2 py-1 rounded"
+          value={busqueda}
+          onChange={(e) => setBusqueda(e.target.value)}
+        />
+
         <button
+          type="submit"
           className="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"
-          onClick={handleConsulta}
         >
-          Consultar
+          Buscar
         </button>
+      </form>
 
-      </div>
-
-      <div className="text-left text-gray-800 mb-4">
-        <strong>{videosMock.length} Videos</strong>
-      </div>
-
+      {/* Resultados */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
-        {videosMock.map((video) => (
-          <div
-            key={video.id}
-            className="bg-gray-300 rounded overflow-hidden shadow"
-          >
-            <div className="aspect-video bg-gray-800 flex justify-center items-center">
-              <img
-                src="/images/youtube-play.png"
-                alt="Video YouTube"
-                className="h-12 w-16"
-              />
-            </div>
-            <div className="p-2 text-sm text-gray-700 truncate">
-              Provincia: {video.provincia} - Cantón: {video.canton} - Parroquia: {video.parroquia}
+        {videosPagina.map((video) => (
+          <div key={video.id} className="bg-white rounded shadow overflow-hidden">
+            <iframe
+              className="w-full aspect-video"
+              src={`https://www.youtube.com/embed/${video.videoId}`}
+              title={video.titulo || "Video"}
+              allowFullScreen
+            ></iframe>
+            <div className="p-3 text-sm text-gray-700">
+              <strong>{video.titulo}</strong><br />
+              {video.provincia} - {video.canton} - {video.parroquia}
             </div>
           </div>
         ))}
       </div>
 
       {/* Paginación */}
-      <div className="flex justify-center items-center gap-4">
-        <button
-          className="bg-blue-600 text-white px-3 py-1 rounded disabled:opacity-50"
-          onClick={() => handlePagina(pagina - 1)}
-          disabled={pagina === 1}
-        >
-          Anterior
-        </button>
-        <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded">{pagina}</span>
-        <span>{pagina + 1}</span>
-        <button
-          className="bg-blue-600 text-white px-3 py-1 rounded"
-          onClick={() => handlePagina(pagina + 1)}
-        >
-          Siguiente
-        </button>
-      </div>
+      {resultadosFiltrados.length > 0 && (
+        <div className="flex justify-center items-center gap-4">
+          <button
+            className="bg-blue-600 text-white px-3 py-1 rounded disabled:opacity-50"
+            onClick={() => setPagina((p) => Math.max(p - 1, 1))}
+            disabled={pagina === 1}
+          >
+            Anterior
+          </button>
+          <span className="text-gray-800">Página {pagina} de {totalPaginas}</span>
+          <button
+            className="bg-blue-600 text-white px-3 py-1 rounded disabled:opacity-50"
+            onClick={() => setPagina((p) => Math.min(p + 1, totalPaginas))}
+            disabled={pagina === totalPaginas}
+          >
+            Siguiente
+          </button>
+        </div>
+      )}
     </section>
   );
 }
