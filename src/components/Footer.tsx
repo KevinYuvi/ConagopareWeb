@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaTiktok, FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 import Image from "next/image";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -35,7 +36,7 @@ export default function Footer() {
     <ul className="space-y-2 text-gray-200">
             <li className="flex items-center gap-2">
               <a href="https://x.com/ConagopareN" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-black">
-                <BsTwitterX/> <span>X</span>
+                <BsTwitterX /> <span>X</span>
               </a>
             </li>
             <li className="flex items-center gap-2">
@@ -54,7 +55,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <a href="https://www.instagram.com/conagopare.ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-pink-500">
+              <a href="https://www.instagram.com/conagopare.ec" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-pink-500">
                 <FaInstagram /> <span>Instagram</span>
               </a>
             </li>

@@ -228,7 +228,7 @@ const parroquiasDisponibles = [...new Set(data
       </p>
       <div className="flex justify-center">
         <iframe
-          src="/docs/articulo_mujeres_presidentas.pdf"
+          src="/Docs/articulo_mujeres_presidentas.pdf"
           width="794"
           height="600"
           className="rounded-md border shadow"
