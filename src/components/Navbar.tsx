@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -7,7 +6,6 @@ import { Menu, X } from "lucide-react"; // o puedes usar íconos propios
 
 export default function Navbar() {
   const [menuAbierto, setMenuAbierto] = useState(false);
-
   const toggleMenu = () => setMenuAbierto(!menuAbierto);
 
   const links = [
@@ -26,20 +24,20 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md shadow-md border-b border-white/20">
-      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3">
-        <Link href="/">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3 overflow-hidden">
+        <Link href="/" className="flex items-center h-12 overflow-hidden">
           <Image
-            src="/images/inicio/logo.webp"
+            src="/images/inicio/icono.png"
             alt="Logo"
-            width={45}
-            height={45}
-            className="rounded-md cursor-pointer"
+            width={80}
+            height={80}
+            className="rounded-md cursor-pointer object-contain"
             priority
           />
         </Link>
 
         {/* Botón Hamburguesa (solo en móviles) */}
-        <button onClick={toggleMenu} className="md:hidden text-gray-800">
+        <button onClick={toggleMenu} className="md:hidden text-gray-800 flex items-center">
           {menuAbierto ? <X size={24} /> : <Menu size={24} />}
         </button>
 
