@@ -80,9 +80,9 @@ const fadeUp = {
 export default function DatosRuralesPage() {
   return (
     <div className="px-4 py-12 max-w-7xl mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-4">Datos Rurales</h1>
-      <p className="text-center text-lg max-w-3xl mx-auto mb-10">
-          La sección &quot;Datos Rurales&quot; ofrece visualizaciones interactivas en Power BI que muestran información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden explorar datos oficiales sobre vialidad, salud, educación, seguridad, servicios básicos, conectividad, empleo y más, segmentados por provincia, cantón y parroquia.
+      <h1 className="text-3xl font-heading font-bold text-center mb-4">Datos Rurales</h1>
+      <p className="text-center text-base max-w-3xl mx-auto mb-2 pr-10 pl-10">
+        Esta seccion ofrece visualizaciones interactivas en Power BI que muestran información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden explorar datos oficiales segmentados por provincia, cantón y parroquia.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
         {data.map((item, i) => (
@@ -93,16 +93,16 @@ export default function DatosRuralesPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeUp}
-            className="bg-gray-200 rounded-xl p-10 shadow hover:shadow-lg transition-shadow duration-300 flex flex-col items-center justify-between"
+            className="bg-gray-200 shadow-lg shadow-gray-400/50 rounded-xl p-10  transition-shadow duration-300 flex flex-col items-center justify-between"
           >
             <div >
-              <Image src={`/images/${item.image}`} alt={item.title} width={400} height={160} className="object-cover rounded-lg mb-4 mx-auto"/>
+              <Image src={`/images/datos_rurales/${item.image}`} alt={item.title} width={400} height={160} className="object-cover rounded-lg mb-4 mx-auto"/>
               <h2 className="text-lg font-bold mb-2 text-center">{item.title}</h2>
               <p className="text-gray-700 mb-4 pr-4 pl-4">{item.description}</p>
             </div>
             <Link
               href={item.href}
-              className=" w-[125px] text-center mt-auto inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-900 transition-colors"
+              className=" w-[125px] text-center bg-blue-500  text-white px-4 py-2 rounded hover:bg-blue-900 shadow-lg shadow-blue-500/50 transition-colors"
             >
               Consultar
             </Link>

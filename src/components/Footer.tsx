@@ -2,16 +2,21 @@
 import Link from "next/link";
 import { FaTiktok, FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#476350] text-white px-6 py-10">
+    <footer className="bg-[#5d7460] text-white px-6 py-10">
 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
   {/* Logo y mensaje */}
   <div className="flex flex-col items-start space-y-2 md:col-span-3">
-    <h1 className="text-white-300 text-3xl font-heading font-bold tracking-wide">
-      IDENTIDAD <span className="text-white">RURAL</span>
-    </h1>
+    <Image
+      src="/LOGOTIPO - IDENTIDAD RURAL.webp"
+      alt="Logo"
+      width={150}
+      height={45}
+      className="rounded-md cursor-pointer mr-10"
+    />
     <p>Hecho con <span className="text-red-500">❤️</span> en Ecuador</p>
     <p className="text-gray-300">Este sitio es de acceso libre y educativo</p>
   </div>
