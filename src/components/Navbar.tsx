@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3">
         <Link href="/">
           <Image
-            src="/logo.png"
+            src="/images/inicio/logo.webp"
             alt="Logo"
             width={45}
             height={45}
