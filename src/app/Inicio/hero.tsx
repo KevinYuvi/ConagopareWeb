@@ -18,7 +18,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          src="images/inicio/Logo2.png" 
+          src="images/inicio/Logo2.webp" 
           alt="Logo Identidad Rural"
           className="h-32 md:h-40 lg:h-48 mx-auto"
         />
