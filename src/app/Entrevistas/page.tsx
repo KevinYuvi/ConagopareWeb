@@ -9,12 +9,10 @@ export default function Entrevistas() {
   const [provincia, setProvincia] = useState("");
   const [canton, setCanton] = useState("");
   const [parroquia, setParroquia] = useState("");
-  const [busqueda, setBusqueda] = useState("");
   const [pagina, setPagina] = useState(1);
   const [filtrar, setFiltrar] = useState(false);
   const [videosAleatorios, setVideosAleatorios] = useState<Video[]>([]);
 
-  // Filtros dependientes
   const cantonesDisponibles = useMemo(() => {
     return [...new Set(videosMock.filter(v => v.provincia === provincia).map(v => v.canton))];
   }, [provincia]);
@@ -23,7 +21,6 @@ export default function Entrevistas() {
     return [...new Set(videosMock.filter(v => v.provincia === provincia && v.canton === canton).map(v => v.parroquia))];
   }, [provincia, canton]);
 
-  // Videos aleatorios al inicio
   useEffect(() => {
     const copia = [...videosMock];
     const aleatorios = copia.sort(() => 0.5 - Math.random()).slice(0, VIDEOS_POR_PAGINA);
@@ -37,10 +34,9 @@ export default function Entrevistas() {
       const coincideProvincia = !provincia || v.provincia === provincia;
       const coincideCanton = !canton || v.canton === canton;
       const coincideParroquia = !parroquia || v.parroquia === parroquia;
-      const coincideBusqueda = v.titulo?.toLowerCase().includes(busqueda.toLowerCase());
-      return coincideProvincia && coincideCanton && coincideParroquia && coincideBusqueda;
+      return coincideProvincia && coincideCanton && coincideParroquia;
     });
-  }, [filtrar, provincia, canton, parroquia, busqueda, videosAleatorios]);
+  }, [filtrar, provincia, canton, parroquia, videosAleatorios]);
 
   const totalPaginas = Math.ceil(resultadosFiltrados.length / VIDEOS_POR_PAGINA);
 
@@ -51,6 +47,14 @@ export default function Entrevistas() {
 
   const aplicarFiltros = () => {
     setFiltrar(true);
+    setPagina(1);
+  };
+
+  const quitarSelecciones = () => {
+    setProvincia("");
+    setCanton("");
+    setParroquia("");
+    setFiltrar(false);
     setPagina(1);
   };
 
@@ -70,40 +74,40 @@ export default function Entrevistas() {
 
       {/* Formulario de filtros */}
       <form onSubmit={manejarEnvio} className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
-        <select className="border px-2 py-1 rounded" onChange={(e) => setProvincia(e.target.value)}>
+        <select className="border px-2 py-1 rounded" value={provincia} onChange={(e) => setProvincia(e.target.value)}>
           <option value="">Provincia</option>
           {[...new Set(videosMock.map(v => v.provincia))].map(p => (
             <option key={p} value={p}>{p}</option>
           ))}
         </select>
 
-        <select className="border px-2 py-1 rounded" onChange={(e) => setCanton(e.target.value)} disabled={!provincia}>
+        <select className="border px-2 py-1 rounded" value={canton} onChange={(e) => setCanton(e.target.value)} disabled={!provincia}>
           <option value="">Cantón</option>
           {cantonesDisponibles.map(c => (
             <option key={c} value={c}>{c}</option>
           ))}
         </select>
 
-        <select className="border px-2 py-1 rounded" onChange={(e) => setParroquia(e.target.value)} disabled={!canton}>
+        <select className="border px-2 py-1 rounded" value={parroquia} onChange={(e) => setParroquia(e.target.value)} disabled={!canton}>
           <option value="">Parroquia</option>
           {parroquiasDisponibles.map(p => (
             <option key={p} value={p}>{p}</option>
           ))}
         </select>
 
-        <input
-          type="text"
-          placeholder="Buscar por título"
-          className="border px-2 py-1 rounded"
-          value={busqueda}
-          onChange={(e) => setBusqueda(e.target.value)}
-        />
-
         <button
           type="submit"
           className="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"
         >
           Buscar
+        </button>
+
+        <button
+          type="button"
+          onClick={quitarSelecciones}
+          className="bg-gray-500 text-white px-4 py-1 rounded hover:bg-gray-600"
+        >
+          Quitar Selecciones
         </button>
       </form>
 
