@@ -7,11 +7,16 @@ import * as XLSX from 'xlsx';
 import EcuadorSVG from './EcuadorSVG';
 import { motion } from 'framer-motion';
 
-const regionesMap = {
+const regionesMap: Record<string, string[]> = {
   Sierra: ["Carchi", "Imbabura", "Pichincha", "Cotopaxi", "Tungurahua", "Chimborazo", "Bolívar", "Cañar", "Azuay", "Loja"],
   Costa: ["Esmeraldas", "Manabí", "Guayas", "Santa Elena", "El Oro", "Los Ríos"],
   Amazonía: ["Sucumbíos", "Napo", "Orellana", "Pastaza", "Morona Santiago", "Zamora Chinchipe"],
   Insular: ["Galápagos"]
+};
+
+type Dato = {
+  Provincia: string;
+  Categoria: string;
 };
 
 const fadeUp = {
@@ -24,7 +29,7 @@ const fadeUp = {
 };
 
 const PaginaProblemas = () => {
-  const [datos, setDatos] = useState<any[]>([]);
+  const [datos, setDatos] = useState<Dato[]>([]);
   const [regionSeleccionada, setRegionSeleccionada] = useState("Sierra");
   const [provinciaSeleccionada, setProvinciaSeleccionada] = useState("Azuay");
 
@@ -34,7 +39,7 @@ const PaginaProblemas = () => {
       .then(data => {
         const workbook = XLSX.read(data, { type: 'array' });
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
-        const json = XLSX.utils.sheet_to_json(sheet);
+        const json = XLSX.utils.sheet_to_json<Dato>(sheet);
         setDatos(json);
       });
   }, []);
@@ -42,7 +47,7 @@ const PaginaProblemas = () => {
   const generarTop3PorProvincia = () => {
     const agrupado: Record<string, Record<string, number>> = {};
 
-    datos.forEach(({ Provincia, Categoria }: any) => {
+    datos.forEach(({ Provincia, Categoria }) => {
       if (!agrupado[Provincia]) agrupado[Provincia] = {};
       agrupado[Provincia][Categoria] = (agrupado[Provincia][Categoria] || 0) + 1;
     });
@@ -60,12 +65,12 @@ const PaginaProblemas = () => {
   };
 
   const generarGrafico = (
-    filtroFn: (row: any) => boolean,
+    filtroFn: (row: Dato) => boolean,
     titulo: string,
     index: number
   ) => {
     const conteo: Record<string, number> = {};
-    datos.filter(filtroFn).forEach((row: any) => {
+    datos.filter(filtroFn).forEach((row) => {
       const categoria = row.Categoria;
       if (categoria) {
         conteo[categoria] = (conteo[categoria] || 0) + 1;
@@ -124,16 +129,16 @@ const PaginaProblemas = () => {
     <div className="px-4 py-12 max-w-6xl mx-auto">
       <h1 className="text-4xl font-bold text-center mb-6">Problemas Rurales en el Ecuador</h1>
 
-      <div className="mb-12">
-        <EcuadorSVG data={dataTooltip} />
+      <div className="mb-12 flex justify-center px-2">
+        <div className="w-full max-w-[500px]">
+          <EcuadorSVG data={dataTooltip} />
+        </div>
       </div>
 
-      {/* Nacional */}
+
       {generarGrafico(() => true, "Problemas a Nivel Nacional", 0)}
 
-      {/* Región + Provincia en columnas */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
-        {/* Región */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">🔍 Problemas por Región</h2>
           <select
@@ -146,13 +151,12 @@ const PaginaProblemas = () => {
             ))}
           </select>
           {generarGrafico(
-            (row: any) => regionesMap[regionSeleccionada]?.includes(row.Provincia),
+            (row) => regionesMap[regionSeleccionada]?.includes(row.Provincia),
             `Problemas en la región ${regionSeleccionada}`,
             1
           )}
         </div>
 
-        {/* Provincia */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">📍 Problemas por Provincia</h2>
           <select
@@ -165,7 +169,7 @@ const PaginaProblemas = () => {
             ))}
           </select>
           {generarGrafico(
-            (row: any) => row.Provincia === provinciaSeleccionada,
+            (row) => row.Provincia === provinciaSeleccionada,
             `Problemas en la provincia ${provinciaSeleccionada}`,
             2
           )}

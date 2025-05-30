@@ -2,15 +2,15 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #444444;
   --font-sans: var(--font-quicksand);
+  --font-heading: var(--font-athiti);
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
-    --foreground: #1f1f1f;
+    --foreground: #444444;
   }
 }
 
@@ -20,16 +20,23 @@ body {
   font-family: var(--font-sans), sans-serif;
 }
 
+/* =====================
+   MAPA ECUADOR - SVG
+===================== */
 .mapa-container {
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .mapa-svg {
   width: 100%;
   height: auto;
+  max-height: 450px;
+  object-fit: contain;
 }
 
 .tooltip {
@@ -41,4 +48,25 @@ body {
   pointer-events: none;
   max-width: 220px;
   z-index: 1000;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .mapa-container {
+    padding: 0.5rem;
+  }
+
+  .mapa-svg {
+    max-height: 300px;
+  }
+
+  .tooltip {
+    font-size: 0.75rem;
+    max-width: 180px;
+  }
+}
+
+/* Tipografía para títulos */
+.font-heading {
+  font-family: var(--font-heading), sans-serif;
 }
