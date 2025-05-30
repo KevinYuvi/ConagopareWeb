@@ -1,2322 +1,10 @@
 [
  {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "CUENCA",
-  "PARROQUIA": "NULTI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "CUENCA",
-  "PARROQUIA": "PACCHA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "CUENCA",
-  "PARROQUIA": "SAN JOAQUÍN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "SANTA ISABEL",
-  "PARROQUIA": "ABDÓN CALDERÓN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "SEVILLA DE ORO",
-  "PARROQUIA": "PALMAS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "BOLÍVAR",
-  "CANTÓN": "GUARANDA",
-  "PARROQUIA": "SAN LORENZO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "BOLÍVAR",
-  "CANTÓN": "SAN MIGUEL",
-  "PARROQUIA": "REGULO DE MORA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CAÑAR",
-  "CANTÓN": "BIBLIAN",
-  "PARROQUIA": "JERUSALEN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CAÑAR",
-  "CANTÓN": "CAÑAR",
-  "PARROQUIA": "SAN ANTONIO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CAÑAR",
-  "CANTÓN": "LA TRONCAL",
-  "PARROQUIA": "MANUEL J CALLE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TULCÁN",
-  "CANTÓN": "TULCÁN",
-  "PARROQUIA": "PIOTER ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "COLTA",
-  "PARROQUIA": "CAÑI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "GUANO",
-  "PARROQUIA": "GUANANDO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "GUANO",
-  "PARROQUIA": "PROVIDENCIA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "GUANO",
-  "PARROQUIA": "SAN GERARDO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "RIOBAMBA",
-  "PARROQUIA": "QUIMIAG",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "SAQUISILI",
-  "PARROQUIA": "CHANTILÍN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PASAJE",
-  "PARROQUIA": "LA PEAÑA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PASAJE",
-  "PARROQUIA": "UZHCURRUMI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PIÑAS",
-  "PARROQUIA": "MORO MORO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PIÑAS",
-  "PARROQUIA": "SARACAY",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "SANTA ROSA",
-  "PARROQUIA": "LA AVANZADA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ATACAMES",
-  "PARROQUIA": "LA UNIÓN ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ESMERALDAS",
-  "PARROQUIA": "CAMARONES ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "MUISNE",
-  "PARROQUIA": "SALIMA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "MUISNE",
-  "PARROQUIA": "SAN JOSÉ DE CHAMANGA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "RIOVERDE",
-  "PARROQUIA": "LAGARTO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "RIOVERDE",
-  "PARROQUIA": "MONTALVO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "SAN LORENZO",
-  "PARROQUIA": "TULULBI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "SAN LORENZO",
-  "PARROQUIA": "URBINA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "MILAGRO",
-  "PARROQUIA": "CHOMBREOBO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "YAGUACHI",
-  "PARROQUIA": "PEDRO J MONTERO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "COTACACHI ",
-  "PARROQUIA": "GARCIA MORENO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "IBARRA",
-  "PARROQUIA": "ESPERANZA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "SAN RAFAEL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "PIMAMPIRO ",
-  "PARROQUIA": "CHUGA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CALVAS",
-  "PARROQUIA": "COLAISACA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CALVAS",
-  "PARROQUIA": "UTUANA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CATAMAYO",
-  "PARROQUIA": "GUAYQUICHUMA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CELICA",
-  "PARROQUIA": "SABANILLA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CELICA",
-  "PARROQUIA": "SAN JUAN DE PÓZUL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "ESPÍNDOLA",
-  "PARROQUIA": "BELLAVISTA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "LOJA",
-  "PARROQUIA": "SAN PEDRO DE VILCABAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "PALTAS",
-  "PARROQUIA": "YAMANA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "QUILANGA",
-  "PARROQUIA": "FUNDOCHAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "SARAGURO",
-  "PARROQUIA": "URDANETA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "BABA",
-  "PARROQUIA": "ISLA DE BEJUCAL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "BABA",
-  "PARROQUIA": "GUARE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "PUEBLOVIEJO",
-  "PARROQUIA": "SAN JUAN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "QUEVEDO",
-  "PARROQUIA": "SAN CARLOS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "EL CARMEN",
-  "PARROQUIA": "WILFRIDO LOOR",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PAJAN",
-  "PARROQUIA": "GUALE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PEDERNALES",
-  "PARROQUIA": "10 DE AGOSTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PORTOVIEJO",
-  "PARROQUIA": "CRUCITA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "SUCRE",
-  "PARROQUIA": "CHARAPOTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "TOSAGUA",
-  "PARROQUIA": "SAN JOSE DE BACHILLERO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "GUALAQUIZA",
-  "PARROQUIA": "CHIGUINDA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "PALORA",
-  "PARROQUIA": "CUMANDA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "SANTIAGO",
-  "PARROQUIA": "COPAL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "ARCHIDONA",
-  "PARROQUIA": "COTUNDO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "QUIJOS",
-  "PARROQUIA": "SUMACO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "TENA",
-  "PARROQUIA": "CHONTAPUNTA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ORELLANA",
-  "CANTÓN": "AGUARICO",
-  "PARROQUIA": "TIPUTINI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "PASTAZA",
-  "CANTÓN": "PASTAZA",
-  "PARROQUIA": "POMONA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "PASTAZA",
-  "CANTÓN": "PASTAZA",
-  "PARROQUIA": "VERACRUZ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "PASTAZA",
-  "CANTÓN": "SANTA CLARA",
-  "PARROQUIA": "SAN JOSE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "MEJIA",
-  "PARROQUIA": "TAMBILLO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CALDERON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "NAYON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "PERUCHO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "SAN ANTONIO DE PICHINCHA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "TUMBACO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "CHANDUY",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "MANGLARALTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "SAN JOSÉ DE ANCÓN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTO DOMINGO",
-  "CANTÓN": "SANTO DOMINGO",
-  "PARROQUIA": "PUERTO LIMON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTO DOMINGO",
-  "CANTÓN": "SANTO DOMINGO",
-  "PARROQUIA": "VALLE HERMOSO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "PÍLLARO",
-  "PARROQUIA": "URBINA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "EL PANGUI ",
-  "PARROQUIA": "EL GUISMI ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "EL PANGUI ",
-  "PARROQUIA": "PACHICUTZA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "YACUAMBI ",
-  "PARROQUIA": "LA PAZ ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "ZAMORA ",
-  "PARROQUIA": "SABANILLA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2010,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "ZAMORA ",
-  "PARROQUIA": "SAN CARLOS DE LAS MINAS",
-  "CANTIDAD": 1
- },
- {
   "AÑO": 2014,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "AZUAY",
   "CANTÓN": "CHORDELEG",
   "PARROQUIA": "SAN MARTIN DE PUZHIO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "CUENCA",
-  "PARROQUIA": "CHAUCHA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "CUENCA",
-  "PARROQUIA": "OCTAVIO CORDERO PALACIOS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "EL PAN",
-  "PARROQUIA": "SAN VICENTE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "PAUTE",
-  "PARROQUIA": "GUARAINAG",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "PAUTE",
-  "PARROQUIA": "TOMEBAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "SEVILLA DE ORO",
-  "PARROQUIA": "AMALUZA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "BOLÍVAR",
-  "CANTÓN": "GUARANDA",
-  "PARROQUIA": "FACUNDO VELA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "BOLÍVAR",
-  "CANTÓN": "SAN MIGUEL",
-  "PARROQUIA": "REGULO DE MORA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CAÑAR",
-  "CANTÓN": "BIBLIAN",
-  "PARROQUIA": "JERUSALEN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CARCHI",
-  "CANTÓN": "MONTUFAR",
-  "PARROQUIA": "CRISTOBAL  COLON ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CARCHI",
-  "CANTÓN": "MONTUFAR",
-  "PARROQUIA": "FERNANDEZ SALVADOR ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CARCHI",
-  "CANTÓN": "TULCÁN",
-  "PARROQUIA": "MALDONADO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "ALAUSI",
-  "PARROQUIA": "HUIGRA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "COLTA",
-  "PARROQUIA": "CAÑI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "GUANO",
-  "PARROQUIA": "PROVIDENCIA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "PENIPE",
-  "PARROQUIA": "PUELA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "SALCEDO",
-  "PARROQUIA": "A.J. HOLGUÍN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "BALSAS",
-  "PARROQUIA": "BELLA MARIA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "EL GUABO",
-  "PARROQUIA": "BARBONES",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "EL GUABO",
-  "PARROQUIA": "RIO BONITO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "MARCABELI",
-  "PARROQUIA": "EL INGENIO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PASAJE",
-  "PARROQUIA": "LA PEAÑA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PASAJE",
-  "PARROQUIA": "PROGRESO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PASAJE",
-  "PARROQUIA": "UZHCURRUMI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PIÑAS",
-  "PARROQUIA": "MORO MORO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PIÑAS",
-  "PARROQUIA": "SARACAY",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ATACAMES",
-  "PARROQUIA": "LA UNIÓN ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ATACAMES",
-  "PARROQUIA": "TONCHIGUE ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ELOY ALFARO",
-  "PARROQUIA": "MALDONADO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ELOY ALFARO",
-  "PARROQUIA": "SANTA LUCIA DE LAS PEÑAS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ELOY ALFARO",
-  "PARROQUIA": "TIMBIRE ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ESMERALDAS",
-  "PARROQUIA": "MAJUA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ESMERALDAS",
-  "PARROQUIA": "SAN MATEO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "MUISNE",
-  "PARROQUIA": "SALIMA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "RIOVERDE",
-  "PARROQUIA": "ROCAFUERTE ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "RIOVERDE",
-  "PARROQUIA": "VICHE ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "SAN LORENZO",
-  "PARROQUIA": "ANCON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "SAN LORENZO",
-  "PARROQUIA": "TAMBILLO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "INSULAR",
-  "PROVINCIA": "GALÁPAGOS",
-  "CANTÓN": "SAN CRISTÓBAL",
-  "PARROQUIA": "EL PROGRESO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "DAULE",
-  "PARROQUIA": "LIMONAL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "MILAGRO",
-  "PARROQUIA": "ROBERTO ASTUDILLO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "NARANJAL",
-  "PARROQUIA": "TAURA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "PEDRO CARBO",
-  "PARROQUIA": "SABANILLA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "SALITRE",
-  "PARROQUIA": "LA VICTORIA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "SAMBORONDON",
-  "PARROQUIA": "TARIFA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "YAGUACHI",
-  "PARROQUIA": "VIRGEN DE FATIMA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "YAGUACHI",
-  "PARROQUIA": "YAGUACHI VIEJO CONE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "COTACACHI ",
-  "PARROQUIA": "GARCIA MORENO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "COTACACHI ",
-  "PARROQUIA": "PEÑAHERRERA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "DR. MIGUEL EGAS ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "ILUMAN ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "SAN RAFAEL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "PIMAMPIRO ",
-  "PARROQUIA": "SIGSIPAMBA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "URCUQUI ",
-  "PARROQUIA": "TUMBABIRO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CATAMAYO",
-  "PARROQUIA": "GUAYQUICUMA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CELICA",
-  "PARROQUIA": "CRUZPAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "GONZANAMÁ",
-  "PARROQUIA": "NAMBACOLA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "LOJA",
-  "PARROQUIA": "MALACATOS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "PUYANGO",
-  "PARROQUIA": "VICENTINO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "BABA",
-  "PARROQUIA": "ISLA DE BEJUCAL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "PUEBLOVIEJO",
-  "PARROQUIA": "PUERTO PECHICHE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "PUEBLOVIEJO",
-  "PARROQUIA": "SAN JUAN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "VINCES",
-  "PARROQUIA": "ANTONIO SOTOMAYOR",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "EL CARMEN",
-  "PARROQUIA": "WILFRIDO LOOR",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "JIPIJAPA",
-  "PARROQUIA": "EL ANEGADO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "JIPIJAPA",
-  "PARROQUIA": "MEMBRILLAL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PAJAN",
-  "PARROQUIA": "GUALE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PORTOVIEJO",
-  "PARROQUIA": "CRUCITA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PORTOVIEJO",
-  "PARROQUIA": "RIOCHICO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "SUCRE",
-  "PARROQUIA": "CHARAPOTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "GUALAQUIZA",
-  "PARROQUIA": "CHIGUINDA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "QUIJOS",
-  "PARROQUIA": "SAN FRANCISCO DE BORJA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "TENA",
-  "PARROQUIA": "CHONTAPUNTA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "TENA",
-  "PARROQUIA": "SAN JUAN DE MUYUNA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ORELLANA",
-  "CANTÓN": "AGUARICO",
-  "PARROQUIA": "NELSON TANGOY FLORES",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ORELLANA",
-  "CANTÓN": "FRANCISCO DE ORELLANA ",
-  "PARROQUIA": "DAYUMA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ORELLANA",
-  "CANTÓN": "LA JOYA DE LOS SACHAS",
-  "PARROQUIA": "ENOKANQUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "PASTAZA",
-  "CANTÓN": "PASTAZA",
-  "PARROQUIA": "POMONA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "PASTAZA",
-  "CANTÓN": "PASTAZA",
-  "PARROQUIA": "VERACRUZ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "PASTAZA",
-  "CANTÓN": "SANTA CLARA",
-  "PARROQUIA": "SAN JOSE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "MEJIA",
-  "PARROQUIA": "ALOASI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "MEJIA",
-  "PARROQUIA": "TAMBILLO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CALDERON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CONOCOTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "LA MERCED",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "NAYON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "POMASQUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "PUEMBO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "TUMBACO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "YARUQUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "ZAMBIZA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "SAN MIGUEL DE LOS BANCOS",
-  "PARROQUIA": "MINDO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "CHANDUY",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "MANGLARALTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "SAN JOSÉ DE ANCÓN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTO DOMINGO",
-  "CANTÓN": "LA CONCORDIA",
-  "PARROQUIA": "LAS VILLEGAS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTO DOMINGO",
-  "CANTÓN": "SANTO DOMINGO",
-  "PARROQUIA": "LUZ DE AMÉRICA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "SUCUMBÍOS",
-  "CANTÓN": "CUYABENO",
-  "PARROQUIA": "AGUAS NEGRAS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "SUCUMBÍOS",
-  "CANTÓN": "LAGO AGRIO",
-  "PARROQUIA": "EL ENO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "AMBATO",
-  "PARROQUIA": "PICAIHUA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "BAÑOS",
-  "PARROQUIA": "LLIGUA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "BAÑOS",
-  "PARROQUIA": "RÍO VERDE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "NANGARTIZA ",
-  "PARROQUIA": "NUEVO PARAÍSO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "YACUAMBI ",
-  "PARROQUIA": "TUTUPALI ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "ZAMORA ",
-  "PARROQUIA": "GUADALUPE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2014,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "CHINCHIPE ",
-  "PARROQUIA": "PUCAPAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "EL PAN",
-  "PARROQUIA": "SAN VICENTE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "GIRON",
-  "PARROQUIA": "SAN GERARDO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "BOLÍVAR",
-  "CANTÓN": "SAN MIGUEL",
-  "PARROQUIA": "SAN VICENTE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "BOLÍVAR",
-  "CANTÓN": "SAN MIGUEL",
-  "PARROQUIA": "REGULO DE MORA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CAÑAR",
-  "CANTÓN": "BIBLIÁN",
-  "PARROQUIA": "SAGEO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CAÑAR",
-  "CANTÓN": "DÉLEG",
-  "PARROQUIA": "SOLANO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "LATACUNGA",
-  "PARROQUIA": "SAN JUAN DE PASTOCALLE ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "SAQUISILI",
-  "PARROQUIA": "CANCHAGUA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "SIGCHOS",
-  "PARROQUIA": "PALO QUEMADO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "ALAUSI",
-  "PARROQUIA": "PISTISHI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "CHUNCHI",
-  "PARROQUIA": "COMPUD",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "GUANO",
-  "PARROQUIA": "SAN GERARDO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "GUANO",
-  "PARROQUIA": "SANTA FÉ DE GALAN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "PENIPE",
-  "PARROQUIA": "BILBAO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "PENIPE",
-  "PARROQUIA": "PUELA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "RIOBAMBA",
-  "PARROQUIA": "SAN JUAN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "ARENILLAS",
-  "PARROQUIA": "CHACRAS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "BALSAS",
-  "PARROQUIA": "BELLA MARIA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "EL GUABO",
-  "PARROQUIA": "TENDALES",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "PIÑAS",
-  "PARROQUIA": "MORO MORO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "INSULAR",
-  "PROVINCIA": "GALÁPAGOS",
-  "CANTÓN": "SAN CRISTÓBAL",
-  "PARROQUIA": "ISLA FLOREANA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "SAN JACINTO",
-  "PARROQUIA": "COLIMES",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "LAUREL",
-  "PARROQUIA": "DAULE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "JUAN BAUTISTA  AGUIRRE",
-  "PARROQUIA": "DAULE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "LOS LOJAS",
-  "PARROQUIA": "DAULE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "LIMONAL",
-  "PARROQUIA": "DAULE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "JUAN GOMEZ RENDON",
-  "PARROQUIA": "GUAYAQUIL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "MARISCAL SUCRE",
-  "PARROQUIA": "MILAGRO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "IBARRA",
-  "PARROQUIA": "LA ESPERANZA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "IBARRA",
-  "PARROQUIA": "ANGOCHAGUA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "GONZALEZ SUAREZ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "PATAQUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "QUICHINCHE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "PIMAMPIRO ",
-  "PARROQUIA": "SIGSIPAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "URCUQUI ",
-  "PARROQUIA": "LA MERCED DE BUENOS AIRES",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CALVAS",
-  "PARROQUIA": "EL LUCERO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CALVAS",
-  "PARROQUIA": "UTUANA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CELICA",
-  "PARROQUIA": "TNTE M.RODRÍGUEZ LOAYZA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CHAGUARPAMBA",
-  "PARROQUIA": "SANTA RUFINA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "ESPÍNDOLA",
-  "PARROQUIA": "JIMBURA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "GONZANAMÁ",
-  "PARROQUIA": "NAMBACOLA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "LOJA",
-  "PARROQUIA": "JIMBILLA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "LOJA",
-  "PARROQUIA": "SANTIAGO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "PALTAS",
-  "PARROQUIA": "YAMANA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "SARAGURO",
-  "PARROQUIA": "URDANETA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "ZAPOTILLO",
-  "PARROQUIA": "GARZAREAL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "ZAPOTILLO",
-  "PARROQUIA": "MANGAHURCO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "VENTANAS ",
-  "PARROQUIA": "ZAPOTAL ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "BABAHOYO ",
-  "PARROQUIA": "LA UNIÓN ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "QUEVEDO ",
-  "PARROQUIA": "LA ESPERANZA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PORTOVIEJO",
-  "PARROQUIA": "CRUCITA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PORTOVIEJO",
-  "PARROQUIA": "RIOCHICO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "JIPIJAPA",
-  "PARROQUIA": "EL ANEGADO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "JIPIJAPA",
-  "PARROQUIA": "LA UNION ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "CHONE",
-  "PARROQUIA": "RICAURTE ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "SANTA ANA",
-  "PARROQUIA": "AYACUCHO ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "FALVIO ALFARO",
-  "PARROQUIA": "SAN FRANCISCO DE NOVILLO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "MANTA",
-  "PARROQUIA": "SANTA MARIANITA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "MANTA",
-  "PARROQUIA": "SAN LORENZO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "EL CARMEN",
-  "PARROQUIA": "WILFRIDO LOOR MOREIRA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "SAN VICENTE",
-  "PARROQUIA": "CANOA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "PALORA",
-  "PARROQUIA": "16 DE AGOSTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "MORONA ",
-  "PARROQUIA": "SINAI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "SAN. J. BOSCO",
-  "PARROQUIA": "SAN CARLOS DE LIMON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "GUALAQUIZA",
-  "PARROQUIA": "BOMBOIZA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "GUALAQUIZA",
-  "PARROQUIA": "NUEVA TARQUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "CHACO",
-  "PARROQUIA": "SANTA ROSA DE QUIJOS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "QUIJOS",
-  "PARROQUIA": "PAPALLACTA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "TENA",
-  "PARROQUIA": "SAN JUAN DE MUYUNA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ORELLANA",
-  "CANTÓN": "LA JOYA DE LOS SACHAS",
-  "PARROQUIA": "ENOKANQUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ORELLANA",
-  "CANTÓN": "LA JOYA DE LOS SACHAS",
-  "PARROQUIA": "SAN SEBASTIAN DEL COCA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "ALANGASI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CALDERON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CUMBAYA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CHAVEZPAMBA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "EL QUINCHE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "NONO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "POMASQUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "TUMBACO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "YARUQUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "SAN JOSÉ DE ANCÓN ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "SIMÓN BOLIVAR",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTA ELENA",
-  "CANTÓN": "SALINAS",
-  "PARROQUIA": "JOSÉ LUIS TAMAYO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTO DOMINGO",
-  "CANTÓN": "SANTO DOMINGO",
-  "PARROQUIA": "LUZ DE AMÉRICA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTO DOMINGO",
-  "CANTÓN": "SANTO DOMINGO",
-  "PARROQUIA": "PUERTO LIMÓN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "SUCUMBIOS ",
-  "CANTÓN": "LAGO AGRIO                                        ",
-  "PARROQUIA": "PACAYACU                                          ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "SUCUMBIOS ",
-  "CANTÓN": "SHUSHUFINDI                                       ",
-  "PARROQUIA": "PANACOCHA                                         ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "AMBATO",
-  "PARROQUIA": "HUACHI GRANDE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "AMBATO",
-  "PARROQUIA": "PILAHUIN",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "BAÑOS",
-  "PARROQUIA": "LLIGUA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "BAÑOS",
-  "PARROQUIA": "RÍO VERDE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "PELILEO",
-  "PARROQUIA": "SALASAKA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "YANTZAZA",
-  "PARROQUIA": "LOS ENCUENTROS",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "PAQUISHA ",
-  "PARROQUIA": "BELLAVISTA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "YACUAMBI ",
-  "PARROQUIA": "LA PAZ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2019,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "ZAMORA ",
-  "PARROQUIA": "SABANILLA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "CUENCA",
-  "PARROQUIA": "PACCHA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "CUENCA",
-  "PARROQUIA": "SININCAY",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "SIGSIG",
-  "PARROQUIA": "GUEL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "AZUAY",
-  "CANTÓN": "SIGSIG",
-  "PARROQUIA": "SAN BARTOLOMÉ",
   "CANTIDAD": 1
  },
  {
@@ -2336,11 +24,35 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2010,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "AZUAY",
-  "CANTÓN": "NABON",
-  "PARROQUIA": "COCHAPATA",
+  "CANTÓN": "CUENCA",
+  "PARROQUIA": "NULTI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "CUENCA",
+  "PARROQUIA": "PACCHA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "BOLÍVAR",
+  "CANTÓN": "GUARANDA",
+  "PARROQUIA": "SAN LORENZO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "BOLÍVAR",
+  "CANTÓN": "GUARANDA",
+  "PARROQUIA": "FACUNDO VELA",
   "CANTIDAD": 1
  },
  {
@@ -2360,11 +72,2275 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CAÑAR",
+  "CANTÓN": "BIBLIÁN",
+  "PARROQUIA": "JERUSALÉN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CARCHI",
+  "CANTÓN": "BOLÍVAR",
+  "PARROQUIA": "SAN VICENTE DE PUSIR",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "ALAUSÍ",
+  "PARROQUIA": "HUIGRA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "ALAUSÍ",
+  "PARROQUIA": "PISTISHÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "ALAUSÍ",
+  "PARROQUIA": "PISTISHÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "CHUNCHI",
+  "PARROQUIA": "COMPUD",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "CHUNCHI",
+  "PARROQUIA": "COMPUD",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "LATACUNGA",
+  "PARROQUIA": "SAN JUAN DE PASTOCALLE ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "ARENILLAS",
+  "PARROQUIA": "CHACRAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "ARENILLAS",
+  "PARROQUIA": "PALMALES",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "BALSAS",
+  "PARROQUIA": "BELLAMARÍA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "BALSAS",
+  "PARROQUIA": "BELLAMARÍA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "EL GUABO",
+  "PARROQUIA": "BARBONES",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ATACAMES",
+  "PARROQUIA": "LA UNIÓN                                          ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ATACAMES",
+  "PARROQUIA": "LA UNIÓN ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ATACAMES",
+  "PARROQUIA": "LA UNIÓN ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ATACAMES",
+  "PARROQUIA": "SÚA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ATACAMES",
+  "PARROQUIA": "TONCHIGÜE ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ELOY ALFARO",
+  "PARROQUIA": "COLÓN ELOY DE MARÍA                               ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ELOY ALFARO",
+  "PARROQUIA": "MALDONADO                                         ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ELOY ALFARO",
+  "PARROQUIA": "MALDONADO ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "DAULE",
+  "PARROQUIA": "LIMONAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "DAULE",
+  "PARROQUIA": "LIMONAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "ANTONIO ANTE ",
+  "PARROQUIA": "NATABUELA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "ANTONIO ANTE ",
+  "PARROQUIA": "IMBAYA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "COTACACHI ",
+  "PARROQUIA": "GARCÍA MORENO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "COTACACHI ",
+  "PARROQUIA": "LOS LOJAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CALVAS",
+  "PARROQUIA": "COLAISACA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CALVAS",
+  "PARROQUIA": "EL LUCERO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CALVAS",
+  "PARROQUIA": "EL LUCERO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CALVAS",
+  "PARROQUIA": "UTUANA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CALVAS",
+  "PARROQUIA": "UTUANA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CALVAS",
+  "PARROQUIA": "UTUANA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CATAMAYO",
+  "PARROQUIA": "GUAYQUICHUMA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CATAMAYO",
+  "PARROQUIA": "GUAYQUICHUMA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CELICA",
+  "PARROQUIA": "CRUZPAMBA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CELICA",
+  "PARROQUIA": "CRUZPAMBA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "BABA",
+  "PARROQUIA": "ISLA DE BEJUCAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "BABA",
+  "PARROQUIA": "GUARE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "BABA",
+  "PARROQUIA": "ISLA DE BEJUCAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "BABAHOYO",
+  "PARROQUIA": "FEBRES CORDERO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "24 DE MAYO",
+  "PARROQUIA": "NOBOA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "CHONE",
+  "PARROQUIA": "BOYACÁ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "CHONE",
+  "PARROQUIA": "CONVENTO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "CHONE",
+  "PARROQUIA": "RICAURTE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "CHONE",
+  "PARROQUIA": "RICAURTE ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "EL CARMEN",
+  "PARROQUIA": "SANTA MARÍA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "GUALAQUIZA",
+  "PARROQUIA": "BOMBOIZA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "GUALAQUIZA",
+  "PARROQUIA": "CHIGUINDA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "GUALAQUIZA",
+  "PARROQUIA": "CHIGUINDA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "ARCHIDONA",
+  "PARROQUIA": "COTUNDO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "CHACO",
+  "PARROQUIA": "SANTA ROSA DE QUIJOS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "EL CHACO",
+  "PARROQUIA": "LINARES",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "PASTAZA",
+  "CANTÓN": "PASTAZA",
+  "PARROQUIA": "POMONA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "PASTAZA",
+  "CANTÓN": "PASTAZA",
+  "PARROQUIA": "VERACRUZ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "PASTAZA",
+  "CANTÓN": "PASTAZA",
+  "PARROQUIA": "POMONA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "CAYAMBE",
+  "PARROQUIA": "OTÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "MEJIA",
+  "PARROQUIA": "ALOASÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "MEJIA",
+  "PARROQUIA": "ALOASÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "MEJIA",
+  "PARROQUIA": "EL CHAUPI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "MEJIA",
+  "PARROQUIA": "TAMBILLO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "MEJIA",
+  "PARROQUIA": "TAMBILLO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SANTA ELENA",
+  "PARROQUIA": "CHANDUY",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SANTA ELENA",
+  "PARROQUIA": "MANGLARALTO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SANTA ELENA",
+  "PARROQUIA": "SAN JOSÉ DE ANCÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTO DOMINGO",
+  "CANTÓN": "LA CONCORDIA",
+  "PARROQUIA": "LAS VILLEGAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTO DOMINGO",
+  "CANTÓN": "LA CONCORDIA",
+  "PARROQUIA": "PLAN PILOTO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "AMBATO",
+  "PARROQUIA": "AMBATILLO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "CENTINELA DEL CÓNDOR",
+  "PARROQUIA": "PANGUINTZA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "CHINCHIPE ",
+  "PARROQUIA": "PUCAPAMBA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "CHINCHIPE ",
+  "PARROQUIA": "PUCAPAMBA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "EL PANGUI ",
+  "PARROQUIA": "EL GÜISMI ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "EL PANGUI ",
+  "PARROQUIA": "EL GÜISMI ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "CUENCA",
+  "PARROQUIA": "SAN JOAQUÍN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "CUENCA",
+  "PARROQUIA": "CHAUCHA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "CUENCA",
+  "PARROQUIA": "OCTAVIO CORDERO PALACIOS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "CUENCA",
+  "PARROQUIA": "PACCHA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "CUENCA",
+  "PARROQUIA": "SININCAY",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "EL PAN",
+  "PARROQUIA": "SAN VICENTE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "EL PAN",
+  "PARROQUIA": "SAN VICENTE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "BOLÍVAR",
+  "CANTÓN": "SAN MIGUEL",
+  "PARROQUIA": "RÉGULO DE MORA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "BOLÍVAR",
+  "CANTÓN": "SAN MIGUEL",
+  "PARROQUIA": "RÉGULO DE MORA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CAÑAR",
+  "CANTÓN": "BIBLIÁN",
+  "PARROQUIA": "JERUSALÉN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CARCHI",
+  "CANTÓN": "MONTÚFAR",
+  "PARROQUIA": "CRISTÓBAL  COLÓN ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CARCHI",
+  "CANTÓN": "MONTÚFAR",
+  "PARROQUIA": "FERNÁNDEZ SALVADOR ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CARCHI",
+  "CANTÓN": "MONTÚFAR",
+  "PARROQUIA": "CRISTÓBAL  COLÓN ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "COLTA",
+  "PARROQUIA": "CAÑI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "COLTA",
+  "PARROQUIA": "CAÑI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "COLTA",
+  "PARROQUIA": "CAÑI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "GUANO",
+  "PARROQUIA": "GUANANDO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "LATACUNGA",
+  "PARROQUIA": "JOSEGUANGO BAJO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "EL GUABO",
+  "PARROQUIA": "RÍO BONITO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "EL GUABO",
+  "PARROQUIA": "TENDALES",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "EL GUABO",
+  "PARROQUIA": "RÍO BONITO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "EL GUABO",
+  "PARROQUIA": "TENDALES",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "LAS LAJAS",
+  "PARROQUIA": "SAN ISIDRO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "MARCABELÍ",
+  "PARROQUIA": "EL INGENIO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "PASAJE",
+  "PARROQUIA": "LA PEAÑA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "PASAJE",
+  "PARROQUIA": "UZHCURRUMI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "PASAJE",
+  "PARROQUIA": "LA PEAÑA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ELOY ALFARO",
+  "PARROQUIA": "SANTA LUCÍA DE LAS PEÑAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ELOY ALFARO",
+  "PARROQUIA": "TIMBIRÉ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ELOY ALFARO",
+  "PARROQUIA": "TIMBIRÉ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ESMERALDAS",
+  "PARROQUIA": "CAMARONES                                         ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ESMERALDAS",
+  "PARROQUIA": "CAMARONES ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ESMERALDAS",
+  "PARROQUIA": "CARLOS CONCHA TORRES                     ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ESMERALDAS",
+  "PARROQUIA": "MAJUA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ESMERALDAS",
+  "PARROQUIA": "SAN MATEO ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ESMERALDAS",
+  "PARROQUIA": "TACHINA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "ESMERALDAS",
+  "PARROQUIA": "VUELTA LARGA                                      ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "MUISNE",
+  "PARROQUIA": "GALERA                                            ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "MUISNE",
+  "PARROQUIA": "SALIMA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "INSULAR",
+  "PROVINCIA": "GALÁPAGOS",
+  "CANTÓN": "SAN CRISTÓBAL",
+  "PARROQUIA": "EL PROGRESO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "EL EMPALME",
+  "PARROQUIA": "EL ROSARIO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "GUAYAQUIL",
+  "PARROQUIA": "JUAN GÓMEZ RENDÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "GUAYAQUIL",
+  "PARROQUIA": "POSORJA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "GUAYAQUIL",
+  "PARROQUIA": "TENGUEL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "DAULE",
+  "PARROQUIA": "JUAN BAUTISTA AGUIRRE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "GUAYAQUIL",
+  "PARROQUIA": "JUAN GÓMEZ RENDÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "DAULE",
+  "PARROQUIA": "LAUREL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "DAULE",
+  "PARROQUIA": "LIMONAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "COTACACHI ",
+  "PARROQUIA": "PEÑAHERRERA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "COTACACHI ",
+  "PARROQUIA": "PLAZA GUITÉRREZ ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "COTACACHI ",
+  "PARROQUIA": "IMANTAG ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "COTACACHI ",
+  "PARROQUIA": "PEÑAHERRERA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "IBARRA",
+  "PARROQUIA": "LA ESPERANZA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "IBARRA",
+  "PARROQUIA": "LA ESPERANZA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "IBARRA",
+  "PARROQUIA": "ANGOCHAGUA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CELICA",
+  "PARROQUIA": "SABANILLA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CELICA",
+  "PARROQUIA": "SAN JUAN DE PÓZUL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CELICA",
+  "PARROQUIA": "SAN JUAN DE PÓZUL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CELICA",
+  "PARROQUIA": "TNTE M.RODRÍGUEZ LOAIZA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CHAGUARPAMBA",
+  "PARROQUIA": "SANTA RUFINA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "BABAHOYO ",
+  "PARROQUIA": "LA UNIÓN ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "MONTALVO",
+  "PARROQUIA": "LA ESMERALDA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "PUEBLOVIEJO",
+  "PARROQUIA": "SAN JUAN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "PUEBLOVIEJO",
+  "PARROQUIA": "PUERTO PECHICHE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "EL CARMEN",
+  "PARROQUIA": "WILFRIDO LOOR MOREIRA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "EL CARMEN",
+  "PARROQUIA": "WILFRIDO LOOR MOREIRA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "EL CARMEN",
+  "PARROQUIA": "WILFRIDO LOOR MOREIRA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "FLAVIO ALFARO",
+  "PARROQUIA": "SAN FRANCISCO DE NOVILLO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "FLAVIO ALFARO",
+  "PARROQUIA": "SAN FRANCISCO DE NOVILLO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "JIPIJAPA",
+  "PARROQUIA": "EL ANEGADO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "JIPIJAPA",
+  "PARROQUIA": "EL ANEGADO ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "GUALAQUIZA",
+  "PARROQUIA": "EL IDEAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "QUIJOS",
+  "PARROQUIA": "CUYUJA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "QUIJOS",
+  "PARROQUIA": "PAPALLACTA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "QUIJOS",
+  "PARROQUIA": "PAPALLACTA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ORELLANA",
+  "CANTÓN": "AGUARICO",
+  "PARROQUIA": "SANTA MARÍA DE  HUIRIRIMA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ORELLANA",
+  "CANTÓN": "AGUARICO",
+  "PARROQUIA": "TIPUTINI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ORELLANA",
+  "CANTÓN": "FRANCISCO DE ORELLANA ",
+  "PARROQUIA": "DAYUMA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "PASTAZA",
+  "CANTÓN": "PASTAZA",
+  "PARROQUIA": "VERACRUZ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "PASTAZA",
+  "CANTÓN": "PASTAZA",
+  "PARROQUIA": "FÁTIMA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "PASTAZA",
+  "CANTÓN": "SANTA CLARA",
+  "PARROQUIA": "SAN JOSÉ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "MEJIA",
+  "PARROQUIA": "TAMBILLO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "PEDRO MONCAYO",
+  "PARROQUIA": "MALCHINGUÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "ALANGASÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CALDERÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CALDERÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CALDERÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CALDERÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CHAVEZPAMBA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CHAVEZPAMBA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CONOCOTO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CONOCOTO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "CUMBAYÁ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SANTA ELENA",
+  "PARROQUIA": "CHANDUY",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SANTA ELENA",
+  "PARROQUIA": "MANGLARALTO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SANTA ELENA",
+  "PARROQUIA": "SAN JOSÉ DE ANCÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTO DOMINGO",
+  "CANTÓN": "SANTO DOMINGO",
+  "PARROQUIA": "EL ESFUERZO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTO DOMINGO",
+  "CANTÓN": "SANTO DOMINGO",
+  "PARROQUIA": "LUZ DE AMÉRICA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "SUCUMBÍOS",
+  "CANTÓN": "CUYABENO",
+  "PARROQUIA": "AGUAS NEGRAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "SUCUMBÍOS",
+  "CANTÓN": "CUYABENO",
+  "PARROQUIA": "AGUAS NEGRAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "AMBATO",
+  "PARROQUIA": "CUNCHIBAMBA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "AMBATO",
+  "PARROQUIA": "HUACHI GRANDE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "AMBATO",
+  "PARROQUIA": "PICAIHUA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "EL PANGUI ",
+  "PARROQUIA": "PACHICUTZA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "NANGARITZA ",
+  "PARROQUIA": "NUEVO PARAÍSO ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "PALANDA ",
+  "PARROQUIA": "VALLADOLID",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "PAQUISHA ",
+  "PARROQUIA": "BELLAVISTA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "GIRON",
+  "PARROQUIA": "SAN GERARDO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "NABON",
+  "PARROQUIA": "COCHAPATA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "BOLÍVAR",
+  "CANTÓN": "SAN MIGUEL",
+  "PARROQUIA": "SAN VICENTE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "BOLÍVAR",
+  "CANTÓN": "SAN MIGUEL",
+  "PARROQUIA": "RÉGULO DE MORA",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "CAÑAR",
-  "CANTÓN": "BIBLIAN",
+  "CANTÓN": "BIBLIÁN",
   "PARROQUIA": "NAZÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CAÑAR",
+  "CANTÓN": "BIBLIÁN",
+  "PARROQUIA": "SAGEO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "LATACUNGA",
+  "PARROQUIA": "11 DE NOVIEMBRE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "LATACUNGA",
+  "PARROQUIA": "TANICUCHÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "PUJILÍ",
+  "PARROQUIA": "PILALÓ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "GUANO",
+  "PARROQUIA": "PROVIDENCIA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "GUANO",
+  "PARROQUIA": "SAN GERARDO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "GUANO",
+  "PARROQUIA": "PROVIDENCIA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "GUANO",
+  "PARROQUIA": "SAN GERARDO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "GUANO",
+  "PARROQUIA": "SANTA FE DE GALÁN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "GUANO",
+  "PARROQUIA": "SAN GERARDO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "PENIPE",
+  "PARROQUIA": "PUELA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "PASAJE",
+  "PARROQUIA": "PROGRESO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "PASAJE",
+  "PARROQUIA": "UZHCURRUMI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "PIÑAS",
+  "PARROQUIA": "MOROMORO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "PIÑAS",
+  "PARROQUIA": "SARACAY",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "INSULAR",
+  "PROVINCIA": "GALÁPAGOS",
+  "CANTÓN": "SAN CRISTÓBAL",
+  "PARROQUIA": "SANTA MARÍA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "DAULE",
+  "PARROQUIA": "LOS LOJAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "MILAGRO",
+  "PARROQUIA": "MARISCAL SUCRE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "MILAGRO",
+  "PARROQUIA": "CHOBO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "MILAGRO",
+  "PARROQUIA": "MARISCAL SUCRE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "MILAGRO",
+  "PARROQUIA": "ROBERTO ASTUDILLO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "NARANJAL",
+  "PARROQUIA": "JESÚS MARÍA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "NARANJAL",
+  "PARROQUIA": "TAURA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "OTAVALO ",
+  "PARROQUIA": "SAN RAFAEL DE LA LAGUNA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "OTAVALO ",
+  "PARROQUIA": "MIGUEL EGAS CABEZAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "OTAVALO ",
+  "PARROQUIA": "SAN JUAN DE ILUMÁN ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "OTAVALO ",
+  "PARROQUIA": "SAN RAFAEL DE LA LAGUNA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "OTAVALO ",
+  "PARROQUIA": "GONZÁLEZ SUÁREZ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "OTAVALO ",
+  "PARROQUIA": "SAN PEDRO DE PATAQUÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "OTAVALO ",
+  "PARROQUIA": "SAN JOSÉ DE QUICHINCHE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "CHAGUARPAMBA",
+  "PARROQUIA": "SANTA RUFINA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "ESPÍNDOLA",
+  "PARROQUIA": "BELLAVISTA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "ESPÍNDOLA",
+  "PARROQUIA": "JIMBURA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "GONZANAMÁ",
+  "PARROQUIA": "CHANGAIMINA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "GONZANAMÁ",
+  "PARROQUIA": "NAMBACOLA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "GONZANAMÁ",
+  "PARROQUIA": "NAMBACOLA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "LOJA",
+  "PARROQUIA": "JIMBILLA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "LOJA",
+  "PARROQUIA": "MALACATOS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "LOJA",
+  "PARROQUIA": "SAN PEDRO DE VILCABAMBA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "LOJA",
+  "PARROQUIA": "SANTIAGO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "MACARÁ",
+  "PARROQUIA": "SABIANGO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "PALTAS",
+  "PARROQUIA": "CANGONAMÁ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "PUEBLOVIEJO",
+  "PARROQUIA": "SAN JUAN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "PUEBLOVIEJO",
+  "PARROQUIA": "PUERTO PECHICHE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "QUEVEDO",
+  "PARROQUIA": "SAN CARLOS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "JIPIJAPA",
+  "PARROQUIA": "JULCUY",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "JIPIJAPA",
+  "PARROQUIA": "LA UNIÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "JIPIJAPA",
+  "PARROQUIA": "LA UNIÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "JIPIJAPA",
+  "PARROQUIA": "MEMBRILLAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "MANTA",
+  "PARROQUIA": "SAN LORENZO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "MANTA",
+  "PARROQUIA": "SAN LORENZO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "MANTA",
+  "PARROQUIA": "SANTA MARIANITA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "MANTA",
+  "PARROQUIA": "SANTA MARIANITA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PAJÁN",
+  "PARROQUIA": "GUALE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PAJÁN",
+  "PARROQUIA": "GUALE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PEDERNALES",
+  "PARROQUIA": "10 DE AGOSTO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "GUALAQUIZA",
+  "PARROQUIA": "NUEVA TARQUI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "LOGROÑO",
+  "PARROQUIA": "YAUPI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "MORONA ",
+  "PARROQUIA": "9 DE OCTUBRE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "MORONA ",
+  "PARROQUIA": "SINAÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "MORONA ",
+  "PARROQUIA": "SINAÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "QUIJOS",
+  "PARROQUIA": "SAN FRANCISCO DE BORJA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "QUIJOS",
+  "PARROQUIA": "SUMACO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "TENA",
+  "PARROQUIA": "CHONTAPUNTA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ORELLANA",
+  "CANTÓN": "FRANCISCO DE ORELLANA ",
+  "PARROQUIA": "GARCÍA MORENO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ORELLANA",
+  "CANTÓN": "FRANCISCO DE ORELLANA ",
+  "PARROQUIA": "TARACOA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "EL QUINCHE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "GUANGOPOLO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "LA MERCED",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "NAYÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "NAYÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "NONO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "PERUCHO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "POMASQUI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "POMASQUI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SANTA ELENA",
+  "PARROQUIA": "SAN JOSÉ DE ANCÓN ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SANTA ELENA",
+  "PARROQUIA": "SIMÓN BOLÍVAR",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTA ELENA",
+  "CANTÓN": "SALINAS",
+  "PARROQUIA": "JOSÉ LUIS TAMAYO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTO DOMINGO",
+  "CANTÓN": "SANTO DOMINGO",
+  "PARROQUIA": "LUZ DE AMÉRICA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTO DOMINGO",
+  "CANTÓN": "SANTO DOMINGO",
+  "PARROQUIA": "PUERTO LIMÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "SUCUMBÍOS",
+  "CANTÓN": "LAGO AGRIO",
+  "PARROQUIA": "EL ENO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "SUCUMBÍOS",
+  "CANTÓN": "LAGO AGRIO                                        ",
+  "PARROQUIA": "PACAYACU                                          ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "AMBATO",
+  "PARROQUIA": "PILAHUÍN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "AMBATO",
+  "PARROQUIA": "SAN FERNANDO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "AMBATO",
+  "PARROQUIA": "UNAMUNCHO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "BAÑOS",
+  "PARROQUIA": "LLIGUA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "BAÑOS",
+  "PARROQUIA": "LLIGUA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "PAQUISHA ",
+  "PARROQUIA": "BELLAVISTA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "YACUAMBI ",
+  "PARROQUIA": "LA PAZ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "YACUAMBI ",
+  "PARROQUIA": "LA PAZ ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "YACUAMBI ",
+  "PARROQUIA": "LA PAZ ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "PAUTE",
+  "PARROQUIA": "GUARAINAG",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "PAUTE",
+  "PARROQUIA": "TOMEBAMBA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "SANTA ISABEL",
+  "PARROQUIA": "ABDÓN CALDERÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "SEVILLA DE ORO",
+  "PARROQUIA": "PALMAS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "SEVILLA DE ORO",
+  "PARROQUIA": "AMALUZA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "SIGSIG",
+  "PARROQUIA": "GUEL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "AZUAY",
+  "CANTÓN": "SIGSIG",
+  "PARROQUIA": "SAN BARTOLOMÉ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CAÑAR",
+  "CANTÓN": "CAÑAR",
+  "PARROQUIA": "SAN ANTONIO",
   "CANTIDAD": 1
  },
  {
@@ -2388,7 +2364,23 @@
   "REGIÓN": "SIERRA",
   "PROVINCIA": "CAÑAR",
   "CANTÓN": "CAÑAR",
-  "PARROQUIA": "GENERAL MORELES",
+  "PARROQUIA": "GENERAL MORALES",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CAÑAR",
+  "CANTÓN": "DÉLEG",
+  "PARROQUIA": "SOLANO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CAÑAR",
+  "CANTÓN": "LA TRONCAL",
+  "PARROQUIA": "MANUEL J CALLE",
   "CANTIDAD": 1
  },
  {
@@ -2396,7 +2388,31 @@
   "REGIÓN": "SIERRA",
   "PROVINCIA": "CAÑAR",
   "CANTÓN": "LA TRONCAL",
-  "PARROQUIA": "PANCHOMBREO NEGRO",
+  "PARROQUIA": "PANCHO NEGRO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CARCHI",
+  "CANTÓN": "MONTÚFAR",
+  "PARROQUIA": "FERNÁNDEZ SALVADOR ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CARCHI",
+  "CANTÓN": "TULCÁN",
+  "PARROQUIA": "PIOTER ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CARCHI",
+  "CANTÓN": "TULCÁN",
+  "PARROQUIA": "MALDONADO ",
   "CANTIDAD": 1
  },
  {
@@ -2418,65 +2434,17 @@
  {
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
-  "PROVINCIA": "CARCHI",
-  "CANTÓN": "MONTUFAR",
-  "PARROQUIA": "CRISTOBAL  COLON ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CARCHI",
-  "CANTÓN": "MONTUFAR",
-  "PARROQUIA": "FERNANDEZ SALVADOR ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CARCHI",
-  "CANTÓN": "BOLIVAR",
-  "PARROQUIA": "SAN VICENTE DE PUSIR",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
   "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "LATACUNGA",
-  "PARROQUIA": "JOSEGUANGO BAJO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "LATACUNGA",
-  "PARROQUIA": "11 DE NOVIEMBRE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "LATACUNGA",
-  "PARROQUIA": "TANICUCHÍ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "PUJILI",
-  "PARROQUIA": "PÍLALO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "COTOPAXI",
-  "CANTÓN": "PUJILI",
+  "CANTÓN": "PUJILÍ",
   "PARROQUIA": "EL TINGO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "SALCEDO",
+  "PARROQUIA": "ANTONIO JOSÉ HOLGUÍN",
   "CANTIDAD": 1
  },
  {
@@ -2484,7 +2452,7 @@
   "REGIÓN": "SIERRA",
   "PROVINCIA": "COTOPAXI",
   "CANTÓN": "SALCEDO",
-  "PARROQUIA": "A.J. HOLGUÍN",
+  "PARROQUIA": "ANTONIO JOSÉ HOLGUÍN",
   "CANTIDAD": 1
  },
  {
@@ -2496,7 +2464,23 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "SAQUISILÍ",
+  "PARROQUIA": "CHANTILÍN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "SAQUISILÍ",
+  "PARROQUIA": "CANCHAGUA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "COTOPAXI",
   "CANTÓN": "SIGCHOS",
@@ -2506,33 +2490,25 @@
  {
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "ALAUSI",
-  "PARROQUIA": "PISTISHI",
+  "PROVINCIA": "COTOPAXI",
+  "CANTÓN": "SIGCHOS",
+  "PARROQUIA": "PALO QUEMADO",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2019,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "CHUNCHI",
-  "PARROQUIA": "COMPUD",
+  "CANTÓN": "PENIPE",
+  "PARROQUIA": "BILBAO",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2019,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "COLTA",
-  "PARROQUIA": "CAÑI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "CHIMBORAZO",
-  "CANTÓN": "GUANO",
-  "PARROQUIA": "SAN GERARDO",
+  "CANTÓN": "PENIPE",
+  "PARROQUIA": "PUELA",
   "CANTIDAD": 1
  },
  {
@@ -2544,6 +2520,22 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "RIOBAMBA",
+  "PARROQUIA": "QUIMIAG",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "CHIMBORAZO",
+  "CANTÓN": "RIOBAMBA",
+  "PARROQUIA": "SAN JUAN",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "CHIMBORAZO",
@@ -2552,35 +2544,27 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "COSTA",
   "PROVINCIA": "EL ORO",
-  "CANTÓN": "ARENILLAS",
-  "PARROQUIA": "PALMALES",
+  "CANTÓN": "PIÑAS",
+  "PARROQUIA": "MOROMORO",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "COSTA",
   "PROVINCIA": "EL ORO",
-  "CANTÓN": "EL GUABO",
-  "PARROQUIA": "RIO BONITO",
+  "CANTÓN": "PIÑAS",
+  "PARROQUIA": "SARACAY",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2019,
   "REGIÓN": "COSTA",
   "PROVINCIA": "EL ORO",
-  "CANTÓN": "EL GUABO",
-  "PARROQUIA": "TENDALES",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "EL ORO",
-  "CANTÓN": "LAS LAJAS",
-  "PARROQUIA": "SAN ISIDRO",
+  "CANTÓN": "PIÑAS",
+  "PARROQUIA": "MOROMORO",
   "CANTIDAD": 1
  },
  {
@@ -2604,7 +2588,15 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "EL ORO",
   "CANTÓN": "PORTOVELO",
-  "PARROQUIA": "CURTINCAPAC",
+  "PARROQUIA": "CURTINCÁPAC",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "EL ORO",
+  "CANTÓN": "SANTA ROSA",
+  "PARROQUIA": "LA AVANZADA",
   "CANTIDAD": 1
  },
  {
@@ -2612,7 +2604,7 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "EL ORO",
   "CANTÓN": "SANTA ROSA",
-  "PARROQUIA": "BELLA MARIA",
+  "PARROQUIA": "BELLAMARÍA",
   "CANTIDAD": 1
  },
  {
@@ -2620,7 +2612,7 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "EL ORO",
   "CANTÓN": "SANTA ROSA",
-  "PARROQUIA": "JAMBELI",
+  "PARROQUIA": "JAMBELÍ",
   "CANTIDAD": 1
  },
  {
@@ -2636,7 +2628,7 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "EL ORO",
   "CANTÓN": "ZARUMA",
-  "PARROQUIA": "GUIZHAGUIÑA",
+  "PARROQUIA": "GÜIZHAGÜIÑA",
   "CANTIDAD": 1
  },
  {
@@ -2648,67 +2640,19 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ESMERALDAS",
-  "PARROQUIA": "CAMARONES                                         ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ESMERALDAS",
-  "PARROQUIA": "CRNL CARLOS CONCHOMBREA TORRES                         ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ESMERALDAS",
-  "PARROQUIA": "TACHOMBREINA                                           ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ESMERALDAS",
-  "PARROQUIA": "VUELTA LARGA                                      ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ELOY ALFARO",
-  "PARROQUIA": "COLÓN ELOY DE MARÍA                               ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ELOY ALFARO",
-  "PARROQUIA": "MALDONADO                                         ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ELOY ALFARO",
-  "PARROQUIA": "TIMBIRE                                           ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "COSTA",
   "PROVINCIA": "ESMERALDAS",
   "CANTÓN": "MUISNE",
-  "PARROQUIA": "GALERA                                            ",
+  "PARROQUIA": "SALIMA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "MUISNE",
+  "PARROQUIA": "SAN JOSÉ DE CHAMANGA ",
   "CANTIDAD": 1
  },
  {
@@ -2716,7 +2660,7 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "ESMERALDAS",
   "CANTÓN": "QUININDÉ",
-  "PARROQUIA": "CHOMBREURA                                             ",
+  "PARROQUIA": "CHURA",
   "CANTIDAD": 1
  },
  {
@@ -2728,11 +2672,43 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "RÍO VERDE",
+  "PARROQUIA": "LAGARTO ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "RÍO VERDE",
+  "PARROQUIA": "MONTALVO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "RÍO VERDE",
+  "PARROQUIA": "ROCAFUERTE ",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "COSTA",
   "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "SAN LORENZO",
-  "PARROQUIA": "5 DE JUNIO\/HOMBREUIMBI                                 ",
+  "CANTÓN": "RÍO VERDE",
+  "PARROQUIA": "ROCAFUERTE ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "RÍO VERDE",
+  "PARROQUIA": "VICHE ",
   "CANTIDAD": 1
  },
  {
@@ -2740,7 +2716,7 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "ESMERALDAS",
   "CANTÓN": "SAN LORENZO",
-  "PARROQUIA": "ALTO TAMBO\/GUADAL                                 ",
+  "PARROQUIA": "5 DE JUNIO",
   "CANTIDAD": 1
  },
  {
@@ -2748,31 +2724,47 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "ESMERALDAS",
   "CANTÓN": "SAN LORENZO",
-  "PARROQUIA": "TULULBI \/RICAURTE                                 ",
+  "PARROQUIA": "ALTO TAMBO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "SAN LORENZO",
+  "PARROQUIA": "ANCÓN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "SAN LORENZO",
+  "PARROQUIA": "TAMBILLO ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "ESMERALDAS",
+  "CANTÓN": "SAN LORENZO",
+  "PARROQUIA": "TULULBÍ",
   "CANTIDAD": 1
  },
  {
   "AÑO": 2023,
   "REGIÓN": "COSTA",
   "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ATACAMES",
-  "PARROQUIA": "LA UNIÓN                                          ",
+  "CANTÓN": "SAN LORENZO",
+  "PARROQUIA": "TULULBÍ",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2010,
   "REGIÓN": "COSTA",
   "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "ATACAMES",
-  "PARROQUIA": "SUA\/BOCANA                                        ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "ESMERALDAS",
-  "CANTÓN": "RIOVERDE",
-  "PARROQUIA": "ROCAMUJERUERTE                                        ",
+  "CANTÓN": "SAN LORENZO",
+  "PARROQUIA": "URBINA ",
   "CANTIDAD": 1
  },
  {
@@ -2780,63 +2772,23 @@
   "REGIÓN": "INSULAR",
   "PROVINCIA": "GALÁPAGOS",
   "CANTÓN": "SAN CRISTÓBAL",
-  "PARROQUIA": "ISLA SANTA MARÍA",
+  "PARROQUIA": "SANTA MARÍA",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "COSTA",
   "PROVINCIA": "GUAYAS",
-  "CANTÓN": "DAULE",
-  "PARROQUIA": "LIMONAL",
+  "CANTÓN": "PEDRO CARBO",
+  "PARROQUIA": "SABANILLA",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "COSTA",
   "PROVINCIA": "GUAYAS",
-  "CANTÓN": "EL EMPALME",
-  "PARROQUIA": "EL ROSARIO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "GUAYAQUIL",
-  "PARROQUIA": "JUAN GOMEZ RENDON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "GUAYAQUIL",
-  "PARROQUIA": "POSORJA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "GUAYAQUIL",
-  "PARROQUIA": "TENGUEL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "MILAGRO",
-  "PARROQUIA": "MARISAL SUCRE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "GUAYAS",
-  "CANTÓN": "NARANJAL",
-  "PARROQUIA": "JESUS MARIA",
+  "CANTÓN": "SALITRE",
+  "PARROQUIA": "LA VICTORIA",
   "CANTIDAD": 1
  },
  {
@@ -2848,11 +2800,51 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "SAMBORONDÓN",
+  "PARROQUIA": "TARIFA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "COLIMES",
+  "PARROQUIA": "SAN JACINTO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "YAGUACHI",
+  "PARROQUIA": "GENERAL PEDRO J MONTERO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "YAGUACHI",
+  "PARROQUIA": "VIRGEN DE FÁTIMA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "GUAYAS",
+  "CANTÓN": "YAGUACHI",
+  "PARROQUIA": "YAGUACHI VIEJO",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "COSTA",
   "PROVINCIA": "GUAYAS",
   "CANTÓN": "YAGUACHI",
-  "PARROQUIA": "YAGUACHOMBREI VIEJO CONE",
+  "PARROQUIA": "YAGUACHI VIEJO",
   "CANTIDAD": 1
  },
  {
@@ -2860,7 +2852,7 @@
   "REGIÓN": "SIERRA",
   "PROVINCIA": "IMBABURA",
   "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "PATAQUI ",
+  "PARROQUIA": "SAN PEDRO DE PATAQUÍ",
   "CANTIDAD": 1
  },
  {
@@ -2868,54 +2860,54 @@
   "REGIÓN": "SIERRA",
   "PROVINCIA": "IMBABURA",
   "CANTÓN": "OTAVALO ",
-  "PARROQUIA": "QUICHINCHE ",
+  "PARROQUIA": "SAN JOSÉ DE QUICHINCHE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "PIMAMPIRO ",
+  "PARROQUIA": "CHUGÁ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "PIMAMPIRO ",
+  "PARROQUIA": "SAN FRANCISCO DE SIGSIPAMBA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "PIMAMPIRO ",
+  "PARROQUIA": "SAN FRANCISCO DE SIGSIPAMBA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "URCUQUÍ",
+  "PARROQUIA": "TUMBABIRO ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "IMBABURA",
+  "CANTÓN": "URCUQUÍ",
+  "PARROQUIA": "LA MERCED DE BUENOS AIRES",
   "CANTIDAD": 1
  },
  {
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "IMBABURA",
-  "CANTÓN": "COTACACHI ",
-  "PARROQUIA": "PLAZA GUITERREZ ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "COTACACHI ",
-  "PARROQUIA": "IMANTAG ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "COTACACHI ",
-  "PARROQUIA": "PEÑAHERRERA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "ANTONIO ANTE ",
-  "PARROQUIA": "NATABUELA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "ANTONIO ANTE ",
-  "PARROQUIA": "IMBAYA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "IMBABURA",
-  "CANTÓN": "URCUQUI ",
+  "CANTÓN": "URCUQUÍ",
   "PARROQUIA": "SAN BLAS",
   "CANTIDAD": 1
  },
@@ -2923,72 +2915,24 @@
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "IMBABURA",
-  "CANTÓN": "URCUQUI ",
-  "PARROQUIA": "MERCED DE BUENOS AIRES ",
+  "CANTÓN": "URCUQUÍ",
+  "PARROQUIA": "LA MERCED DE BUENOS AIRES",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CALVAS",
-  "PARROQUIA": "EL LUCERO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CALVAS",
-  "PARROQUIA": "UTUANA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CELICA",
-  "PARROQUIA": "CRUZPAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CELICA",
-  "PARROQUIA": "SAN JUAN DE PÓZUL",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "CHAGUARPAMBA",
-  "PARROQUIA": "SANTA RUMUJERINA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "GONZANAMÁ",
-  "PARROQUIA": "CHOMBREANGAIMINA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "LOJA",
-  "CANTÓN": "MACARÁ",
-  "PARROQUIA": "SABIANGO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
+  "AÑO": 2010,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "LOJA",
   "CANTÓN": "PALTAS",
-  "PARROQUIA": "CANGONAMÁ",
+  "PARROQUIA": "YAMANA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "PALTAS",
+  "PARROQUIA": "YAMANA",
   "CANTIDAD": 1
  },
  {
@@ -2996,7 +2940,15 @@
   "REGIÓN": "SIERRA",
   "PROVINCIA": "LOJA",
   "CANTÓN": "PINDAL",
-  "PARROQUIA": "CHOMBREAQUINAL",
+  "PARROQUIA": "CHAQUINAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "PUYANGO",
+  "PARROQUIA": "VICENTINO",
   "CANTIDAD": 1
  },
  {
@@ -3008,11 +2960,19 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "QUILANGA",
+  "PARROQUIA": "FUNDOCHAMBA",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "LOJA",
   "CANTÓN": "QUILANGA",
-  "PARROQUIA": "MUJERUNDOCHOMBREAMBA",
+  "PARROQUIA": "FUNDOCHAMBA",
   "CANTIDAD": 1
  },
  {
@@ -3024,6 +2984,22 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "SARAGURO",
+  "PARROQUIA": "URDANETA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "SARAGURO",
+  "PARROQUIA": "URDANETA",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "LOJA",
@@ -3032,27 +3008,19 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "BABAHOYO",
-  "PARROQUIA": "FEBRES CORDERO",
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "ZAPOTILLO",
+  "PARROQUIA": "GARZAREAL",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "MONTALVO",
-  "PARROQUIA": "LA ESMERALDA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "LOS RÍOS",
-  "CANTÓN": "PUEBLOVIEJO",
-  "PARROQUIA": "PUERTO PECHICHE",
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "LOJA",
+  "CANTÓN": "ZAPOTILLO",
+  "PARROQUIA": "MANGAHURCO",
   "CANTIDAD": 1
  },
  {
@@ -3064,6 +3032,14 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "QUEVEDO ",
+  "PARROQUIA": "LA ESPERANZA ",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "COSTA",
   "PROVINCIA": "LOS RÍOS",
@@ -3072,91 +3048,19 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2019,
   "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "24 DE MAYO",
-  "PARROQUIA": "NOBOA",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "VENTANAS ",
+  "PARROQUIA": "ZAPOTAL ",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "CHONE",
-  "PARROQUIA": "CONVENTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "CHONE",
-  "PARROQUIA": "BOYACA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "CHONE",
-  "PARROQUIA": "RICAURTE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "EL CARMEN",
-  "PARROQUIA": "SANTA MARIA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "FLAVIO ALFARO",
-  "PARROQUIA": "NOVILLO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "JIPIJAPA",
-  "PARROQUIA": "LA UNION",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "JIPIJAPA",
-  "PARROQUIA": "JULCUY",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "MANTA",
-  "PARROQUIA": "SAN LORENZO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "MANTA",
-  "PARROQUIA": "SANTA MARIANITA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PEDERNALES",
-  "PARROQUIA": "COJIMIES",
+  "PROVINCIA": "LOS RÍOS",
+  "CANTÓN": "VINCES",
+  "PARROQUIA": "ANTONIO SOTOMAYOR",
   "CANTIDAD": 1
  },
  {
@@ -3171,12 +3075,28 @@
   "AÑO": 2023,
   "REGIÓN": "COSTA",
   "PROVINCIA": "MANABÍ",
-  "CANTÓN": "PICHINCHA",
-  "PARROQUIA": "SAN SEBASTIAN",
+  "CANTÓN": "PEDERNALES",
+  "PARROQUIA": "COJIMÍES",
   "CANTIDAD": 1
  },
  {
   "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PICHINCHA",
+  "PARROQUIA": "SAN SEBASTIÁN",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PORTOVIEJO",
+  "PARROQUIA": "CRUCITA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
   "REGIÓN": "COSTA",
   "PROVINCIA": "MANABÍ",
   "CANTÓN": "PORTOVIEJO",
@@ -3188,7 +3108,39 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "MANABÍ",
   "CANTÓN": "PORTOVIEJO",
-  "PARROQUIA": "RIOCHICO",
+  "PARROQUIA": "CRUCITA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PORTOVIEJO",
+  "PARROQUIA": "CRUCITA ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PORTOVIEJO",
+  "PARROQUIA": "RÍO CHICO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PORTOVIEJO",
+  "PARROQUIA": "RÍO CHICO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "PORTOVIEJO",
+  "PARROQUIA": "RÍO CHICO",
   "CANTIDAD": 1
  },
  {
@@ -3200,6 +3152,14 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "SAN VICENTE",
+  "PARROQUIA": "CANOA",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "COSTA",
   "PROVINCIA": "MANABÍ",
@@ -3208,11 +3168,35 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2019,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "SANTA ANA",
+  "PARROQUIA": "AYACUCHO ",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "COSTA",
   "PROVINCIA": "MANABÍ",
   "CANTÓN": "SANTA ANA",
-  "PARROQUIA": "HONORATO VASQUEZ",
+  "PARROQUIA": "HONORATO VÁSQUEZ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "SUCRE",
+  "PARROQUIA": "CHARAPOTÓ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "SUCRE",
+  "PARROQUIA": "CHARAPOTÓ",
   "CANTIDAD": 1
  },
  {
@@ -3228,39 +3212,23 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "MANABÍ",
   "CANTÓN": "TOSAGUA",
-  "PARROQUIA": "ANGEL PEDRO GILER",
+  "PARROQUIA": "ÁNGEL PEDRO GILER",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "GUALAQUIZA",
-  "PARROQUIA": "EL IDEAL",
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "MANABÍ",
+  "CANTÓN": "TOSAGUA",
+  "PARROQUIA": "SAN JOSE DE BACHILLERO",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2019,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "LOGROÑO",
-  "PARROQUIA": "YAUPI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "MORONA ",
-  "PARROQUIA": "9 DE OCTUBRE",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "MORONA ",
-  "PARROQUIA": "SINAI",
+  "CANTÓN": "PALORA",
+  "PARROQUIA": "16 DE AGOSTO",
   "CANTIDAD": 1
  },
  {
@@ -3272,26 +3240,50 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2010,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "SAN. J. BOSCO",
-  "PARROQUIA": "SANTIAGO DE  PANANZA",
+  "CANTÓN": "PALORA",
+  "PARROQUIA": "CUMANDÁ",
   "CANTIDAD": 1
  },
  {
   "AÑO": 2023,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "SAN. J. BOSCO",
-  "PARROQUIA": "PAN DE AZUCAR",
+  "CANTÓN": "SAN JUAN BOSCO",
+  "PARROQUIA": "PAN DE AZÚCAR",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "SAN JUAN BOSCO",
+  "PARROQUIA": "SAN CARLOS DE LIMÓN",
   "CANTIDAD": 1
  },
  {
   "AÑO": 2023,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "MORONA SANTIAGO",
-  "CANTÓN": "SANTIAGO",
+  "CANTÓN": "SAN JUAN BOSCO",
+  "PARROQUIA": "SANTIAGO DE  PANANTZA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "SANTIAGO DE MÉNDEZ",
+  "PARROQUIA": "COPAL",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "MORONA SANTIAGO",
+  "CANTÓN": "SANTIAGO DE MÉNDEZ",
   "PARROQUIA": "COPAL",
   "CANTIDAD": 1
  },
@@ -3304,27 +3296,11 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "NAPO",
-  "CANTÓN": "EL CHACO",
-  "PARROQUIA": "LINARES",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "QUIJOS",
-  "PARROQUIA": "CUYUJA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "NAPO",
-  "CANTÓN": "QUIJOS",
-  "PARROQUIA": "PAPALLACTA",
+  "CANTÓN": "TENA",
+  "PARROQUIA": "CHONTAPUNTA",
   "CANTIDAD": 1
  },
  {
@@ -3340,7 +3316,23 @@
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "NAPO",
   "CANTÓN": "TENA",
-  "PARROQUIA": "PUERTO MISAHUALLI",
+  "PARROQUIA": "PUERTO MISAHUALLÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "TENA",
+  "PARROQUIA": "SAN JUAN DE MUYUNA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "NAPO",
+  "CANTÓN": "TENA",
+  "PARROQUIA": "SAN JUAN DE MUYUNA",
   "CANTIDAD": 1
  },
  {
@@ -3352,31 +3344,15 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "ORELLANA",
-  "CANTÓN": "AGUARICO",
-  "PARROQUIA": "SANTA MARIA DE  HUIRIRIMA",
+  "CANTÓN": "LA JOYA DE LOS SACHAS",
+  "PARROQUIA": "ENOKANQUI",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ORELLANA",
-  "CANTÓN": "FRANCISCO DE ORELLANA ",
-  "PARROQUIA": "GARCIA MORENO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ORELLANA",
-  "CANTÓN": "FRANCISCO DE ORELLANA ",
-  "PARROQUIA": "TARACOA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
+  "AÑO": 2019,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "ORELLANA",
   "CANTÓN": "LA JOYA DE LOS SACHAS",
@@ -3388,7 +3364,23 @@
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "ORELLANA",
   "CANTÓN": "LA JOYA DE LOS SACHAS",
-  "PARROQUIA": "SAN SEBASTIAN DEL COCA",
+  "PARROQUIA": "ENOKANQUI",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ORELLANA",
+  "CANTÓN": "LA JOYA DE LOS SACHAS",
+  "PARROQUIA": "SAN SEBASTIÁN DEL COCA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ORELLANA",
+  "CANTÓN": "LA JOYA DE LOS SACHAS",
+  "PARROQUIA": "SAN SEBASTIÁN DEL COCA",
   "CANTIDAD": 1
  },
  {
@@ -3404,7 +3396,7 @@
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "ORELLANA",
   "CANTÓN": "LORETO",
-  "PARROQUIA": "AVILA HUIRUMO",
+  "PARROQUIA": "ÁVILA HUIRUMO",
   "CANTIDAD": 1
  },
  {
@@ -3416,83 +3408,11 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "PASTAZA",
-  "CANTÓN": "PASTAZA",
-  "PARROQUIA": "FATIMA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "CAYAMBE",
-  "PARROQUIA": "OTON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "MEJIA",
-  "PARROQUIA": "ALOASI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "MEJIA",
-  "PARROQUIA": "EL CHAUPI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "MEJIA",
-  "PARROQUIA": "TAMBILLO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "PEDRO MONCAYO",
-  "PARROQUIA": "MALCHINGUI",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CALDERON",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CONOCOTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "CHAVEZPAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "PICHINCHA",
-  "CANTÓN": "QUITO",
-  "PARROQUIA": "GUANGOPOLO",
+  "CANTÓN": "SANTA CLARA",
+  "PARROQUIA": "SAN JOSÉ",
   "CANTIDAD": 1
  },
  {
@@ -3504,7 +3424,15 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "PUEMBO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "PICHINCHA",
   "CANTÓN": "QUITO",
@@ -3515,8 +3443,72 @@
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "SAN ANTONIO DE PICHINCHA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "TUMBACO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "TUMBACO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "TUMBACO",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "YARUQUÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "YARUQUÍ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "QUITO",
+  "PARROQUIA": "ZÁMBIZA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2023,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
   "CANTÓN": "RUMIÑAHUI",
   "PARROQUIA": "COTOGCHOA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "PICHINCHA",
+  "CANTÓN": "SAN MIGUEL DE LOS BANCOS",
+  "PARROQUIA": "MINDO",
   "CANTIDAD": 1
  },
  {
@@ -3532,31 +3524,23 @@
   "REGIÓN": "COSTA",
   "PROVINCIA": "SANTA ELENA",
   "CANTÓN": "SANTA ELENA",
-  "PARROQUIA": "SIMÓN BOLIVAR (JULIO MORENO)",
+  "PARROQUIA": "SIMÓN BOLÍVAR",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "COSTA",
-  "PROVINCIA": "SANTO DOMINGO",
-  "CANTÓN": "LA CONCORDIA",
-  "PARROQUIA": "PLAN PILOTO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
+  "AÑO": 2010,
   "REGIÓN": "COSTA",
   "PROVINCIA": "SANTO DOMINGO",
   "CANTÓN": "SANTO DOMINGO",
-  "PARROQUIA": "PUERTO LIMON",
+  "PARROQUIA": "PUERTO LIMÓN",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2019,
   "REGIÓN": "COSTA",
   "PROVINCIA": "SANTO DOMINGO",
   "CANTÓN": "SANTO DOMINGO",
-  "PARROQUIA": "EL ESFUERZO",
+  "PARROQUIA": "PUERTO LIMÓN",
   "CANTIDAD": 1
  },
  {
@@ -3568,11 +3552,11 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "SUCUMBÍOS",
-  "CANTÓN": "CUYABENO",
-  "PARROQUIA": "AGUAS NEGRAS",
+  "AÑO": 2010,
+  "REGIÓN": "COSTA",
+  "PROVINCIA": "SANTO DOMINGO",
+  "CANTÓN": "SANTO DOMINGO",
+  "PARROQUIA": "VALLE HERMOSO",
   "CANTIDAD": 1
  },
  {
@@ -3608,6 +3592,14 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "SUCUMBÍOS",
+  "CANTÓN": "SHUSHUFINDI                                       ",
+  "PARROQUIA": "PAÑACOCHA",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "SUCUMBÍOS",
@@ -3616,35 +3608,19 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "AMBATO",
-  "PARROQUIA": "AMBATILLO",
+  "CANTÓN": "BAÑOS",
+  "PARROQUIA": "RÍO VERDE",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
+  "AÑO": 2019,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "AMBATO",
-  "PARROQUIA": "CUNCHIBAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "AMBATO",
-  "PARROQUIA": "SAN FERNANDO",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "SIERRA",
-  "PROVINCIA": "TUNGURAHUA",
-  "CANTÓN": "AMBATO",
-  "PARROQUIA": "UNAMUNCHO",
+  "CANTÓN": "BAÑOS",
+  "PARROQUIA": "RÍO VERDE",
   "CANTIDAD": 1
  },
  {
@@ -3672,11 +3648,19 @@
   "CANTIDAD": 1
  },
  {
+  "AÑO": 2019,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "PELILEO",
+  "PARROQUIA": "SALASACA",
+  "CANTIDAD": 1
+ },
+ {
   "AÑO": 2023,
   "REGIÓN": "SIERRA",
   "PROVINCIA": "TUNGURAHUA",
   "CANTÓN": "PELILEO",
-  "PARROQUIA": "SALASAKA",
+  "PARROQUIA": "SALASACA",
   "CANTIDAD": 1
  },
  {
@@ -3688,51 +3672,51 @@
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "CENTINELA DEL CONDOR",
-  "PARROQUIA": "PANGUINTZA ",
+  "AÑO": 2010,
+  "REGIÓN": "SIERRA",
+  "PROVINCIA": "TUNGURAHUA",
+  "CANTÓN": "PÍLLARO",
+  "PARROQUIA": "PRESIDENTE URBINA",
   "CANTIDAD": 1
  },
  {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "CHINCHIPE ",
-  "PARROQUIA": "PUCAPAMBA",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "EL PANGUI ",
-  "PARROQUIA": "EL GUISMI ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "PALANDA ",
-  "PARROQUIA": "VALLADOLID",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
-  "REGIÓN": "AMAZONÍA",
-  "PROVINCIA": "ZAMORA CHINCHIPE",
-  "CANTÓN": "PAQUISHA ",
-  "PARROQUIA": "BELLAVISTA ",
-  "CANTIDAD": 1
- },
- {
-  "AÑO": 2023,
+  "AÑO": 2014,
   "REGIÓN": "AMAZONÍA",
   "PROVINCIA": "ZAMORA CHINCHIPE",
   "CANTÓN": "YACUAMBI ",
-  "PARROQUIA": "LA PAZ ",
+  "PARROQUIA": "TUTUPALI ",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "YANTZAZA",
+  "PARROQUIA": "LOS ENCUENTROS",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2014,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "ZAMORA ",
+  "PARROQUIA": "GUADALUPE",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "ZAMORA ",
+  "PARROQUIA": "SABANILLA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2019,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "ZAMORA ",
+  "PARROQUIA": "SABANILLA",
   "CANTIDAD": 1
  },
  {
@@ -3741,6 +3725,14 @@
   "PROVINCIA": "ZAMORA CHINCHIPE",
   "CANTÓN": "ZAMORA ",
   "PARROQUIA": "SABANILLA",
+  "CANTIDAD": 1
+ },
+ {
+  "AÑO": 2010,
+  "REGIÓN": "AMAZONÍA",
+  "PROVINCIA": "ZAMORA CHINCHIPE",
+  "CANTÓN": "ZAMORA ",
+  "PARROQUIA": "SAN CARLOS DE LAS MINAS",
   "CANTIDAD": 1
  }
 ]

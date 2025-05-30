@@ -12,11 +12,9 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { ChartOptions } from "chart.js";
-import dynamic from "next/dynamic";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-ChartJS.register(ChartDataLabels);
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ChartDataLabels);
 
 interface Registro {
   AÑO: number;
@@ -27,7 +25,7 @@ interface Registro {
   CANTIDAD: number;
 }
 
-const MujeresRuralesPage = () => {
+export default function MujeresRuralesPage() {
   const [data, setData] = useState<Registro[]>([]);
   const [region, setRegion] = useState("");
   const [provincia, setProvincia] = useState("");
@@ -41,58 +39,74 @@ const MujeresRuralesPage = () => {
       .catch(console.error);
   }, []);
 
-// Calcular filtros interdependientes
-const regionesDisponibles = [...new Set(data
-  .filter(d =>
-    (!provincia || d.PROVINCIA === provincia) &&
-    (!canton || d.CANTÓN === canton) &&
-    (!parroquia || d.PARROQUIA === parroquia)
-  )
-  .map(d => d.REGIÓN))];
+  const encontrarUbicacion = (campo: keyof Registro, valor: string): Registro | undefined =>
+    data.find((d) => String(d[campo]).trim() === valor.trim());
 
-const provinciasDisponibles = [...new Set(data
-  .filter(d =>
-    (!region || d.REGIÓN === region) &&
-    (!canton || d.CANTÓN === canton) &&
-    (!parroquia || d.PARROQUIA === parroquia)
-  )
-  .map(d => d.PROVINCIA))];
+  const handleParroquiaChange = (value: string) => {
+    setParroquia(value);
+    const match = encontrarUbicacion("PARROQUIA", value);
+    if (match) {
+      setCanton(match.CANTÓN.trim());
+      setProvincia(match.PROVINCIA.trim());
+      setRegion(match.REGIÓN.trim());
+    }
+  };
 
-const cantonesDisponibles = [...new Set(data
-  .filter(d =>
-    (!region || d.REGIÓN === region) &&
-    (!provincia || d.PROVINCIA === provincia) &&
-    (!parroquia || d.PARROQUIA === parroquia)
-  )
-  .map(d => d.CANTÓN))];
+  const handleCantonChange = (value: string) => {
+    setCanton(value);
+    const match = encontrarUbicacion("CANTÓN", value);
+    if (match) {
+      setProvincia(match.PROVINCIA.trim());
+      setRegion(match.REGIÓN.trim());
+    }
+  };
 
-const parroquiasDisponibles = [...new Set(data
-  .filter(d =>
-    (!region || d.REGIÓN === region) &&
-    (!provincia || d.PROVINCIA === provincia) &&
-    (!canton || d.CANTÓN === canton)
-  )
-  .map(d => d.PARROQUIA))];
+  const handleProvinciaChange = (value: string) => {
+    setProvincia(value);
+    const match = encontrarUbicacion("PROVINCIA", value);
+    if (match) {
+      setRegion(match.REGIÓN.trim());
+    }
+  };
 
+  const limpiarFiltros = () => {
+    setRegion("");
+    setProvincia("");
+    setCanton("");
+    setParroquia("");
+  };
 
+  const filtroCondicional = (campo: keyof Registro): string[] => {
+    return [...new Set(
+      data
+        .filter((d) => {
+          return (
+            (!region || d.REGIÓN === region) &&
+            (!provincia || d.PROVINCIA.trim() === provincia) &&
+            (!canton || d.CANTÓN.trim() === canton) &&
+            (!parroquia || d.PARROQUIA.trim() === parroquia)
+          );
+        })
+        .map((d) => String(d[campo]).trim())
+    )].sort((a, b) => a.localeCompare(b));
+  };
 
-
-  const datosFiltrados = data.filter((d) =>
-    (!region || d.REGIÓN === region) &&
-    (!provincia || d.PROVINCIA === provincia) &&
-    (!canton || d.CANTÓN === canton) &&
-    (!parroquia || d.PARROQUIA === parroquia)
-  );
+  const datosFiltrados = data.filter((d) => {
+    return (!region || d.REGIÓN === region) &&
+      (!provincia || (d.PROVINCIA.trim() === provincia && d.REGIÓN === region)) &&
+      (!canton || (d.CANTÓN.trim() === canton && d.PROVINCIA.trim() === provincia)) &&
+      (!parroquia || (d.PARROQUIA.trim() === parroquia && d.CANTÓN.trim() === canton));
+  });
 
   const agrupadoPorAnio = [2010, 2014, 2019, 2023].map((año) => ({
-    año,
+    anio: año,
     cantidad: datosFiltrados
       .filter((d) => d.AÑO === año)
       .reduce((sum, d) => sum + d.CANTIDAD, 0),
   }));
 
   const chartData = {
-    labels: agrupadoPorAnio.map((d) => d.año),
+    labels: agrupadoPorAnio.map((d) => d.anio),
     datasets: [
       {
         label: "Mujeres Presidentas",
@@ -102,122 +116,95 @@ const parroquiasDisponibles = [...new Set(data
     ],
   };
 
-
   const chartOptions: ChartOptions<"bar"> = {
-  responsive: true,
-  maintainAspectRatio: false,
-  plugins: {
-    legend: { display: false },
-    datalabels: {
-      anchor: "end",
-      align: "end",
-      color: "#777",
-      font: {
-        weight: "bold" as const,
-      },
-      formatter: (value: number) => `${value}`,
-    },
-  },
-  scales: {
-    y: {
-      beginAtZero: true,
-      min: 0,
-      ticks: {
-        stepSize: 50,
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      datalabels: {
+        anchor: "end",
+        align: "top",
+        color: "#444",
+        font: { weight: "bold" },
+        formatter: (value: number) => `${value}`,
       },
     },
-  },
-};
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: { stepSize: 1 },
+      },
+    },
+  };
 
   return (
     <div className="px-4 py-12 max-w-6xl mx-auto">
       <h1 className="text-3xl font-heading font-bold text-center mb-4">Mujeres Presidentas</h1>
       <p className="text-center max-w-3xl mx-auto pr-10 pl-10 mb-6">
-        El liderazgo femenino en las parroquias rurales refleja la fuerza, perseverancia y compromiso de las mujeres con el desarrollo de sus comunidades. Esta herramienta permite explorar cómo ha sido su representación política en Ecuador, mostrando cuántas mujeres han sido elegidas como presidentas de juntas parroquiales en los años 2010, 2014, 2019 y 2023, con filtros por región, provincia, cantón y parroquia.
+        El liderazgo femenino en las parroquias rurales refleja la fuerza, perseverancia y compromiso de las mujeres con el desarrollo de sus comunidades...
       </p>
 
-{/* Filtros */}
-<div className="grid grid-cols-1 gap-5 pr-10 pl-10 mb-6">
-  <div>
-    <label htmlFor="region" className="block mb-2 font-medium">Seleccione una región:</label>
-    <select
-      id="region"
-      onChange={(e) => setRegion(e.target.value)}
-      className="border rounded p-2 w-3xs"
-    >
-      <option value="">Región</option>
-      {regionesDisponibles.sort().map((r, i) => (
-        <option key={`region-${i}`} value={r}>{r}</option>
-      ))}
-    </select>
-  </div>
+      <div className="px-6 py-10 max-w-6xl mx-auto">
+        <h1 className="text-3xl font-bold text-center mb-6">Mujeres Presidentas por Año</h1>
 
-  <div>
-    <label htmlFor="provincia" className=" block mb-2 font-medium">Seleccione una provincia:</label>
-    <select
-      id="provincia"
-      onChange={(e) => setProvincia(e.target.value)}
-      className="border rounded p-2 w-3xs"
-    >
-      <option value="">Provincia</option>
-      {provinciasDisponibles.sort().map((p, i) => (
-        <option key={`provincia-${i}`} value={p}>{p}</option>
-      ))}
-    </select>
-  </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+          <select value={region} onChange={(e) => setRegion(e.target.value)} className="p-2 border rounded">
+            <option value="">Escoge una región</option>
+            {filtroCondicional("REGIÓN").map((r) => <option key={r} value={r}>{r}</option>)}
+          </select>
 
-  <div>
-    <label htmlFor="canton" className="block mb-2 font-medium">Seleccione un cantón:</label>
-    <select
-      id="canton"
-      onChange={(e) => setCanton(e.target.value)}
-      className="border rounded p-2 w-3xs"
-    >
-      <option value="">Cantón</option>
-      {cantonesDisponibles.sort().map((c, i) => (
-        <option key={`canton-${i}`} value={c}>{c}</option>
-      ))}
-    </select>
-  </div>
+          <select value={provincia} onChange={(e) => handleProvinciaChange(e.target.value)} className="p-2 border rounded">
+            <option value="">Escoge una provincia</option>
+            {filtroCondicional("PROVINCIA").map((p) => <option key={p} value={p}>{p}</option>)}
+          </select>
 
-  <div>
-    <label htmlFor="parroquia" className="block mb-2 font-medium">Seleccione una parroquia:</label>
-    <select
-      id="parroquia"
-      onChange={(e) => setParroquia(e.target.value)}
-      className="border rounded p-2 w-3xs"
-    >
-      <option value="">Parroquia</option>
-      {parroquiasDisponibles.sort().map((p, i) => (
-        <option key={`parroquia-${i}`} value={p}>{p}</option>
-      ))}
-    </select>
-  </div>
-</div>
+          <select value={canton} onChange={(e) => handleCantonChange(e.target.value)} className="p-2 border rounded">
+            <option value="">Escoge un cantón</option>
+            {filtroCondicional("CANTÓN").map((c) => <option key={c} value={c}>{c}</option>)}
+          </select>
 
-      {/* Gráfico */}
-      <Bar options={chartOptions} data={chartData} className="mb-8 pr-10 pl-10 max-h-100" />
+          <select value={parroquia} onChange={(e) => handleParroquiaChange(e.target.value)} className="p-2 border rounded">
+            <option value="">Escoge una parroquia</option>
+            {filtroCondicional("PARROQUIA").map((p) => <option key={p} value={p}>{p}</option>)}
+          </select>
+        </div>
+
+        <div className="flex justify-center mb-10">
+          <button
+            onClick={limpiarFiltros}
+            className=" w-[150px] text-center bg-blue-500  text-white px-4 py-2 rounded hover:bg-blue-900 shadow-lg shadow-blue-500/50 transition-colors"
+          >
+            Limpiar filtros
+          </button>
+        </div>
+
+        <div className="h-96">
+          <Bar data={chartData} options={chartOptions} />
+        </div>
+      </div>
 
       <p className="text-center max-w-xl mx-auto text-base text-gray-600 mb-16">
         En 2023, con 182 presidentas, se logró el mayor avance en equidad de género.
       </p>
 
+
       {/* Video */}
       <h2 className="text-3xl font-heading font-bold mb-4 text-center">Warmis Power - CONAGOPARE #8M</h2>
-      <div className="flex flex-col items-center justify-center mb-10">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/F4P4WPmjyNM?si=GPnzRWdYksxbszeG"
-          title="Warmis Power"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className=" mb-10 mr-10 ml-10 rounded-lg"
-        ></iframe>
-        <p className="text-center text-base max-w-3xl mb-4">
-          Una apología a la conmemoración del 8 de Marzo en Ecuador desde una perspectiva de la situación actual en materia de derechos, con énfasis en PARROQUIAS RURALES,  y los retos que enfrenta la política pública de género en el país.
+      <div className="flex flex-col items-center justify-center mb-10 px-4">
+        <div className="relative w-full max-w-3xl" style={{ paddingBottom: "56.25%" }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/F4P4WPmjyNM?si=GPnzRWdYksxbszeG"
+            title="Warmis Power"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <p className="text-center text-base max-w-3xl mt-6">
+          Una apología a la conmemoración del 8 de Marzo en Ecuador desde una perspectiva de la situación actual en materia de derechos, con énfasis en PARROQUIAS RURALES, y los retos que enfrenta la política pública de género en el país.
         </p>
       </div>
+
 
       {/* Artículo */}
       <h2 className="text-3xl font-heading font-bold mb-4 text-center">
@@ -235,7 +222,7 @@ const parroquiasDisponibles = [...new Set(data
         ></iframe>
       </div>
     </div>
-  );
-};
 
-export default MujeresRuralesPage;
+
+  );
+}

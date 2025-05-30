@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // íconos bonitos
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,54 +22,52 @@ export default function Navbar() {
   ];
 
   return (
-<nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 shadow-md z-50">
-  {/* Contenedor visible solo en pantallas grandes */}
-  <div className="hidden xl:flex container mx-auto items-center justify-center p-4">
-    <Link href="/">
-      <Image
-        src="/ICONO IDENTIDAD RURAL@2x.webp"
-        alt="Logo"
-        width={45}
-        height={45}
-        className="rounded-md cursor-pointer mr-10"
-      />
-    </Link>
+    <nav className="w-full z-50">
+      {/* Navbar en pantallas grandes */}
+      <div className="hidden xl:flex container mx-auto items-center justify-center p-4 bg-white/30 backdrop-blur-md shadow-md fixed top-0 left-0 right-0 z-40">
+        <Link href="/">
+          <Image
+            src="/ICONO IDENTIDAD RURAL@2x.webp"
+            alt="Logo"
+            width={45}
+            height={45}
+            className="rounded-md cursor-pointer mr-10"
+          />
+        </Link>
+        <ul className="flex space-x-6 text-sm font-semibold">
+          {links.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="hover:text-cyan-600">
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-    <ul className="flex space-x-6 text-sm font-semibold">
-      {links.map((link) => (
-        <li key={link.href}>
-          <Link href={link.href} className="hover:text-blue-900">
-            {link.label}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
+      {/* Botón flotante siempre visible en móviles */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="xl:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-lg"
+      >
+        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+      </button>
 
-  {/* Botón flotante SIEMPRE visible en móviles */}
-  <button
-    onClick={() => setIsOpen(!isOpen)}
-    className="xl:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-lg"
-  >
-    {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-  </button>
-
-  {/* Menú móvil desplegable */}
-  {isOpen && (
-    <ul className="xl:hidden min-h-screen mt-20 flex flex-col items-center backdrop-blur-md shadow-md space-y-4 py-4 text-sm font-semibold">
-      {links.map((link) => (
-        <li key={link.href}>
-          <Link
-            href={link.href}
-            className="hover:text-blue-900"
-            onClick={() => setIsOpen(false)}
-          >
-            {link.label}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  )}
-</nav>
+      {/* Menú móvil responsive */}
+      {isOpen && (
+        <div className="xl:hidden fixed inset-0 z-40 backdrop-blur-md bg-white/30 flex flex-col items-center justify-center space-y-6 text-sm font-semibold">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="hover:text-blue-900"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </nav>
   );
 }

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#5d7460] text-white px-6 py-10">
+    <footer className="bg-[#2d3036] text-white px-6 py-10">
 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
   {/* Logo y mensaje */}
   <div className="flex flex-col items-start space-y-2 md:col-span-3">
@@ -34,7 +34,7 @@ export default function Footer() {
     <h2 className="text-lg font-semibold mb-2 border-b border-white pb-1">Redes Sociales</h2>
     <ul className="space-y-2 text-gray-200">
             <li className="flex items-center gap-2">
-              <a href="https://x.com/ConagopareN" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-black">
+              <a href="https://x.com/ConagopareN" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-teal-300">
                 <BsTwitterX /> <span>X</span>
               </a>
             </li>
