@@ -24,13 +24,22 @@ body {
    MAPA ECUADOR - SVG
 ===================== */
 .mapa-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 800px;
-  margin: auto;
+  max-width: 100%;
   padding: 1rem;
   box-sizing: border-box;
 }
+
+.mapa-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px; /* o 100vh si quieres toda la pantalla */
+}
+
 
 .mapa-svg {
   width: 100%;

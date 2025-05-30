@@ -4,12 +4,41 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 
 const provincias = [
-  "Azuay", "Bolivar", "Cañar", "Carchi", "Chimborazo", "Cotopaxi",
+  "Azuay", "Bolívar", "Cañar", "Carchi", "Chimborazo", "Cotopaxi",
   "El Oro", "Esmeraldas", "Galápagos", "Guayas", "Imbabura", "Loja",
-  "Los Rios", "Manabi", "Morona Santiago", "Napo", "Orellana",
+  "Los Ríos", "Manabí", "Morona Santiago", "Napo", "Orellana",
   "Pastaza", "Pichincha", "Santa Elena", "Santo Domingo de los Tsáchilas",
-  "Sucumbios", "Tungurahua", "Zamora Chinchipe"
+  "Sucumbíos", "Tungurahua", "Zamora Chinchipe"
 ];
+
+// 🎨 Colores únicos para cada provincia
+const coloresProvincia: Record<string, string> = {
+  "Azuay": "#2E8B57",
+  "Bolívar": "#3CB371",
+  "Cañar": "#66CDAA",
+  "Carchi": "#20B2AA",
+  "Chimborazo": "#4682B4",
+  "Cotopaxi": "#87CEFA",
+  "El Oro": "#FFD700",
+  "Esmeraldas": "#FFA07A",
+  "Galápagos": "#DDA0DD",
+  "Guayas": "#FF6347",
+  "Imbabura": "#6A5ACD",
+  "Loja": "#708090",
+  "Los Ríos": "#00CED1",
+  "Manabí": "#FF8C00",
+  "Morona Santiago": "#DB7093",
+  "Napo": "#B0C4DE",
+  "Orellana": "#5F9EA0",
+  "Pastaza": "#556B2F",
+  "Pichincha": "#B22222",
+  "Santa Elena": "#BC8F8F",
+  "Santo Domingo de los Tsáchilas": "#CD853F",
+  "Sucumbíos": "#8FBC8F",
+  "Tungurahua": "#DAA520",
+  "Zamora Chinchipe": "#2F4F4F",
+};
+
 
 type TooltipState = {
   visible: boolean;
@@ -69,20 +98,22 @@ const EcuadorSVG = ({ data }: EcuadorSVGProps) => {
 
     container.innerHTML = svgContent;
 
-    provincias.forEach((provincia) => {
+    provincias.forEach((provincia, index) => {
       const element = document.getElementById(provincia);
+      const baseColor = coloresProvincia[index % coloresProvincia.length];
+
       if (element instanceof SVGElement) {
         element.style.cursor = 'pointer';
-        element.style.fill = "#077f01";
+        element.style.fill = coloresProvincia[provincia] || "#ccc";
         element.style.transition = "fill 0.3s";
 
         const enterHandler = (e: MouseEvent) => {
-          element.style.fill = "#FF6B6B";
+          element.style.fill = "#0088ff"; // al pasar mouse (hover)
           handleMouseEnter(e, provincia);
         };
 
         const leaveHandler = () => {
-          element.style.fill = "#077f01";
+          element.style.fill = baseColor;
           handleMouseLeave();
         };
 
@@ -122,7 +153,7 @@ const EcuadorSVG = ({ data }: EcuadorSVGProps) => {
 
   return (
     <motion.div
-      className="mapa-container w-full"
+      className="mapa-container"
       onMouseMove={handleMouseMove}
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
