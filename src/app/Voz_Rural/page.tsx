@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 interface Mensaje {
   id: number;
@@ -17,6 +18,11 @@ interface Word {
   palabra: string;
   frecuencia: number;
 }
+
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
 
 export default function VozRuralPage() {
   const [data, setData] = useState<Mensaje[]>([]);
@@ -46,7 +52,6 @@ export default function VozRuralPage() {
     { palabra: "local", frecuencia: 39 },
     { palabra: "trabajo", frecuencia: 38 },
     { palabra: "beneficio", frecuencia: 37 },
-    // añade más palabras si quieres
   ];
 
   // Escala frecuencia a tamaño de fuente
@@ -112,9 +117,10 @@ export default function VozRuralPage() {
                 .filter((s) => s !== "")
             : [];
 
-          const filtradas = todas.length > 0
-            ? todas.filter((sub, index, arr) => sub !== "" && arr.indexOf(sub) !== index)
-            : [];
+          const filtradas =
+            todas.length > 0
+              ? todas.filter((sub, index, arr) => sub !== "" && arr.indexOf(sub) !== index)
+              : [];
 
           subsPorCat[cat] = Array.from(new Set(filtradas));
         });
@@ -173,7 +179,11 @@ export default function VozRuralPage() {
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       }}
     >
-      <section
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeUpVariant}
         style={{
           textAlign: "center",
           marginBottom: 40,
@@ -182,15 +192,24 @@ export default function VozRuralPage() {
           marginRight: "auto",
         }}
       >
-        <h1 style={{ fontSize: 32, fontWeight: "bold", marginBottom: 12 }}>
+        <motion.h1
+          style={{ fontSize: 32, fontWeight: "bold", marginBottom: 12 }}
+          variants={fadeUpVariant}
+        >
           Mensajes de las Parroquias
-        </h1>
-        <p style={{ color: "#555", fontSize: 16, marginBottom: 30 }}>
+        </motion.h1>
+        <motion.p
+          style={{ color: "#555", fontSize: 16, marginBottom: 30 }}
+          variants={fadeUpVariant}
+        >
           Esta página visualiza la voz de las parroquias rurales del Ecuador mediante mensajes representativos...
-        </p>
-        <h2 style={{ fontSize: 24, fontWeight: 600, marginBottom: 15 }}>
+        </motion.p>
+        <motion.h2
+          style={{ fontSize: 24, fontWeight: 600, marginBottom: 15 }}
+          variants={fadeUpVariant}
+        >
           Nube de Palabras
-        </h2>
+        </motion.h2>
 
         <div
           style={{
@@ -218,6 +237,7 @@ export default function VozRuralPage() {
                   transform: rotacion,
                   userSelect: "none",
                   transition: "transform 0.3s ease, color 0.3s ease",
+                  zIndex: 1,
                 }}
                 title={`${palabra} (${frecuencia})`}
                 onMouseEnter={(e) => {
@@ -236,7 +256,7 @@ export default function VozRuralPage() {
             );
           })}
         </div>
-      </section>
+      </motion.section>
 
       <div
         style={{
@@ -250,7 +270,12 @@ export default function VozRuralPage() {
           flexDirection: isMobile ? "column" : "row",
         }}
       >
-        <div
+        {/* Sección de categorías */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUpVariant}
           style={{
             flex: isMobile ? "1 1 auto" : "0 0 700px",
             width: isMobile ? "100%" : undefined,
@@ -263,167 +288,173 @@ export default function VozRuralPage() {
           <h3 style={{ fontSize: 28, fontWeight: "bold", marginBottom: 20, color: "#222" }}>
             📋 Análisis de Respuestas
           </h3>
-          {Array.isArray(categoriasPrincipales) && categoriasPrincipales.map((cat) => {
-            const abierto = categoriaActiva === cat;
-            const subs = Array.isArray(subcategoriasPorCategoria[cat]) ? subcategoriasPorCategoria[cat] : [];
-            return (
-              <div
-                key={cat}
-                style={{
-                  marginBottom: 20,
-                  border: "1px solid #ddd",
-                  borderRadius: 8,
-                  backgroundColor: "#fff",
-                  cursor: "pointer",
-                  transition: "box-shadow 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLDivElement).style.boxShadow = "0 0 10px #0070f3";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
-                }}
-                onClick={() => toggleCategoria(cat)}
-              >
-                <button
+          {Array.isArray(categoriasPrincipales) &&
+            categoriasPrincipales.map((cat) => {
+              const abierto = categoriaActiva === cat;
+              const subs = Array.isArray(subcategoriasPorCategoria[cat]) ? subcategoriasPorCategoria[cat] : [];
+              return (
+                <div
+                  key={cat}
                   style={{
-                    width: "100%",
-                    padding: "12px 20px",
-                    textAlign: "left",
-                    background: "none",
-                    border: "none",
-                    color: "#222",
+                    marginBottom: 20,
+                    border: "1px solid #ddd",
+                    borderRadius: 8,
+                    backgroundColor: "#fff",
                     cursor: "pointer",
-                    fontSize: 18,
-                    fontWeight: 600,
+                    transition: "box-shadow 0.3s ease",
                   }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLDivElement).style.boxShadow = "0 0 10px #0070f3";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
+                  }}
+                  onClick={() => toggleCategoria(cat)}
                 >
-                  {cat}
-                </button>
+                  <button
+                    style={{
+                      width: "100%",
+                      padding: "12px 20px",
+                      textAlign: "left",
+                      background: "none",
+                      border: "none",
+                      color: "#222",
+                      cursor: "pointer",
+                      fontSize: 18,
+                      fontWeight: 600,
+                    }}
+                  >
+                    {cat}
+                  </button>
 
-                {abierto && (
-                  <div style={{ padding: "10px 20px 20px", color: "#555", fontSize: 14 }}>
-                    {subs && subs.length > 0 ? (
-                      subs.map((s) => {
-                        const sel = subcategoriaActiva === s;
-                        return (
-                          <p
-                            key={s}
-                            onClick={() => seleccionarSubcategoria(s)}
-                            style={{
-                              margin: "6px 0",
-                              cursor: "pointer",
-                              fontWeight: sel ? "bold" : "normal",
-                              color: sel ? "#0070f3" : "#555",
-                            }}
-                          >
-                            {s}
-                          </p>
-                        );
-                      })
-                    ) : (
-                      <p>No hay subcategorías.</p>
-                    )}
-
-                    {subs.length > 0 && (
-                      <div style={{ marginTop: 20 }}>
-                        <p style={{ marginBottom: 6, fontWeight: 600 }}>Modo de visualización</p>
-                        <label style={{ marginRight: 12, cursor: "pointer", color: "#555" }}>
-                          <input
-                            type="radio"
-                            checked={modoVisualizacion === "top"}
-                            onChange={() => setModoVisualizacion("top")}
-                            style={{ marginRight: 6 }}
-                          />
-                          Top votados
-                        </label>
-                        <label style={{ cursor: "pointer", color: "#555" }}>
-                          <input
-                            type="radio"
-                            checked={modoVisualizacion === "todos"}
-                            onChange={() => setModoVisualizacion("todos")}
-                            style={{ marginRight: 6 }}
-                          />
-                          Todos
-                        </label>
-                      </div>
-                    )}
-
-                    {mensajesFiltrados && mensajesFiltrados.length > 0 ? (
-                      <div
-                        style={{
-                          marginTop: 15,
-                          maxHeight: "calc(650px - 300px)",
-                          overflowY: "auto",
-                        }}
-                      >
-                        {mensajesFiltrados.map((m) => (
-                          <div
-                            key={m.id}
-                            style={{
-                              backgroundColor: "#fff",
-                              borderRadius: 8,
-                              padding: 15,
-                              marginBottom: 12,
-                              boxShadow: "0 0 4px rgba(0,0,0,0.1)",
-                            }}
-                          >
-                            <p style={{ fontWeight: "bold", marginBottom: 8 }}>📄 Mensaje:</p>
-                            <p style={{ marginBottom: 10, whiteSpace: "pre-wrap", color: "#333" }}>
-                              {m.Mensaje}
-                            </p>
+                  {abierto && (
+                    <div style={{ padding: "10px 20px 20px", color: "#555", fontSize: 14 }}>
+                      {subs && subs.length > 0 ? (
+                        subs.map((s) => {
+                          const sel = subcategoriaActiva === s;
+                          return (
                             <p
+                              key={s}
+                              onClick={() => seleccionarSubcategoria(s)}
                               style={{
-                                color: "#666",
-                                fontSize: 14,
-                                marginBottom: 10,
-                                display: "flex",
-                                alignItems: "center",
-                                gap: 6,
+                                margin: "6px 0",
+                                cursor: "pointer",
+                                fontWeight: sel ? "bold" : "normal",
+                                color: sel ? "#0070f3" : "#555",
                               }}
                             >
-                              👤 {m.Presidente.toLowerCase()} – {m.Canton.toLowerCase()} – {m.Provincia.toLowerCase()}
+                              {s}
                             </p>
-                            <div style={{ display: "flex", gap: 10 }}>
-                              <button
-                                onClick={() => votar(m.id, "like")}
-                                style={{
-                                  background: "none",
-                                  border: "none",
-                                  color: "#0070f3",
-                                  cursor: "pointer",
-                                  fontSize: 18,
-                                }}
-                              >
-                                👍 {reacciones[m.id]?.likes || 0}
-                              </button>
-                              <button
-                                onClick={() => votar(m.id, "dislike")}
-                                style={{
-                                  background: "none",
-                                  border: "none",
-                                  color: "#999",
-                                  cursor: "pointer",
-                                  fontSize: 18,
-                                }}
-                              >
-                                👎 {reacciones[m.id]?.dislikes || 0}
-                              </button>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <p style={{ color: "#666", marginTop: 10 }}>No hay mensajes para mostrar.</p>
-                    )}
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
+                          );
+                        })
+                      ) : (
+                        <p>No hay subcategorías.</p>
+                      )}
 
-        <div
+                      {subs.length > 0 && (
+                        <div style={{ marginTop: 20 }}>
+                          <p style={{ marginBottom: 6, fontWeight: 600 }}>Modo de visualización</p>
+                          <label style={{ marginRight: 12, cursor: "pointer", color: "#555" }}>
+                            <input
+                              type="radio"
+                              checked={modoVisualizacion === "top"}
+                              onChange={() => setModoVisualizacion("top")}
+                              style={{ marginRight: 6 }}
+                            />
+                            Top votados
+                          </label>
+                          <label style={{ cursor: "pointer", color: "#555" }}>
+                            <input
+                              type="radio"
+                              checked={modoVisualizacion === "todos"}
+                              onChange={() => setModoVisualizacion("todos")}
+                              style={{ marginRight: 6 }}
+                            />
+                            Todos
+                          </label>
+                        </div>
+                      )}
+
+                      {mensajesFiltrados && mensajesFiltrados.length > 0 ? (
+                        <div
+                          style={{
+                            marginTop: 15,
+                            maxHeight: "calc(650px - 300px)",
+                            overflowY: "auto",
+                          }}
+                        >
+                          {mensajesFiltrados.map((m) => (
+                            <div
+                              key={m.id}
+                              style={{
+                                backgroundColor: "#fff",
+                                borderRadius: 8,
+                                padding: 15,
+                                marginBottom: 12,
+                                boxShadow: "0 0 4px rgba(0,0,0,0.1)",
+                              }}
+                            >
+                              <p style={{ fontWeight: "bold", marginBottom: 8 }}>📄 Mensaje:</p>
+                              <p style={{ marginBottom: 10, whiteSpace: "pre-wrap", color: "#333" }}>
+                                {m.Mensaje}
+                              </p>
+                              <p
+                                style={{
+                                  color: "#666",
+                                  fontSize: 14,
+                                  marginBottom: 10,
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: 6,
+                                }}
+                              >
+                                👤 {m.Presidente.toLowerCase()} – {m.Canton.toLowerCase()} – {m.Provincia.toLowerCase()}
+                              </p>
+                              <div style={{ display: "flex", gap: 10 }}>
+                                <button
+                                  onClick={() => votar(m.id, "like")}
+                                  style={{
+                                    background: "none",
+                                    border: "none",
+                                    color: "#0070f3",
+                                    cursor: "pointer",
+                                    fontSize: 18,
+                                  }}
+                                >
+                                  👍 {reacciones[m.id]?.likes || 0}
+                                </button>
+                                <button
+                                  onClick={() => votar(m.id, "dislike")}
+                                  style={{
+                                    background: "none",
+                                    border: "none",
+                                    color: "#999",
+                                    cursor: "pointer",
+                                    fontSize: 18,
+                                  }}
+                                >
+                                  👎 {reacciones[m.id]?.dislikes || 0}
+                                </button>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <p style={{ color: "#666", marginTop: 10 }}>No hay mensajes para mostrar.</p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+        </motion.div>
+
+        {/* Sección de mensajes aleatorios */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUpVariant}
           style={{
             flex: isMobile ? "1 1 auto" : "0 0 350px",
             width: isMobile ? "100%" : undefined,
@@ -460,7 +491,7 @@ export default function VozRuralPage() {
           ) : (
             <p style={{ color: "#666" }}>No hay mensajes aleatorios para mostrar.</p>
           )}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
