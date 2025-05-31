@@ -225,10 +225,6 @@ const PaginaProblemas = () => {
           )}
         </div>
       </div>
-
-      <p className="text-center mt-8 italic text-sm text-gray-600">
-        Fuente: archivo_resumen.xlsx y frases_categorizadas.xlsx cargados dinámicamente.
-      </p>
     </div>
   );
 };
