@@ -90,66 +90,68 @@ const EcuadorSVG = ({ data }: EcuadorSVGProps) => {
     }
   };
 
-  useEffect(() => {
-    if (!svgContent) return;
+useEffect(() => {
+  if (!svgContent) return;
+  const container = document.getElementById('mapa-ecuador');
+  if (!container) return;
 
-    const container = document.getElementById('mapa-ecuador');
-    if (!container) return;
+  container.innerHTML = svgContent;
 
-    container.innerHTML = svgContent;
+  provincias.forEach((provincia) => {
+    const element = document.getElementById(provincia);
+    const baseColor = coloresProvincia[provincia] || "#ccc";
 
-    provincias.forEach((provincia, index) => {
+    if (element instanceof SVGElement) {
+      element.style.cursor = 'pointer';
+      element.style.fill = baseColor;
+      element.setAttribute("data-base-color", baseColor); // 💾 guardar el color original
+      element.style.transition = "fill 0.3s";
+
+      const enterHandler = (e: MouseEvent) => {
+        element.style.fill = "#0088ff"; // hover
+        handleMouseEnter(e, provincia);
+      };
+
+      const leaveHandler = () => {
+        const original = element.getAttribute("data-base-color") || "#ccc"; // ✅ usa el atributo
+        element.style.fill = original;
+        handleMouseLeave();
+      };
+
+      const touchStartHandler = (e: TouchEvent) => {
+        handleMouseEnter(e as unknown as MouseEvent, provincia);
+      };
+
+      const touchEndHandler = () => {
+        handleMouseLeave();
+      };
+
+      element.addEventListener('mouseenter', enterHandler);
+      element.addEventListener('mouseleave', leaveHandler);
+      element.addEventListener('touchstart', touchStartHandler);
+      element.addEventListener('touchend', touchEndHandler);
+
+      (element as any)._enterHandler = enterHandler;
+      (element as any)._leaveHandler = leaveHandler;
+      (element as any)._touchStartHandler = touchStartHandler;
+      (element as any)._touchEndHandler = touchEndHandler;
+    }
+  });
+
+  return () => {
+    provincias.forEach((provincia) => {
       const element = document.getElementById(provincia);
-      const baseColor = coloresProvincia[index % coloresProvincia.length];
-
       if (element instanceof SVGElement) {
-        element.style.cursor = 'pointer';
-        element.style.fill = coloresProvincia[provincia] || "#ccc";
-        element.style.transition = "fill 0.3s";
-
-        const enterHandler = (e: MouseEvent) => {
-          element.style.fill = "#0088ff"; // al pasar mouse (hover)
-          handleMouseEnter(e, provincia);
-        };
-
-        const leaveHandler = () => {
-          element.style.fill = baseColor;
-          handleMouseLeave();
-        };
-
-        const touchStartHandler = (e: TouchEvent) => {
-          handleMouseEnter(e as unknown as MouseEvent, provincia);
-        };
-
-        const touchEndHandler = () => {
-          handleMouseLeave();
-        };
-
-        element.addEventListener('mouseenter', enterHandler);
-        element.addEventListener('mouseleave', leaveHandler);
-        element.addEventListener('touchstart', touchStartHandler);
-        element.addEventListener('touchend', touchEndHandler);
-
-        (element as any)._enterHandler = enterHandler;
-        (element as any)._leaveHandler = leaveHandler;
-        (element as any)._touchStartHandler = touchStartHandler;
-        (element as any)._touchEndHandler = touchEndHandler;
+        const el = element as any;
+        if (el._enterHandler) element.removeEventListener('mouseenter', el._enterHandler);
+        if (el._leaveHandler) element.removeEventListener('mouseleave', el._leaveHandler);
+        if (el._touchStartHandler) element.removeEventListener('touchstart', el._touchStartHandler);
+        if (el._touchEndHandler) element.removeEventListener('touchend', el._touchEndHandler);
       }
     });
+  };
+}, [svgContent, handleMouseEnter]);
 
-    return () => {
-      provincias.forEach((provincia) => {
-        const element = document.getElementById(provincia);
-        if (element instanceof SVGElement) {
-          const el = element as any;
-          if (el._enterHandler) element.removeEventListener('mouseenter', el._enterHandler);
-          if (el._leaveHandler) element.removeEventListener('mouseleave', el._leaveHandler);
-          if (el._touchStartHandler) element.removeEventListener('touchstart', el._touchStartHandler);
-          if (el._touchEndHandler) element.removeEventListener('touchend', el._touchEndHandler);
-        }
-      });
-    };
-  }, [svgContent, handleMouseEnter]);
 
   return (
     <motion.div
