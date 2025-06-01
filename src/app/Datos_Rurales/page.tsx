@@ -81,8 +81,11 @@ export default function DatosRuralesPage() {
   return (
     <div className="px-4 py-12 max-w-7xl mx-auto">
       <h1 className="text-3xl font-heading font-bold text-center mb-4">Datos Rurales</h1>
-      <p className="text-center text-base max-w-3xl mx-auto mb-2 pr-10 pl-10">
-        Esta seccion ofrece visualizaciones interactivas en Power BI que muestran información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden explorar datos oficiales segmentados por provincia, cantón y parroquia.
+      <p className="text-center text-base max-w-3xl mx-auto mb-5 pr-6 pl-6">
+        La sección Datos Rurales presenta visualizaciones interactivas desarrolladas en Power BI, que permiten explorar información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden consultar datos oficiales sobre vialidad, salud, educación, seguridad, servicios básicos, conectividad, empleo, entre otros, con posibilidad de filtrarlos por provincia, cantón y parroquia.
+      </p>
+      <p className="text-center text-base max-w-3xl mx-auto pr-6 pl-6">
+        Los indicadores provienen de fuentes de datos abiertos y de la información recopilada por CONAGOPARE Nacional. Los temas abordados fueron seleccionados en función de las principales problemáticas identificadas en nuestra investigación de campo, con el objetivo de visibilizar las brechas y oportunidades del territorio rural.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
         {data.map((item, i) => (

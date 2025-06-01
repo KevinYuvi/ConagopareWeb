@@ -9,15 +9,15 @@ export default function Navbar() {
 
   const links = [
     { href: "/", label: "Inicio" },
-    { href: "/Datos_Rurales", label: "Datos Rurales" },
     { href: "/Problemas", label: "Problemas" },
     { href: "/Voz_Rural", label: "Voz Rural" },
-    { href: "/Datos_Curiosos", label: "Datos Curiosos" },
-    { href: "/Metodologia", label: "Metodología" },
     { href: "/Entrevistas", label: "Entrevistas" },
+    { href: "/Datos_Curiosos", label: "Datos Curiosos" },
+    { href: "/Mujeres_Rurales", label: "Mujeres Rurales" },
+    { href: "/Datos_Rurales", label: "Datos Rurales" },
     { href: "/Difunde", label: "Difunde" },
     { href: "/Equipo", label: "Equipo" },
-    { href: "/Mujeres_Rurales", label: "Mujeres Rurales" },
+    { href: "/Metodologia", label: "Metodología" },
     { href: "/Taller_Periodismo", label: "Taller de Periodismo" },
   ];
 
