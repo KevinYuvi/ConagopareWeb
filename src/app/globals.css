@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #444444;
-  --font-sans: var(--font-quicksand);
-  --font-heading: var(--font-athiti);
+  --font-sans: "Baloo 2", sans-serif;
+  --font-heading: "Baloo 2", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +17,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Tipografía para títulos */
+.font-heading {
+  font-family: var(--font-heading);
+  font-weight: 800;
 }
 
 /* =====================
