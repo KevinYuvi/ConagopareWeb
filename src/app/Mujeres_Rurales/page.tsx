@@ -76,19 +76,8 @@ export default function MujeresRuralesPage() {
     setParroquia("");
   };
 
-  const filtroCondicional = (campo: keyof Registro): string[] => {
-    return [...new Set(
-      data
-        .filter((d) => {
-          return (
-            (!region || d.REGIÓN === region) &&
-            (!provincia || d.PROVINCIA.trim() === provincia) &&
-            (!canton || d.CANTÓN.trim() === canton) &&
-            (!parroquia || d.PARROQUIA.trim() === parroquia)
-          );
-        })
-        .map((d) => String(d[campo]).trim())
-    )].sort((a, b) => a.localeCompare(b));
+  const valoresUnicos = (campo: keyof Registro): string[] => {
+    return [...new Set(data.map((d) => String(d[campo]).trim()))].sort((a, b) => a.localeCompare(b));
   };
 
   const datosFiltrados = data.filter((d) => {
@@ -145,27 +134,27 @@ export default function MujeresRuralesPage() {
       </p>
 
       <div className="px-6 py-10 max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-6">Mujeres Presidentas por Año</h1>
+        <h1 className="text-3xl font-heading font-bold text-center mb-6">Mujeres Presidentas por Año</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
           <select value={region} onChange={(e) => setRegion(e.target.value)} className="p-2 border rounded">
             <option value="">Escoge una región</option>
-            {filtroCondicional("REGIÓN").map((r) => <option key={r} value={r}>{r}</option>)}
+            {valoresUnicos("REGIÓN").map((r) => <option key={r} value={r}>{r}</option>)}
           </select>
 
           <select value={provincia} onChange={(e) => handleProvinciaChange(e.target.value)} className="p-2 border rounded">
             <option value="">Escoge una provincia</option>
-            {filtroCondicional("PROVINCIA").map((p) => <option key={p} value={p}>{p}</option>)}
+            {valoresUnicos("PROVINCIA").map((p) => <option key={p} value={p}>{p}</option>)}
           </select>
 
           <select value={canton} onChange={(e) => handleCantonChange(e.target.value)} className="p-2 border rounded">
             <option value="">Escoge un cantón</option>
-            {filtroCondicional("CANTÓN").map((c) => <option key={c} value={c}>{c}</option>)}
+            {valoresUnicos("CANTÓN").map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
 
           <select value={parroquia} onChange={(e) => handleParroquiaChange(e.target.value)} className="p-2 border rounded">
             <option value="">Escoge una parroquia</option>
-            {filtroCondicional("PARROQUIA").map((p) => <option key={p} value={p}>{p}</option>)}
+            {valoresUnicos("PARROQUIA").map((p) => <option key={p} value={p}>{p}</option>)}
           </select>
         </div>
 
@@ -183,10 +172,9 @@ export default function MujeresRuralesPage() {
         </div>
       </div>
 
-      <p className="text-center max-w-xl mx-auto text-base text-gray-600 mb-16">
+      <p className="text-center max-w-xl mx-auto text-base text-gray-600 mb-18">
         En 2023, con 182 presidentas, se logró el mayor avance en equidad de género.
       </p>
-
 
       {/* Video */}
       <h2 className="text-3xl font-heading font-bold mb-4 text-center">Warmis Power - CONAGOPARE #8M</h2>
@@ -205,7 +193,6 @@ export default function MujeresRuralesPage() {
         </p>
       </div>
 
-
       {/* Artículo */}
       <h2 className="text-3xl font-heading font-bold mb-4 text-center">
         Mujeres en presidencias de Gobiernos Parroquiales Rurales
@@ -222,7 +209,5 @@ export default function MujeresRuralesPage() {
         ></iframe>
       </div>
     </div>
-
-
   );
 }
