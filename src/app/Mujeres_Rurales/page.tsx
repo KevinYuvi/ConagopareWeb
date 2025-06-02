@@ -23,6 +23,7 @@ interface Registro {
   CANTÓN: string;
   PARROQUIA: string;
   CANTIDAD: number;
+  NOMBRE: string;
 }
 
 export default function MujeresRuralesPage() {
@@ -31,11 +32,15 @@ export default function MujeresRuralesPage() {
   const [provincia, setProvincia] = useState("");
   const [canton, setCanton] = useState("");
   const [parroquia, setParroquia] = useState("");
+  const [datosFiltrados, setDatosFiltrados] = useState<Registro[]>([]);
 
   useEffect(() => {
-    fetch("/Data/num_presidentas_parroquia.json")
+    fetch("/Data/nom_presidentas_parroquia.json")
       .then((res) => res.json())
-      .then(setData)
+      .then((jsonData) => {
+        setData(jsonData);
+        setDatosFiltrados(jsonData); // Inicializa el gráfico con todos los datos
+      })
       .catch(console.error);
   }, []);
 
@@ -74,18 +79,34 @@ export default function MujeresRuralesPage() {
     setProvincia("");
     setCanton("");
     setParroquia("");
+    setDatosFiltrados(data); // Mostrar todos los datos al limpiar filtros
+  };
+
+  const consultarDatos = () => {
+    const filtrado = data.filter((d) => {
+      return (!region || d.REGIÓN === region) &&
+        (!provincia || (d.PROVINCIA.trim() === provincia && d.REGIÓN === region)) &&
+        (!canton || (d.CANTÓN.trim() === canton && d.PROVINCIA.trim() === provincia)) &&
+        (!parroquia || (d.PARROQUIA.trim() === parroquia && d.CANTÓN.trim() === canton));
+    });
+    setDatosFiltrados(filtrado);
   };
 
   const valoresUnicos = (campo: keyof Registro): string[] => {
     return [...new Set(data.map((d) => String(d[campo]).trim()))].sort((a, b) => a.localeCompare(b));
   };
 
-  const datosFiltrados = data.filter((d) => {
-    return (!region || d.REGIÓN === region) &&
-      (!provincia || (d.PROVINCIA.trim() === provincia && d.REGIÓN === region)) &&
-      (!canton || (d.CANTÓN.trim() === canton && d.PROVINCIA.trim() === provincia)) &&
-      (!parroquia || (d.PARROQUIA.trim() === parroquia && d.CANTÓN.trim() === canton));
-  });
+  const provinciasFiltradas = region
+    ? valoresUnicos("PROVINCIA").filter((p) => encontrarUbicacion("PROVINCIA", p)?.REGIÓN === region)
+    : valoresUnicos("PROVINCIA");
+
+  const cantonesFiltrados = provincia
+    ? valoresUnicos("CANTÓN").filter((c) => encontrarUbicacion("CANTÓN", c)?.PROVINCIA === provincia)
+    : valoresUnicos("CANTÓN");
+
+  const parroquiasFiltradas = canton
+    ? valoresUnicos("PARROQUIA").filter((p) => encontrarUbicacion("PARROQUIA", p)?.CANTÓN === canton)
+    : valoresUnicos("PARROQUIA");
 
   const agrupadoPorAnio = [2010, 2014, 2019, 2023].map((año) => ({
     anio: año,
@@ -126,6 +147,19 @@ export default function MujeresRuralesPage() {
     },
   };
 
+  const [paginaActual, setPaginaActual] = useState(1);
+  const resultadosPorPagina = 10;
+  const totalPaginas = Math.ceil(datosFiltrados.length / resultadosPorPagina);
+  const datosPaginados = datosFiltrados.slice(
+    (paginaActual - 1) * resultadosPorPagina,
+    paginaActual * resultadosPorPagina
+  );
+
+  const irPrimeraPagina = () => setPaginaActual(1);
+  const irUltimaPagina = () => setPaginaActual(totalPaginas);
+  const irPaginaAnterior = () => setPaginaActual((prev) => Math.max(prev - 1, 1));
+  const irPaginaSiguiente = () => setPaginaActual((prev) => Math.min(prev + 1, totalPaginas));
+
   return (
     <div className="px-4 py-12 max-w-6xl mx-auto">
       <h1 className="text-3xl font-heading font-bold text-center mb-4">Mujeres Presidentas</h1>
@@ -134,7 +168,10 @@ export default function MujeresRuralesPage() {
       </p>
 
       <div className="px-6 py-10 max-w-6xl mx-auto">
-        <h1 className="text-3xl font-heading font-bold text-center mb-6">Mujeres Presidentas por Año</h1>
+        <h1 className="text-3xl font-heading font-bold text-center mb-4">Mujeres Presidentas por Año</h1>
+        <p className="text-center max-w-xl mx-auto text-base mb-6">
+          En 2023, con 182 presidentas, se logró el mayor avance en equidad de género.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
           <select value={region} onChange={(e) => setRegion(e.target.value)} className="p-2 border rounded">
@@ -144,25 +181,33 @@ export default function MujeresRuralesPage() {
 
           <select value={provincia} onChange={(e) => handleProvinciaChange(e.target.value)} className="p-2 border rounded">
             <option value="">Escoge una provincia</option>
-            {valoresUnicos("PROVINCIA").map((p) => <option key={p} value={p}>{p}</option>)}
+            {provinciasFiltradas.map((p) => <option key={p} value={p}>{p}</option>)}
           </select>
 
           <select value={canton} onChange={(e) => handleCantonChange(e.target.value)} className="p-2 border rounded">
             <option value="">Escoge un cantón</option>
-            {valoresUnicos("CANTÓN").map((c) => <option key={c} value={c}>{c}</option>)}
+            {cantonesFiltrados.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
 
           <select value={parroquia} onChange={(e) => handleParroquiaChange(e.target.value)} className="p-2 border rounded">
             <option value="">Escoge una parroquia</option>
-            {valoresUnicos("PARROQUIA").map((p) => <option key={p} value={p}>{p}</option>)}
+            {parroquiasFiltradas.map((p) => <option key={p} value={p}>{p}</option>)}
           </select>
         </div>
 
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-6">
+          <button
+            onClick={consultarDatos}
+            className="cursor-pointer transition-all bg-green-600 text-white px-6 py-2 rounded-lg
+      border-green-700 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
+      hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-5">
+            Consultar
+          </button>
           <button
             onClick={limpiarFiltros}
-            className=" w-[150px] text-center bg-blue-500  text-white px-4 py-2 rounded hover:bg-blue-900 shadow-lg shadow-blue-500/50 transition-colors"
-          >
+            className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
+      border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
+      hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-5">
             Limpiar filtros
           </button>
         </div>
@@ -170,13 +215,85 @@ export default function MujeresRuralesPage() {
         <div className="h-96">
           <Bar data={chartData} options={chartOptions} />
         </div>
+<div className="w-full overflow-x-auto mt-12 mb-6 rounded-xl shadow-md bg-white">
+  <h2 className="text-2xl font-bold mb-4 text-center">Listado de Mujeres Presidentas</h2>
+  <table className="min-w-full text-sm text-center border-collapse">
+    <thead>
+      <tr className="bg-blue-600 text-white">
+        <th className="px-3 py-2 w-20">AÑO</th>
+        <th className="px-3 py-2 w-32">REGIÓN</th>
+        <th className="px-3 py-2 w-40">PROVINCIA</th>
+        <th className="px-3 py-2 w-40">CANTÓN</th>
+        <th className="px-3 py-2 w-40">PARROQUIA</th>
+        <th className="px-3 py-2 w-56 text-left">NOMBRE</th>
+      </tr>
+    </thead>
+    <tbody>
+      {datosPaginados.map((item, index) => (
+        <tr key={index} className="odd:bg-white even:bg-gray-100 hover:bg-blue-50 transition">
+          <td className="px-3 py-2">{item.AÑO}</td>
+          <td className="px-3 py-2">{item.REGIÓN}</td>
+          <td className="px-3 py-2">{item.PROVINCIA}</td>
+          <td className="px-3 py-2">{item.CANTÓN}</td>
+          <td className="px-3 py-2">{item.PARROQUIA}</td>
+          <td className="px-3 py-2 text-left">{item.NOMBRE}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  
+</div>
+
+
+
+{/* Paginación */}
+<div className="flex flex-wrap justify-center items-center gap-3 mt-6 mb-10 px-2">
+  <button
+    onClick={irPrimeraPagina}
+    disabled={paginaActual === 1}
+    className="cursor-pointer w-full sm:w-auto transition-all bg-red-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
+    border-red-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
+    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+    « Inicio
+  </button>
+
+  <button
+    onClick={irPaginaAnterior}
+    disabled={paginaActual === 1}
+    className="cursor-pointer w-full sm:w-auto transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
+    border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
+    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+    ‹ Anterior
+  </button>
+
+  <span className="px-4 py-1 font-semibold text-gray-700 text-sm sm:text-base text-center w-full sm:w-auto">
+    Página {paginaActual} de {totalPaginas}
+  </span>
+
+  <button
+    onClick={irPaginaSiguiente}
+    disabled={paginaActual === totalPaginas}
+    className="cursor-pointer w-full sm:w-auto transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
+    border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
+    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+    Siguiente ›
+  </button>
+
+  <button
+    onClick={irUltimaPagina}
+    disabled={paginaActual === totalPaginas}
+    className="cursor-pointer w-full sm:w-auto transition-all bg-red-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
+    border-red-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
+    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+    Final »
+  </button>
+</div>
+
+
+
       </div>
 
-      <p className="text-center max-w-xl mx-auto text-base text-gray-600 mb-18">
-        En 2023, con 182 presidentas, se logró el mayor avance en equidad de género.
-      </p>
-
-      {/* Video */}
       <h2 className="text-3xl font-heading font-bold mb-4 text-center">Warmis Power - CONAGOPARE #8M</h2>
       <div className="flex flex-col items-center justify-center mb-10 px-4">
         <div className="relative w-full max-w-3xl" style={{ paddingBottom: "56.25%" }}>
@@ -188,17 +305,16 @@ export default function MujeresRuralesPage() {
             allowFullScreen
           ></iframe>
         </div>
-        <p className="text-center text-base max-w-3xl mt-6">
+        <p className="text-center text-base max-w-3xl mt-6 mb-16">
           Una apología a la conmemoración del 8 de Marzo en Ecuador desde una perspectiva de la situación actual en materia de derechos, con énfasis en PARROQUIAS RURALES, y los retos que enfrenta la política pública de género en el país.
         </p>
       </div>
 
-      {/* Artículo */}
       <h2 className="text-3xl font-heading font-bold mb-4 text-center">
         Mujeres en presidencias de Gobiernos Parroquiales Rurales
       </h2>
       <p className="text-center text-base max-w-3xl mx-auto mb-4">
-        Este artículo analiza la participación de las mujeres como presidentas en los Gobiernos Parroquiales Rurales del Ecuador desde 2009 hasta 2023. A través de un estudio de leyes, elecciones y cifras, muestra que aunque ha habido un crecimiento en la representación femenina, para el periodo actual (2023–2027) solo el 22% de las presidencias son ocupadas por mujeres, evidenciando que aún falta mucho por avanzar en equidad.
+        Este artículo analiza la participación de las mujeres como presidentas en los Gobiernos Parroquiales Rurales del Ecuador desde 2009 hasta 2023...
       </p>
       <div className="flex justify-center">
         <iframe

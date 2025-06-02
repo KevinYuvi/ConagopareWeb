@@ -105,8 +105,10 @@ export default function DatosRuralesPage() {
             </div>
             <Link
               href={item.href}
-              className=" w-[125px] text-center bg-blue-500  text-white px-4 py-2 rounded hover:bg-blue-900 shadow-lg shadow-blue-500/50 transition-colors"
-            >
+              className="cursor-pointer w-full sm:w-auto transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
+    border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
+    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+    
               Consultar
             </Link>
           </motion.div>
