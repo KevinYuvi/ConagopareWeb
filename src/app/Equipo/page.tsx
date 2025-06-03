@@ -6,14 +6,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import { FaFacebook, FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function EquipoPage() {
   const equipo = [
-    { nombre: "Nombre Apellido", rol: "Coordinador General", image: "avatar1.jpg" },
-    { nombre: "Nombre Apellido", rol: "Analista de Datos", image: "avatar1.jpg" },
-    { nombre: "Nombre Apellido", rol: "Diseñador Gráfico", image: "avatar1.jpg" },
-    { nombre: "Nombre Apellido", rol: "Investigador", image: "avatar1.jpg" },
+    { nombre: "Duvard Cisneros", rol: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu velit ut sapien facilisis sollicitudin. Sed porttitor est non fermentum.", image: "avatar1.jpg" },
+    { nombre: "Ariel Inguillay", rol: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu velit ut sapien facilisis sollicitudin. Sed porttitor est non fermentum.", image: "avatar1.jpg" },
+    { nombre: "Marlon Tituaña", rol: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu velit ut sapien facilisis sollicitudin. Sed porttitor est non fermentum.", image: "avatar1.jpg" },
+    { nombre: "Kevin Yuvi", rol: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu velit ut sapien facilisis sollicitudin. Sed porttitor est non fermentum.", image: "avatar1.jpg" },
   ];
 
   const images = [
@@ -44,11 +44,9 @@ export default function EquipoPage() {
                 />
               </div>
               <h3 className="text-lg font-semibold">{persona.nombre}</h3>
-              <p className="text-sm text-gray-600">{persona.rol}</p>
+              <p className="text-sm  p-5 text-gray-600">{persona.rol}</p>
               <div className="flex gap-3 mt-4 text-xl text-gray-600">
-                <FaFacebook className="hover:text-blue-500"/>
-                <FaXTwitter className="hover:text-black" />
-                <FaInstagram className="hover:text-pink-500"/>
+                <FaLinkedin className="hover:text-blue-700"/>
               </div>
             </div>
           ))}

@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #444444;
-  --font-sans: var(--font-quicksand);
-  --font-heading: var(--font-athiti);
+  --font-sans: "Baloo 2", sans-serif;
+  --font-heading: "Baloo 2", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,20 +17,35 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Tipografía para títulos */
+.font-heading {
+  font-family: var(--font-heading);
+  font-weight: 800;
 }
 
 /* =====================
    MAPA ECUADOR - SVG
 ===================== */
 .mapa-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 800px;
-  margin: auto;
+  max-width: 100%;
   padding: 1rem;
   box-sizing: border-box;
 }
+
+.mapa-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px; /* o 100vh si quieres toda la pantalla */
+}
+
 
 .mapa-svg {
   width: 100%;

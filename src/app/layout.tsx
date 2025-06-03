@@ -1,25 +1,20 @@
 import type { Metadata } from "next";
-import { Quicksand, Athiti } from 'next/font/google';
+import { Baloo_2 } from "next/font/google"; // ✅ Importar la fuente correcta
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const quicksand = Quicksand({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-quicksand',
-});
-
-const athiti = Athiti({
+// ✅ Configurar la fuente con los pesos necesarios
+const baloo2 = Baloo_2({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-athiti",
-  weight: "700"
+  variable: "--font-baloo2",
+  weight: ["400", "600", "800"],
 });
 
 export const metadata: Metadata = {
   title: "Identidad Rural",
-  description: "Platform on rural issues in Ecuador",
+  description: "Plataforma de visibilidad rural del Ecuador",
 };
 
 export default function RootLayout({
@@ -28,10 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${quicksand.variable} ${athiti.variable}`}>
+    <html lang="es" className={baloo2.variable}>
       <body className="antialiased font-sans">
         <Navbar />
-          <main className="min-h-screen pt-20">{children}</main>
+        <main className="min-h-screen pt-20">{children}</main>
         <Footer />
       </body>
     </html>
