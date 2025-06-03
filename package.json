@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "aos": "^2.3.4",
     "chart.js": "^4.4.9",
     "chartjs-plugin-datalabels": "^2.2.0",
+    "d3": "^7.9.0",
+    "d3-cloud": "^1.2.7",
+    "d3-scale": "^4.0.2",
     "framer-motion": "^12.12.1",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.511.0",
