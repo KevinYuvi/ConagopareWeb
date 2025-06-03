@@ -28,9 +28,9 @@ export default function Navbar() {
       submenu: [
         { href: "/Voz_Rural#importancia-gobierno", label: "¿Por qué los Gobiernos Parroquiales son importantes?" },
         { href: "/Voz_Rural#mensaje-parroquias", label: "Mensaje de las parroquias rurales al Ecuador" },
-    { href: "/Entrevistas", label: "Entrevistas" },
       ],
     },
+    { href: "/Entrevistas", label: "Entrevistas" },
     { href: "/Datos_Curiosos", label: "Datos Curiosos" },
     { href: "/Mujeres_Rurales", label: "Mujeres Rurales" },
     { href: "/Datos_Rurales", label: "Datos Rurales" },
