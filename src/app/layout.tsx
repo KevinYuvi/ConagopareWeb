@@ -3,6 +3,7 @@ import { Baloo_2 } from "next/font/google"; // ✅ Importar la fuente correcta
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 // ✅ Configurar la fuente con los pesos necesarios
 const baloo2 = Baloo_2({
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className="antialiased font-sans">
         <Navbar />
         <main className="min-h-screen pt-20">{children}</main>
+        <ScrollToTopButton />
         <Footer />
       </body>
     </html>
