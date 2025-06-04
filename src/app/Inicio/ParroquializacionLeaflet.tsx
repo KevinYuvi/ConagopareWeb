@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useEffect, useState, useRef } from "react";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
-// Icono personalizado para el marcador
+// Icono personalizado
 const customIcon = new L.Icon({
   iconUrl: "https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png",
   iconSize: [25, 41],
@@ -22,25 +22,40 @@ interface Parroquia {
   fecha: string;
 }
 
+// Componente que mueve el mapa suavemente a una parroquia
+function FlyToParroquia({ coords, zoom }: { coords: { lat: number; lng: number }; zoom: number }) {
+  const map = useMap();
+
+  useEffect(() => {
+    map.flyTo([coords.lat, coords.lng], zoom, { duration: 1.5 });
+  }, [coords, zoom, map]);
+
+  return null;
+}
+
 export default function ParroquializacionLeaflet() {
   const [parroquiasData, setParroquiasData] = useState<Parroquia[]>([]);
-
-  // Estados para la selección de filtros
   const [provincia, setProvincia] = useState("");
   const [canton, setCanton] = useState("");
   const [parroquia, setParroquia] = useState("");
-
-  // Estado para mostrar resultados al hacer clic en "Consultar"
   const [parroquiaSeleccionada, setParroquiaSeleccionada] = useState<Parroquia | null>(null);
-
   const [coords, setCoords] = useState({ lat: -1.8312, lng: -78.1834 });
   const [zoom, setZoom] = useState(6);
+  const markerRef = useRef<L.Marker>(null);
 
+  // Cargar datos
   useEffect(() => {
     fetch("/Data/parroquias.json")
       .then((res) => res.json())
       .then((data: Parroquia[]) => setParroquiasData(data));
   }, []);
+
+  // Mostrar automáticamente popup cuando cambia la parroquia seleccionada
+  useEffect(() => {
+    if (markerRef.current) {
+      markerRef.current.openPopup();
+    }
+  }, [parroquiaSeleccionada]);
 
   const handleConsulta = () => {
     const resultado = parroquiasData.find(
@@ -89,12 +104,12 @@ export default function ParroquializacionLeaflet() {
           </select>
         </div>
 
-        {/* Botón de consulta */}
+        {/* Botón */}
         <button onClick={handleConsulta} className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
           Consultar
         </button>
 
-        {/* Fecha de parroquialización (solo si ya se consultó) */}
+        {/* Fecha de parroquialización */}
         {parroquiaSeleccionada && (
           <p className="mt-4 mb-4 text-lg text-center text-gray-800">
             Fecha de parroquialización de <strong>{parroquiaSeleccionada.parroquia}</strong>:{" "}
@@ -105,7 +120,6 @@ export default function ParroquializacionLeaflet() {
         {/* Mapa */}
         <div className="mt-4 border shadow-md h-[400px] relative z-10 overflow-hidden">
           <MapContainer
-            key={`${coords.lat}-${coords.lng}`}
             center={coords}
             zoom={zoom}
             scrollWheelZoom={true}
@@ -116,14 +130,16 @@ export default function ParroquializacionLeaflet() {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            {/* Solo se muestra marcador si se hizo clic en "Consultar" */}
             {parroquiaSeleccionada && (
-              <Marker position={coords} icon={customIcon}>
-                <Popup>
-                  <strong>{parroquiaSeleccionada.parroquia}</strong><br />
-                  Fecha: {parroquiaSeleccionada.fecha}
-                </Popup>
-              </Marker>
+              <>
+                <FlyToParroquia coords={coords} zoom={zoom} />
+                <Marker position={coords} icon={customIcon} ref={markerRef}>
+                  <Popup>
+                    <strong>{parroquiaSeleccionada.parroquia}</strong><br />
+                    Fecha: {parroquiaSeleccionada.fecha}
+                  </Popup>
+                </Marker>
+              </>
             )}
           </MapContainer>
         </div>

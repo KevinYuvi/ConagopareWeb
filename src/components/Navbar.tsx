@@ -52,6 +52,10 @@ export default function Navbar() {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+  const [difundeOpen, setDifundeOpen] = useState(false);
+  const [submenuAbierto, setSubmenuAbierto] = useState<string | null>(null);
+
+  let timeoutId: NodeJS.Timeout;
 
   const links: NavLink[] = [
     { href: "/", label: "Inicio" },
@@ -60,8 +64,14 @@ export default function Navbar() {
       href: "/Voz_Rural",
       label: "Voz Rural",
       submenu: [
-        { href: "/Voz_Rural#importancia-gobierno", label: "¿Por qué los Gobiernos Parroquiales son importantes?" },
-        { href: "/Voz_Rural#mensaje-parroquias", label: "Mensaje de las parroquias rurales al Ecuador" },
+        {
+          href: "/Voz_Rural#importancia-gobierno",
+          label: "¿Por qué los Gobiernos Parroquiales son importantes?",
+        },
+        {
+          href: "/Voz_Rural#mensaje-parroquias",
+          label: "Mensaje de las parroquias rurales al Ecuador",
+        },
       ],
     },
     { href: "/Entrevistas", label: "Entrevistas" },
@@ -75,7 +85,23 @@ export default function Navbar() {
     },
     { href: "/Mujeres_Rurales", label: "Mujeres Rurales" },
     { href: "/Datos_Rurales", label: "Datos Rurales" },
-    { href: "/Difunde", label: "Difunde" },
+    {
+      label: "Difunde",
+      submenu: [
+        {
+          href: "/Difunde#expo-fotos",
+          label: "Exposición de fotos con IA generativa",
+        },
+        {
+          href: "/Difunde#editorial",
+          label: "Editorial",
+        },
+        {
+          href: "/Difunde#recursos",
+          label: "Otros recursos",
+        },
+      ],
+    },
     { href: "/Equipo", label: "Equipo" },
     { href: "/Metodologia", label: "Metodología" },
     { href: "/Taller_Periodismo", label: "Taller de Periodismo" },
@@ -87,8 +113,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full z-50 font-heading">
-      {/* Navbar desktop */}
+    <nav className="w-full z-50">
+      {/* Navbar en pantallas grandes */}
       <div className="hidden xl:flex container mx-auto items-center justify-center p-4 bg-white/30 backdrop-blur-md shadow-md fixed top-0 left-0 right-0 z-40">
         <Link href="/">
           <Image
@@ -102,31 +128,16 @@ export default function Navbar() {
         <ul className="flex space-x-6 text-sm font-semibold">
           {links.map((link) => {
             if ("submenu" in link) {
-              const isVozRural = link.label === "Voz Rural";
-              const isDatosCuriosos = link.label === "Datos Curiosos";
               return (
                 <li
                   key={link.label}
                   className="relative"
-                  onMouseEnter={() => {
-                    if (isVozRural) setVozRuralOpen(true);
-                    if (isDatosCuriosos) setDatosCuriososOpen(true);
-                  }}
-                  onMouseLeave={() => {
-                    if (isVozRural) setVozRuralOpen(false);
-                    if (isDatosCuriosos) setDatosCuriososOpen(false);
-                  }}
+                  onMouseEnter={() => setVozRuralOpen(true)}
+                  onMouseLeave={() => setVozRuralOpen(false)}
                 >
                   <button
-                    data-submenu-button={isVozRural ? "vozRural" : isDatosCuriosos ? "datosCuriosos" : undefined}
-                    className="hover:text-cyan-600 flex items-center gap-1 focus:outline-none"
-                    type="button"
-                    aria-haspopup="true"
-                    aria-expanded={isVozRural ? vozRuralOpen : isDatosCuriosos ? datosCuriososOpen : false}
-                    onClick={() => {
-                      if (isVozRural) setVozRuralOpen((prev) => !prev);
-                      if (isDatosCuriosos) setDatosCuriososOpen((prev) => !prev);
-                    }}
+                    className="hover:text-cyan-600 flex items-center gap-1"
+                    onClick={() => setVozRuralOpen((prev) => !prev)}
                   >
                     <Link href={link.href} className="cursor-pointer">
                       {link.label}
@@ -142,36 +153,25 @@ export default function Navbar() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  <AnimatePresence>
-                    {(isVozRural && vozRuralOpen) || (isDatosCuriosos && datosCuriososOpen) ? (
-                      <motion.ul
-                        ref={isVozRural ? vozRuralRef : datosCuriososRef}
-                        initial="hidden"
-                        animate="visible"
-                        exit="hidden"
-                        variants={submenuVariants}
-                        className="absolute top-full left-0 mt-1 w-max bg-white border border-gray-300 rounded shadow-lg z-50"
-                      >
-                        {link.submenu.map((sublink) => (
-                          <li key={sublink.href}>
-                            <Link
-                              href={sublink.href}
-                              className="block px-4 py-2 whitespace-nowrap hover:bg-cyan-100"
-                              onClick={() => {
-                                if (isVozRural) setVozRuralOpen(false);
-                                if (isDatosCuriosos) setDatosCuriososOpen(false);
-                              }}
-                            >
-                              {sublink.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </motion.ul>
-                    ) : null}
-                  </AnimatePresence>
+                  {vozRuralOpen && (
+                    <ul className="absolute top-full left-0 mt-1 w-max bg-white border border-gray-300 rounded shadow-lg z-50">
+                      {link.submenu.map((sublink) => (
+                        <li key={sublink.href}>
+                          <Link
+                            href={sublink.href}
+                            className="block px-4 py-2 whitespace-nowrap hover:bg-cyan-100"
+                            onClick={() => setVozRuralOpen(false)}
+                          >
+                            {sublink.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               );
             }
+
             return (
               <li key={link.href}>
                 <Link href={link.href} className="hover:text-cyan-600">
@@ -183,7 +183,7 @@ export default function Navbar() {
         </ul>
       </div>
 
-      {/* Botón móvil */}
+      {/* Botón flotante siempre visible en móviles */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="xl:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-lg"
@@ -191,21 +191,15 @@ export default function Navbar() {
         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
-      {/* Menú móvil */}
+      {/* Menú móvil responsive */}
       {isOpen && (
-        <div className="xl:hidden fixed inset-0 z-40 backdrop-blur-md bg-white/30 flex flex-col items-center justify-center space-y-6 text-sm font-semibold">
+        <div className="xl:hidden fixed inset-0 z-40 backdrop-blur-md bg-white/30 flex flex-col items-center justify-center space-y-6 text-sm font-semibold px-4 py-6 overflow-y-auto">
           {links.map((link) => {
             if ("submenu" in link) {
+              const estaAbierto = submenuAbierto === link.label;
               return (
                 <div key={link.label} className="flex flex-col items-center">
-                  {/* Para móvil, los submenus hacen scroll suave */}
-                  <Link
-                    href={link.href}
-                    className="font-semibold hover:text-blue-900"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
+                  <p className="font-semibold">{link.label}</p>
                   {link.submenu.map((sublink) => (
                     <Link
                       key={sublink.href}
@@ -219,6 +213,7 @@ export default function Navbar() {
                 </div>
               );
             }
+
             return (
               <Link
                 key={link.href}
