@@ -79,15 +79,15 @@ const fadeUp = {
 
 export default function DatosRuralesPage() {
   return (
-    <div className="px-4 py-12 max-w-7xl mx-auto">
-      <h1 className="text-3xl font-heading font-bold text-center mb-4">Datos Rurales</h1>
-      <p className="text-center text-base max-w-3xl mx-auto mb-5 pr-6 pl-6">
+    <div className="p-4 max-w-7xl mx-auto flex flex-col items-center justify-between gap-4">
+      <h1 className="text-3xl font-heading text-center">Datos Rurales</h1>
+      <p className="text-center max-w-4xl mx-auto px-4">
         La sección Datos Rurales presenta visualizaciones interactivas desarrolladas en Power BI, que permiten explorar información clave sobre las realidades de las parroquias rurales del Ecuador. A través de diez paneles temáticos, los usuarios pueden consultar datos oficiales sobre vialidad, salud, educación, seguridad, servicios básicos, conectividad, empleo, entre otros, con posibilidad de filtrarlos por provincia, cantón y parroquia.
       </p>
-      <p className="text-center text-base max-w-3xl mx-auto pr-6 pl-6">
+      <p className="text-center max-w-4xl mx-auto px-4">
         Los indicadores provienen de fuentes de datos abiertos y de la información recopilada por CONAGOPARE Nacional. Los temas abordados fueron seleccionados en función de las principales problemáticas identificadas en nuestra investigación de campo, con el objetivo de visibilizar las brechas y oportunidades del territorio rural.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5 text-center">
         {data.map((item, i) => (
           <motion.div
             key={item.title}
@@ -96,19 +96,19 @@ export default function DatosRuralesPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeUp}
-            className="bg-gray-200 shadow-lg shadow-gray-400/50 rounded-xl p-10  transition-shadow duration-300 flex flex-col items-center justify-between"
+            
+            className="bg-gray-300 rounded-2xl p-8 flex flex-col items-center justify-between gap-6 hover:shadow-[0_0_20px_4px_rgba(43,100,255,0.4)] transition-shadow duration-300 "
           >
-            <div >
-              <Image src={`/images/datos_rurales/${item.image}`} alt={item.title} width={400} height={160} className="object-cover rounded-lg mb-4 mx-auto"/>
-              <h2 className="text-lg font-bold mb-2 text-center">{item.title}</h2>
-              <p className="text-gray-700 mb-4 pr-4 pl-4">{item.description}</p>
+            <div className="flex flex-col items-center justify-between gap-6">
+              <Image src={`/images/datos_rurales/${item.image}`} alt={item.title} width={400} height={160} className="object-cover rounded-2xl mx-auto" />
+              <h2 className="text-xl font-bold">{item.title}</h2>
+              <p>{item.description}</p>
             </div>
             <Link
               href={item.href}
-              className="cursor-pointer w-full sm:w-auto transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
-    border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
-    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
-    
+              className="
+              cursor-pointer w-32 transition-all bg-blue-500 text-white py-2 rounded-xl border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px]  hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+
               Consultar
             </Link>
           </motion.div>
