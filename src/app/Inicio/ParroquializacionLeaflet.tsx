@@ -22,14 +22,12 @@ interface Parroquia {
   fecha: string;
 }
 
-// Componente que usa flyTo() para mover el mapa suavemente
+// Componente que mueve el mapa suavemente a una parroquia
 function FlyToParroquia({ coords, zoom }: { coords: { lat: number; lng: number }; zoom: number }) {
   const map = useMap();
 
   useEffect(() => {
-    map.flyTo([coords.lat, coords.lng], zoom, {
-      duration: 1.5,
-    });
+    map.flyTo([coords.lat, coords.lng], zoom, { duration: 1.5 });
   }, [coords, zoom, map]);
 
   return null;
@@ -37,33 +35,22 @@ function FlyToParroquia({ coords, zoom }: { coords: { lat: number; lng: number }
 
 export default function ParroquializacionLeaflet() {
   const [parroquiasData, setParroquiasData] = useState<Parroquia[]>([]);
-
   const [provincia, setProvincia] = useState("");
   const [canton, setCanton] = useState("");
   const [parroquia, setParroquia] = useState("");
-
   const [parroquiaSeleccionada, setParroquiaSeleccionada] = useState<Parroquia | null>(null);
   const [coords, setCoords] = useState({ lat: -1.8312, lng: -78.1834 });
   const [zoom, setZoom] = useState(6);
-
   const markerRef = useRef<L.Marker>(null);
 
-  // Cargar datos al iniciar
+  // Cargar datos
   useEffect(() => {
     fetch("/Data/parroquias.json")
       .then((res) => res.json())
       .then((data: Parroquia[]) => setParroquiasData(data));
   }, []);
 
-  // Solución al error de Leaflet: limpiar contenedor si ya existe
-  useEffect(() => {
-    const container = L.DomUtil.get("map");
-    if (container != null) {
-      (container as any)._leaflet_id = null;
-    }
-  }, []);
-
-  // Abre automáticamente el popup cuando cambia la parroquia
+  // Mostrar automáticamente popup cuando cambia la parroquia seleccionada
   useEffect(() => {
     if (markerRef.current) {
       markerRef.current.openPopup();
@@ -117,7 +104,7 @@ export default function ParroquializacionLeaflet() {
           </select>
         </div>
 
-        {/* Botón de consulta */}
+        {/* Botón */}
         <button onClick={handleConsulta} className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
           Consultar
         </button>
@@ -133,7 +120,6 @@ export default function ParroquializacionLeaflet() {
         {/* Mapa */}
         <div className="mt-4 border shadow-md h-[400px] relative z-10 overflow-hidden">
           <MapContainer
-            id="map"
             center={coords}
             zoom={zoom}
             scrollWheelZoom={true}

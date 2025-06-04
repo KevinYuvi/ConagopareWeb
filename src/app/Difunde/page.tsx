@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaDownload, FaXmark } from "react-icons/fa6";
+import Image from "next/image"; 
 
-// Tipo extendido con metadatos para la sección tipo noticia
 type Elemento = {
   tipo: "imagen" | "video" | "texto" | "vaner";
   src: string;
@@ -15,7 +15,6 @@ type Elemento = {
   fecha?: string;
 };
 
-// Elementos tipo noticia (los de arriba)
 const noticias: Elemento[] = [
   {
     tipo: "imagen",
@@ -24,7 +23,7 @@ const noticias: Elemento[] = [
     autor: "Sebastian Tamayo",
     titulo: "Voces del Territorio: Narrativas Rurales en Movimiento",
     descripcion:
-      "En esta sección recopilamos artículos, reflexiones, videos y expresiones gráficas que nacen desde las parroquias rurales del Ecuador. Son voces auténticas que narran sus realidades, luchas y esperanzas, construyendo un archivo vivo de memoria territorial. Aquí, la comunicación no es solo información: es resistencia, identidad y movimiento.",
+      "Recopilamos artículos, reflexiones, videos y expresiones gráficas desde las parroquias rurales del Ecuador.",
     fecha: "MAY 28, 2025",
   },
   {
@@ -32,14 +31,13 @@ const noticias: Elemento[] = [
     src: "images/difunde/difunde2.webp",
     color: "bg-green-600",
     autor: "Sebastian Tamayo",
-    titulo: "Comunicando lo Nuestro: Historias desde las Parroquias ",
+    titulo: "Comunicando lo Nuestro: Historias desde las Parroquias",
     descripcion:
-      "En esta sección recopilamos artículos, reflexiones, videos y expresiones gráficas que nacen desde las parroquias rurales del Ecuador. Son voces auténticas que narran sus realidades, luchas y esperanzas, construyendo un archivo vivo de memoria territorial. Aquí, la comunicación no es solo información: es resistencia, identidad y movimiento.",
+      "Son voces auténticas que narran sus realidades, luchas y esperanzas.",
     fecha: "MAY 28, 2025",
   },
 ];
 
-// Elementos multimedia (grilla de imágenes y videos original)
 const elementos: Elemento[] = [
   { tipo: "imagen", src: "images/difunde/difunde1.webp", color: "bg-gray-700" },
   { tipo: "imagen", src: "images/difunde/difunde2.webp", color: "bg-green-600" },
@@ -57,91 +55,129 @@ export default function Difunde() {
 
   return (
     <div className="bg-gray-100 text-gray-900 px-6 pb-10">
-      {/* Encabezado principal */}
-      <div className="max-w-5xl mx-auto text-center pt-4 mb-10">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-2 leading-tight">
-          Material de Difusión
-        </h2>
-        <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-          Explora, comparte y sé parte del cambio desde las voces de las parroquias rurales del Ecuador.
+
+      {/* SECCIÓN 1: EXPOSICIÓN DE FOTOS */}
+      <section id="expo-fotos" className="scroll-mt-32 max-w-5xl mx-auto mb-20">
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center">
+          Territorios con voz
+        </h3>
+        <p className="text-base md:text-lg text-gray-600 leading-relaxed text-center mb-10 px-4">
+          “Esta exposición marca un hito: por primera vez, la inteligencia artificial generativa interpreta las percepciones de liderazgos parroquiales, elevando su sentir en formatos visuales diversos y lúdicos. <br />
+          Cada imagen nace de testimonios reales para que lo descargues y lo difundas en redes sociales o lo imprimas para ubicar en espacios comunitarios visibles. <br />
+          Una invitación a escuchar, conectar y actuar”.
         </p>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {elementos.map((item, index) => (
+            <motion.div
+              key={index}
+              className={`relative ${item.color} p-6 rounded-lg shadow-lg cursor-pointer`}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              onClick={() => setSelectedItem(item)}
+            >
+              {item.tipo === "video" ? (
+                <video src={item.src} className="w-full h-full object-cover rounded-lg" />
+              ) : (
+                <img src={item.src} alt={item.tipo} className="w-full h-full object-cover rounded-lg" />
+              )}
+              <FaDownload className="absolute top-2 right-2 text-white opacity-80" />
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+
+{/* SECCIÓN 2: EDITORIAL */}
+<section id="editorial" className="scroll-mt-32 max-w-6xl mx-auto mb-20 px-4">
+  <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
+    Editorial
+  </h3>
+
+  <p className="text-base md:text-lg text-gray-600 leading-relaxed text-center mb-10">
+    En esta sección se recogen aportes ciudadanos que invitan a reflexionar y debatir sobre las problemáticas del sector rural ecuatoriano. Son textos que se inspiran en la ruralidad, con mirada crítica y compromiso ciudadano. <br />
+    Aquí también se visibilizan los artículos desarrollados por quienes completan el curso de periodismo de datos, reconociendo su voz como parte activa del pensamiento y la acción colectiva. <br />
+    Porque escribir también es una forma de participación ciudadana. <br />
+    <strong>Identidad Rural: escuchar, conectar, actuar</strong>
+  </p>
+
+  <div className="grid md:grid-cols-2 gap-6">
+    {/* Tarjeta 1 */}
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition-all border border-gray-200 w-full max-w-sm mx-auto overflow-hidden">
+      <div className="relative w-full h-56">
+        <Image
+          src="/images/difunde/noticia1.png"
+          alt="Los Gobiernos Parroquiales"
+          fill
+          className="object-cover rounded-t-xl"
+        />
       </div>
-
-      {/* Noticias tipo tarjeta */}
-      <div className="space-y-6 max-w-5xl mx-auto mb-14">
-        {noticias.map((item, index) => (
-          <motion.div
-            key={index}
-            className="flex flex-col md:flex-row bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-all cursor-pointer"
-            whileHover={{ scale: 1.01 }}
-            onClick={() => setSelectedItem(item)}
-          >
-            {/* Imagen */}
-            <div className="relative md:w-1/3 w-full">
-              <img
-                src={item.src}
-                alt={item.titulo}
-                className="w-full h-full object-contain bg-white"
-              />
-              {/* Ícono tipo cámara */}
-              <div className="absolute bottom-2 left-2 bg-red-600 rounded p-1">
-                <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M4 5a2 2 0 012-2h1.172a2 2 0 011.414.586l.828.828H14a2 2 0 012 2v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm6 2a3 3 0 100 6 3 3 0 000-6z" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Texto */}
-            <div className="md:w-2/3 p-6 flex flex-col justify-center gap-2">
-              <span className="text-xs font-bold uppercase text-white bg-red-600 px-2 py-1 rounded w-fit">
-                {item.autor}
-              </span>
-              <h3 className="text-xl font-extrabold text-gray-900 leading-snug hover:underline">
-                {item.titulo}
-              </h3>
-              <div className="flex items-center gap-2 text-sm text-gray-500">
-                <span>{item.fecha}</span>
-                <span>•</span>
-                <span>Conagopare</span>
-              </div>
-              <p className="text-gray-700 text-sm">{item.descripcion}</p>
-            </div>
-          </motion.div>
-        ))}
+      <div className="p-4">
+        <a
+          href="https://radiolacalle.com/los-gobiernos-parroquiales-entre-la-descentralizacion-y-la-supervivencia/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-base font-semibold text-blue-800 leading-snug line-clamp-3 hover:underline block"
+        >
+          Los Gobiernos Parroquiales: entre la descentralización y la supervivencia
+        </a>
+        <p className="text-sm text-pink-600 mt-1">Gobiernos rurales</p>
+        <p className="text-sm text-gray-500">04/06/2024</p>
       </div>
+    </div>
 
-      {/* Título intermedio + subtítulo */}
-      <div className="text-center max-w-4xl mx-auto mt-12 mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-          Descarga y Difunde: Comunicación para el Territorio
-        </h2>
-        <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-          Material gráfico, videos y documentos para visibilizar las voces rurales.
-          ¡Compártelo en tus redes, espacios comunitarios y medios locales!
+    {/* Tarjeta 2 */}
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition-all border border-gray-200 w-full max-w-sm mx-auto overflow-hidden">
+      <div className="relative w-full h-56">
+        <Image
+          src="/images/difunde/noticia2.png"
+          alt="El empleo en las parroquias rurales"
+          fill
+          className="object-cover rounded-t-xl"
+        />
+      </div>
+      <div className="p-4">
+        <a
+          href="https://al-dato.org/community/cG9zdDoxMzY="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-base font-semibold text-blue-800 leading-snug line-clamp-3 hover:underline block"
+        >
+          El empleo en las parroquias rurales: una deuda estructural
+        </a>
+        <p className="text-sm text-pink-600 mt-1">Economía rural</p>
+        <p className="text-sm text-gray-500">04/06/2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      {/* SECCIÓN 3: OTROS RECURSOS */}
+      <section id="recursos" className="scroll-mt-32 max-w-5xl mx-auto text-center">
+        <h3 className="text-2xl font-bold text-gray-800 mb-4">Otros recursos</h3>
+        <p className="text-gray-600 mb-6">
+          Aquí puedes agregar enlaces a PDFs, documentos, redes sociales, posters, etc.
         </p>
-      </div>
-
-      {/* Grilla de imágenes y videos */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-        {elementos.map((item, index) => (
-          <motion.div
-            key={index}
-            className={`relative ${item.color} p-6 text-white text-lg font-semibold flex items-center justify-center rounded-lg shadow-lg cursor-pointer`}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            onClick={() => setSelectedItem(item)}
+        <div className="flex justify-center gap-4">
+          <a
+            href="/docs/guia-comunicacion.pdf"
+            target="_blank"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow"
           >
-            {item.tipo === "video" ? (
-              <video src={item.src} className="w-full h-full object-cover rounded-lg" />
-            ) : (
-              <img src={item.src} alt={item.tipo} className="w-full h-full object-cover rounded-lg" />
-            )}
-            <FaDownload className="absolute top-2 right-2 text-white opacity-80" />
-          </motion.div>
-        ))}
-      </div>
+            Guía de comunicación (PDF)
+          </a>
+          <a
+            href="/docs/poster.png"
+            target="_blank"
+            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow"
+          >
+            Póster informativo
+          </a>
+        </div>
+      </section>
 
-      {/* Modal emergente */}
+      {/* MODAL EMERGENTE */}
       <AnimatePresence>
         {selectedItem && (
           <motion.div
