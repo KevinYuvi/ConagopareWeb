@@ -87,7 +87,7 @@ export default function Navbar() {
     { href: "/Datos_Rurales", label: "Datos Rurales" },
     {
       label: "Difunde",
-      submenu: [
+       submenu: [
         {
           href: "/Difunde#expo-fotos",
           label: "Exposición de fotos con IA generativa",
