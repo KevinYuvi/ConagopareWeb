@@ -251,14 +251,14 @@ export default function MujeresRuralesPage() {
           <button
             onClick={irPrimeraPagina}
             disabled={paginaActual === 1}
-            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 text-sm rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px]">
+            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 text-sm rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] disabled:opacity-50">
             « Inicio
           </button>
 
           <button
             onClick={irPaginaAnterior}
             disabled={paginaActual === 1}
-            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
             ‹ Anterior
           </button>
 
@@ -269,14 +269,14 @@ export default function MujeresRuralesPage() {
           <button
             onClick={irPaginaSiguiente}
             disabled={paginaActual === totalPaginas}
-            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
             Siguiente ›
           </button>
 
           <button
             onClick={irUltimaPagina}
             disabled={paginaActual === totalPaginas}
-            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 text-sm rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px]">
+            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 text-sm rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] disabled:opacity-50">
             Final »
           </button>
         </div>
