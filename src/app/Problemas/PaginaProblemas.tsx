@@ -293,8 +293,8 @@ const PaginaProblemas = () => {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="bg-white/50 backdrop-blur-md border border-blue-100 shadow-xl hover:shadow-blue-200 transition-all duration-300 rounded-2xl p-6"
               >
-                <p className="text-lg font-semibold text-gray-600 uppercase tracking-wider mb-2">
-                  INFORME DETALLADO
+                <p className="text-lg font-semibold text-gray-600 uppercase tracking-wider mb-2 text-center">
+                  PRONUNCIAMIENTO PARROQUIAL
                 </p>
                 <div className="text-lg text-gray-700 mb-3 grid grid-cols-2 gap-y-2">
                   <span>🗺️ <span className="font-semibold text-gray-800">Provincia:</span> {frase.Provincia}</span>
