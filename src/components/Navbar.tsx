@@ -81,14 +81,19 @@ export default function Navbar() {
         },
       ],
     },
-    { href: "/Equipo", label: "Equipo" },
-    { href: "/Metodologia", label: "Metodología" },
+    {
+      label: "Acerca de",
+      submenu: [
+        { href: "/Metodologia", label: "Metodología" },
+        { href: "/Equipo", label: "Equipo" },
+      ],
+    },
     { href: "/Taller_Periodismo", label: "Taller de Periodismo" },
   ];
 
   return (
     <nav className="w-full z-50">
-      <div className="hidden xl:flex container mx-auto items-center justify-center p-4 bg-white/30 backdrop-blur-md shadow-md fixed top-0 left-0 right-0 z-40">
+      <div className="hidden xl:flex mx-auto items-center justify-center p-2 bg-gradient-to-r from-white/80 via-white/60 to-white/80 backdrop-blur-xl shadow-lg fixed top-0 left-0 right-0 z-40">
         <Link href="/">
           <Image
             src="/ICONO IDENTIDAD RURAL@2x.webp"
@@ -105,14 +110,11 @@ export default function Navbar() {
               const isVozRural = link.label === "Voz Rural";
               const isDifunde = link.label === "Difunde";
               const isDatosCuriosos = link.label === "Datos Curiosos";
-              const isOpen = isVozRural
-                ? vozRuralOpen
-                : isDifunde
-                ? difundeOpen
-                : isDatosCuriosos
-                ? datosCuriososOpen
-                : false;
-
+              const isOpen =
+                (isVozRural && vozRuralOpen) ||
+                (isDifunde && difundeOpen) ||
+                (isDatosCuriosos && datosCuriososOpen) ||
+                submenuAbierto === link.label;
               return (
                 <li
                   key={link.label}
@@ -123,10 +125,12 @@ export default function Navbar() {
                     if (isVozRural) setVozRuralOpen(true);
                     if (isDifunde) setDifundeOpen(true);
                     if (isDatosCuriosos) setDatosCuriososOpen(true);
+                    else setSubmenuAbierto(link.label);
                   }}
                   onMouseLeave={() => {
                     closeTimeout.current = setTimeout(() => {
                       closeAllSubmenus();
+                      setSubmenuAbierto(null);
                     }, 300);
                   }}
                 >
@@ -192,13 +196,13 @@ export default function Navbar() {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="xl:hidden fixed top-4 right-4 z-50 w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-lg"
+        className="xl:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-lg"
       >
         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
       {isOpen && (
-        <div className="xl:hidden fixed inset-0 z-40 backdrop-blur-md bg-white/30 flex flex-col items-center justify-center space-y-6 text-sm font-semibold px-4 py-6 overflow-y-auto">
+        <div className="xl:hidden fixed inset-0 z-40 bg-white flex flex-col items-center justify-center text-center space-y-4 text-lg  font-light tracking-wide">
           {links.map((link) => {
             if ("submenu" in link) {
               const estaAbierto = submenuAbierto === link.label;
@@ -209,21 +213,36 @@ export default function Navbar() {
                     onClick={() =>
                       setSubmenuAbierto(estaAbierto ? null : link.label)
                     }
-                    className="w-full py-2 hover:text-blue-900 font-semibold"
+                    className="w-full py-2 hover:text-blue-800"
                   >
-                    {link.label} {estaAbierto ? "▲" : "▼"}
+                    <span className="flex items-center justify-center gap-2">
+                      {link.label}
+                      <svg
+                        className={`w-4 h-4 transition-transform duration-300 ${estaAbierto ? "rotate-180" : "rotate-0"
+                          }`}
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </span>
                   </button>
 
                   {estaAbierto && (
-                    <div className="flex flex-col pl-4">
+                    <div className="flex flex-col">
                       {link.submenu.map((sublink) => (
                         <Link
                           key={sublink.href}
                           href={sublink.href}
-                          className="py-1 hover:text-blue-800 text-sm"
+                          className="py-2 hover:text-blue-800"
                           onClick={() => setIsOpen(false)}
-                        >
-                          ↳ {sublink.label}
+                        >{sublink.label}
                         </Link>
                       ))}
                     </div>
