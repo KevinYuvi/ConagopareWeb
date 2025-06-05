@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 
 interface Mensaje {
   texto: string;
-  emocion: string; // p.ej. "😄 Alegría"
+  emocion: string;
 }
 
 interface PreguntaData {
@@ -29,19 +29,20 @@ const fadeUpVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
+const subtitulosPorPregunta: Record<number, string> = {
+  1: "¿Por qué su gobierno parroquial es importante para su comunidad?",
+  2: "¿Enumere en orden de prioridad máximo 10 problemáticas que usted identifica en su parroquia?",
+  3: "¿Cuál sería su mensaje para el Ecuador?",
+};
+
 export default function DatosCuriososPage() {
   const [dataRaw, setDataRaw] = useState<PreguntaData[]>([]);
   const [selectedPregunta, setSelectedPregunta] = useState(1);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Colores para el gráfico
   const colors = ["#4caf50", "#f44336", "#ff9800", "#2196f3", "#9c27b0"];
 
-  // Leyendas por pregunta
-  const leyendasPorPregunta: Record<
-    number,
-    { color: string; label: string }[]
-  > = {
+  const leyendasPorPregunta: Record<number, { color: string; label: string }[]> = {
     1: [
       { color: "#4caf50", label: "😐 Neutralidad" },
       { color: "#f44336", label: "😊 Alegría / Optimismo" },
@@ -96,31 +97,23 @@ export default function DatosCuriososPage() {
   const cuadros = [
     {
       color: "#f44336",
-      text: "Lorem ipsum dolor sit amet consectetur.",
-      style: { top: 20, left: 20, width: 160, height: 120, color: "white" },
+      text: "Hubo quien nos respondió con enojo: que no enviaría nada, que no tenía tiempo...",
+      style: { top: 20, left: 160, width: 200, height: 180, color: "white" },
     },
     {
       color: "#2196f3",
-      text:
-        "Lorem ipsum dolor sit amet consectetur. Consectetur sit neque eu egestas nunc dolor tincidunt. Sed odio at diam nisi dui. Fermentum consectetur ornare purus fames nulla iaculis. In dapibus malesuada nullam.",
-      style: { top: 70, left: 130, width: 200, height: 160, color: "white" },
+      text: "Algunas autoridades prefirieron enviar un audio o texto...",
+      style: { top: 200, left: 250, width: 230, height: 160, color: "white" },
     },
     {
       color: "#ffeb3b",
-      text:
-        "Algunas personas se negaron a grabar un video por temor a represalias, prefiriendo mantener su identidad en el anonimato.",
-      style: { top: 30, right: 200, width: 180, height: 140, color: "black" },
+      text: "Dos presidentes nos respondieron con firmeza: No estamos para hacer su trabajo...",
+      style: { top: 30, right: 200, width: 280, height: 270, color: "black" },
     },
     {
       color: "#ffeb3b",
-      text:
-        "Lorem ipsum dolor sit amet consectetur. Consectetur sit neque eu egestas nunc dolor tincidunt. Sed odio at diam nisi dui. Fermentum consectetur ornare purus fames nulla iaculis. In dapibus malesuada nullam.",
-      style: { bottom: 20, left: 1, width: 160, height: 160, color: "black" },
-    },
-    {
-      color: "#f44336",
-      text: "Lorem ipsum dolor sit amet consectetur. Nec quis.",
-      style: { bottom: 20, right: 300, width: 160, height: 120, color: "white" },
+      text: "Una autoridad parroquial nos dijo: 'Por ahora no les puedo ayudar...'",
+      style: { bottom: 40, left: 40, width: 160, height: 240, color: "black" },
     },
   ];
 
@@ -131,219 +124,121 @@ export default function DatosCuriososPage() {
         whileInView="visible"
         variants={fadeUpVariant}
         viewport={{ once: true }}
-        style={{
-          fontWeight: "bold",
-          fontSize: 26,
-          marginBottom: 10,
-          textAlign: "center",
-        }}
+        style={{ fontWeight: "bold", fontSize: 26, marginBottom: 10, textAlign: "center" }}
       >
         Datos Curiosos
       </motion.h1>
-      <motion.p
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUpVariant}
-        viewport={{ once: true }}
-        style={{
-          fontSize: 14,
-          color: "#555",
-          marginBottom: 40,
-          textAlign: "center",
-        }}
-      >
-        Los datos curiosos son fragmentos de información relevantes pero difíciles
-        de clasificar dentro de las categorías principales del proyecto. A través
-        de esta sección, buscamos resaltar esas voces únicas que aportan una
-        perspectiva diferente sobre la realidad rural.
-      </motion.p>
 
-      {/* Botones */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUpVariant}
-        viewport={{ once: true }}
-        style={{ marginBottom: 20, textAlign: "center" }}
-      >
-        {[1, 2, 3].map((n) => (
-          <button
-            key={n}
-            onClick={() => setSelectedPregunta(n)}
-            style={{
-              marginRight: 8,
-              padding: "0.5rem 1rem",
-              background: selectedPregunta === n ? "#0070f3" : "#eee",
-              color: selectedPregunta === n ? "#fff" : "#000",
-              border: "none",
-              borderRadius: 4,
-              cursor: "pointer",
-              transition: "all 0.3s ease",
-              outline: "none",
-            }}
-            onMouseEnter={(e) => {
-              const target = e.currentTarget;
-              if (selectedPregunta !== n) {
-                target.style.backgroundColor = "#005bb5";
-                target.style.color = "#fff";
-              }
-            }}
-            onMouseLeave={(e) => {
-              const target = e.currentTarget;
-              if (selectedPregunta !== n) {
-                target.style.backgroundColor = "#eee";
-                target.style.color = "#000";
-              }
-            }}
-            onFocus={(e) => {
-              const target = e.currentTarget;
-              target.style.boxShadow = "0 0 8px #0070f3";
-            }}
-            onBlur={(e) => {
-              const target = e.currentTarget;
-              target.style.boxShadow = "none";
-            }}
-          >
-            Pregunta {n}
-          </button>
-        ))}
-      </motion.div>
-
-      {/* Contenedor gráfico + leyenda */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUpVariant}
-        viewport={{ once: true }}
-        style={{
-          display: "flex",
-          flexDirection: isMobile ? "column" : "row",
-          gap: 30,
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
-        {/* Gráfico */}
-        <div style={{ flex: "1 1 400px", minWidth: 280, height: 320 }}>
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart
-              data={chartData}
-              margin={{ top: 20, right: 20, left: 0, bottom: 40 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis
-                dataKey="emoji"
-                tick={{ fontSize: 24 }}
-                interval={0}
-                angle={-20}
-                textAnchor="end"
-              />
-              <YAxis allowDecimals={false} />
-              <Tooltip formatter={(value: number) => [`${value}`, "Veces"]} />
-              <Bar dataKey="count" fill="#82ca9d">
-                {chartData.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
-                ))}
-                <LabelList dataKey="count" position="top" />
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-
-        {/* Leyenda */}
-        <div
-          style={{
-            flex: "0 0 240px",
-            display: "flex",
-            flexDirection: "column",
-            gap: 12,
-            justifyContent: "center",
-            userSelect: "none",
-            minWidth: 200,
-          }}
+      <motion.section id="emociones" className="scroll-mt-38">
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeUpVariant}
+          viewport={{ once: true }}
+          style={{ fontWeight: "bold", fontSize: 22, marginBottom: 10, textAlign: "center" }}
         >
-          {leyendaActual.map(({ color, label }) => (
-            <div
-              key={label}
+          Emociones de las y los entrevistados
+        </motion.h2>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeUpVariant}
+          viewport={{ once: true }}
+          style={{ marginBottom: 20, textAlign: "center" }}
+        >
+          {[1, 2, 3].map((n) => (
+            <button
+              key={n}
+              onClick={() => setSelectedPregunta(n)}
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 12,
-                padding: "8px 12px",
-                borderRadius: 20,
-                backgroundColor: "#f0f0f0",
-                fontSize: 14,
-                transition: "transform 0.3s ease",
-                cursor: "default",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLDivElement).style.transform = "scale(1.05)";
-                (e.currentTarget as HTMLDivElement).style.boxShadow =
-                  "0 4px 12px rgba(0,0,0,0.15)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
-                (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
+                marginRight: 8,
+                padding: "0.5rem 1rem",
+                background: selectedPregunta === n ? "#0070f3" : "#eee",
+                color: selectedPregunta === n ? "#fff" : "#000",
+                border: "none",
+                borderRadius: 4,
+                cursor: "pointer",
               }}
             >
-              <div
-                style={{
-                  width: 22,
-                  height: 22,
-                  backgroundColor: color,
-                  borderRadius: "50%",
-                  border: "1px solid #ccc",
-                }}
-              />
-              <span>{label}</span>
-            </div>
+              Pregunta {n}
+            </button>
+          ))}
+        </motion.div>
+
+        <motion.h3
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeUpVariant}
+          viewport={{ once: true }}
+          style={{ textAlign: "center", fontWeight: 700, fontSize: 18, marginBottom: 14, color: "#505050" }}
+        >
+          {subtitulosPorPregunta[selectedPregunta]}
+        </motion.h3>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeUpVariant}
+          viewport={{ once: true }}
+          style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 30, flexWrap: "wrap", justifyContent: "center" }}
+        >
+          <div style={{ flex: "1 1 400px", minWidth: 280, height: 320 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: 40 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="emoji" tick={{ fontSize: 24 }} interval={0} angle={-20} textAnchor="end" />
+                <YAxis allowDecimals={false} />
+                <Tooltip formatter={(value: number) => [`${value}`, "Veces"]} />
+                <Bar dataKey="count" fill="#82ca9d">
+                  {chartData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+                  ))}
+                  <LabelList dataKey="count" position="top" />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+
+          <div style={{ flex: "0 0 240px", display: "flex", flexDirection: "column", gap: 12, justifyContent: "center", userSelect: "none", minWidth: 200 }}>
+            {leyendaActual.map(({ color, label }) => (
+              <div key={label} style={{ display: "flex", alignItems: "center", gap: 12, padding: "8px 12px", borderRadius: 20, backgroundColor: "#f0f0f0", fontSize: 14 }}>
+                <div style={{ width: 22, height: 22, backgroundColor: color, borderRadius: "50%", border: "1px solid #ccc" }} />
+                <span>{label}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </motion.section>
+
+     <motion.section id="anecdotas" style={{ marginTop: "160px", scrollMarginTop: "100px" }}>
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeUpVariant}
+          viewport={{ once: true }}
+          style={{ fontWeight: "bold", fontSize: 22, marginBottom: 10, textAlign: "center" }}
+        >
+          Anécdotas Random
+        </motion.h2>
+
+        <div style={{ position: "relative", width: "100%", height: 300, marginTop: 40, marginBottom: 60 }}>
+          {cuadros.map(({ color, text, style }, i) => (
+            <motion.div
+              key={i}
+              initial="hidden"
+              whileInView="visible"
+              whileHover={{ y: -20, scale: 1.08, boxShadow: "0 12px 32px rgba(0,0,0,0.25)", zIndex: 10 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeUpVariant}
+              style={{ position: "absolute", backgroundColor: color, padding: 20, borderRadius: 8, fontSize: 14, cursor: "pointer", boxShadow: "0 2px 8px rgba(0,0,0,0.12)", zIndex: 1, ...style }}
+            >
+              {text}
+            </motion.div>
           ))}
         </div>
-      </motion.div>
-
-      {/* Cuadros coloridos debajo */}
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          height: 300,
-          marginTop: 40,
-          marginBottom: 60,
-        }}
-      >
-        {cuadros.map(({ color, text, style }, i) => (
-          <motion.div
-            key={i}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUpVariant}
-            style={{
-              position: "absolute",
-              backgroundColor: color,
-              padding: 20,
-              borderRadius: 8,
-              fontSize: 14,
-              cursor: "default",
-              transition: "transform 0.3s ease, box-shadow 0.3s ease",
-              boxShadow: "none",
-              ...style,
-            }}
-            onMouseEnter={(e) => {
-              const el = e.currentTarget;
-              el.style.transform = "scale(1.05)";
-              el.style.boxShadow = "0 8px 20px rgba(0,0,0,0.25)";
-            }}
-            onMouseLeave={(e) => {
-              const el = e.currentTarget;
-              el.style.transform = "scale(1)";
-              el.style.boxShadow = "none";
-            }}
-          >
-            {text}
-          </motion.div>
-        ))}
-      </div>
+      </motion.section>
     </div>
   );
 }
