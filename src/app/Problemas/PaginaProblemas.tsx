@@ -5,14 +5,24 @@ import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
 import * as XLSX from 'xlsx';
 import EcuadorSVG from './EcuadorSVG';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const regionesMap: Record<string, string[]> = {
   Sierra: ["Carchi", "Imbabura", "Pichincha", "Cotopaxi", "Tungurahua", "Chimborazo", "Bolívar", "Cañar", "Azuay", "Loja"],
-  Costa: ["Esmeraldas", "Manabí", "Guayas", "Santa Elena", "El Oro", "Los Ríos","Santo Domingo de los Tsáchilas"],
+  Costa: ["Esmeraldas", "Manabí", "Guayas", "Santa Elena", "El Oro", "Los Ríos", "Santo Domingo de los Tsáchilas"],
   Amazonía: ["Sucumbíos", "Napo", "Orellana", "Pastaza", "Morona Santiago", "Zamora Chinchipe"],
   Insular: ["Galápagos"]
 };
+
+// Mezcla un array de forma aleatoria
+function shuffleArray<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 type DatoResumen = {
   Provincia: string;
@@ -21,10 +31,11 @@ type DatoResumen = {
 
 type DatoFrase = {
   Provincia: string;
-  Canton?: string;
+  Cantón?: string;
   Parroquia?: string;
   Presidente?: string;
   Frase2?: string;
+  Categoria?: string;
 };
 
 const fadeUp = {
@@ -39,12 +50,17 @@ const fadeUp = {
 const PaginaProblemas = () => {
   const [resumen, setResumen] = useState<DatoResumen[]>([]);
   const [frases, setFrases] = useState<DatoFrase[]>([]);
+  const [frasesFiltradas, setFrasesFiltradas] = useState<DatoFrase[]>([]);
+  const [frasesOrdenadas, setFrasesOrdenadas] = useState<DatoFrase[]>([]);
   const [regionSeleccionada, setRegionSeleccionada] = useState("Sierra");
   const [provinciaSeleccionada, setProvinciaSeleccionada] = useState("Azuay");
-  const [fraseActual, setFraseActual] = useState<DatoFrase | null>(null);
-  const [showFrase, setShowFrase] = useState(true);
+  const [provinciasOrdenadas, setProvinciasOrdenadas] = useState<string[]>([]);
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState<string | null>(null);
+  const [index, setIndex] = useState(0);
 
+  // Cargar datos de los archivos Excel
   useEffect(() => {
+    // Archivo de resumen
     fetch('/archivo_resumen.xlsx')
       .then(res => res.arrayBuffer())
       .then(data => {
@@ -54,34 +70,63 @@ const PaginaProblemas = () => {
         setResumen(json);
       });
 
+    // Archivo de frases (con categorización)
     fetch('/frases_categorizadas.xlsx')
       .then(res => res.arrayBuffer())
       .then(data => {
         const workbook = XLSX.read(data, { type: 'array' });
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
-        const json = XLSX.utils.sheet_to_json<DatoFrase>(sheet);
-        setFrases(json);
+        const raw = XLSX.utils.sheet_to_json<any>(sheet);
+
+        // Normaliza la columna “Categoría” (con tilde) a “Categoria” sin tilde
+        const parsed: DatoFrase[] = raw.map((f: any) => ({
+          Provincia: f.Provincia,
+          Cantón: f.Cantón,
+          Parroquia: f.Parroquia,
+          Presidente: f.Presidente,
+          Frase2: f.Frase2,
+          Categoria: f.Categoria || f["Categoría"] || null,
+        }));
+
+        setFrases(parsed);
       });
   }, []);
 
+  // Cuando cambia la región, baraja sus provincias
   useEffect(() => {
-    cambiarFraseAleatoria();
-  }, [provinciaSeleccionada, frases]);
+    const lista = regionesMap[regionSeleccionada] || [];
+    setProvinciasOrdenadas(shuffleArray(lista));
+  }, [regionSeleccionada]);
 
-  const cambiarFraseAleatoria = () => {
-    const candidatas = frases.filter(f => f.Provincia?.trim().toLowerCase() === provinciaSeleccionada.trim().toLowerCase());
-    if (candidatas.length > 0) {
-      setShowFrase(false);
-      setTimeout(() => {
-        const aleatoria = candidatas[Math.floor(Math.random() * candidatas.length)];
-        setFraseActual(aleatoria);
-        setShowFrase(true);
-      }, 200);
-    } else {
-      setFraseActual(null);
+  // Filtra por categoría y luego baraja las frases resultantes
+  useEffect(() => {
+    const filtradas = frases.filter(f =>
+      !categoriaSeleccionada || f.Categoria === categoriaSeleccionada
+    );
+    setFrasesFiltradas(filtradas);
+  }, [categoriaSeleccionada, frases]);
+
+  // Cada vez que cambien las frases filtradas, mézclalas
+  useEffect(() => {
+    setFrasesOrdenadas(shuffleArray(frasesFiltradas));
+    setIndex(0);
+  }, [frasesFiltradas]);
+
+  const frasesVisibles = frasesOrdenadas.slice(index, index + 2);
+
+  const handleNext = () => {
+    if (index + 2 < frasesOrdenadas.length) {
+      setIndex(index + 2);
     }
   };
 
+  const handlePrev = () => {
+    if (index > 0) {
+      setIndex(index - 2);
+    }
+  };
+
+  // Genera el top 3 de problemáticas por provincia (para tooltip del mapa)
   const generarTop3PorProvincia = () => {
     const agrupado: Record<string, Record<string, number>> = {};
     resumen.forEach(({ Provincia, Categoria }) => {
@@ -90,27 +135,28 @@ const PaginaProblemas = () => {
     });
 
     const resultado: Record<string, string[]> = {};
-    Object.entries(agrupado).forEach(([provincia, categorias]) => {
-      const top3 = Object.entries(categorias)
+    Object.entries(agrupado).forEach(([prov, cats]) => {
+      const top3 = Object.entries(cats)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 3)
         .map(([cat]) => cat);
-      resultado[provincia] = top3;
+      resultado[prov] = top3;
     });
 
     return resultado;
   };
 
+  // Genera un gráfico de barras a partir de un filtro de DatoResumen
   const generarGrafico = (
     filtroFn: (row: DatoResumen) => boolean,
     titulo: string,
-    index: number
+    idx: number
   ) => {
     const conteo: Record<string, number> = {};
     resumen.filter(filtroFn).forEach((row) => {
-      const categoria = row.Categoria;
-      if (categoria) {
-        conteo[categoria] = (conteo[categoria] || 0) + 1;
+      const cat = row.Categoria;
+      if (cat) {
+        conteo[cat] = (conteo[cat] || 0) + 1;
       }
     });
 
@@ -123,7 +169,11 @@ const PaginaProblemas = () => {
       datasets: [{
         label: 'Total de menciones',
         data: topCategorias.map(item => item[1]),
-        backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f', '#edc948', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ab'],
+        backgroundColor: [
+          '#4e79a7', '#f28e2b', '#e15759', '#76b7b2',
+          '#59a14f', '#edc948', '#b07aa1', '#ff9da7',
+          '#9c755f', '#bab0ab'
+        ],
         borderRadius: 5,
       }]
     };
@@ -139,51 +189,39 @@ const PaginaProblemas = () => {
     };
 
     return (
-      <motion.div className="bg-white p-6 rounded-lg shadow-md" custom={index} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeUp}>
+      <motion.div
+        key={idx}
+        className="bg-white p-6 rounded-lg shadow-md"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeUp}
+        custom={idx}
+      >
         <h3 className="text-xl font-semibold mb-4">{titulo}</h3>
         <Bar data={data} options={options} />
       </motion.div>
     );
   };
 
-  const provinciasFiltradas = regionesMap[regionSeleccionada] || [];
   const dataTooltip = generarTop3PorProvincia();
+  const categoriasUnicas = [...new Set(frases.map(f => f.Categoria).filter(Boolean))];
 
   return (
     <div className="px-4 py-12 max-w-6xl mx-auto">
       <h1 className="text-4xl font-bold text-center mb-6">Problemas Rurales en el Ecuador</h1>
 
-<div className="mapa-wrapper">
-  <div className="mapa-container">
-    <EcuadorSVG data={dataTooltip} />
-  </div>
-</div>
+      {/* Mapa SVG interactiv o */}
+      <div className="mapa-wrapper mb-10">
+        <div className="mapa-container">
+          <EcuadorSVG data={dataTooltip} />
+        </div>
+      </div>
 
+      {/* Gráfico nacional */}
+      {generarGrafico(() => true, "Problemas a Nivel Nacional", 0)}<br />
 
-      {generarGrafico(() => true, "Problemas a Nivel Nacional", 0)}<br></br>
-
-      <AnimatePresence mode="wait">
-        {showFrase && fraseActual && (
-          <motion.div
-            key={fraseActual.Frase2}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.4 }}
-            className="bg-blue-50 p-6 rounded shadow text-center mb-10"
-          >
-            <p className="text-gray-700 text-sm uppercase tracking-wide font-bold">Autoridad Parroquial</p>
-            <p className="text-2xl font-semibold text-gray-900">{fraseActual.Presidente}</p>
-            <div className="border-l-4 border-blue-400 pl-4 mt-4 max-w-3xl mx-auto text-left">
-              <p className="text-xl text-gray-700 italic leading-relaxed">“{fraseActual.Frase2}”</p>
-            </div>
-            <button onClick={cambiarFraseAleatoria} className="mt-6 bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded shadow transition">
-              Cambiar frase aleatoria
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
+      {/* 🔽 Gráficos por región y provincia (provincias barajadas) */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
         <div>
           <h2 className="text-2xl font-semibold mb-4">🔍 Problemas por Región</h2>
@@ -214,7 +252,7 @@ const PaginaProblemas = () => {
             value={provinciaSeleccionada}
             className="w-full border border-gray-300 rounded px-3 py-2 mb-4"
           >
-            {provinciasFiltradas.map((p) => (
+            {provinciasOrdenadas.map((p) => (
               <option key={p} value={p}>{p}</option>
             ))}
           </select>
@@ -223,6 +261,64 @@ const PaginaProblemas = () => {
             `Problemas en la provincia ${provinciaSeleccionada}`,
             2
           )}
+        </div>
+      </div>
+          <br></br>
+      {/* 🔽 Filtro por Problemática y carrusel de frases */}
+      <div className="mb-10">
+        <label className="block mb-2 text-base font-semibold text-gray-700">
+          Filtrar frases por problemática:
+        </label>
+        <select
+          onChange={(e) => setCategoriaSeleccionada(e.target.value || null)}
+          className="w-full border border-gray-300 rounded px-3 py-2 mb-6 text-base"
+        >
+          <option value="">Todas las problemáticas</option>
+          {categoriasUnicas.map((cat) => (
+            <option key={cat} value={cat}>{cat}</option>
+          ))}
+        </select>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {frasesVisibles.length === 0 ? (
+            <div className="text-center text-gray-500 col-span-full">
+              No hay frases para esta problemática.
+            </div>
+          ) : (
+            frasesVisibles.map((frase, i) => (
+              <motion.div
+                key={`${frase.Frase2}-${i}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="bg-white/50 backdrop-blur-md border border-blue-100 shadow-xl hover:shadow-blue-200 transition-all duration-300 rounded-2xl p-6"
+              >
+                <p className="text-lg font-semibold text-gray-600 uppercase tracking-wider mb-2">
+                  INFORME DETALLADO
+                </p>
+                <div className="text-lg text-gray-700 mb-3 grid grid-cols-2 gap-y-2">
+                  <span>🗺️ <span className="font-semibold text-gray-800">Provincia:</span> {frase.Provincia}</span>
+                  <span>🏙️ <span className="font-semibold text-gray-800">Cantón:</span> {frase.Cantón || '-'}</span>
+                  <span>📍 <span className="font-semibold text-gray-800">Parroquia:</span> {frase.Parroquia || '-'}</span>
+                  <span>👤 <span className="font-semibold text-gray-800">Presidente:</span> {frase.Presidente || '-'}</span>
+                </div>
+                <div className="border-l-4 border-blue-500 pl-4">
+                  <p className="text-lg text-gray-800 italic leading-relaxed">
+                    “{frase.Frase2}”
+                  </p>
+                </div>
+              </motion.div>
+            ))
+          )}
+        </div>
+
+        <div className="flex justify-center gap-4 mt-6">
+          <button onClick={handlePrev} className="bg-gray-300 hover:bg-gray-400 text-sm px-4 py-2 rounded">
+            Anterior
+          </button>
+          <button onClick={handleNext} className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded">
+            Siguiente
+          </button>
         </div>
       </div>
     </div>
