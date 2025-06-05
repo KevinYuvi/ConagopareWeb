@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 type LinkItem = {
   href: string;
@@ -21,41 +21,29 @@ type NavLink = LinkItem | LinkWithSubmenu;
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [vozRuralOpen, setVozRuralOpen] = useState(false); // Estado para el submenu Voz Rural
-  const [datosCuriososOpen, setDatosCuriososOpen] = useState(false); // Estado para el submenu Datos Curiosos
+  const [submenuAbierto, setSubmenuAbierto] = useState<string | null>(null);
 
   // Referencias para detectar clicks fuera de los submenus
-  const vozRuralRef = useRef<HTMLUListElement>(null);
-  const datosCuriososRef = useRef<HTMLUListElement>(null);
+  const submenuRefs = {
+    vozRural: useRef<HTMLUListElement>(null),
+    datosCuriosos: useRef<HTMLUListElement>(null),
+    difunde: useRef<HTMLUListElement>(null),
+  };
 
   // Función para cerrar submenu si haces click fuera
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (
-        vozRuralRef.current &&
-        !vozRuralRef.current.contains(e.target as Node) &&
-        !(e.target as HTMLElement).closest('button[data-submenu-button="vozRural"]')
-      ) {
-        setVozRuralOpen(false);
-      }
-      if (
-        datosCuriososRef.current &&
-        !datosCuriososRef.current.contains(e.target as Node) &&
-        !(e.target as HTMLElement).closest('button[data-submenu-button="datosCuriosos"]')
-      ) {
-        setDatosCuriososOpen(false);
-      }
+      Object.keys(submenuRefs).forEach((key) => {
+        const submenu = submenuRefs[key as keyof typeof submenuRefs].current;
+        if (submenu && !submenu.contains(e.target as Node)) {
+          setSubmenuAbierto(null); // Cerrar submenu
+        }
+      });
     };
+
     document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
+    return () => document.removeEventListener("click", handleClickOutside);
   }, []);
-  const [difundeOpen, setDifundeOpen] = useState(false);
-  const [submenuAbierto, setSubmenuAbierto] = useState<string | null>(null);
-
-  let timeoutId: NodeJS.Timeout;
 
   const links: NavLink[] = [
     { href: "/", label: "Inicio" },
@@ -86,8 +74,9 @@ export default function Navbar() {
     { href: "/Mujeres_Rurales", label: "Mujeres Rurales" },
     { href: "/Datos_Rurales", label: "Datos Rurales" },
     {
+      href: "/Difunde",
       label: "Difunde",
-       submenu: [
+      submenu: [
         {
           href: "/Difunde#expo-fotos",
           label: "Exposición de fotos con IA generativa",
@@ -132,12 +121,12 @@ export default function Navbar() {
                 <li
                   key={link.label}
                   className="relative"
-                  onMouseEnter={() => setVozRuralOpen(true)}
-                  onMouseLeave={() => setVozRuralOpen(false)}
+                  onMouseEnter={() => setSubmenuAbierto(link.label)}
+                  onMouseLeave={() => setSubmenuAbierto(null)}
                 >
                   <button
                     className="hover:text-cyan-600 flex items-center gap-1"
-                    onClick={() => setVozRuralOpen((prev) => !prev)}
+                    onClick={() => setSubmenuAbierto((prev) => (prev === link.label ? null : link.label))}
                   >
                     <Link href={link.href} className="cursor-pointer">
                       {link.label}
@@ -153,14 +142,14 @@ export default function Navbar() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  {vozRuralOpen && (
-                    <ul className="absolute top-full left-0 mt-1 w-max bg-white border border-gray-300 rounded shadow-lg z-50">
-                      {link.submenu.map((sublink) => (
+                  {submenuAbierto === link.label && (
+                    <ul ref={submenuRefs[link.label as keyof typeof submenuRefs]} className="absolute top-full left-0 mt-1 w-max bg-white border border-gray-300 rounded shadow-lg z-50">
+                      {link.submenu?.map((sublink) => (
                         <li key={sublink.href}>
                           <Link
                             href={sublink.href}
                             className="block px-4 py-2 whitespace-nowrap hover:bg-cyan-100"
-                            onClick={() => setVozRuralOpen(false)}
+                            onClick={() => setSubmenuAbierto(null)}
                           >
                             {sublink.label}
                           </Link>
@@ -196,7 +185,6 @@ export default function Navbar() {
         <div className="xl:hidden fixed inset-0 z-40 backdrop-blur-md bg-white/30 flex flex-col items-center justify-center space-y-6 text-sm font-semibold px-4 py-6 overflow-y-auto">
           {links.map((link) => {
             if ("submenu" in link) {
-              const estaAbierto = submenuAbierto === link.label;
               return (
                 <div key={link.label} className="flex flex-col items-center">
                   <p className="font-semibold">{link.label}</p>

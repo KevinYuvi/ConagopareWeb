@@ -348,7 +348,7 @@ export default function DatosCuriososPage() {
       {/* Sección de anécdotas random */}
 <section
   id="anecdotas"
-  style={{ marginTop: "100px" }}
+  style={{ marginTop: "200px" }}
 >
   <motion.h2
     initial="hidden"

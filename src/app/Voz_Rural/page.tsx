@@ -57,7 +57,6 @@ export default function VozRuralPage() {
   const [isMobile, setIsMobile] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [highlightedSection, setHighlightedSection] = useState<string | null>(null);
-
   const categoriasPrincipales = ["🏛️ Gobierno parroquial", "🇪🇨 Mensaje para el Ecuador"];
   const [subcategoriasPorCategoria, setSubcategoriasPorCategoria] = useState<{ [key: string]: string[] }>({});
 
@@ -339,7 +338,7 @@ export default function VozRuralPage() {
         viewport={{ once: true, amount: 0.3 }}
         variants={highlightVariant}
         animate={highlightedSection === "importancia-gobierno" ? "highlighted" : "normal"}
-        className="mb-12 rounded-lg p-5"
+        className="mb-12 rounded-lg p-5 pt-21"
       >
         <h2 className="text-3xl font-heading font-bold mb-5">
           ¿Por qué los Gobiernos Parroquiales son importantes?
@@ -471,7 +470,7 @@ export default function VozRuralPage() {
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeUpVariant}
         animate={highlightedSection === "mensaje-parroquias" ? "highlighted" : "normal"}
-        className="mb-12 rounded-lg p-5"
+        className="mb-12 rounded-lg p-5 pt-18"
       >
         <h2 className="text-3xl font-heading font-bold mb-5">Mensaje de las parroquias rurales al Ecuador</h2>
 
@@ -592,17 +591,6 @@ export default function VozRuralPage() {
           </motion.div>
         </div>
       </motion.section>
-
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-10 right-10 bg-blue-600 text-white rounded-full w-12 h-12 text-xl shadow-lg select-none"
-          aria-label="Volver arriba"
-          title="Volver arriba"
-        >
-          ↑
-        </button>
-      )}
     </div>
   );
 }
