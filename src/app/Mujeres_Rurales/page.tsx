@@ -142,7 +142,7 @@ export default function MujeresRuralesPage() {
     scales: {
       y: {
         beginAtZero: true,
-        ticks: { stepSize: 1 },
+        ticks: { stepSize:20 },
       },
     },
   };
@@ -161,141 +161,134 @@ export default function MujeresRuralesPage() {
   const irPaginaSiguiente = () => setPaginaActual((prev) => Math.min(prev + 1, totalPaginas));
 
   return (
-    <div className="px-4 py-12 max-w-6xl mx-auto">
-      <h1 className="text-3xl font-heading font-bold text-center mb-4">Mujeres Presidentas</h1>
-      <p className="text-center max-w-3xl mx-auto pr-10 pl-10 mb-6">
-        El liderazgo femenino en las parroquias rurales refleja la fuerza, perseverancia y compromiso de las mujeres con el desarrollo de sus comunidades...
+    <div className="w-full max-w-6xl p-6 mx-auto ">
+      <h1 className="text-3xl font-heading text-center mb-6">
+        Mujeres Presidentas
+      </h1>
+      <p className="text-center max-w-3xl mx-auto px-8 mb-10">
+        El liderazgo femenino en las parroquias rurales refleja la fuerza, perseverancia y compromiso de las mujeres con el desarrollo de sus comunidades.
       </p>
 
-      <div className="px-6 py-10 max-w-6xl mx-auto">
-        <h1 className="text-3xl font-heading font-bold text-center mb-4">Mujeres Presidentas por Año</h1>
-        <p className="text-center max-w-xl mx-auto text-base mb-6">
+      <div className="w-full max-w-6xl mx-auto flex flex-col items-center justify-between gap-6">
+        <h1 className="text-3xl font-heading text-center">
+          Mujeres Presidentas por Año
+        </h1>
+        <p className="text-center max-w-3xl mx-auto">
           En 2023, con 182 presidentas, se logró el mayor avance en equidad de género.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-          <select value={region} onChange={(e) => setRegion(e.target.value)} className="p-2 border rounded">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <select value={region} onChange={(e) => setRegion(e.target.value)} className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400">
             <option value="">Escoge una región</option>
             {valoresUnicos("REGIÓN").map((r) => <option key={r} value={r}>{r}</option>)}
           </select>
 
-          <select value={provincia} onChange={(e) => handleProvinciaChange(e.target.value)} className="p-2 border rounded">
+          <select value={provincia} onChange={(e) => handleProvinciaChange(e.target.value)} className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400">
             <option value="">Escoge una provincia</option>
             {provinciasFiltradas.map((p) => <option key={p} value={p}>{p}</option>)}
           </select>
 
-          <select value={canton} onChange={(e) => handleCantonChange(e.target.value)} className="p-2 border rounded">
+          <select value={canton} onChange={(e) => handleCantonChange(e.target.value)} className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400">
             <option value="">Escoge un cantón</option>
             {cantonesFiltrados.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
 
-          <select value={parroquia} onChange={(e) => handleParroquiaChange(e.target.value)} className="p-2 border rounded">
+          <select value={parroquia} onChange={(e) => handleParroquiaChange(e.target.value)} className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400">
             <option value="">Escoge una parroquia</option>
             {parroquiasFiltradas.map((p) => <option key={p} value={p}>{p}</option>)}
           </select>
         </div>
 
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center gap-2 ">
           <button
             onClick={consultarDatos}
-            className="cursor-pointer transition-all bg-green-600 text-white px-6 py-2 rounded-lg
-      border-green-700 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
-      hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-5">
+            className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2">
             Consultar
           </button>
           <button
             onClick={limpiarFiltros}
-            className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
-      border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
-      hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-5">
+            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] m-2">
             Limpiar filtros
           </button>
         </div>
 
-        <div className="h-96">
+        <div className="w-full max-w-2xl h-[400px] mx-auto p-5 mb-10">
           <Bar data={chartData} options={chartOptions} />
         </div>
-<div className="w-full overflow-x-auto mt-12 mb-6 rounded-xl shadow-md bg-white">
-  <h2 className="text-2xl font-bold mb-4 text-center">Listado de Mujeres Presidentas</h2>
-  <table className="min-w-full text-sm text-center border-collapse">
-    <thead>
-      <tr className="bg-blue-600 text-white">
-        <th className="px-3 py-2 w-20">AÑO</th>
-        <th className="px-3 py-2 w-32">REGIÓN</th>
-        <th className="px-3 py-2 w-40">PROVINCIA</th>
-        <th className="px-3 py-2 w-40">CANTÓN</th>
-        <th className="px-3 py-2 w-40">PARROQUIA</th>
-        <th className="px-3 py-2 w-56 text-left">NOMBRE</th>
-      </tr>
-    </thead>
-    <tbody>
-      {datosPaginados.map((item, index) => (
-        <tr key={index} className="odd:bg-white even:bg-gray-100 hover:bg-blue-50 transition">
-          <td className="px-3 py-2">{item.AÑO}</td>
-          <td className="px-3 py-2">{item.REGIÓN}</td>
-          <td className="px-3 py-2">{item.PROVINCIA}</td>
-          <td className="px-3 py-2">{item.CANTÓN}</td>
-          <td className="px-3 py-2">{item.PARROQUIA}</td>
-          <td className="px-3 py-2 text-left">{item.NOMBRE}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
+        <h2 className="text-3xl font-bold text-center">
+          Listado de Mujeres Presidentas
+        </h2>
+        <div className="w-full overflow-x-auto rounded-lg shadow-2xl">
 
-  
-</div>
+          <table className="min-w-full text-sm text-center border-collapse">
+            <thead>
+              <tr className="bg-blue-600 text-white">
+                <th className="px-3 py-2 w-20">AÑO</th>
+                <th className="px-3 py-2 w-32">REGIÓN</th>
+                <th className="px-3 py-2 w-40">PROVINCIA</th>
+                <th className="px-3 py-2 w-40">CANTÓN</th>
+                <th className="px-3 py-2 w-40">PARROQUIA</th>
+                <th className="px-3 py-2 w-56">NOMBRE</th>
+              </tr>
+            </thead>
+            <tbody>
+              {datosPaginados.map((item, index) => (
+                <tr key={index} className=" even:bg-gray-200 hover:bg-gray-300 transition">
+                  <td className="px-3 py-2">{item.AÑO}</td>
+                  <td className="px-3 py-2">{item.REGIÓN}</td>
+                  <td className="px-3 py-2">{item.PROVINCIA}</td>
+                  <td className="px-3 py-2">{item.CANTÓN}</td>
+                  <td className="px-3 py-2">{item.PARROQUIA}</td>
+                  <td className="px-3 py-2 text-left">{item.NOMBRE}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
+        {/* Paginación */}
+        <div className="flex flex-wrap justify-center items-center gap-3 p-2 mb-10">
+          <button
+            onClick={irPrimeraPagina}
+            disabled={paginaActual === 1}
+            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 text-sm rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px]">
+            « Inicio
+          </button>
 
+          <button
+            onClick={irPaginaAnterior}
+            disabled={paginaActual === 1}
+            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+            ‹ Anterior
+          </button>
 
-{/* Paginación */}
-<div className="flex flex-wrap justify-center items-center gap-3 mt-6 mb-10 px-2">
-  <button
-    onClick={irPrimeraPagina}
-    disabled={paginaActual === 1}
-    className="cursor-pointer w-full sm:w-auto transition-all bg-red-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
-    border-red-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
-    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
-    « Inicio
-  </button>
+          <span className="px-4 py-1 font-semibold text-sm text-center w-full sm:w-auto">
+            Página {paginaActual} de {totalPaginas}
+          </span>
 
-  <button
-    onClick={irPaginaAnterior}
-    disabled={paginaActual === 1}
-    className="cursor-pointer w-full sm:w-auto transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
-    border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
-    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
-    ‹ Anterior
-  </button>
+          <button
+            onClick={irPaginaSiguiente}
+            disabled={paginaActual === totalPaginas}
+            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+            Siguiente ›
+          </button>
 
-  <span className="px-4 py-1 font-semibold text-gray-700 text-sm sm:text-base text-center w-full sm:w-auto">
-    Página {paginaActual} de {totalPaginas}
-  </span>
-
-  <button
-    onClick={irPaginaSiguiente}
-    disabled={paginaActual === totalPaginas}
-    className="cursor-pointer w-full sm:w-auto transition-all bg-blue-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
-    border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
-    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
-    Siguiente ›
-  </button>
-
-  <button
-    onClick={irUltimaPagina}
-    disabled={paginaActual === totalPaginas}
-    className="cursor-pointer w-full sm:w-auto transition-all bg-red-500 text-white px-4 py-2 text-sm sm:text-base rounded-lg
-    border-red-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] 
-    hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
-    Final »
-  </button>
-</div>
+          <button
+            onClick={irUltimaPagina}
+            disabled={paginaActual === totalPaginas}
+            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 text-sm rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px]">
+            Final »
+          </button>
+        </div>
 
 
 
       </div>
 
-      <h2 className="text-3xl font-heading font-bold mb-4 text-center">Warmis Power - CONAGOPARE #8M</h2>
-      <div className="flex flex-col items-center justify-center mb-10 px-4">
+      <h2 className="text-3xl font-heading text-center mb-6">
+        Warmis Power - CONAGOPARE #8M
+      </h2>
+      <div className="flex flex-col items-center justify-center px-4 gap-6">
         <div className="relative w-full max-w-3xl" style={{ paddingBottom: "56.25%" }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-lg"
@@ -305,18 +298,18 @@ export default function MujeresRuralesPage() {
             allowFullScreen
           ></iframe>
         </div>
-        <p className="text-center text-base max-w-3xl mt-6 mb-16">
+        <p className="text-center max-w-3xl mb-10">
           Una apología a la conmemoración del 8 de Marzo en Ecuador desde una perspectiva de la situación actual en materia de derechos, con énfasis en PARROQUIAS RURALES, y los retos que enfrenta la política pública de género en el país.
         </p>
       </div>
 
-      <h2 className="text-3xl font-heading font-bold mb-4 text-center">
+      <h2 className="text-3xl font-heading text-center mb-6">
         Mujeres en presidencias de Gobiernos Parroquiales Rurales
       </h2>
-      <p className="text-center text-base max-w-3xl mx-auto mb-4">
-        Este artículo analiza la participación de las mujeres como presidentas en los Gobiernos Parroquiales Rurales del Ecuador desde 2009 hasta 2023...
+      <p className="text-center max-w-3xl mx-auto mb-6">
+        Este artículo analiza la participación de las mujeres como presidentas en los Gobiernos Parroquiales Rurales del Ecuador desde 2009 hasta 2023.
       </p>
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-6">
         <iframe
           src="/Docs/articulo_mujeres_presidentas.pdf"
           width="794"
