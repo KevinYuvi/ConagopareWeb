@@ -241,7 +241,10 @@ export default function Navbar() {
                           key={sublink.href}
                           href={sublink.href}
                           className="py-2 hover:text-blue-800"
-                          onClick={() => setIsOpen(false)}
+                            onClick={() => {
+    setIsOpen(false);
+    setSubmenuAbierto(null);
+  }}
                         >{sublink.label}
                         </Link>
                       ))}
