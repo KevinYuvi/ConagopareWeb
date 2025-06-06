@@ -13,25 +13,25 @@ export default function EquipoPage() {
       nombre: "Duvard Cisneros",
       rol: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu velit ut sapien facilisis sollicitudin. Sed porttitor est non fermentum.",
       image: "avatar1.jpg",
-      linkedin: "https://www.linkedin.com/in/duvard",
+      linkedin: "",
     },
     {
       nombre: "Ariel Inguillay",
       rol: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu velit ut sapien facilisis sollicitudin. Sed porttitor est non fermentum.",
       image: "avatar1.jpg",
-      linkedin: "https://www.linkedin.com/in/ariel",
+      linkedin: "",
     },
     {
       nombre: "Marlon Tituaña",
       rol: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu velit ut sapien facilisis sollicitudin. Sed porttitor est non fermentum.",
       image: "avatar1.jpg",
-      linkedin: "https://www.linkedin.com/in/marlon",
+      linkedin: "",
     },
     {
       nombre: "Kevin Yuvi",
-      rol: "Estudiante de Ingeniería en Sistemas. Me enfoco en el desarrollo web y en construir soluciones que combinen funcionalidad, claridad y propósito.",
+      rol: "Soy  Estudiante de Ingeniería en Sistemas. Me enfoco en el desarrollo web y en construir soluciones que combinen funcionalidad, claridad y propósito.",
       image: "avatar1.jpg",
-      linkedin: "https://www.linkedin.com/in/kevin",
+      linkedin: "www.linkedin.com/in/kevin-yuvi-657b63334",
     },
   ];
 
