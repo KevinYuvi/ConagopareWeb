@@ -247,7 +247,7 @@ export default function MujeresRuralesPage() {
         </div>
 
         {/* Paginación */}
-        <div className="flex flex-wrap justify-center items-center gap-3 p-2 mb-10">
+        <div className="flex flex-wrap justify-center items-center gap-3 p-2">
           <button
             onClick={irPrimeraPagina}
             disabled={paginaActual === 1}
@@ -280,7 +280,15 @@ export default function MujeresRuralesPage() {
             Final »
           </button>
         </div>
+        <div className="flex justify-center mb-10">
+          <a
+            href="/Data/datos_mujeres_presidentas.xlsx"
+            download
+            className="cursor-pointer transition-all bg-green-500 text-white px-4 py-2 text-sm rounded-lg border-green-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
 
+            Descarga estos datos
+          </a>
+        </div>
 
 
       </div>
