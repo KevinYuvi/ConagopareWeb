@@ -97,7 +97,7 @@ export default function DatosRuralesPage() {
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeUp}
             
-            className="bg-gray-300 rounded-2xl p-8 flex flex-col items-center justify-between gap-6 hover:shadow-[0_0_20px_4px_rgba(43,100,255,0.4)] transition-shadow duration-300 "
+            className="bg-gray-200 rounded-2xl p-8 flex flex-col items-center justify-between gap-6 hover:shadow-[0_0_10px_2px_rgba(43,100,255,0.3)] transition-shadow duration-300 "
           >
             <div className="flex flex-col items-center justify-between gap-6">
               <Image src={`/images/datos_rurales/${item.image}`} alt={item.title} width={400} height={160} className="object-cover rounded-2xl mx-auto" />
@@ -106,8 +106,8 @@ export default function DatosRuralesPage() {
             </div>
             <Link
               href={item.href}
-              className="
-              cursor-pointer w-32 transition-all bg-blue-500 text-white py-2 rounded-xl border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px]  hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+
 
               Consultar
             </Link>
