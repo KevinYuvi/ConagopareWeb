@@ -1,28 +1,5 @@
 [
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Alangasí",
-    "lat": -0.30801156902450544,
-    "lng": -78.41373725767225,
-    "fecha": "12 de marzo de 1985"
-  },
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Lloa",
-    "lat": -0.292282,
-    "lng": -78.626171,
-    "fecha": "15 de abril de 1980"
-  },
-  {
-    "provincia": "Pichincha",
-    "canton": "Cayambe",
-    "parroquia": "Ayora",
-    "lat": 0.051703,
-    "lng": -78.101731,
-    "fecha": "20 de julio de 1986"
-  },
+ 
   {
     "provincia": "Loja",
     "canton": "Loja",
@@ -31,12 +8,532 @@
     "lng": -79.20422,
     "fecha": "01 de enero de 2010"
   },
+
+
+   {
+    "provincia": "Loja",
+    "canton": "Loja",
+    "parroquia": "Chantaco",
+    "lat": -3.879319617363925,
+    "lng": -79.3285506312908,
+    "fecha": "21 de marzo de 1986"
+  },
+
+   {
+    "provincia": "Loja",
+    "canton": "Loja",
+    "parroquia": "Chuquiribamba",
+    "lat": -3.84337162554255,
+    "lng": -79.34466153499667,
+    "fecha": "27 de abril de 1911"
+  },
+  
+   {
+    "provincia": "Loja",
+    "canton": "Loja",
+    "parroquia": "El Cisne",
+    "lat": -3.8505115288592866,
+    "lng": -79.4268219713855,
+    "fecha": "1 de mayo de 187"
+  },
+
+   {
+    "provincia": "Loja",
+    "canton": "Loja",
+    "parroquia": "Gualel",
+    "lat": -3.7707384672099202,
+    "lng": -79.37733814663572,
+    "fecha": "31 de marzo de 1942"
+  },
+
+   {
+    "provincia": "Loja",
+    "canton": "Loja",
+    "parroquia": "Jimbilla",
+    "lat": -3.8605645242810738,
+    "lng": -79.17164317732427,
+    "fecha": "28 de noviembre de 1956"
+  },
+
+  
+  {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Ayora",
+    "lat": 0.051703,
+    "lng": -78.101731,
+    "fecha": "20 de julio de 1986"
+  },
+
+
+   {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Ascázubi",
+    "lat": -0.08487609936133034,
+    "lng": -78.2921903223319,
+    "fecha": "21 de septiembre de 1913"
+  },
+
+   {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Cangahua",
+    "lat": -0.060840323404382196,
+    "lng": -78.16887505767225,
+    "fecha": "29 de octubre de 1790"
+  },
+
+   {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Santa Rosa de Cusubamba",
+    "lat": -0.04932469088541417,
+    "lng": -78.27375715952513,
+    "fecha": "6 de diciembre de 1944"
+  }, 
+  
+  {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Olmedo Pesillo",
+    "lat": 0.14022132009457267,
+    "lng": -78.07695466931098,
+    "fecha": "26 de septiembre de 1911"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Otón",
+    "lat": -0.025172582817082862,
+    "lng": 78.25978358836126,
+    "fecha": "3 de junio de 1851"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Alóag",
+    "lat": -0.46837418807077,
+    "lng": -78.58513627116388,
+    "fecha": "23 de julio de 1883"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Aloasí",
+    "lat": -0.5169401036212175,
+    "lng": -78.5807401,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Manuel Cornejo Astorga (Tandapi)",
+    "lat": -0.41619298821544376,
+    "lng": -78.79882352866167,
+    "fecha": "20 de enero de 1909"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Cutuglagua",
+    "lat": -0.36549572765141003,
+    "lng": -78.55054888650838,
+    "fecha": "25 de septiembre de 1950"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "El Chaupi",
+    "lat": -0.6018017245362571,
+    "lng":  -78.64240125246805,
+    "fecha": "23 de mayo de 1949"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Tambillo",
+    "lat": -0.40502745319252187,
+    "lng": -78.54479710839648,
+    "fecha": "23 de julio de 1883"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Uyumbicho",
+    "lat": -0.382911259393723,
+    "lng": -78.52129378279471,
+    "fecha": "23 de julio de 1883"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "parroquia": "La Esperanza",
+    "lat": 0.041095390162753646,
+    "lng": -78.24928308650836,
+    "fecha": "17 de diciembre de 1900"
+  },
+
   {
     "provincia": "Pichincha",
     "canton": "Pedro Moncayo",
     "parroquia": "Malchinguí",
-    "lat": 0.020349,
-    "lng": -78.140282,
-    "fecha": "18 de noviembre de 1984"
+    "lat": 0.05782951878084622,
+    "lng": -78.33917933901691,
+    "fecha": "24 de julio de 1883"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "parroquia": "Tocachi",
+    "lat": 0.04511940731130756,
+    "lng": -78.28914027116386,
+    "fecha": "17 de mayo de 1851"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "parroquia": "Tupigachi",
+    "lat": 0.0770035746627236,
+    "lng": -78.18070019087344,
+    "fecha": "15 de mayo de 1947"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Alangasí",
+    "lat": -0.308052261352998,
+    "lng": -78.41363328134818,
+    "fecha": "2 de febrero de 1860"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Amaguaña",
+    "lat": -0.375629555653089,
+    "lng": -78.50497470431733,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Atahualpa Habaspamba",
+    "lat": 0.13370093196528426,
+    "lng": -78.37496261780903,
+    "fecha": "1 de agosto de 1894"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Calacalí",
+    "lat": -0.0006698521179629911,
+    "lng": -78.51380869082571,
+    "fecha": "14 de noviembre de 1952"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Calderón",
+    "lat": -0.11863331834395154,
+    "lng": -78.44580305980661,
+    "fecha": "9 de agosto de 1897"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Chavezpamba",
+    "lat": 0.12401200490108621,
+    "lng":  -78.40361986198964,
+    "fecha": "11 de noviembre de 1942"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Checa",
+    "lat": -0.12781357964314782,
+    "lng": -78.31280780617026,
+    "fecha": "24 de mayo de 1913"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Conocoto",
+    "lat": -0.2914916257673269,
+    "lng": -78.4776783331535,
+    "fecha": "20 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Cumbayá",
+    "lat": -0.20114085317289454,
+    "lng": -78.42841591966189,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "El Quinche",
+    "lat": -0.11086106800337675,
+    "lng": -78.29476020924267,
+    "fecha": "27 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Gualea",
+    "lat": 0.11140756275913634,
+    "lng": -78.74914138650837,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Guangopolo",
+    "lat": -0.2587025719238101,
+    "lng": -78.4527956532602,
+    "fecha": "11 de noviembre de 1953"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Guayllabamba",
+    "lat": -0.05891619269600206,
+    "lng": -78.34595394664518,
+    "fecha": "28 de mayo de 1868"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "La Merced",
+    "lat": -0.2914231544629873,
+    "lng": -78.39862781966185,
+    "fecha": "4 de mayo de 1964"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Llano Chico",
+    "lat": -0.12756878243382397,
+    "lng": -78.44405956777287,
+    "fecha": "5 de julio de 1944"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Lloa",
+    "lat": -0.24787825507706662,
+    "lng": -78.58269356508964,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Nanegal",
+    "lat": 0.13861684877770952,
+    "lng": -78.67613763315344,
+    "fecha": "29 de mayo de 1881"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Nanegalito",
+    "lat": 0.062258574440508765,
+    "lng": -78.68203563892195,
+    "fecha": "14 de noviembre de 1952"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Nayón",
+    "lat": -0.1563176254954732,
+    "lng": -78.4396043908257,
+    "fecha": "17 de junio de 1935"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Nono",
+    "lat": -0.06685242875032633,
+    "lng": -78.5767554188391,
+    "fecha": "13 de agosto de 1720"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Pacto",
+    "lat": 0.14174945267961905,
+    "lng": -78.76741249465252,
+    "fecha": "27 de marzo de 1936"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Perucho",
+    "lat": 0.11056701857490603,
+    "lng": -78.42358064664509,
+    "fecha": "25 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Pifo",
+    "lat": -0.22518652598427763,
+    "lng": -78.33735948897282,
+    "fecha": "30 de agosto de 1869"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Píntag",
+    "lat": -0.37147374158982116,
+    "lng": -78.37374803500636,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Pomasqui",
+    "lat": -0.054454565663100904,
+    "lng": -78.45600477548123,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Puéllaro",
+    "lat": 0.0672248980062422,
+    "lng": -78.40025756138144,
+    "fecha": "25 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Puembo",
+    "lat": -0.17692095142089712,
+    "lng": -78.35806126384247,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "San Antonio de Pichincha",
+    "lat": -0.008554865605100277,
+    "lng": -78.44794600431737,
+    "fecha": "8 de octubre de 1952"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "San José de Minas",
+    "lat": 0.17128423316275174,
+    "lng": -78.41079141966195,
+    "fecha": "14 de septiembre de 1870"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Tababela",
+    "lat": -0.18450072421024885,
+    "lng": -78.34535086198957,
+    "fecha": "13 de junio de 1952"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Tumbaco",
+    "lat": -0.21243980816351254,
+    "lng": -78.40510543315347,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Yaruquí",
+    "lat": -0.16220105277269553,
+    "lng": -78.3170300908258,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Zámbiza",
+    "lat": -0.14867081025496778,
+    "lng": -78.44138891780904,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Rumiñahui",
+    "parroquia": "Cotogchoa",
+    "lat": -0.36687589715835806,
+    "lng": -78.45392202284621,
+    "fecha": "31 de mayo de 1938"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Rumiñahui",
+    "parroquia": "Rumipamba",
+    "lat": -1.4215573542370379,
+    "lng": -78.63245167491009,
+    "fecha": "31 de mayo de 1938"
+  },
+
+   {
+    "provincia": "Pichincha",
+    "canton": "San Miguel de los Bancos",
+    "parroquia": "Mindo",
+    "lat": -0.05186677619696219,
+    "lng": -78.77472032811629,
+    "fecha": "31 de mayo de 1938"
   }
+
+
+
 ]
