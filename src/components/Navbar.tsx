@@ -39,12 +39,16 @@ export default function Navbar() {
       label: "Voz Rural",
       submenu: [
         {
-          href: "/Voz_Rural#importancia-gobierno",
-          label: "¿Por qué los Gobiernos Parroquiales son importantes?",
+          href: "/Voz_Rural#voz-rural",
+          label: "Mensajes de las Parroquias",
         },
         {
-          href: "/Voz_Rural#mensaje-parroquias",
-          label: "Mensaje de las parroquias rurales al Ecuador",
+          href: "/Voz_Rural#importancia",
+          label: "¿Por qué su gobierno parroquial es importante para su comunidad?",
+        },
+        {
+          href: "/Voz_Rural#mensaje",
+          label: "¿Cual sería su mensaje para el Ecuador?",
         },
       ],
     },

@@ -1,11 +1,31 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: "easeOut" },
+  },
+};
+
+const blockHover = {
+  scale: 1.05,
+  boxShadow: "0 6px 28px rgba(52, 80, 68, 0.18)",
+  transition: { duration: 0.25, type: "spring", stiffness: 220 },
+};
+
+const titleHover = {
+  color: "#207364",
+  transition: { duration: 0.2 },
+};
 
 interface Mensaje {
   texto: string;
-  emocion: string;    // p.ej. "😄 Alegría"
+  emocion: string;
 }
 
 interface PreguntaData {
@@ -13,15 +33,31 @@ interface PreguntaData {
   mensajes: Mensaje[];
 }
 
-const fadeUpVariant = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
+// ---- Contador animado tipado ----
+function Counter({ target }: { target: number }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    if (!target || isNaN(target)) return;
+    const step = Math.ceil(target / 40);
+    const interval = setInterval(() => {
+      start += step;
+      if (start >= target) {
+        setCount(target);
+        clearInterval(interval);
+      } else {
+        setCount(start);
+      }
+    }, 18);
+    return () => clearInterval(interval);
+  }, [target]);
+
+  return <>{count}+</>;
+}
 
 export default function MetodologiaPage() {
   const [dataRaw, setDataRaw] = useState<PreguntaData[]>([]);
-
-  // Estado para resultados calculados
   const [totalMensajes, setTotalMensajes] = useState(0);
   const [porcentajes, setPorcentajes] = useState({
     positivos: 0,
@@ -35,7 +71,6 @@ export default function MetodologiaPage() {
       .then((json: PreguntaData[]) => {
         setDataRaw(json);
 
-        // Procesar para calcular totales y porcentajes
         let positivos = 0,
           neutros = 0,
           negativos = 0,
@@ -86,17 +121,28 @@ export default function MetodologiaPage() {
         maxWidth: 960,
         margin: "auto",
         padding: 20,
-        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        color: "#333",
+        color: "var(--foreground)",
+        background: "var(--background)",
+        fontFamily: `Montserrat, var(--font-sans), "Baloo 2", sans-serif`,
       }}
     >
       {/* Título principal */}
       <motion.h1
         initial="hidden"
         whileInView="visible"
+        whileHover="hover"
+        variants={{
+          ...fadeUpVariant,
+          hover: titleHover,
+        }}
         viewport={{ once: true, amount: 0.3 }}
-        variants={fadeUpVariant}
-        style={{ fontWeight: "bold", fontSize: 28, marginBottom: 10, textAlign: "center" }}
+        style={{
+          fontWeight: "bold",
+          fontSize: 28,
+          marginBottom: 10,
+          textAlign: "center",
+          cursor: "pointer",
+        }}
       >
         Metodología de Recolección y Análisis
       </motion.h1>
@@ -105,11 +151,11 @@ export default function MetodologiaPage() {
       <motion.p
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
         variants={fadeUpVariant}
+        viewport={{ once: true, amount: 0.3 }}
         style={{
-          fontSize: 14,
-          lineHeight: 1.6,
+          fontSize: 15,
+          lineHeight: 1.7,
           maxWidth: 700,
           margin: "auto",
           marginBottom: 50,
@@ -123,9 +169,19 @@ export default function MetodologiaPage() {
       <motion.h2
         initial="hidden"
         whileInView="visible"
+        whileHover="hover"
+        variants={{
+          ...fadeUpVariant,
+          hover: titleHover,
+        }}
         viewport={{ once: true, amount: 0.3 }}
-        variants={fadeUpVariant}
-        style={{ fontWeight: "600", fontSize: 22, marginBottom: 15 }}
+        style={{
+          fontWeight: "600",
+          fontSize: 22,
+          marginBottom: 15,
+          cursor: "pointer",
+          transition: "color 0.2s",
+        }}
       >
         Proceso de Recolección de Datos
       </motion.h2>
@@ -133,8 +189,8 @@ export default function MetodologiaPage() {
       <motion.p
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
         variants={fadeUpVariant}
+        viewport={{ once: true, amount: 0.3 }}
         style={{ fontSize: 14, lineHeight: 1.6, maxWidth: 700, marginBottom: 60 }}
       >
         La recopilación de información se llevó a cabo a través de entrevistas dirigidas a los representantes de los Gobiernos Autónomos Descentralizados Parroquiales (GAD). A cada representante se le solicitó responder tres preguntas clave: Las respuestas fueron entregadas en su mayoría en formato de video, grabados por los mismos representantes y enviados a CONAGOPARE. En algunos casos, las respuestas fueron entregadas por escrito. En total, se recibieron aproximadamente 160 videos con información valiosa sobre las realidades de cada parroquia.
@@ -152,24 +208,27 @@ export default function MetodologiaPage() {
           marginBottom: 80,
         }}
       >
-        {[ 
-          { title: "Pregunta 1", text: "¿Cuáles son los 10 principales problemas de su parroquia?" },
-          { title: "Pregunta 2", text: "¿Por qué su parroquia es importante para sus habitantes?" },
-          { title: "Pregunta 3", text: "¿Qué mensaje desea transmitir al Ecuador?" },
+        {[
+          { title: "Pregunta 1", text: "¿Por qué su gobierno parroquial es importante para su comunidad?" },
+          { title: "Pregunta 2", text: "¿Enumere en orden de prioridad máximo 10 problemáticas que usted identifica en su parroquia?" },
+          { title: "Pregunta 3", text: "¿Cual seria su mensaje para el Ecuador?" },
         ].map(({ title, text }, i) => (
           <motion.div
             key={title}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            whileHover={blockHover}
             variants={fadeUpVariant}
-            transition={{ delay: i * 0.15 }}
+            transition={{ delay: i * 0.12 }}
+            viewport={{ once: true, amount: 0.3 }}
             style={{
               backgroundColor: "#a6bbb5",
               borderRadius: 10,
               padding: 20,
               width: "100%",
-              boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.11)",
+              cursor: "pointer",
+              transition: "box-shadow 0.2s, transform 0.2s",
             }}
           >
             <strong>{title}</strong>
@@ -182,9 +241,19 @@ export default function MetodologiaPage() {
       <motion.h2
         initial="hidden"
         whileInView="visible"
+        whileHover="hover"
+        variants={{
+          ...fadeUpVariant,
+          hover: titleHover,
+        }}
         viewport={{ once: true, amount: 0.3 }}
-        variants={fadeUpVariant}
-        style={{ fontWeight: "600", fontSize: 22, marginBottom: 15 }}
+        style={{
+          fontWeight: "600",
+          fontSize: 22,
+          marginBottom: 15,
+          cursor: "pointer",
+          transition: "color 0.2s",
+        }}
       >
         Análisis y Procesamiento de la Información
       </motion.h2>
@@ -192,8 +261,8 @@ export default function MetodologiaPage() {
       <motion.p
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
         variants={fadeUpVariant}
+        viewport={{ once: true, amount: 0.3 }}
         style={{ fontSize: 14, lineHeight: 1.6, maxWidth: 700, marginBottom: 60 }}
       >
         Para procesar los videos de manera eficiente, un software de transcripción automática, con el fin de convertir el contenido audiovisual en texto. Luego, se tabularon los datos y se analizaron las respuestas con el siguiente enfoque: Identificación de los problemas más frecuentes por parroquia, provincia y región. Clasificación y análisis de los mensajes dirigidos al Ecuador.
@@ -203,9 +272,19 @@ export default function MetodologiaPage() {
       <motion.h2
         initial="hidden"
         whileInView="visible"
+        whileHover="hover"
+        variants={{
+          ...fadeUpVariant,
+          hover: titleHover,
+        }}
         viewport={{ once: true, amount: 0.3 }}
-        variants={fadeUpVariant}
-        style={{ fontWeight: "600", fontSize: 22, marginBottom: 30 }}
+        style={{
+          fontWeight: "600",
+          fontSize: 22,
+          marginBottom: 30,
+          cursor: "pointer",
+          transition: "color 0.2s",
+        }}
       >
         Resultados Obtenidos
       </motion.h2>
@@ -213,8 +292,8 @@ export default function MetodologiaPage() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
         variants={fadeUpVariant}
+        viewport={{ once: true, amount: 0.3 }}
         style={{
           display: "flex",
           justifyContent: "space-around",
@@ -224,37 +303,55 @@ export default function MetodologiaPage() {
           flexWrap: "wrap",
         }}
       >
-        {[{
-          count: totalMensajes > 0 ? "1500 +" : "...",
-          label: "Problemas Identificados",
-          icon: "😃",
-          percent: porcentajes.positivos,
-          color: "#444"
-        },{
-          count: totalMensajes > 0 ? "140 +" : "...",
-          label: "Mensajes al Ecuador",
-          icon: "😐",
-          percent: porcentajes.neutros,
-          color: "#444"
-        },{
-          count: totalMensajes > 0 ? "15 +" : "...",
-          label: "Datos Curiosos",
-          icon: "🙁",
-          percent: porcentajes.negativos,
-          color: "#444"
-        }].map(({ count, label, icon, percent, color }, i) => (
+        {[
+          {
+            count: totalMensajes > 0 ? 1500 : 0,
+            label: "Problemas Identificados",
+            icon: "😃",
+            percent: porcentajes.positivos,
+            color: "#444",
+          },
+          {
+            count: totalMensajes > 0 ? 140 : 0,
+            label: "Mensajes al Ecuador",
+            icon: "😐",
+            percent: porcentajes.neutros,
+            color: "#444",
+          },
+          {
+            count: totalMensajes > 0 ? 15 : 0,
+            label: "Datos Curiosos",
+            icon: "🙁",
+            percent: porcentajes.negativos,
+            color: "#444",
+          },
+        ].map(({ count, label, icon, percent, color }, i) => (
           <motion.div
             key={label}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            whileHover={blockHover}
             variants={fadeUpVariant}
-            transition={{ delay: i * 0.15 }}
-            style={{ textAlign: "center", minWidth: 150 }}
+            transition={{ delay: i * 0.13 }}
+            viewport={{ once: true, amount: 0.3 }}
+            style={{
+              textAlign: "center",
+              minWidth: 150,
+              background: "#f6faf7",
+              borderRadius: 10,
+              boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+              padding: "24px 12px 20px 12px",
+              cursor: "pointer",
+              transition: "box-shadow 0.2s, transform 0.2s",
+            }}
           >
-            <h3 style={{ fontWeight: "700", fontSize: 28, marginBottom: 5 }}>{count}</h3>
+            <h3 style={{ fontWeight: "700", fontSize: 30, marginBottom: 5 }}>
+              <AnimatePresence>
+                {totalMensajes > 0 ? <Counter target={count} /> : "..."}
+              </AnimatePresence>
+            </h3>
             <p style={{ fontWeight: "600", marginBottom: 5 }}>{label}</p>
-            <p style={{ fontSize: 24 }}>{icon}</p>
+            <p style={{ fontSize: 28 }}>{icon}</p>
             <p style={{ fontWeight: "600", color }}>{percent}%</p>
           </motion.div>
         ))}
