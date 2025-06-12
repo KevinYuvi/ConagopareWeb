@@ -97,22 +97,22 @@ export default function DatosCuriososPage() {
   const cuadros = [
     {
       color: "#f44336",
-      text: "Hubo quien nos respondió con enojo: que no enviaría nada, que no tenía tiempo...",
+      text: "Hubo quien nos respondió con enojo: que no enviaría nada, que no tenía tiempo, y que aunque lo hiciera, igual no pasaría nada. Y nos pidió no volver a escribir",
       style: { top: 20, left: 160, width: 200, height: 180, color: "white" },
     },
     {
       color: "#2196f3",
-      text: "Algunas autoridades prefirieron enviar un audio o texto...",
+      text: "Algunas autoridades prefirieron enviar un audio o texto, pues por motivos de seguridad, prefirieron no mostrar su imagen.",
       style: { top: 200, left: 250, width: 230, height: 160, color: "white" },
     },
     {
       color: "#ffeb3b",
-      text: "Dos presidentes nos respondieron con firmeza: No estamos para hacer su trabajo...",
+      text: "Dos presidentes nos respondieron con firmeza: No estamos para hacer su trabajo. Si quieren contar lo que pasa aquí, vengan ustedes. Y lo entendimos. Porque tiene razón: nada reemplaza el cara a cara. Pero hablamos de 824 territorios rurales en todo el país. Con recursos limitados, logramos contactar a todos por WhatsApp. Respondieron 193. Sin ese canal, escuchar esas voces habría sido imposible.",
       style: { top: 30, right: 200, width: 280, height: 270, color: "black" },
     },
     {
       color: "#ffeb3b",
-      text: "Una autoridad parroquial nos dijo: 'Por ahora no les puedo ayudar...'",
+      text: "Una autoridad parroquial nos dijo: “Por ahora no les puedo ayudar... Hay cosas más urgentes que necesita la parroquia y que aún no han sido atendidas.",
       style: { bottom: 40, left: 40, width: 160, height: 240, color: "black" },
     },
   ];
@@ -128,6 +128,25 @@ export default function DatosCuriososPage() {
       >
         Datos Curiosos
       </motion.h1>
+      <motion.p
+  initial="hidden"
+  whileInView="visible"
+  variants={fadeUpVariant}
+  viewport={{ once: true }}
+  style={{
+    maxWidth: 580,
+    margin: "18px auto 34px auto",
+    fontSize: 17,
+    color: "#444",
+    textAlign: "center",
+    fontWeight: 400,
+    lineHeight: 1.6,
+    letterSpacing: "0.01em"
+  }}
+>
+  No todo lo que recogimos encaja en una categoría, pero sí en la historia. Aquí reunimos fragmentos que nos sorprendieron, emocionaron o incomodaron, respuestas que no sabíamos si reír o llorar.  
+  Esta sección rescata esas expresiones sueltas, a veces crudas, a veces brillantes.
+</motion.p>
 
       <motion.section id="emociones" className="scroll-mt-38">
         <motion.h2

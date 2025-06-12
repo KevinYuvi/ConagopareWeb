@@ -1,8 +1,17 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"; // Importar las flechas
+import React, { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
+
+// SLUGs para las categorías principales:
+const ID_IMPORTANCIA = "importancia";
+const ID_MENSAJE = "mensaje";
+
+interface Word {
+  palabra: string;
+  frecuencia: number;
+}
 
 interface Mensaje {
   id: number;
@@ -15,9 +24,8 @@ interface Mensaje {
   Provincia: string;
 }
 
-interface Word {
-  palabra: string;
-  frecuencia: number;
+interface Reacciones {
+  [key: number]: { likes: number; dislikes: number };
 }
 
 const fadeUpVariant = {
@@ -25,45 +33,23 @@ const fadeUpVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
-const highlightVariant = {
-  highlighted: {
-    backgroundColor: "#fff9c4",
-    transition: { duration: 1 },
-  },
-  normal: {
-    backgroundColor: "transparent",
-    transition: { duration: 1 },
-  },
-};
+const DATA_URL = "/data/respuestas_clasificadas.json";
+const ALEATORIOS_CANT = 2;
+const ALEATORIOS_MS = 25000;
 
-const hoverShadowVariant = {
-  hover: {
-    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
-    transform: "translateY(-5px)",
-    transition: { duration: 0.3 },
-  },
-  normal: {
-    boxShadow: "none",
-    transform: "translateY(0px)",
-  },
-};
+function slugify(text: string): string {
+  return text
+    .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/¿/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
 
 export default function VozRuralPage() {
-  const [data, setData] = useState<Mensaje[]>([]);
-  const [categoriaActiva, setCategoriaActiva] = useState<string | null>(null);
-  const [subcategoriaActiva, setSubcategoriaActiva] = useState<string | null>(null);
-  const [modoVisualizacion, setModoVisualizacion] = useState<"top" | "todos">("top");
-  const [reacciones, setReacciones] = useState<{ [key: number]: { likes: number; dislikes: number } }>({});
-  const [isMobile, setIsMobile] = useState(false);
-  const [showScrollTop, setShowScrollTop] = useState(false);
-  const [highlightedSection, setHighlightedSection] = useState<string | null>(null);
-  const categoriasPrincipales = ["🏛️ Gobierno parroquial", "🇪🇨 Mensaje para el Ecuador"];
-  const [subcategoriasPorCategoria, setSubcategoriasPorCategoria] = useState<{ [key: string]: string[] }>({});
-
-  const seleccionarSubcategoria = (s: string) => {
-    setSubcategoriaActiva((prev) => (prev === s ? null : s)); // Alternar la subcategoría
-  };
-
   const palabrasRelevantes: Word[] = [
     { palabra: "gobierno", frecuencia: 60 },
     { palabra: "parroquial", frecuencia: 40 },
@@ -92,177 +78,143 @@ export default function VozRuralPage() {
 
   const colores = ["#b34700", "#cc6600", "#ff9900", "#cc3300", "#996633", "#804000", "#e67300"];
   const colorAleatorio = () => colores[Math.floor(Math.random() * colores.length)];
-
   const rotacionAleatoria = () => {
     const grado = Math.floor(Math.random() * 61) - 30;
     return `rotate(${grado}deg)`;
   };
 
+  const [data, setData] = useState<Mensaje[]>([]);
+  const [categoriaActiva, setCategoriaActiva] = useState<string | null>(null);
+  const [subcategoriaActiva, setSubcategoriaActiva] = useState<string | null>(null);
+  const [modoVisualizacion, setModoVisualizacion] = useState<"top" | "todos">("top");
+  const [reacciones, setReacciones] = useState<Reacciones>({});
+  const [aleatorios, setAleatorios] = useState<Mensaje[]>([]);
+  const aleatorioIndex = useRef(0);
+  const [userVotes, setUserVotes] = useState<{ [key: number]: "like" | "dislike" | undefined }>({});
+
+  // ADAPTADO: Hash scroll y expansión automática de categoría (como Datos Curiosos)
   useEffect(() => {
-    const checkIsMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkIsMobile();
-    window.addEventListener("resize", checkIsMobile);
-
-    const onScroll = () => {
-      if (window.scrollY > 300) setShowScrollTop(true);
-      else setShowScrollTop(false);
-    };
-    window.addEventListener("scroll", onScroll);
-
-    return () => {
-      window.removeEventListener("resize", checkIsMobile);
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const checkHash = () => {
+    function expandAndScrollFromHash() {
       const hash = window.location.hash.replace("#", "");
-      if (hash) {
-        setHighlightedSection(hash);
-        setTimeout(() => setHighlightedSection(null), 2000);
+      let cat = null;
+      if (hash === "importancia") {
+        cat = "¿Por qué su gobierno parroquial es importante para su comunidad?";
       }
-    };
-
-    checkHash();
-    window.addEventListener("hashchange", checkHash);
-    return () => window.removeEventListener("hashchange", checkHash);
+      if (hash === "mensaje") {
+        cat = "¿Cual sería su mensaje para el Ecuador?";
+      }
+      if (cat) {
+        setCategoriaActiva(cat);
+        setSubcategoriaActiva(null); // Opcional: colapsa cualquier subcategoría
+        setTimeout(() => {
+          const section = document.getElementById(hash);
+          if (section) section.scrollIntoView({ behavior: "smooth" });
+        }, 400);
+      }
+    }
+    window.addEventListener("hashchange", expandAndScrollFromHash);
+    expandAndScrollFromHash(); // Al cargar
+    return () => window.removeEventListener("hashchange", expandAndScrollFromHash);
   }, []);
 
+  // Cargar datos y votos iniciales
   useEffect(() => {
-    fetch("/data/respuestas_clasificadas.json")
-      .then((res) => res.json())
-      .then((json) => {
-        if (!json || !Array.isArray(json)) {
-          console.error("Datos no válidos para respuestas:", json);
-          return;
-        }
+    fetch(DATA_URL)
+      .then(res => res.json())
+      .then(json => {
         const datosConId: Mensaje[] = json.map((item: any, idx: number) => ({
+          ...item,
           id: idx,
-          Categoría: item.Categoría,
-          Subcategoría: item.Subcategoría,
-          Mensaje: item.Mensaje,
-          Presidente: item.Presidente,
-          Parroquia: item.Parroquia,
-          Canton: item["Cantón"],
-          Provincia: item.Provincia,
         }));
         setData(datosConId);
 
-        const storedReacciones = localStorage.getItem("vozRuralReacciones");
-        if (storedReacciones) {
+        let almacen = localStorage.getItem("vozRuralReacciones");
+        let nuevasReacciones: Reacciones = {};
+        if (almacen) {
           try {
-            setReacciones(JSON.parse(storedReacciones));
-          } catch {}
-        } else {
-          const inicial: { [key: number]: { likes: number; dislikes: number } } = {};
-          datosConId.forEach((m) => {
-            if (m.id !== undefined) inicial[m.id] = { likes: 0, dislikes: 0 };
-          });
-          setReacciones(inicial);
-          localStorage.setItem("vozRuralReacciones", JSON.stringify(inicial));
+            nuevasReacciones = JSON.parse(almacen);
+          } catch { }
         }
-
-        const subsPorCat: { [key: string]: string[] } = {};
-        categoriasPrincipales.forEach((cat) => {
-          const todas = Array.isArray(datosConId)
-            ? datosConId
-                .filter((d) => d.Categoría === cat)
-                .map((d) => (d.Subcategoría ? d.Subcategoría.trim() : ""))
-                .filter((s) => s !== "")
-            : [];
-
-          const filtradas =
-            todas.length > 0
-              ? todas.filter((sub, index, arr) => sub !== "" && arr.indexOf(sub) !== index)
-              : [];
-
-          subsPorCat[cat] = Array.from(new Set(filtradas));
+        datosConId.forEach(m => {
+          if (nuevasReacciones[m.id] === undefined) {
+            nuevasReacciones[m.id] = { likes: 0, dislikes: 0 };
+          }
         });
-        setSubcategoriasPorCategoria(subsPorCat);
-      })
-      .catch((error) => {
-        console.error("Error cargando respuestas:", error);
+        setReacciones(nuevasReacciones);
+        localStorage.setItem("vozRuralReacciones", JSON.stringify(nuevasReacciones));
+
+        setAleatorios(escogeAleatorios(datosConId, 0));
+
+        const votes: any = JSON.parse(localStorage.getItem("vozRuralUserVotes") || "{}");
+        setUserVotes(votes);
       });
   }, []);
 
-  const toggleCategoria = (cat: string) => {
-    if (categoriaActiva === cat) {
-      return;
+  // Cambiar mensajes aleatorios periódicamente
+  useEffect(() => {
+    if (data.length === 0) return;
+    const interval = setInterval(() => {
+      aleatorioIndex.current = (aleatorioIndex.current + 1) % data.length;
+      setAleatorios(escogeAleatorios(data, aleatorioIndex.current));
+    }, ALEATORIOS_MS);
+    return () => clearInterval(interval);
+  }, [data]);
+
+  function escogeAleatorios(arreglo: Mensaje[], offset: number) {
+    if (arreglo.length <= ALEATORIOS_CANT) return [...arreglo];
+    let res = [];
+    for (let i = 0; i < ALEATORIOS_CANT; i++) {
+      res.push(arreglo[(offset + i) % arreglo.length]);
     }
-    setCategoriaActiva(cat);
-    setSubcategoriaActiva(null); // Resetea la subcategoría cuando se cambia de categoría
-  };
+    return res;
+  }
 
-  let mensajesFiltrados = (data || []).filter(
-    (d) =>
-      d.Categoría === categoriaActiva &&
-      (subcategoriaActiva ? d.Subcategoría === subcategoriaActiva : true)
+  const categorias = Array.from(new Set(data.map(d => d.Categoría).filter(Boolean)));
+  const subcategoriasPorCategoria: { [key: string]: string[] } = {};
+  categorias.forEach(cat => {
+    subcategoriasPorCategoria[cat] = Array.from(new Set(
+      data.filter(d => d.Categoría === cat).map(d => d.Subcategoría).filter(Boolean)
+    ));
+  });
+
+  let mensajesFiltrados = data.filter(
+    d => d.Categoría === categoriaActiva && d.Subcategoría === subcategoriaActiva
   );
-
   if (modoVisualizacion === "top") {
     mensajesFiltrados = mensajesFiltrados
-      .filter(Boolean)
       .slice()
       .sort((a, b) => (reacciones[b.id]?.likes || 0) - (reacciones[a.id]?.likes || 0))
       .slice(0, 3);
-  } else if (modoVisualizacion === "todos") {
-    mensajesFiltrados = mensajesFiltrados.filter(Boolean);
   }
 
-  const mensajesAleatorios = (data || [])
-    .filter(Boolean)
-    .slice()
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 3);
-
   const votar = (id: number, tipo: "like" | "dislike") => {
-    setReacciones((prev) => {
-      const votoActual = prev[id] || { likes: 0, dislikes: 0 };
-
-      const storedUserVotes = JSON.parse(localStorage.getItem("vozRuralUserVotes") || "{}");
-      const votoUsuario = storedUserVotes[id];
-
-      if (votoUsuario === tipo) {
-        alert(`Ya has votado ${tipo} en este mensaje.`);
-        return prev;
-      }
-
-      let nuevosLikes = votoActual.likes;
-      let nuevosDislikes = votoActual.dislikes;
-
-      if (votoUsuario === "like" && tipo === "dislike") {
-        nuevosLikes = Math.max(0, nuevosLikes - 1);
-        nuevosDislikes = nuevosDislikes + 1;
-      } else if (votoUsuario === "dislike" && tipo === "like") {
-        nuevosDislikes = Math.max(0, nuevosDislikes - 1);
-        nuevosLikes = nuevosLikes + 1;
-      } else if (votoUsuario === undefined) {
-        if (tipo === "like") nuevosLikes++;
-        else nuevosDislikes++;
-      }
-
-      storedUserVotes[id] = tipo;
-      localStorage.setItem("vozRuralUserVotes", JSON.stringify(storedUserVotes));
-
-      const nuevasReacciones = {
-        ...prev,
-        [id]: { likes: nuevosLikes, dislikes: nuevosDislikes },
-      };
-      localStorage.setItem("vozRuralReacciones", JSON.stringify(nuevasReacciones));
-
-      return nuevasReacciones;
-    });
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    let userVotesLocal: any = JSON.parse(localStorage.getItem("vozRuralUserVotes") || "{}");
+    if (userVotesLocal[id]) {
+      return;
+    }
+    let nuevo = { ...reacciones };
+    if (!nuevo[id]) nuevo[id] = { likes: 0, dislikes: 0 };
+    if (tipo === "like") {
+      nuevo[id].likes += 1;
+    } else {
+      nuevo[id].dislikes += 1;
+    }
+    userVotesLocal[id] = tipo;
+    setReacciones(nuevo);
+    setUserVotes(userVotes => ({ ...userVotes, [id]: tipo }));
+    localStorage.setItem("vozRuralReacciones", JSON.stringify(nuevo));
+    localStorage.setItem("vozRuralUserVotes", JSON.stringify(userVotesLocal));
   };
 
   return (
     <div
       className="max-w-[1300px] mx-auto p-5"
-      style={{ backgroundColor: "#fff", color: "#222", position: "relative", fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" }}
+      style={{
+        backgroundColor: "#fff",
+        color: "#222",
+        position: "relative",
+        fontFamily: "'Baloo 2', var(--font-sans), sans-serif"
+      }}
     >
       {/* Introducción y Nube de Palabras */}
       <motion.section
@@ -274,19 +226,21 @@ export default function VozRuralPage() {
         className="text-center mb-10 max-w-[800px] mx-auto"
       >
         <motion.h1
-          className="text-3xl font-heading font-bold mb-3"
+          className="text-4xl font-heading mb-3"
           variants={fadeUpVariant}
+          style={{ letterSpacing: ".02em" }}
         >
           Mensajes de las Parroquias
         </motion.h1>
         <motion.p
-          className="text-gray-600 text-base mb-8"
+          className="text-gray-700 text-lg mb-8"
           variants={fadeUpVariant}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           Esta página visualiza la voz de las parroquias rurales del Ecuador mediante mensajes representativos...
         </motion.p>
         <motion.h2
-          className="text-2xl font-semibold mb-4"
+          className="text-2xl font-semibold mb-4 font-heading"
           variants={fadeUpVariant}
         >
           Nube de Palabras
@@ -303,18 +257,19 @@ export default function VozRuralPage() {
                 style={{
                   fontSize,
                   color,
-                  fontWeight: "600",
+                  fontWeight: 700,
                   display: "inline-block",
                   cursor: "default",
                   transform: rotacion,
                   userSelect: "none",
                   transition: "transform 0.3s ease, color 0.3s ease",
                   zIndex: 1,
+                  fontFamily: "'Baloo 2', var(--font-sans), sans-serif"
                 }}
                 title={`${palabra} (${frecuencia})`}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLSpanElement).style.color = "#FF4500";
-                  (e.currentTarget as HTMLSpanElement).style.transform = "scale(1.3) rotate(0deg)";
+                  (e.currentTarget as HTMLSpanElement).style.color = "#FF8300";
+                  (e.currentTarget as HTMLSpanElement).style.transform = "scale(1.15) rotate(0deg)";
                   (e.currentTarget as HTMLSpanElement).style.zIndex = "10";
                 }}
                 onMouseLeave={(e) => {
@@ -330,267 +285,169 @@ export default function VozRuralPage() {
         </div>
       </motion.section>
 
-      {/* Sección: ¿Por qué los Gobiernos Parroquiales son importantes? */}
-      <motion.section
-        id="importancia-gobierno"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={highlightVariant}
-        animate={highlightedSection === "importancia-gobierno" ? "highlighted" : "normal"}
-        className="mb-12 rounded-lg p-5 pt-21"
-      >
-        <h2 className="text-3xl font-heading font-bold mb-5">
-          ¿Por qué los Gobiernos Parroquiales son importantes?
-        </h2>
+      {/* Layout principal: mensajes y columna aleatoria */}
+      <div className="flex gap-8 items-start">
+        <div className="flex-1">
+          {/* Secciones de Categoría */}
+          {categorias.map(cat => (
+            <section
+              key={cat}
+              id={
+                cat === "¿Por qué su gobierno parroquial es importante para su comunidad?"
+                  ? "importancia"
+                  : cat === "¿Cual sería su mensaje para el Ecuador?"
+                  ? "mensaje"
+                  : undefined
+              }
+              className="mb-8 rounded-xl bg-white shadow-md p-4"
+            >
+              <h2
+                onClick={() => {
+                  setCategoriaActiva(cat === categoriaActiva ? null : cat);
+                  setSubcategoriaActiva(null);
+                }}
+                className={`cursor-pointer text-2xl font-heading mb-2 flex items-center gap-2 hover:text-orange-600 transition`}
+              >
+                {cat}
+                {categoriaActiva === cat ? "▼" : "►"}
+              </h2>
 
-        <div className={`flex justify-center gap-8 max-w-[1100px] mx-auto ${isMobile ? "flex-col" : "flex-row"} max-h-[650px] overflow-y-auto`}>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUpVariant}
-            className={`bg-gray-100 p-5 rounded-lg ${isMobile ? "w-full" : "w-[700px]"}`}
-          >
-            {categoriasPrincipales.map((cat) => {
-              if (cat !== "🏛️ Gobierno parroquial") return null;
-              const abierto = categoriaActiva === cat;
-              const subs = Array.isArray(subcategoriasPorCategoria[cat]) ? subcategoriasPorCategoria[cat] : [];
-              return (
-                <div
-                  key={cat}
-                  className="mb-5 border border-gray-300 rounded-lg bg-white cursor-pointer transition-shadow hover:shadow-lg"
-                  onClick={() => toggleCategoria(cat)}
-                >
-                  <button
-                    className="w-full p-3 text-left text-gray-900 text-lg font-semibold bg-transparent border-none cursor-pointer"
-                  >
-                    {cat}
-                  </button>
-
-                  {abierto && (
-                    <div className="px-5 pt-2 text-gray-700 text-sm">
-                      {subs && subs.length > 0 ? (
-                        subs.map((s) => {
-                          const sel = subcategoriaActiva === s;
-                          return (
-                            <p
-                              key={s}
-                              onClick={() => seleccionarSubcategoria(s)}
-                              className={`my-1 cursor-pointer ${sel ? "font-bold text-blue-600" : "font-normal text-gray-700"}`}
-                            >
-                              {s}
-                            </p>
-                          );
-                        })
-                      ) : (
-                        <p>No hay subcategorías.</p>
-                      )}
-
+              {categoriaActiva === cat && (
+                <div>
+                  {/* SUBCATEGORÍAS */}
+                  <div className="flex flex-wrap gap-3 mb-4">
+                    {subcategoriasPorCategoria[cat].map(sub => (
                       <button
+                        key={sub}
+                        onClick={() => setSubcategoriaActiva(sub === subcategoriaActiva ? null : sub)}
+                        className={`px-3 py-1 rounded-full border transition font-semibold
+                          ${sub === subcategoriaActiva ? "bg-orange-500 text-white border-orange-500" : "bg-gray-100 hover:bg-orange-100 border-gray-300"}
+                        `}
+                        style={{ fontFamily: "var(--font-sans)" }}
+                      >
+                        {sub}
+                      </button>
+                    ))}
+                  </div>
+                  {/* MENSAJES */}
+                  {subcategoriaActiva && (
+                    <div className="mb-2">
+                      <button
+                        className="mb-4 mt-2 px-4 py-2 rounded bg-orange-600 text-white font-semibold hover:bg-orange-700 transition"
                         onClick={() =>
                           setModoVisualizacion(modoVisualizacion === "top" ? "todos" : "top")
                         }
-                        className="mb-4 mt-3 px-4 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
+                        style={{ fontFamily: "var(--font-sans)" }}
                       >
-                        {modoVisualizacion === "top" ? "Ver todos los mensajes" : "Ver solo los mejores 3"}
+                        {modoVisualizacion === "top" ? "Ver todos los mensajes" : "Ver solo el Top 3"}
                       </button>
-
-                      {mensajesFiltrados && mensajesFiltrados.length > 0 ? (
-                        <div className="mt-3 max-h-[350px] overflow-y-auto">
-                          {mensajesFiltrados
-                            .filter((m) => m.Categoría === "🏛️ Gobierno parroquial")
-                            .map((m) => (
-                              <div
-                                key={m.id}
-                                className="bg-white rounded-lg p-4 mb-3 shadow"
-                              >
-                                <p className="font-bold mb-2">📄 Mensaje:</p>
-                                <p className="mb-3 whitespace-pre-wrap text-gray-800">{m.Mensaje}</p>
-                                <p className="text-gray-600 text-sm mb-3 flex gap-2 items-center">
-                                  👤 {m.Presidente.toLowerCase()} – {m.Canton.toLowerCase()} – {m.Provincia.toLowerCase()}
-                                </p>
-                                <div className="flex gap-4 text-lg">
-                                  <button
-                                    onClick={() => votar(m.id, "like")}
-                                    className="text-blue-600 hover:text-blue-700"
-                                  >
-                                    👍 {reacciones[m.id]?.likes || 0}
-                                  </button>
-                                  <button
-                                    onClick={() => votar(m.id, "dislike")}
-                                    className="text-gray-500 hover:text-gray-700"
-                                  >
-                                    👎 {reacciones[m.id]?.dislikes || 0}
-                                  </button>
-                                </div>
-                              </div>
-                            ))}
-                        </div>
-                      ) : (
-                        <p className="text-gray-600 mt-2">No hay mensajes para mostrar.</p>
-                      )}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUpVariant}
-            className={`bg-gray-100 p-5 rounded-lg overflow-y-auto ${isMobile ? "w-full" : "w-[350px]"}`}
-            style={{ maxHeight: isMobile ? "none" : 650 }}
-          >
-            <h3 className="text-2xl font-semibold mb-5 text-gray-900">🌟 Mensajes aleatorios</h3>
-            {mensajesAleatorios
-              .filter((m) => m.Categoría === "🏛️ Gobierno parroquial")
-              .map((m) => (
-                <div key={m.id} className="bg-white rounded-lg p-4 mb-5 italic shadow hover:shadow-lg">
-                  <p className="mb-3 text-gray-800">
-                    “{m.Mensaje.length > 250 ? m.Mensaje.slice(0, 250) + "..." : m.Mensaje}”
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    👤 {m.Presidente.toLowerCase()} – {m.Canton.toLowerCase()} – {m.Provincia.toLowerCase()}
-                  </p>
-                </div>
-              ))}
-          </motion.div>
-        </div>
-      </motion.section>
-
-      {/* Sección: Mensaje de las parroquias rurales al Ecuador */}
-      <motion.section
-        id="mensaje-parroquias"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={fadeUpVariant}
-        animate={highlightedSection === "mensaje-parroquias" ? "highlighted" : "normal"}
-        className="mb-12 rounded-lg p-5 pt-18"
-      >
-        <h2 className="text-3xl font-heading font-bold mb-5">Mensaje de las parroquias rurales al Ecuador</h2>
-
-        <div className={`flex justify-center gap-8 max-w-[1100px] mx-auto ${isMobile ? "flex-col" : "flex-row"} max-h-[650px] overflow-y-auto`}>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUpVariant}
-            className={`bg-gray-100 p-5 rounded-lg ${isMobile ? "w-full" : "w-[700px]"}`}
-          >
-            {categoriasPrincipales.map((cat) => {
-              if (cat !== "🇪🇨 Mensaje para el Ecuador") return null;
-              const abierto = categoriaActiva === cat;
-              const subs = Array.isArray(subcategoriasPorCategoria[cat]) ? subcategoriasPorCategoria[cat] : [];
-              return (
-                <div
-                  key={cat}
-                  className="mb-5 border border-gray-300 rounded-lg bg-white cursor-pointer transition-shadow hover:shadow-lg"
-                  onClick={() => toggleCategoria(cat)}
-                >
-                  <button
-                    className="w-full p-3 text-left text-gray-900 text-lg font-semibold bg-transparent border-none cursor-pointer"
-                  >
-                    {cat}
-                  </button>
-
-                  {abierto && (
-                    <div className="px-5 pt-2 text-gray-700 text-sm">
-                      {subs && subs.length > 0 ? (
-                        subs.map((s) => {
-                          const sel = subcategoriaActiva === s;
-                          return (
-                            <p
-                              key={s}
-                              onClick={() => seleccionarSubcategoria(s)}
-                              className={`my-1 cursor-pointer ${sel ? "font-bold text-blue-600" : "font-normal text-gray-700"}`}
+                      <div className="grid gap-5">
+                        {mensajesFiltrados.length > 0 ? (
+                          mensajesFiltrados.map(m => (
+                            <motion.div
+                              key={m.id}
+                              initial={{ opacity: 0, y: 30 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.3 }}
+                              className="rounded-lg p-4 bg-white border border-orange-100 shadow hover:shadow-lg transition"
+                              style={{ fontFamily: "var(--font-sans)" }}
                             >
-                              {s}
-                            </p>
-                          );
-                        })
-                      ) : (
-                        <p>No hay subcategorías.</p>
-                      )}
-
-                      <button
-                        onClick={() =>
-                          setModoVisualizacion(modoVisualizacion === "top" ? "todos" : "top")
-                        }
-                        className="mb-4 mt-3 px-4 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
-                      >
-                        {modoVisualizacion === "top" ? "Ver todos los mensajes" : "Ver solo los mejores 3"}
-                      </button>
-
-                      {mensajesFiltrados && mensajesFiltrados.length > 0 ? (
-                        <div className="mt-3 max-h-[350px] overflow-y-auto">
-                          {mensajesFiltrados
-                            .filter((m) => m.Categoría === "🇪🇨 Mensaje para el Ecuador")
-                            .map((m) => (
-                              <div
-                                key={m.id}
-                                className="bg-white rounded-lg p-4 mb-3 shadow"
-                              >
-                                <p className="font-bold mb-2">📄 Mensaje:</p>
-                                <p className="mb-3 whitespace-pre-wrap text-gray-800">{m.Mensaje}</p>
-                                <p className="text-gray-600 text-sm mb-3 flex gap-2 items-center">
-                                  👤 {m.Presidente.toLowerCase()} – {m.Canton.toLowerCase()} – {m.Provincia.toLowerCase()}
-                                </p>
-                                <div className="flex gap-4 text-lg">
-                                  <button
-                                    onClick={() => votar(m.id, "like")}
-                                    className="text-blue-600 hover:text-blue-700"
-                                  >
-                                    👍 {reacciones[m.id]?.likes || 0}
-                                  </button>
-                                  <button
-                                    onClick={() => votar(m.id, "dislike")}
-                                    className="text-gray-500 hover:text-gray-700"
-                                  >
-                                    👎 {reacciones[m.id]?.dislikes || 0}
-                                  </button>
-                                </div>
+                              <div className="mb-2 text-gray-900 font-semibold italic">{m.Mensaje}</div>
+                              <div className="text-sm text-gray-700 flex flex-wrap gap-3 mb-2">
+                                <span>👤 <b>{m.Presidente}</b></span>
+                                <span>🏞️ {m.Parroquia}</span>
+                                <span>🏙️ {m.Canton}</span>
+                                <span>🌎 {m.Provincia}</span>
                               </div>
-                            ))}
-                        </div>
-                      ) : (
-                        <p className="text-gray-600 mt-2">No hay mensajes para mostrar.</p>
-                      )}
+                              <div className="flex gap-6 items-center mt-2">
+                                <button
+                                  className={`flex items-center gap-1 transition
+                                    ${userVotes[m.id] === "like" ? "text-green-800 font-bold" : "text-green-600 hover:text-green-800"}
+                                    ${userVotes[m.id] ? "opacity-70 cursor-not-allowed" : ""}
+                                  `}
+                                  onClick={() => votar(m.id, "like")}
+                                  disabled={!!userVotes[m.id]}
+                                >
+                                  <FaThumbsUp /> {reacciones[m.id]?.likes || 0}
+                                </button>
+                                <button
+                                  className={`flex items-center gap-1 transition
+                                    ${userVotes[m.id] === "dislike" ? "text-red-800 font-bold" : "text-red-600 hover:text-red-800"}
+                                    ${userVotes[m.id] ? "opacity-70 cursor-not-allowed" : ""}
+                                  `}
+                                  onClick={() => votar(m.id, "dislike")}
+                                  disabled={!!userVotes[m.id]}
+                                >
+                                  <FaThumbsDown /> {reacciones[m.id]?.dislikes || 0}
+                                </button>
+                              </div>
+                            </motion.div>
+                          ))
+                        ) : (
+                          <p className="text-gray-500 text-center">No hay mensajes para esta subcategoría.</p>
+                        )}
+                      </div>
                     </div>
                   )}
                 </div>
-              );
-            })}
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUpVariant}
-            className={`bg-gray-100 p-5 rounded-lg overflow-y-auto ${isMobile ? "w-full" : "w-[350px]"}`}
-            style={{ maxHeight: isMobile ? "none" : 650 }}
-          >
-            <h3 className="text-2xl font-semibold mb-5 text-gray-900">🌟 Mensajes aleatorios</h3>
-            {mensajesAleatorios
-              .filter((m) => m.Categoría === "🇪🇨 Mensaje para el Ecuador")
-              .map((m) => (
-                <div key={m.id} className="bg-white rounded-lg p-4 mb-5 italic shadow hover:shadow-lg">
-                  <p className="mb-3 text-gray-800">
-                    “{m.Mensaje.length > 250 ? m.Mensaje.slice(0, 250) + "..." : m.Mensaje}”
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    👤 {m.Presidente.toLowerCase()} – {m.Canton.toLowerCase()} – {m.Provincia.toLowerCase()}
-                  </p>
-                </div>
-              ))}
-          </motion.div>
+              )}
+            </section>
+          ))}
         </div>
-      </motion.section>
+
+        {/* Columna derecha: Mensajes aleatorios */}
+        <aside className="w-[350px] bg-white shadow-md rounded-xl p-4">
+          <h3 className="text-2xl font-heading mb-5 text-gray-900">
+            🌟 Mensajes aleatorios
+          </h3>
+          {data.length === 0 && (
+            <div className="text-center text-gray-500">Cargando...</div>
+          )}
+          <AnimatePresence>
+            {aleatorios.map(m => (
+              <motion.div
+                key={m.id}
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -40 }}
+                transition={{ duration: 0.6, type: "spring" }}
+                className="bg-white rounded-lg p-4 mb-5 shadow hover:shadow-lg transition"
+                style={{ fontFamily: "var(--font-sans)" }}
+              >
+                <div className="mb-2 text-gray-900 font-semibold italic">{m.Mensaje}</div>
+                <div className="text-sm text-gray-700 flex flex-wrap gap-3 mb-2">
+                  <span>👤 <b>{m.Presidente}</b></span>
+                  <span>🏞️ {m.Parroquia}</span>
+                  <span>🏙️ {m.Canton}</span>
+                  <span>🌎 {m.Provincia}</span>
+                </div>
+                <div className="flex gap-6 items-center mt-2">
+                  <button
+                    className={`flex items-center gap-1 transition
+                      ${userVotes[m.id] === "like" ? "text-green-800 font-bold" : "text-green-600 hover:text-green-800"}
+                      ${userVotes[m.id] ? "opacity-70 cursor-not-allowed" : ""}
+                    `}
+                    onClick={() => votar(m.id, "like")}
+                    disabled={!!userVotes[m.id]}
+                  >
+                    <FaThumbsUp /> {reacciones[m.id]?.likes || 0}
+                  </button>
+                  <button
+                    className={`flex items-center gap-1 transition
+                      ${userVotes[m.id] === "dislike" ? "text-red-800 font-bold" : "text-red-600 hover:text-red-800"}
+                      ${userVotes[m.id] ? "opacity-70 cursor-not-allowed" : ""}
+                    `}
+                    onClick={() => votar(m.id, "dislike")}
+                    disabled={!!userVotes[m.id]}
+                  >
+                    <FaThumbsDown /> {reacciones[m.id]?.dislikes || 0}
+                  </button>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </aside>
+      </div>
     </div>
   );
 }
