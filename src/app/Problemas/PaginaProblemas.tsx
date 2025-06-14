@@ -208,7 +208,7 @@ const PaginaProblemas = () => {
   const categoriasUnicas = [...new Set(frases.map(f => f.Categoria).filter(Boolean))];
 
   return (
-    <div className="px-4 py-12 max-w-6xl mx-auto">
+    <div className="px-4 py-7 max-w-6xl mx-auto">
       <h1 className="text-4xl font-bold text-center mb-6">Problemas Rurales en el Ecuador</h1>
 
       {/* Mapa SVG interactiv o */}

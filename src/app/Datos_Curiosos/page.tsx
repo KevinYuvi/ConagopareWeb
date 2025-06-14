@@ -120,14 +120,17 @@ export default function DatosCuriososPage() {
   return (
     <div style={{ padding: "2rem", maxWidth: 900, margin: "auto" }}>
       <motion.h1
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUpVariant}
-        viewport={{ once: true }}
-        style={{ fontWeight: "bold", fontSize: 26, marginBottom: 10, textAlign: "center" }}
-      >
-        Datos Curiosos
-      </motion.h1>
+  id="emociones"
+  className="scroll-mt-28"
+  initial="hidden"
+  whileInView="visible"
+  variants={fadeUpVariant}
+  viewport={{ once: true }}
+  style={{ fontWeight: "bold", fontSize: 26, marginBottom: 10, textAlign: "center" }}
+>
+  Datos Curiosos
+</motion.h1>
+
       <motion.p
   initial="hidden"
   whileInView="visible"
