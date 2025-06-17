@@ -5,9 +5,10 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
 
-// SLUGs para las categorías principales:
+
 const ID_IMPORTANCIA = "importancia";
 const ID_MENSAJE = "mensaje";
+const ID_VOZ_RURAL = "voz-rural";
 
 // 🧭 Mapeo entre nombres y slugs de categorías
 const MAPEO_CATEGORIAS: Record<string, string> = {
@@ -46,13 +47,15 @@ const ALEATORIOS_MS = 25000;
 
 function slugify(text: string): string {
   return text
-    .normalize("NFD")                     // quita tildes
+    .toString()
+    .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")         // espacios y signos → "-"
-    .replace(/^-+|-+$/g, "");            // sin guiones al inicio o final
+    .trim()
+    .replace(/¿/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
-
 
 export default function VozRuralPage() {
   const pathname = usePathname();
@@ -85,10 +88,7 @@ export default function VozRuralPage() {
 
   const colores = ["#b34700", "#cc6600", "#ff9900", "#cc3300", "#996633", "#804000", "#e67300"];
   const colorAleatorio = () => colores[Math.floor(Math.random() * colores.length)];
-  const rotacionAleatoria = () => {
-    const grado = Math.floor(Math.random() * 61) - 30;
-    return `rotate(${grado}deg)`;
-  };
+  const rotacionAleatoria = () => `rotate(${Math.floor(Math.random() * 61) - 30}deg)`;
 
   const [data, setData] = useState<Mensaje[]>([]);
   const [categoriaActiva, setCategoriaActiva] = useState<string | null>(null);
@@ -98,28 +98,33 @@ export default function VozRuralPage() {
   const [aleatorios, setAleatorios] = useState<Mensaje[]>([]);
   const aleatorioIndex = useRef(0);
   const [userVotes, setUserVotes] = useState<{ [key: number]: "like" | "dislike" | undefined }>({});
- 
-useEffect(() => {
-  if (typeof window === "undefined") return;
-  const hash = window.location.hash.replace("#", "");
-  if (!hash) return;
 
-  const categoria = Object.entries(MAPEO_CATEGORIAS).find(
-    ([, slug]) => slug === hash
-  )?.[0];
-
-  if (categoria) {
-    setCategoriaActiva(categoria);
-
-    const subcategorias = Array.from(
-      new Set(data.filter(d => d.Categoría === categoria).map(d => d.Subcategoría).filter(Boolean))
-    );
-    if (subcategorias.length > 0) {
-      setSubcategoriaActiva(subcategorias[0]);
+  // ADAPTADO: Hash scroll y expansión automática de categoría (como Datos Curiosos)
+  useEffect(() => {
+    function expandAndScrollFromHash() {
+      const hash = window.location.hash.replace("#", "");
+      let cat = null;
+      if (hash === "importancia") {
+        cat = "¿Por qué su gobierno parroquial es importante para su comunidad?";
+      }
+      if (hash === "mensaje") {
+        cat = "¿Cual sería su mensaje para el Ecuador?";
+      }
+      if (cat) {
+        setCategoriaActiva(cat);
+        setSubcategoriaActiva(null); // Opcional: colapsa cualquier subcategoría
+        setTimeout(() => {
+          const section = document.getElementById(hash);
+          if (section) section.scrollIntoView({ behavior: "smooth" });
+        }, 400);
+      }
     }
-  }
-}, [data]);
- 
+    window.addEventListener("hashchange", expandAndScrollFromHash);
+    expandAndScrollFromHash(); // Al cargar
+    return () => window.removeEventListener("hashchange", expandAndScrollFromHash);
+  }, []);
+
+  // Cargar datos y votos iniciales
   useEffect(() => {
     fetch(DATA_URL)
       .then(res => res.json())
@@ -213,20 +218,20 @@ useEffect(() => {
     >
       {/* Introducción y Nube de Palabras */}
       <motion.section
-        id="voz-rural"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={fadeUpVariant}
-        className="text-center mb-10 max-w-[800px] mx-auto"
-      >
-        <motion.h1
-          className="text-4xl font-heading mb-3"
-          variants={fadeUpVariant}
-          style={{ letterSpacing: ".02em" }}
+       id="voz-rural"
+       initial="hidden"
+       whileInView="visible"
+       viewport={{ once: true, amount: 0.3 }}
+       variants={fadeUpVariant}
+       className="text-center mb-10 max-w-[800px] mx-auto scroll-mt-28" 
         >
-          Mensajes de las Parroquias
-        </motion.h1>
+     <motion.h1
+        className="text-4xl font-heading mb-3"
+        variants={fadeUpVariant}
+        style={{ letterSpacing: ".02em" }}
+        >
+         Mensajes de las Parroquias
+       </motion.h1>
         <motion.p
           className="text-gray-700 text-lg mb-8"
           variants={fadeUpVariant}
@@ -286,10 +291,16 @@ useEffect(() => {
           {/* Secciones de Categoría */}
           {categorias.map(cat => (
             <section
-             key={cat}
-             id={slugify(cat)} // convierte el texto a id tipo "mensaje-ecuador"
-             className="mb-8 rounded-xl bg-white shadow-md p-4 scroll-mt-[100px]"
-              >
+              key={cat}
+              id={
+                cat === "¿Por qué su gobierno parroquial es importante para su comunidad?"
+                  ? "importancia"
+                  : cat === "¿Cual sería su mensaje para el Ecuador?"
+                  ? "mensaje"
+                  : undefined
+              }
+              className="mb-8 rounded-xl bg-white shadow-md p-4"
+            >
               <h2
                 onClick={() => {
                   setCategoriaActiva(cat === categoriaActiva ? null : cat);

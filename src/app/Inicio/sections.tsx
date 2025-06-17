@@ -1,32 +1,42 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Carga segura desde cliente (sin SSR)
 const MapaLeaflet = dynamic(() => import("./ParroquializacionLeaflet"), {
   ssr: false,
 });
 
-// Hook para animar conteo
+// Función de easing suave
+function easeOutExpo(x: number): number {
+  return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
+}
+
+// Hook mejorado para animar conteo suavemente
 function useCountUp(target: number, duration: number = 1.5): number {
   const [count, setCount] = useState(0);
+
   useEffect(() => {
-    let start = 0;
-    const increment = target / (duration * 60);
-    const interval = setInterval(() => {
-      start += increment;
-      if (start >= target) {
-        setCount(target);
-        clearInterval(interval);
-      } else {
-        setCount(Math.floor(start));
+    let startTime: number | null = null;
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const elapsed = (timestamp - startTime) / 1000;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = easeOutExpo(progress);
+      setCount(Math.floor(eased * target));
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
       }
-    }, 1000 / 60);
-    return () => clearInterval(interval);
+    };
+
+    requestAnimationFrame(animate);
   }, [target, duration]);
+
   return count;
 }
 
@@ -61,10 +71,13 @@ const sections = [
 ];
 
 export default function Sections() {
-  const countMensajes = useCountUp(3514);
-  const countHoras = useCountUp(1200);
-  const countEntrevistas = useCountUp(193);
-  const countMinutos = useCountUp(579);
+  const statsRef = useRef(null);
+  const isInView = useInView(statsRef, { once: true });
+
+  const countMensajes = useCountUp(isInView ? 3514 : 0);
+  const countHoras = useCountUp(isInView ? 1200 : 0);
+  const countEntrevistas = useCountUp(isInView ? 193 : 0);
+  const countMinutos = useCountUp(isInView ? 579 : 0);
 
   return (
     <>
@@ -168,34 +181,30 @@ export default function Sections() {
           </motion.section>
         );
       })}
-    {/* Sección de estadísticas rurales */}
-      <section className="bg-[#F5E5B8] py-16 px-6">
+
+      {/* Sección de estadísticas rurales con conteo suave */}
+      <section ref={statsRef} className="bg-[#F5E5B8] py-16 px-6">
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[{
-            icon: "💬",
-            count: "3,514+",
-            label: "Mensajes enviados por WhatsApp",
-          }, {
-            icon: "⏱️",
-            count: "1.200+ horas",
-            label: "Horas de trabajo comunitario",
-          }, {
-            icon: "📝",
-            count: "193+",
-            label: "Entrevistas transcritas",
-          }, {
-            icon: "🎥",
-            count: "579+ min",
-            label: "Minutos en video documental",
-          }].map((item, index) => (
-            <div
+          {[
+            { icon: "💬", count: countMensajes, suffix: "+", label: "Mensajes enviados por WhatsApp" },
+            { icon: "⏱️", count: countHoras, suffix: "+ horas", label: "Horas de trabajo comunitario" },
+            { icon: "📝", count: countEntrevistas, suffix: "+", label: "Entrevistas transcritas" },
+            { icon: "🎥", count: countMinutos, suffix: "+ min", label: "Minutos en video documental" },
+          ].map((item, index) => (
+            <motion.div
               key={index}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
               className="bg-[#FFF8E1] border border-[#E0C97F] rounded-2xl shadow-sm hover:shadow-lg transition duration-300 p-6 flex flex-col items-center"
             >
               <div className="text-4xl md:text-5xl mb-4">{item.icon}</div>
-              <p className="text-2xl font-bold text-[#3A4D39]">{item.count}</p>
+              <p className="text-2xl font-bold text-[#3A4D39]">
+                {item.count}
+                {item.suffix}
+              </p>
               <p className="text-sm text-[#5C452D] mt-1">{item.label}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>

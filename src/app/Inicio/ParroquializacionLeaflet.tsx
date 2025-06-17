@@ -76,7 +76,7 @@ export default function ParroquializacionLeaflet() {
   return (
     <section className="py-16 bg-gray-100 text-gray-800">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-8">Parroquialización en Ecuador</h2>
+        <h2 className="text-3xl font-bold font-heading mb-8">Parroquialización en Ecuador</h2>
 
         {/* Filtros */}
         <div className="flex flex-col md:flex-row justify-center gap-4 mb-6">
