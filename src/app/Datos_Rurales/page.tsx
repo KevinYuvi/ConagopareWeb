@@ -43,9 +43,9 @@ const data = [
     image: '6.Servicios-Básicos.webp',
   },
   {
-    title: 'Desnutrición Infantil',
-    description: 'Analiza la prevalencia de desnutrición infantil según género, área (urbana/rural), etnia y nivel socioeconómico.',
-    href: '/Datos/Desnutricion',
+    title: 'Desnutrición Crónica Infantil',
+    description: 'Visita y consulta el SUUSEN, Sistema Unificado y Universal de Seguimiento Nominal, para conocer datos de tu territorio sobre DCI.',
+    href: 'https://informacion.infancia.gob.ec/',
     image: '7.Desnutrición.webp',
   },
   {
@@ -96,7 +96,7 @@ export default function DatosRuralesPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeUp}
-            
+
             className="bg-gray-200 rounded-2xl p-8 flex flex-col items-center justify-between gap-6 hover:shadow-[0_0_10px_2px_rgba(43,100,255,0.3)] transition-shadow duration-300 "
           >
             <div className="flex flex-col items-center justify-between gap-6">
@@ -106,7 +106,9 @@ export default function DatosRuralesPage() {
             </div>
             <Link
               href={item.href}
-            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
 
 
               Consultar
