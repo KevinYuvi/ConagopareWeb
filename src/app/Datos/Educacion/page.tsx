@@ -14,6 +14,20 @@ export default function EducacionPage() {
                         allowFullScreen
                     ></iframe>
                 </div>
+                <div className="mx-auto mt-8 border-l-4 border-blue-600 text-left px-6">
+                    <h3 className="text-xl font-bold">Fuente</h3>
+                    <p>
+                        Ministerio de Educación · Repositorio de bases de datos y publicaciones.{' '}
+                        <a
+                            href="https://educacion.gob.ec/base-de-datos/"
+                            className="text-blue-600 underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver fuente
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     );

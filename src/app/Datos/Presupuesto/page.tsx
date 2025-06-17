@@ -14,6 +14,12 @@ export default function PresupuestoPage() {
                         allowFullScreen
                     ></iframe>
                 </div>
+                <div className="mx-auto mt-8 border-l-4 border-blue-600 text-left px-6">
+                    <h3 className="text-xl font-bold">Fuente</h3>
+                    <p className="text-gray-700">
+                        CONAGOPARE Nacional · Datos institucionales de presupuesto 2025.
+                    </p>
+                </div>
             </div>
         </div>
     );

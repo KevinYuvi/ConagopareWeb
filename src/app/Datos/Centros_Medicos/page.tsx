@@ -16,6 +16,20 @@ export default function CentrosMedicosPage() {
             allowFullScreen
           ></iframe>
         </div>
+        <div className="mx-auto mt-8 border-l-4 border-blue-600 text-left px-6">
+          <h3 className="text-xl font-bold">Fuente</h3>
+          <p>
+            ACESS - Licencias otorgadas a establecimientos de salud públicos y privados.{' '}
+            <a
+              href="https://datosabiertos.gob.ec/dataset/licenciamientos-a-establecimientos-de-salud"
+              className="text-blue-600 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver fuente
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
