@@ -1,12 +1,19 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
 
 // SLUGs para las categorías principales:
 const ID_IMPORTANCIA = "importancia";
 const ID_MENSAJE = "mensaje";
+
+// 🧭 Mapeo entre nombres y slugs de categorías
+const MAPEO_CATEGORIAS: Record<string, string> = {
+  "¿Por qué su gobierno parroquial es importante para su comunidad?": ID_IMPORTANCIA,
+  "¿Cual sería su mensaje para el Ecuador?": ID_MENSAJE,
+};
 
 interface Word {
   palabra: string;
@@ -39,17 +46,17 @@ const ALEATORIOS_MS = 25000;
 
 function slugify(text: string): string {
   return text
-    .toString()
-    .normalize("NFD")
+    .normalize("NFD")                     // quita tildes
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .trim()
-    .replace(/¿/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+    .replace(/[^a-z0-9]+/g, "-")         // espacios y signos → "-"
+    .replace(/^-+|-+$/g, "");            // sin guiones al inicio o final
 }
 
+
 export default function VozRuralPage() {
+  const pathname = usePathname();
+
   const palabrasRelevantes: Word[] = [
     { palabra: "gobierno", frecuencia: 60 },
     { palabra: "parroquial", frecuencia: 40 },
@@ -91,33 +98,28 @@ export default function VozRuralPage() {
   const [aleatorios, setAleatorios] = useState<Mensaje[]>([]);
   const aleatorioIndex = useRef(0);
   const [userVotes, setUserVotes] = useState<{ [key: number]: "like" | "dislike" | undefined }>({});
+ 
+useEffect(() => {
+  if (typeof window === "undefined") return;
+  const hash = window.location.hash.replace("#", "");
+  if (!hash) return;
 
-  // ADAPTADO: Hash scroll y expansión automática de categoría (como Datos Curiosos)
-  useEffect(() => {
-    function expandAndScrollFromHash() {
-      const hash = window.location.hash.replace("#", "");
-      let cat = null;
-      if (hash === "importancia") {
-        cat = "¿Por qué su gobierno parroquial es importante para su comunidad?";
-      }
-      if (hash === "mensaje") {
-        cat = "¿Cual sería su mensaje para el Ecuador?";
-      }
-      if (cat) {
-        setCategoriaActiva(cat);
-        setSubcategoriaActiva(null); // Opcional: colapsa cualquier subcategoría
-        setTimeout(() => {
-          const section = document.getElementById(hash);
-          if (section) section.scrollIntoView({ behavior: "smooth" });
-        }, 400);
-      }
+  const categoria = Object.entries(MAPEO_CATEGORIAS).find(
+    ([, slug]) => slug === hash
+  )?.[0];
+
+  if (categoria) {
+    setCategoriaActiva(categoria);
+
+    const subcategorias = Array.from(
+      new Set(data.filter(d => d.Categoría === categoria).map(d => d.Subcategoría).filter(Boolean))
+    );
+    if (subcategorias.length > 0) {
+      setSubcategoriaActiva(subcategorias[0]);
     }
-    window.addEventListener("hashchange", expandAndScrollFromHash);
-    expandAndScrollFromHash(); // Al cargar
-    return () => window.removeEventListener("hashchange", expandAndScrollFromHash);
-  }, []);
-
-  // Cargar datos y votos iniciales
+  }
+}, [data]);
+ 
   useEffect(() => {
     fetch(DATA_URL)
       .then(res => res.json())
@@ -133,7 +135,7 @@ export default function VozRuralPage() {
         if (almacen) {
           try {
             nuevasReacciones = JSON.parse(almacen);
-          } catch { }
+          } catch {}
         }
         datosConId.forEach(m => {
           if (nuevasReacciones[m.id] === undefined) {
@@ -148,9 +150,7 @@ export default function VozRuralPage() {
         const votes: any = JSON.parse(localStorage.getItem("vozRuralUserVotes") || "{}");
         setUserVotes(votes);
       });
-  }, []);
-
-  // Cambiar mensajes aleatorios periódicamente
+   }, []);
   useEffect(() => {
     if (data.length === 0) return;
     const interval = setInterval(() => {
@@ -189,16 +189,13 @@ export default function VozRuralPage() {
 
   const votar = (id: number, tipo: "like" | "dislike") => {
     let userVotesLocal: any = JSON.parse(localStorage.getItem("vozRuralUserVotes") || "{}");
-    if (userVotesLocal[id]) {
-      return;
-    }
+    if (userVotesLocal[id]) return;
+
     let nuevo = { ...reacciones };
     if (!nuevo[id]) nuevo[id] = { likes: 0, dislikes: 0 };
-    if (tipo === "like") {
-      nuevo[id].likes += 1;
-    } else {
-      nuevo[id].dislikes += 1;
-    }
+    if (tipo === "like") nuevo[id].likes += 1;
+    else nuevo[id].dislikes += 1;
+
     userVotesLocal[id] = tipo;
     setReacciones(nuevo);
     setUserVotes(userVotes => ({ ...userVotes, [id]: tipo }));
@@ -207,13 +204,11 @@ export default function VozRuralPage() {
   };
 
   return (
-    <div
-      className="max-w-[1300px] mx-auto p-5"
-      style={{
-        backgroundColor: "#fff",
-        color: "#222",
-        position: "relative",
-        fontFamily: "'Baloo 2', var(--font-sans), sans-serif"
+    <div className="max-w-[1300px] mx-auto p-5" style={{
+      backgroundColor: "#fff",
+      color: "#222",
+      position: "relative",
+      fontFamily: "'Baloo 2', var(--font-sans), sans-serif"
       }}
     >
       {/* Introducción y Nube de Palabras */}
@@ -291,16 +286,10 @@ export default function VozRuralPage() {
           {/* Secciones de Categoría */}
           {categorias.map(cat => (
             <section
-              key={cat}
-              id={
-                cat === "¿Por qué su gobierno parroquial es importante para su comunidad?"
-                  ? "importancia"
-                  : cat === "¿Cual sería su mensaje para el Ecuador?"
-                  ? "mensaje"
-                  : undefined
-              }
-              className="mb-8 rounded-xl bg-white shadow-md p-4"
-            >
+             key={cat}
+             id={slugify(cat)} // convierte el texto a id tipo "mensaje-ecuador"
+             className="mb-8 rounded-xl bg-white shadow-md p-4 scroll-mt-[100px]"
+              >
               <h2
                 onClick={() => {
                   setCategoriaActiva(cat === categoriaActiva ? null : cat);

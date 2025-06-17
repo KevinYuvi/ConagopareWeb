@@ -55,10 +55,15 @@ export default function EquipoPage() {
     },
     {
       nombre: "Marlon Tituaña",
-      rol: "🛠️ Apoyo logístico",
-      descripcion: `⭐ Apoyo logístico y comunicación institucional.`,
+      rol: "🛠️ Desarrollador Web",
+      descripcion: `🎓 Estudiante de Ingeniería en Sistemas de Información en la Universidad Central del Ecuador. Participó en el desarrollo integral de la plataforma web, implementando funcionalidades clave tanto en el frontend como en el backend.
+      
+      🧩 Su trabajo contribuyó a que los mensajes y testimonios del territorio sean transmitidos de forma clara y comprensible. 
+      
+      💬 "El software es una gran combinación entre arte e ingeniería." — Bill Gates`,
+
       imagen: "Marlon.webp",
-      redSocial: "https://www.linkedin.com",
+      redSocial: "https://www.linkedin.com/in/marlon-castillo-1770a5370",
     },
     {
       nombre: "Ariel Inguillay",
