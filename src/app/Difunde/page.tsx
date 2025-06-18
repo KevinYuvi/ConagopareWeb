@@ -149,12 +149,12 @@ export default function Difunde() {
     </div>
 
     <audio controls className="w-full rounded-md shadow-sm mb-3">
-      <source src="/audios/cuña identidad rural_mezcla1.mp3" type="audio/mpeg" />
+      <source src="/audios/cuna-identidad-rural.mp3" type="audio/mpeg" />
       Tu navegador no soporta el reproductor de audio.
     </audio>
 
     <a
-      href="/audios/cuña identidad rural_mezcla1.mp3"
+      href="/audios/cuna-identidad-rural.mp3"
       download
       className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
     >
