@@ -145,7 +145,7 @@ const modulos = [
       </p>
     ),
     video: "https://www.youtube.com/embed/q8NDE-t2AB4",
-    download: "/sources/módulo 5 - DCI priorización territorial ‘indicadores.xlsx",
+    download: "/sources/módulo 5 - DCI priorización territorial indicadores.xlsx",
   },
 ];
 
