@@ -55,23 +55,24 @@ export default function Difunde() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-          {elementos.map((item, index) => (
-            <motion.div
-              key={index}
-              className={`relative ${item.color} p-4 rounded-lg shadow-md cursor-pointer`}
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-              onClick={() => setSelectedItem(item)}
-            >
-              {item.tipo === "video" ? (
-                <video src={item.src} className="w-full h-full object-cover rounded-lg" />
-              ) : (
-                <img src={item.src} alt="Contenido visual" className="w-full h-full object-cover rounded-lg" />
-              )}
-              <FaDownload className="absolute top-2 right-2 text-white opacity-80" />
-            </motion.div>
-          ))}
-        </div>
+  {elementos.map((item, index) => (
+    <motion.div
+      key={index}
+      className={`relative ${item.color} p-4 rounded-lg shadow-md cursor-pointer`}
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+      onClick={() => setSelectedItem(item)}
+    >
+      {item.tipo === "video" ? (
+        <video src={item.src} className="w-full h-full object-cover rounded-lg" />
+      ) : (
+        <img src={item.src} alt="Contenido visual" className="w-full h-full object-cover rounded-lg" />
+      )}
+      {/* <FaDownload className="absolute top-2 right-2 text-white opacity-80" /> */}
+    </motion.div>
+  ))}
+</div>
+
       </section>
 
       {/* Editorial */}
@@ -127,27 +128,41 @@ export default function Difunde() {
 
       {/* Recursos */}
       <section id="recursos" className="scroll-mt-24 max-w-5xl mx-auto text-center">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">Otros recursos</h3>
-        <p className="text-gray-600 mb-6">
-          Aquí puedes agregar enlaces a PDFs, documentos, redes sociales, posters, etc.
+  <h3 className="text-2xl font-bold text-gray-800 mb-8">Otros recursos</h3>
+
+  <div className="bg-[#f7f5f0] px-6 py-5 rounded-xl shadow-lg border border-green-300 inline-block w-full max-w-xl text-left">
+    <div className="flex items-start gap-3 mb-3">
+      <span className="text-purple-600 text-2xl">🎧</span>
+      <div>
+        <p className="text-lg font-semibold text-gray-900 flex items-center">
+          Cuña radial - Identidad Rural
+          <span
+            className="ml-2 text-gray-400 cursor-pointer"
+            title="Una cuña radial es un mensaje breve diseñado para ser difundido en radios comunitarias."
+          >
+            ℹ️
+          </span>
         </p>
-        <div className="flex justify-center gap-4 flex-wrap">
-          <a
-            href="/docs/guia-comunicacion.pdf"
-            target="_blank"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow"
-          >
-            Guía de comunicación (PDF)
-          </a>
-          <a
-            href="/docs/poster.png"
-            target="_blank"
-            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow"
-          >
-            Póster informativo
-          </a>
-        </div>
-      </section>
+        <p className="text-sm text-gray-600">Escucha y comparte este mensaje sonoro para visibilizar la voz rural.</p>
+        <p className="text-sm text-gray-500 italic mt-1">Duración: 57 segundos</p>
+      </div>
+    </div>
+
+    <audio controls className="w-full rounded-md shadow-sm mb-3">
+      <source src="/audios/cuña identidad rural_mezcla1.mp3" type="audio/mpeg" />
+      Tu navegador no soporta el reproductor de audio.
+    </audio>
+
+    <a
+      href="/audios/cuña identidad rural_mezcla1.mp3"
+      download
+      className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
+    >
+      ⬇️ Descargar cuña radial
+    </a>
+  </div>
+</section>
+
 
       {/* Modal de visualización */}
       <AnimatePresence>
