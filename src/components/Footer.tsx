@@ -11,7 +11,7 @@ export default function Footer() {
   {/* Logo y mensaje */}
   <div className="flex flex-col items-start space-y-2 md:col-span-3">
     <Image
-      src="/LOGOTIPO - IDENTIDAD RURAL.webp"
+      src="/images/inicio/Logo2.webp"
       alt="Logo"
       width={150}
       height={45}

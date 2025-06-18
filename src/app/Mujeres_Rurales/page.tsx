@@ -178,10 +178,24 @@ export default function MujeresRuralesPage() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <select value={region} onChange={(e) => setRegion(e.target.value)} className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400">
-            <option value="">Escoge una región</option>
-            {valoresUnicos("REGIÓN").map((r) => <option key={r} value={r}>{r}</option>)}
-          </select>
+<select
+  value={region}
+  onChange={(e) => {
+    const value = e.target.value;
+    if (value === "NACIONAL") {
+      limpiarFiltros();
+    } else {
+      setRegion(value);
+    }
+  }}
+  className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400"
+>
+  <option value="">Escoge una región</option>
+  <option value="NACIONAL">NACIONAL</option>
+  {valoresUnicos("REGIÓN").map((r) => (
+    <option key={r} value={r}>{r}</option>
+  ))}
+</select>
 
           <select value={provincia} onChange={(e) => handleProvinciaChange(e.target.value)} className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400">
             <option value="">Escoge una provincia</option>
