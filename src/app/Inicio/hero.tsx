@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
           src="/images/inicio/Logo2.webp"
           alt="Logo Identidad Rural"
-          className="h-auto w-[250px] md:w-[320px] lg:w-[400px] mx-auto drop-shadow-lg rounded-xl"
+          className="h-auto w-[250px] md:w-[320px] lg:w-[400px] mx-auto"
         />
 
         {/* Logo Conagopare debajo */}
@@ -29,9 +29,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4 }}
-          src="/images/inicio/logo-conagopare.png"
+          src="/images/inicio/logo-conagopare.webp"
           alt="Logo Conagopare"
-          className="mt-6 h-auto w-[180px] md:w-[220px] lg:w-[260px] drop-shadow-md"
+          className=" h-auto w-[180px] md:w-[220px] lg:w-[260px] "
         />
       </div>
     </section>
