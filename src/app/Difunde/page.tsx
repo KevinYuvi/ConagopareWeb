@@ -149,12 +149,12 @@ export default function Difunde() {
     </div>
 
     <audio controls className="w-full rounded-md shadow-sm mb-3">
-      <source src="/audios/audio1.mp3" type="audio/mpeg" />
+      <source src="/Audios/audio1.mp3" type="audio/mpeg" />
       Tu navegador no soporta el reproductor de audio.
     </audio>
 
     <a
-      href="/audios/audio1.mp3"
+      href="/Audios/audio1.mp3"
       download
       className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
     >
