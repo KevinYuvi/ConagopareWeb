@@ -68,27 +68,27 @@ export default function Entrevistas() {
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
         Entrevistas con Líderes Rurales
       </h2>
-      <p className="text-gray-600 mb-6 text-sm">
+      <p className="text-gray-600 mb-6 ">
         Historias de quienes trabajan por el desarrollo de sus comunidades
       </p>
 
       {/* Formulario de filtros */}
       <form onSubmit={manejarEnvio} className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
-        <select className="border px-2 py-1 rounded" value={provincia} onChange={(e) => setProvincia(e.target.value)}>
+        <select className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400"value={provincia} onChange={(e) => setProvincia(e.target.value)}>
           <option value="">Provincia</option>
           {[...new Set(videosMock.map(v => v.provincia))].map(p => (
             <option key={p} value={p}>{p}</option>
           ))}
         </select>
 
-        <select className="border px-2 py-1 rounded" value={canton} onChange={(e) => setCanton(e.target.value)} disabled={!provincia}>
+        <select className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400" value={canton} onChange={(e) => setCanton(e.target.value)} disabled={!provincia}>
           <option value="">Cantón</option>
           {cantonesDisponibles.map(c => (
             <option key={c} value={c}>{c}</option>
           ))}
         </select>
 
-        <select className="border px-2 py-1 rounded" value={parroquia} onChange={(e) => setParroquia(e.target.value)} disabled={!canton}>
+        <select className="px-4 py-2 bg-white shadow-xl rounded-xl outline-none focus:ring-2 focus:ring-blue-400" value={parroquia} onChange={(e) => setParroquia(e.target.value)} disabled={!canton}>
           <option value="">Parroquia</option>
           {parroquiasDisponibles.map(p => (
             <option key={p} value={p}>{p}</option>
@@ -97,7 +97,7 @@ export default function Entrevistas() {
 
         <button
           type="submit"
-          className="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"
+          className="cursor-pointer transition-all bg-[#224e99] text-white px-6 py-2 rounded-lg border-[#11336d] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2"
         >
           Buscar
         </button>
@@ -105,7 +105,7 @@ export default function Entrevistas() {
         <button
           type="button"
           onClick={quitarSelecciones}
-          className="bg-gray-500 text-white px-4 py-1 rounded hover:bg-gray-600"
+          className="cursor-pointer transition-all bg-[#d02e28] text-white px-6 py-2 rounded-lg border-[#a31611] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2"
         >
           Quitar Selecciones
         </button>
@@ -133,7 +133,7 @@ export default function Entrevistas() {
       {resultadosFiltrados.length > 0 && (
         <div className="flex justify-center items-center gap-4">
           <button
-            className="bg-blue-600 text-white px-3 py-1 rounded disabled:opacity-50"
+          className="cursor-pointer transition-all bg-[#d02e28] text-white px-6 py-2 rounded-lg border-[#a31611] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2 disabled:opacity-50"
             onClick={() => setPagina((p) => Math.max(p - 1, 1))}
             disabled={pagina === 1}
           >
@@ -141,7 +141,7 @@ export default function Entrevistas() {
           </button>
           <span className="text-gray-800">Página {pagina} de {totalPaginas}</span>
           <button
-            className="bg-blue-600 text-white px-3 py-1 rounded disabled:opacity-50"
+          className="cursor-pointer transition-all bg-[#224e99] text-white px-6 py-2 rounded-lg border-[#11336d] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2 disabled:opacity-50"
             onClick={() => setPagina((p) => Math.min(p + 1, totalPaginas))}
             disabled={pagina === totalPaginas}
           >

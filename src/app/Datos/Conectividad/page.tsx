@@ -8,7 +8,7 @@ export default function ConectividadPage() {
                 <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         title="Internet y Conectividad"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiYWM5YTNjN2EtOTg1NC00YTIwLTlkZDktODc5ODY5MjM0OTQ4IiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiMmU0MjEzNzgtYzI0Zi00OWRiLWJlYjAtYjE0ZDVjZGEwMjgwIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
                         className="w-full h-full"
                         allowFullScreen
                     ></iframe>

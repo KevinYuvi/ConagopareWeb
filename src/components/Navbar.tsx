@@ -20,17 +20,13 @@ type NavLink = LinkItem | LinkWithSubmenu;
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [vozRuralOpen, setVozRuralOpen] = useState(false);
-  const [difundeOpen, setDifundeOpen] = useState(false);
-  const [datosCuriososOpen, setDatosCuriososOpen] = useState(false);
-  const [submenuAbierto, setSubmenuAbierto] = useState<string | null>(null);
+const [submenuAbierto, setSubmenuAbierto] = useState<string | null>(null);
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
 
-  function closeAllSubmenus() {
-    setVozRuralOpen(false);
-    setDifundeOpen(false);
-    setDatosCuriososOpen(false);
-  }
+function closeAllSubmenus() {
+  setSubmenuAbierto(null);
+}
+
 
   const links: NavLink[] = [
     { href: "/", label: "Inicio" },
@@ -114,35 +110,27 @@ export default function Navbar() {
               const isVozRural = link.label === "Voz Rural";
               const isDifunde = link.label === "Difunde";
               const isDatosCuriosos = link.label === "Datos Curiosos";
-              const isOpen =
-                (isVozRural && vozRuralOpen) ||
-                (isDifunde && difundeOpen) ||
-                (isDatosCuriosos && datosCuriososOpen) ||
-                submenuAbierto === link.label;
+const isOpen = submenuAbierto === link.label;
+
               return (
                 <li
                   key={link.label}
                   className="relative group"
-                  onMouseEnter={() => {
-                    if (closeTimeout.current) clearTimeout(closeTimeout.current);
-                    closeAllSubmenus();
-                    if (isVozRural) setVozRuralOpen(true);
-                    if (isDifunde) setDifundeOpen(true);
-                    if (isDatosCuriosos) setDatosCuriososOpen(true);
-                    else setSubmenuAbierto(link.label);
-                  }}
-                  onMouseLeave={() => {
-                    closeTimeout.current = setTimeout(() => {
-                      closeAllSubmenus();
-                      setSubmenuAbierto(null);
-                    }, 300);
-                  }}
+onMouseEnter={() => {
+  if (closeTimeout.current) clearTimeout(closeTimeout.current);
+  setSubmenuAbierto(link.label);
+}}
+onMouseLeave={() => {
+  closeTimeout.current = setTimeout(() => {
+    setSubmenuAbierto(null);
+  }, 300);
+}}
                 >
                   <div>
                     <button
                       aria-haspopup="true"
                       aria-expanded={isOpen}
-                      className="hover:text-cyan-600 flex items-center gap-1"
+                      className="hover:text-[#3bb2e7] flex items-center gap-1"
                     >
                       {link.label}
                       <svg
@@ -174,7 +162,7 @@ export default function Navbar() {
                         >
                           <Link
                             href={sublink.href}
-                            className={`block px-4 py-2 hover:bg-cyan-100 transition duration-150 ${idx === 0 ? "rounded-t-md" : ""} ${idx === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
+                            className={`block px-4 py-2 hover:bg-gray-200 transition duration-150 ${idx === 0 ? "rounded-t-md" : ""} ${idx === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
                             onClick={() => closeAllSubmenus()}
                           >
                             {sublink.label}
@@ -189,7 +177,7 @@ export default function Navbar() {
 
             return (
               <li key={link.href}>
-                <Link href={link.href} className="hover:text-cyan-600">
+                <Link href={link.href} className="hover:text-[#3bb2e7]">
                   {link.label}
                 </Link>
               </li>

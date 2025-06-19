@@ -9,7 +9,7 @@ export default function PresupuestoPage() {
                 <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         title="Presupuesto Parroquial 2025"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiZjlmNzY5MmEtMzhjYS00M2QwLThlNTYtNjg0ZmE0M2FjZjYwIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiMWQ5ZDY3MDctZmJiMi00ZmZlLThkNGEtY2MwODU0YzJmMjlhIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
                         className="w-full h-full"
                         allowFullScreen
                     ></iframe>

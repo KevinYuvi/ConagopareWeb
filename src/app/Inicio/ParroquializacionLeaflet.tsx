@@ -105,7 +105,9 @@ export default function ParroquializacionLeaflet() {
         </div>
 
         {/* Botón */}
-        <button onClick={handleConsulta} className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+        <button onClick={handleConsulta}
+        
+              className="cursor-pointer transition-all bg-[#224e99] text-white px-4 py-2 text-sm rounded-lg border-[#11336d]  border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
           Consultar
         </button>
 

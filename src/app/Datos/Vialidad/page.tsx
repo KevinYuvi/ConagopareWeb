@@ -9,7 +9,7 @@ export default function VialidadPage() {
                 <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         title="Centros Médicos"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiY2EyZTQzNTktYjM2My00ZDQxLWEwZWMtMWU0NzQ4NDMwNzA1IiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiMDkyYWIxOTgtMmNhYS00ODQwLTkzMjItMDdkNjhjMjhlNDEwIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
                         className="w-full h-full"
                         allowFullScreen
                     ></iframe>

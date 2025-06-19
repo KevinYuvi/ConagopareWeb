@@ -9,7 +9,7 @@ export default function EgresosHospitalariosPage() {
                 <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         title="Egresos Hospitalarios"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiMjMwMWY4NzYtNjRhYy00MWI1LWFhNDktYzRkMjNjMjRmODQxIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiNDQzMWQxOGEtNTFmYy00NTFmLWJmZTItZmViMDk2N2Y2MTNkIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
                         className="w-full h-full"
                         allowFullScreen
                     ></iframe>

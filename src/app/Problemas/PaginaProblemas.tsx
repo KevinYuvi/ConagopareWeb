@@ -313,10 +313,11 @@ const PaginaProblemas = () => {
         </div>
 
         <div className="flex justify-center gap-4 mt-6">
-          <button onClick={handlePrev} className="bg-gray-300 hover:bg-gray-400 text-sm px-4 py-2 rounded">
+          <button onClick={handlePrev} className="cursor-pointer transition-all bg-[#d02e28] text-white px-6 py-2 rounded-lg border-[#a31611] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2">
             Anterior
           </button>
-          <button onClick={handleNext} className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded">
+          <button onClick={handleNext} className="cursor-pointer transition-all bg-[#224e99] text-white px-6 py-2 rounded-lg border-[#11336d] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2">
+
             Siguiente
           </button>
         </div>

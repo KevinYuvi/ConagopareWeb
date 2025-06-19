@@ -11,7 +11,7 @@ export default function CentrosMedicosPage() {
         <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg ">
           <iframe
             title="Centros Médicos"
-            src="https://app.powerbi.com/view?r=eyJrIjoiZTVhYjYyNzEtNDgxOC00NDQ1LTgwNWMtZTMyOTVjMTJiZTllIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
+            src="https://app.powerbi.com/view?r=eyJrIjoiM2JjYzYwM2ItNzY4NS00ZjAzLWIxZDEtZmEwM2MyYjVjZThhIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
             className="w-full h-full"
             allowFullScreen
           ></iframe>

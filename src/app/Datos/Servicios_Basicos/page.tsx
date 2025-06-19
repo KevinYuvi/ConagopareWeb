@@ -9,7 +9,7 @@ export default function ServiciosBasicosPage() {
                 <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         title="Servicios Básicos"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiN2JlYWMwYWYtMjkxMy00Njc5LWFiMzgtNTI1NWUyMDU1NWE1IiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiOTk3MWY1YTUtOWQyNi00NTk4LTk1ZGEtZTA2MDAyN2ZhY2RlIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
                         className="w-full h-full"
                         allowFullScreen
                     ></iframe>
