@@ -75,7 +75,9 @@ export default function EquipoPage() {
     {
       nombre: "Kevin Yuvi",
       rol: "🛠️ Desarrollador Web",
-      descripcion: `⭐ Estudiante de Ingeniería en Sistemas. Me enfoco en el desarrollo web y en construir soluciones que combinen funcionalidad, claridad y propósito.`,
+      descripcion: `⭐ Estudiante de Ingeniería en Sistemas de Información, Universidad Central del Ecuador. Especializado en análisis y visualización de datos mediante Power BI, con enfoque en datos abiertos.
+      🧠 Su trabajo facilita la toma de decisiones y promueve la transparencia, convirtiendo grandes volúmenes de datos abiertos en conocimiento útil para la ciudadanía,
+      💬 "La información es el petróleo del siglo XXI, y el análisis de datos es el motor de combustión." — Peter Sondergaard`,
       imagen: "Kevin.webp",
       redSocial: "https://www.linkedin.com/in/kevin-yuvi-657b63334",
     },

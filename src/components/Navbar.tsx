@@ -206,7 +206,7 @@ export default function Navbar() {
       </button>
 
       {isOpen && (
-        <div className="xl:hidden fixed inset-0 z-40 bg-white flex flex-col items-center justify-center text-center space-y-4 text-lg  font-light tracking-wide">
+        <div className="xl:hidden fixed inset-0 z-40 bg-white flex flex-col items-center justify-center text-center space-y-4 text-lg ">
           {links.map((link) => {
             if ("submenu" in link) {
               const estaAbierto = submenuAbierto === link.label;
@@ -244,7 +244,7 @@ export default function Navbar() {
                         <Link
                           key={sublink.href}
                           href={sublink.href}
-                          className="py-2 hover:text-blue-800"
+                          className="py-2 text-black hover:text-blue-800"
                             onClick={() => {
     setIsOpen(false);
     setSubmenuAbierto(null);
