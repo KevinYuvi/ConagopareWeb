@@ -144,28 +144,45 @@ export default function MetodologiaPage() {
           cursor: "pointer",
         }}
       >
-        Metodología de Recolección y Análisis
+        🧭 Metodología de Identidad Rural
       </motion.h1>
 
       {/* Descripción */}
-      <motion.p
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUpVariant}
-        viewport={{ once: true, amount: 0.3 }}
-        style={{
-          fontSize: 15,
-          lineHeight: 1.7,
-          maxWidth: 700,
-          margin: "auto",
-          marginBottom: 50,
-          textAlign: "center",
-        }}
-      >
-        En esta sección se detalla el proceso de recolección, análisis y presentación de los datos que forman parte de este proyecto, cuyo objetivo es visibilizar las problemáticas y perspectivas de las parroquias rurales del Ecuador.
-      </motion.p>
+      <motion.div
+  initial="hidden"
+  whileInView="visible"
+  variants={fadeUpVariant}
+  viewport={{ once: true, amount: 0.3 }}
+  style={{
+    fontSize: 15,
+    lineHeight: 1.7,
+    maxWidth: 700,
+    margin: "auto",
+    marginBottom: 50,
+    textAlign: "justify",
+    display: "flex",
+    flexDirection: "column",
+    gap: "1rem",
+  }}
+>
+  <p>
+    Identidad Rural surge frente a una realidad evidente: existe una brecha de comunicación entre las administraciones públicas y los territorios rurales. Esta brecha no se limita al acceso a la información, sino que también atraviesa los lenguajes, los formatos y los canales con los que se construye el vínculo entre lo institucional y lo local.
+  </p>
 
-      {/* Proceso de Recolección de Datos */}
+  <p>
+    Nuestra propuesta busca acortar esa brecha trabajando desde los propios territorios, con sus voces, pero incorporando tonos, formatos y tendencias contemporáneas. A esto se suma un enfoque intergeneracional que conecta memorias y saberes históricos con nuevos liderazgos y herramientas actuales.
+  </p>
+
+  <p>
+    Aunque no se trata de una intervención de gran escala, representa un paso concreto hacia los principios del Estado Abierto, impulsando la transparencia y la participación ciudadana digital desde la ruralidad.
+  </p>
+
+  <p>
+    Lo hacemos reconociendo el derecho a habitar el espacio público digital, amparado por los marcos normativos vigentes.
+  </p>
+</motion.div>
+
+      {/* 🌐 Transmedia para la participación ciudadana */}
       <motion.h2
         initial="hidden"
         whileInView="visible"
@@ -183,7 +200,7 @@ export default function MetodologiaPage() {
           transition: "color 0.2s",
         }}
       >
-        Proceso de Recolección de Datos
+        🌐 Transmedia para la participación ciudadana
       </motion.h2>
 
       <motion.p
@@ -193,7 +210,7 @@ export default function MetodologiaPage() {
         viewport={{ once: true, amount: 0.3 }}
         style={{ fontSize: 14, lineHeight: 1.6, maxWidth: 700, marginBottom: 60 }}
       >
-        La recopilación de información se llevó a cabo a través de entrevistas dirigidas a los representantes de los Gobiernos Autónomos Descentralizados Parroquiales (GAD). A cada representante se le solicitó responder tres preguntas clave: Las respuestas fueron entregadas en su mayoría en formato de video, grabados por los mismos representantes y enviados a CONAGOPARE. En algunos casos, las respuestas fueron entregadas por escrito. En total, se recibieron aproximadamente 160 videos con información valiosa sobre las realidades de cada parroquia.
+        La metodología articula una estrategia transmedia con acciones presenciales, como conversatorios, talleres y espacios de formación que fortalecen capacidades en el territorio. Estos encuentros permiten trabajar procesos de culturización digital desde lo local, complementando para fortalecer las narrativas locales y empoderar a los actores del territorio.
       </motion.p>
 
       {/* Bloques preguntas alineados a la derecha */}
@@ -255,7 +272,7 @@ export default function MetodologiaPage() {
           transition: "color 0.2s",
         }}
       >
-        Análisis y Procesamiento de la Información
+        📊 Periodismo de datos
       </motion.h2>
 
       <motion.p
@@ -265,7 +282,9 @@ export default function MetodologiaPage() {
         viewport={{ once: true, amount: 0.3 }}
         style={{ fontSize: 14, lineHeight: 1.6, maxWidth: 700, marginBottom: 60 }}
       >
-        Para procesar los videos de manera eficiente, un software de transcripción automática, con el fin de convertir el contenido audiovisual en texto. Luego, se tabularon los datos y se analizaron las respuestas con el siguiente enfoque: Identificación de los problemas más frecuentes por parroquia, provincia y región. Clasificación y análisis de los mensajes dirigidos al Ecuador.
+        Desde un enfoque de periodismo de datos aplicado a lo local, trabajamos con información pública para habilitar nuevas formas de contar lo que ocurre en los territorios, con evidencia, contexto y sentido propio. Esta línea metodológica busca romper la dependencia informativa desde los medios locales rurales hacia las grandes agencias de noticias, permitiendo que mediante transferencia de capacidades, el periodismo rural construya sus propias narrativas y así disputar agenda nacional.
+        El análisis de open data, cruzado con testimonios y dinámicas propias de cada lugar, permite abrir una conversación distinta sobre lo rural: más informada, más justa, más conectada con quienes viven y transforman el territorio día a día: con identidad. 
+        Transmedia y periodismo de datos para escuchar, conectar y actuar.
       </motion.p>
 
       {/* Resultados Obtenidos */}
