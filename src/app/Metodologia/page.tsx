@@ -194,7 +194,7 @@ export default function MetodologiaPage() {
         viewport={{ once: true, amount: 0.3 }}
         style={{
           fontWeight: "600",
-          fontSize: 22,
+          fontSize: 25,
           marginBottom: 15,
           cursor: "pointer",
           transition: "color 0.2s",
@@ -208,7 +208,7 @@ export default function MetodologiaPage() {
         whileInView="visible"
         variants={fadeUpVariant}
         viewport={{ once: true, amount: 0.3 }}
-        style={{ fontSize: 14, lineHeight: 1.6, maxWidth: 700, marginBottom: 60 }}
+        style={{ fontSize: 15, lineHeight: 1.6, maxWidth: 700, marginBottom: 60 }}
       >
         La metodología articula una estrategia transmedia con acciones presenciales, como conversatorios, talleres y espacios de formación que fortalecen capacidades en el territorio. Estos encuentros permiten trabajar procesos de culturización digital desde lo local, complementando para fortalecer las narrativas locales y empoderar a los actores del territorio.
       </motion.p>
@@ -249,7 +249,7 @@ export default function MetodologiaPage() {
             }}
           >
             <strong>{title}</strong>
-            <p style={{ marginTop: 10, fontSize: 14 }}>{text}</p>
+            <p style={{ marginTop: 10, fontSize: 15 }}>{text}</p>
           </motion.div>
         ))}
       </div>
@@ -280,7 +280,7 @@ export default function MetodologiaPage() {
         whileInView="visible"
         variants={fadeUpVariant}
         viewport={{ once: true, amount: 0.3 }}
-        style={{ fontSize: 14, lineHeight: 1.6, maxWidth: 700, marginBottom: 60 }}
+        style={{ fontSize: 15, lineHeight: 1.6, maxWidth: 700, marginBottom: 60 }}
       >
         Desde un enfoque de periodismo de datos aplicado a lo local, trabajamos con información pública para habilitar nuevas formas de contar lo que ocurre en los territorios, con evidencia, contexto y sentido propio. Esta línea metodológica busca romper la dependencia informativa desde los medios locales rurales hacia las grandes agencias de noticias, permitiendo que mediante transferencia de capacidades, el periodismo rural construya sus propias narrativas y así disputar agenda nacional.
         El análisis de open data, cruzado con testimonios y dinámicas propias de cada lugar, permite abrir una conversación distinta sobre lo rural: más informada, más justa, más conectada con quienes viven y transforman el territorio día a día: con identidad. 

@@ -40,28 +40,20 @@ function closeAllSubmenus() {
         },
         {
           href: "/Voz_Rural#importancia",
-          label: "¿Por qué su gobierno parroquial es importante para su comunidad?",
+          label: "¿Por qué su gobierno parroquial es importante para su comunidad? / ¿Cual sería su mensaje para el Ecuador?",
         },
-        {
+        /*{
           href: "/Voz_Rural#mensaje",
           label: "¿Cual sería su mensaje para el Ecuador?",
+        },
+        */
+        {
+          href: "/Datos_Curiosos#datos",
+          label: "Datos Curiosos",
         },
       ],
     },
     { href: "/Entrevistas", label: "Entrevistas" },
-    {
-      label: "Datos Curiosos",
-      submenu: [
-        {
-          href: "/Datos_Curiosos#emociones",
-          label: "Emociones de las y los Entrevistados",
-        },
-        {
-          href: "/Datos_Curiosos#anecdotas",
-          label: "Anécdotas Random",
-        },
-      ],
-    },
     { href: "/Mujeres_Rurales", label: "Mujeres Rurales" },
     { href: "/Datos_Rurales", label: "Datos Rurales" },
     {
