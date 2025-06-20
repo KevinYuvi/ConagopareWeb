@@ -126,9 +126,10 @@ export default function DatosCuriososPage() {
   whileInView="visible"
   variants={fadeUpVariant}
   viewport={{ once: true }}
-  style={{ fontWeight: "bold", fontSize: 26, marginBottom: 10, textAlign: "center" }}
+  style={{ fontWeight: "bold", fontSize: 30, marginBottom: 10, textAlign: "center" }}
 >
   Datos Curiosos
+  <motion.section id="datos" className="scroll-mt-38"></motion.section>
 </motion.h1>
 
       <motion.p
@@ -239,7 +240,7 @@ export default function DatosCuriososPage() {
           whileInView="visible"
           variants={fadeUpVariant}
           viewport={{ once: true }}
-          style={{ fontWeight: "bold", fontSize: 22, marginBottom: 10, textAlign: "center" }}
+          style={{ fontWeight: "bold", fontSize: 30, marginBottom: 10, textAlign: "center" }}
         >
           Anécdotas Random
         </motion.h2>

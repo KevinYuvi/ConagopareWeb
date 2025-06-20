@@ -224,27 +224,28 @@ export default function VozRuralPage() {
        viewport={{ once: true, amount: 0.3 }}
        variants={fadeUpVariant}
        className="text-center mb-10 max-w-[800px] mx-auto scroll-mt-28" 
-        >
+        ></motion.section>
      <motion.h1
-        className="text-4xl font-heading mb-3"
-        variants={fadeUpVariant}
-        style={{ letterSpacing: ".02em" }}
-        >
-         Mensajes de las Parroquias
-       </motion.h1>
-        <motion.p
-          className="text-gray-700 text-lg mb-8"
+       className="text-4xl font-heading mb-3 text-center"
+       variants={fadeUpVariant}
+       style={{ letterSpacing: ".02em" }}
+       >
+        Mensajes de las Parroquias
+      </motion.h1>
+       <motion.p
+          className="text-gray-700 text-lg mb-8 text-center"
           variants={fadeUpVariant}
           style={{ fontFamily: "var(--font-sans)" }}
-        >
-          Esta página visualiza la voz de las parroquias rurales del Ecuador mediante mensajes representativos...
-        </motion.p>
+          >
+        Esta página visualiza la voz de las parroquias rurales del Ecuador mediante mensajes representativos y curiosidades extraidas de entrevistas con sus representantes. Podrás explorar los mensajes más recurrentes , testimonios aleatorios y datos destacados, organizados por provincia y GAD, para conoces mejor la realidad rural del país.
+      </motion.p>
         <motion.h2
-          className="text-2xl font-semibold mb-4 font-heading"
-          variants={fadeUpVariant}
+        className="text-2xl font-semibold mb-4 font-heading text-center"
+        variants={fadeUpVariant}
         >
-          Nube de Palabras
-        </motion.h2>
+         Nube de Palabras
+      </motion.h2>
+
 
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 max-w-[900px] mx-auto">
           {palabrasRelevantes.map(({ palabra, frecuencia }) => {
@@ -283,7 +284,7 @@ export default function VozRuralPage() {
             );
           })}
         </div>
-      </motion.section>
+      
 
       {/* Layout principal: mensajes y columna aleatoria */}
       <div className="flex gap-8 items-start">
