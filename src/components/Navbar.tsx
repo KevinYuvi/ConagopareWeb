@@ -80,7 +80,7 @@ function closeAllSubmenus() {
         { href: "/Equipo", label: "Equipo" },
       ],
     },
-    { href: "/Taller_Periodismo", label: "Taller de Periodismo" },
+    { href: "/Taller_Periodismo", label: "Periodismo de Datos" },
   ];
 
   return (
