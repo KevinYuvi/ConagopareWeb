@@ -9,7 +9,7 @@ export default function EmpleoPage() {
                 <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         title="Tasa de Empleo y Desempleo"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiZWI2MDIwYTMtZmU0OC00ZmQ4LTk4MDAtZGRlNzE0NTMxOTVhIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiYmU1NmUwMmYtYmUwNS00ZjczLThhZTQtMjYwYWRhYzRmMGY4IiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
                         className="w-full h-full"
                         allowFullScreen
                     ></iframe>

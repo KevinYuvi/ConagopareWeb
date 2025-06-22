@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative h-[100vh] -mt-16 flex flex-col justify-center items-center text-center text-white overflow-hidden">
+    <section className="relative h-[100vh] -mt-20 flex flex-col justify-center items-center text-center text-white overflow-hidden">
       {/* Imagen de fondo */}
       <img
         src="/images/inicio/inicio1.jpeg"

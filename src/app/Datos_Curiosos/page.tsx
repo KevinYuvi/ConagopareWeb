@@ -96,22 +96,22 @@ export default function DatosCuriososPage() {
 
   const cuadros = [
     {
-      color: "#f44336",
+      color: "#d02e28",
       text: "Hubo quien nos respondió con enojo: que no enviaría nada, que no tenía tiempo, y que aunque lo hiciera, igual no pasaría nada. Y nos pidió no volver a escribir",
       style: { top: 20, left: 160, width: 200, height: 180, color: "white" },
     },
     {
-      color: "#2196f3",
+      color: "#224e99",
       text: "Algunas autoridades prefirieron enviar un audio o texto, pues por motivos de seguridad, prefirieron no mostrar su imagen.",
       style: { top: 200, left: 250, width: 230, height: 160, color: "white" },
     },
     {
-      color: "#ffeb3b",
+      color: "#fbd93a",
       text: "Dos presidentes nos respondieron con firmeza: No estamos para hacer su trabajo. Si quieren contar lo que pasa aquí, vengan ustedes. Y lo entendimos. Porque tiene razón: nada reemplaza el cara a cara. Pero hablamos de 824 territorios rurales en todo el país. Con recursos limitados, logramos contactar a todos por WhatsApp. Respondieron 193. Sin ese canal, escuchar esas voces habría sido imposible.",
       style: { top: 30, right: 200, width: 280, height: 270, color: "black" },
     },
     {
-      color: "#ffeb3b",
+      color: "#fbd93a",
       text: "Una autoridad parroquial nos dijo: “Por ahora no les puedo ayudar... Hay cosas más urgentes que necesita la parroquia y que aún no han sido atendidas.",
       style: { bottom: 40, left: 40, width: 160, height: 240, color: "black" },
     },
@@ -126,9 +126,10 @@ export default function DatosCuriososPage() {
   whileInView="visible"
   variants={fadeUpVariant}
   viewport={{ once: true }}
-  style={{ fontWeight: "bold", fontSize: 26, marginBottom: 10, textAlign: "center" }}
+  style={{ fontWeight: "bold", fontSize: 30, marginBottom: 10, textAlign: "center" }}
 >
   Datos Curiosos
+  <motion.section id="datos" className="scroll-mt-38"></motion.section>
 </motion.h1>
 
       <motion.p
@@ -239,7 +240,7 @@ export default function DatosCuriososPage() {
           whileInView="visible"
           variants={fadeUpVariant}
           viewport={{ once: true }}
-          style={{ fontWeight: "bold", fontSize: 22, marginBottom: 10, textAlign: "center" }}
+          style={{ fontWeight: "bold", fontSize: 30, marginBottom: 10, textAlign: "center" }}
         >
           Anécdotas Random
         </motion.h2>

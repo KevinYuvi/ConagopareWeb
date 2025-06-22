@@ -121,7 +121,7 @@ export default function MujeresRuralesPage() {
       {
         label: "Mujeres Presidentas",
         data: agrupadoPorAnio.map((d) => d.cantidad),
-        backgroundColor: ["#E8EB50", "#347FF7", "#FF4242", "#7EDEFF"],
+        backgroundColor: ["#fbd93a", "#224e99", "#d02e28", "#3bb2e7"],
       },
     ],
   };
@@ -216,12 +216,12 @@ export default function MujeresRuralesPage() {
         <div className="flex justify-center gap-2 ">
           <button
             onClick={consultarDatos}
-            className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2">
+            className="cursor-pointer transition-all bg-[#224e99] text-white px-6 py-2 rounded-lg border-[#11336d] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] m-2">
             Consultar
           </button>
           <button
             onClick={limpiarFiltros}
-            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] m-2">
+            className="cursor-pointer transition-all bg-[#d02e28] text-white px-6 py-2 rounded-lg border-[#a31611] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] m-2">
             Limpiar filtros
           </button>
         </div>
@@ -236,7 +236,7 @@ export default function MujeresRuralesPage() {
 
           <table className="min-w-full text-sm text-center border-collapse">
             <thead>
-              <tr className="bg-blue-600 text-white">
+              <tr className="bg-[#224e99] text-white">
                 <th className="px-3 py-2 w-20">AÑO</th>
                 <th className="px-3 py-2 w-32">REGIÓN</th>
                 <th className="px-3 py-2 w-40">PROVINCIA</th>
@@ -265,14 +265,14 @@ export default function MujeresRuralesPage() {
           <button
             onClick={irPrimeraPagina}
             disabled={paginaActual === 1}
-            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 text-sm rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] disabled:opacity-50">
+            className="cursor-pointer transition-all bg-[#d02e28] text-white px-6 py-2 text-sm rounded-lg border-[#a31611]  border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] disabled:opacity-50">
             « Inicio
           </button>
 
           <button
             onClick={irPaginaAnterior}
             disabled={paginaActual === 1}
-            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+            className="cursor-pointer transition-all bg-[#224e99] text-white px-4 py-2 text-sm rounded-lg border-[#11336d] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
             ‹ Anterior
           </button>
 
@@ -283,14 +283,14 @@ export default function MujeresRuralesPage() {
           <button
             onClick={irPaginaSiguiente}
             disabled={paginaActual === totalPaginas}
-            className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 text-sm rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+            className="cursor-pointer transition-all bg-[#224e99] text-white px-4 py-2 text-sm rounded-lg border-[#11336d] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
             Siguiente ›
           </button>
 
           <button
             onClick={irUltimaPagina}
             disabled={paginaActual === totalPaginas}
-            className="cursor-pointer transition-all bg-red-500 text-white px-6 py-2 text-sm rounded-lg border-red-800 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] disabled:opacity-50">
+            className="cursor-pointer transition-all bg-[#d02e28] text-white px-6 py-2 text-sm rounded-lg border-[#a31611]  border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90  active:translate-y-[2px] disabled:opacity-50">
             Final »
           </button>
         </div>
@@ -298,8 +298,7 @@ export default function MujeresRuralesPage() {
           <a
             href="/Data/datos_mujeres_presidentas.xlsx"
             download
-            className="cursor-pointer transition-all bg-green-500 text-white px-4 py-2 text-sm rounded-lg border-green-600 border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
-
+            className="cursor-pointer transition-all bg-[#253e7c] text-white px-4 py-2 text-sm rounded-lg border-[#132655] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
             Descarga estos datos
           </a>
         </div>

@@ -10,7 +10,7 @@ import { Autoplay } from "swiper/modules";
 import { FaLinkedin } from "react-icons/fa6";
 
 export default function EquipoPage() {
-   const equipo = [
+  const equipo = [
     {
       nombre: "Sebastián Tamayo Villarroel",
       rol: "🏅 CEO Identidad Rural",
@@ -45,19 +45,18 @@ export default function EquipoPage() {
     },
     {
       nombre: "Duvard Esteban Cisneros",
-      rol: "🛠️ Desarrollador Web - UI/UX",
+      rol: "🛠️ Desarrollador Web",
       descripcion: `⭐ Estudiante de Ingeniería en Sistemas de Información, Universidad Central del Ecuador. Contribuidor al diseño y desarrollo de la plataforma web, definiendo su estructura, experiencia de usuario e interfaces en Figma y React.
       🧠 Su trabajo permite que los datos y voces del territorio sean accesibles a todo público a través de una interfaz intuitiva y coherente.
       
       💬 "El acceso a la información es el primer paso para transformar la realidad." — Kofi Annan`,
       imagen: "Duvard.webp",
-      redSocial: "https://www.linkedin.com",
+      redSocial: "https://www.linkedin.com/in/duvard-cisneros-9a073323b",
     },
     {
       nombre: "Marlon Tituaña",
       rol: "🛠️ Desarrollador Web",
       descripcion: `🎓 Estudiante de Ingeniería en Sistemas de Información en la Universidad Central del Ecuador. Participó en el desarrollo integral de la plataforma web, implementando funcionalidades clave tanto en el frontend como en el backend.
-      
       🧩 Su trabajo contribuyó a que los mensajes y testimonios del territorio sean transmitidos de forma clara y comprensible. 
       
       💬 "El software es una gran combinación entre arte e ingeniería." — Bill Gates`,
@@ -67,7 +66,7 @@ export default function EquipoPage() {
     },
     {
       nombre: "Ariel Inguillay",
-      rol: "🛠️ Apoyo logístico",
+      rol: "🛠️ Desarrollador Web",
       descripcion: `⭐ Apoyo logístico y comunicación institucional.`,
       imagen: "Ariel.webp",
       redSocial: "https://www.linkedin.com",
@@ -119,10 +118,10 @@ export default function EquipoPage() {
       >
         {equipo.map((persona, index) => (
           <SwiperSlide key={index} className="p-5">
-            <div className=" shadow-lg rounded-lg flex flex-col justify-between text-center hover:scale-105 transition-transform duration-300 gap-5">
+            <div className="rounded-lg flex flex-col justify-between text-center hover:scale-105 transition-transform duration-300 gap-5">
 
               {/* Imagen en forma de header */}
-              <div className="relative w-full aspect-square ">
+              <div className="relative w-full aspect-square">
                 <Image
                   src={`/images/equipo/${persona.imagen}`}
                   alt={`Foto de ${persona.nombre}`}
@@ -137,7 +136,7 @@ export default function EquipoPage() {
                 <p className="whitespace-pre-line  text-left flex-grow">
                   {persona.descripcion}
                 </p>
-{persona.redSocial && (
+                {persona.redSocial && (
                   <div className="flex justify-center text-3xl">
                     <a
                       href={persona.redSocial}
@@ -164,32 +163,32 @@ export default function EquipoPage() {
           posible.
         </p>
 
-      <Swiper
-  spaceBetween={30}
-  slidesPerView={3}
-  autoplay={{ delay: 2500, disableOnInteraction: false }}
-  loop={true}
-  breakpoints={{
-    0: { slidesPerView: 1 },
-    640: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
-  }}
-  modules={[Autoplay]}
-  className="my-6 mx-auto max-w-6xl"
->
-  {images.map((imgSrc, index) => (
-    <SwiperSlide key={index}>
-      <div className="relative bg-gray-200 aspect-[16/9] h-40 flex items-center justify-center hover:scale-105 transition-transform duration-300 ">
-        <Image
-          src={`/images/logos/${imgSrc.src}`}
-          alt={imgSrc.title}
-          fill
-          className="object-contain rounded-xl"
-        />
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={3}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          loop={true}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          modules={[Autoplay]}
+          className="my-6 mx-auto max-w-6xl"
+        >
+          {images.map((imgSrc, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative aspect-[16/9] h-40 flex items-center justify-center hover:scale-105 transition-transform duration-300 ">
+                <Image
+                  src={`/images/logos/${imgSrc.src}`}
+                  alt={imgSrc.title}
+                  fill
+                  className="object-contain rounded-xl"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
     </div>
   );

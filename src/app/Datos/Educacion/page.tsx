@@ -9,7 +9,7 @@ export default function EducacionPage() {
                 <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         title="Educación"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiN2MwOWY4ODItY2QxMi00YjhlLWJkMTAtYWYxZGJkNTgxY2Q1IiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiYmM1NzRjZTYtNTBlZC00ZDY4LWJiODktMTU4NGUyMjYyZjdkIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9"
                         className="w-full h-full"
                         allowFullScreen
                     ></iframe>
