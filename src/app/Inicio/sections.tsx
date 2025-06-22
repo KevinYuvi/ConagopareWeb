@@ -138,7 +138,7 @@ export default function Sections() {
             d="M15 10l4.553 2.276A1.5 1.5 0 0120 13.618v.764a1.5 1.5 0 01-.447 1.342L15 18M4 6h16M4 6v12"
           />
         </svg>
-        Taller de Periodismo
+        Periodismo de Datos
       </a>
     </div>
   </motion.section>

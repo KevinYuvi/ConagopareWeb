@@ -67,9 +67,13 @@ export default function EquipoPage() {
     {
       nombre: "Ariel Inguillay",
       rol: "🛠️ Desarrollador Web",
-      descripcion: `⭐ Apoyo logístico y comunicación institucional.`,
+      descripcion: `💻 Estudiante de Ingeniería en Sistemas de Información en la Universidad Central del Ecuador. Desarrolló desde cero las páginas “Difunde” y “Entrevistas” de Identidad Rural, integrando diseño y funcionalidad en frontend y backend.
+
+🌍 Su aporte permitió visibilizar las voces rurales mediante soluciones accesibles y significativas.
+
+✨ "La tecnología es mejor cuando conecta a las personas." — Matt Mullenweg`,
       imagen: "Ariel.webp",
-      redSocial: "https://www.linkedin.com",
+      redSocial: "https://www.linkedin.com/in/ariel-inguillay-531063198",
     },
     {
       nombre: "Kevin Yuvi",

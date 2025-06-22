@@ -26,7 +26,6 @@ const elementos: Elemento[] = [
   { tipo: "imagen", src: "images/difunde/6@3x.png", color: "bg-red-400" },
   { tipo: "imagen", src: "images/difunde/7@3x.png", color: "bg-blue-400" },
   { tipo: "imagen", src: "images/difunde/8@3x.png", color: "bg-yellow-400" },
-  { tipo: "imagen", src: "images/difunde/difunde13.png", color: "bg-blue-500" },
 ];
 
 export default function Difunde() {
@@ -48,7 +47,7 @@ export default function Difunde() {
       <p>
         Cada imagen nace de testimonios reales, y está diseñada para ser descargada, compartida en redes sociales o impresa y colocada en espacios comunitarios visibles.
       </p>
-      <p className="italic text-gray-500">
+      <p className="text-xl font-semibold italic tracking-wide mt-8">
         Es una invitación a escuchar, conectar y actuar desde el territorio.
       </p>
     </div>
@@ -76,14 +75,24 @@ export default function Difunde() {
       </section>
 
       {/* Editorial */}
-      <section id="editorial" className="scroll-mt-24 max-w-6xl mx-auto mb-20 px-4">
-        <h3 className="text-2xl font-bold text-gray-800 text-center mb-4">Editorial</h3>
-        <p className="text-lg text-gray-600 leading-relaxed text-center mb-10">
-          En esta sección se recogen aportes ciudadanos que invitan a reflexionar y debatir sobre las problemáticas del sector rural ecuatoriano. Son textos que se inspiran en la ruralidad, con mirada crítica y compromiso ciudadano. <br />
-          Aquí también se visibilizan los artículos desarrollados por quienes completan el curso de periodismo de datos, reconociendo su voz como parte activa del pensamiento y la acción colectiva. <br />
-          Porque escribir también es una forma de participación ciudadana. <br />
-          <strong>Identidad Rural: escuchar, conectar, actuar</strong>
-        </p>
+<section id="editorial" className="scroll-mt-24 max-w-6xl mx-auto mb-20 px-4">
+  <h3 className="text-2xl font-bold text-gray-800 text-center mb-4">Editorial</h3>
+  <div className="text-lg text-gray-600 leading-relaxed text-center mb-10 space-y-4">
+    <p>
+      Esta sección reúne aportes ciudadanos que invitan a reflexionar y debatir sobre las problemáticas del sector rural ecuatoriano. Son textos inspirados en la ruralidad, con mirada crítica y compromiso ciudadano.
+    </p>
+    <p>
+      También se visibilizan artículos elaborados por participantes del curso de periodismo de datos, reconociendo su voz como parte activa del pensamiento y la acción colectiva.
+    </p>
+    <p>
+      Porque escribir también es una forma de participación ciudadana.
+    </p>
+    <p className="text-xl font-bold italic tracking-wide mt-8">
+      IDENTIDAD RURAL: ESCUCHAR, CONECTAR, ACTUAR
+    </p>
+  </div>
+
+
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* Tarjeta 1 */}
@@ -168,7 +177,8 @@ export default function Difunde() {
       <AnimatePresence>
         {selectedItem && (
           <motion.div
-            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-white/60 backdrop-blur-sm flex items-center justify-center z-50"
+
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -182,7 +192,8 @@ export default function Difunde() {
               onClick={(e) => e.stopPropagation()}
             >
               <button
-                className="absolute top-2 right-2 text-gray-800 hover:text-red-500"
+                className="absolute top-2 right-2 text-gray-700 hover:text-red-600 transition-colors duration-300"
+
                 onClick={() => setSelectedItem(null)}
               >
                 <FaXmark size={24} />
