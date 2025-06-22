@@ -1,5 +1,3992 @@
 [
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Lago Agrio",
+    "parroquia": "Dureno",
+    "lat": 0.06113086455982197,
+    "lng": -76.68235160180836,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Lago Agrio",
+    "parroquia": "El Eno",
+    "lat": -0.06338418585774121,
+    "lng": -76.88449567702737,
+    "fecha": "28 de octubre de 1991"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Lago Agrio",
+    "parroquia": "General Farfán",
+    "lat": 0.23590237660762478,
+    "lng": -76.846123270381,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Lago Agrio",
+    "parroquia": "Jambelí",
+    "lat": 0.08577578167532453,
+    "lng": -77.07581958309903,
+    "fecha": "26 de mayo de 1994"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Lago Agrio",
+    "parroquia": "Pacayacu",
+    "lat": -0.04086299263155834,
+    "lng": -76.5891201197095,
+    "fecha": "13 de noviembre de 1991"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Lago Agrio",
+    "parroquia": "Santa Cecilia",
+    "lat": 0.083925486362184,
+    "lng": -76.99182852361875,
+    "fecha": "15 de diciembre de 1993"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Lago Agrio",
+    "parroquia": "10 de Agosto",
+    "lat": 0.18430817542222155,
+    "lng": -76.88249317367595,
+    "fecha": "27 de febrero de 2012"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Cascales",
+    "parroquia": "Santa Rosa de Sucumbíos",
+    "lat": 0.36154663273023224,
+    "lng":  -77.13472071273553,
+    "fecha": "9 de octubre de 1991"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Cascales",
+    "parroquia": "Sevilla",
+    "lat": 0.08571279701468709,
+    "lng": -77.12592495510728,
+    "fecha": "20 de abril de 1992"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Gonzalo Pizarro",
+    "parroquia": "El Reventador",
+    "lat": -0.04672075198760598,
+    "lng": -77.5289756952145,
+    "fecha": "27 de septiembre de 2011"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Gonzalo Pizarro",
+    "parroquia": "Gonzalo Pizarro",
+    "lat": 0.013988549723984759,
+    "lng": -77.38131360185288,
+    "fecha": "29 de Octubre de 1977"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Gonzalo Pizarro",
+    "parroquia": "Puerto Libre",
+    "lat": 0.04686194776616369,
+    "lng": -77.32809208902053,
+    "fecha": "3 de agosto de 1968"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Cuyabeno",
+    "parroquia": "Aguas Negras",
+    "lat": -0.12345841641876709,
+    "lng": -76.30167377534241,
+    "fecha": "22 de julio de 1998"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Putumayo",
+    "parroquia": "Palma Roja",
+    "lat": 0.12344250503091649,
+    "lng": -76.05502601349163,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Putumayo",
+    "parroquia": "Puerto Bolívar (Puerto Montúfar)",
+    "lat": -0.10106164418349277,
+    "lng": -75.99953771833854,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Putumayo",
+    "parroquia": "Puerto Rodríguez",
+    "lat": -0.05293813738877778,
+    "lng": -75.48403018051327,
+    "fecha": "30 de Octubre de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Putumayo",
+    "parroquia": "Santa Elena",
+    "lat": 0.36882475071592286,
+    "lng": -76.1858279089381,
+    "fecha": "30 de Abril de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Shushufindi",
+    "parroquia": "Limoncocha",
+    "lat": -0.4067495997166964,
+    "lng": -76.6271435313481,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Shushufindi",
+    "parroquia": "Pañacocha",
+    "lat": -0.4213141519973893,
+    "lng": -76.10252761927403,
+    "fecha": "30 de Abril de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Shushufindi",
+    "parroquia": "San Roque",
+    "lat": -0.30391988208819765,
+    "lng": -76.5344969153445,
+    "fecha": "13 de Septiembre de 19921"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Shushufindi",
+    "parroquia": "San Pedro de los Cofanes",
+    "lat": -0.12999889083267735,
+    "lng": -76.84691618065906,
+    "fecha": "9 de mayo de 1989"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Shushufindi",
+    "parroquia": "7 de Julio",
+    "lat": -0.18733143809609726,
+    "lng": -76.77828607301676,
+    "fecha": "09 de Mayo de 1989"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Shushufindi",
+    "parroquia": "La Magdalena",
+    "lat": -0.25193276707898027,
+    "lng": -76.70171568954916,
+    "fecha": "28 de marzo de 2023"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Shushufindi",
+    "parroquia": "La Primavera",
+    "lat": -0.1838356365116737,
+    "lng": -76.66059106028122,
+    "fecha": "28 de marzo de 2023"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Sucumbíos",
+    "parroquia": "El Playón de San Francisco",
+    "lat": 0.6382593606024959,
+    "lng": -77.62189778650836,
+    "fecha": "29 de Enero del 1949"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Sucumbíos",
+    "parroquia": "La Sofía",
+    "lat": 0.36898435709164246,
+    "lng": -77.65060109547714,
+    "fecha": "30 de Abril 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Sucumbíos",
+    "parroquia": "Rosa Florida",
+    "lat": 0.29647602953806945,
+    "lng": -77.45672730185288,
+    "fecha": "30 de Abril de 1969"
+  },
+  {
+    "provincia": "Sucumbíos",
+    "canton": "Sucumbíos",
+    "parroquia": "Santa Bárbara",
+    "lat": 0.6475294891174269,
+    "lng": -77.52523455276848,
+    "fecha": "28 de Noviembre de 1956"
+  },
+
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "Alejandro Labaka",
+    "lat": -0.6210784079821787,
+    "lng": -76.50264313774407,
+    "fecha": "30 de julio de 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "La Belleza",
+    "lat": -0.6554997549197789,
+    "lng": -77.04714610338424,
+    "fecha": "30 de julio de 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "El Dorado",
+    "lat": -0.49996951501912723,
+    "lng": -76.95416563310017,
+    "fecha": "30 de julio de 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "El Edén",
+    "lat": -0.4947756063720713,
+    "lng": -76.07762400595708,
+    "fecha": "30 de julio de 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "Dayuma",
+    "lat": -0.6712343334578543,
+    "lng": -76.8817850669659,
+    "fecha": "16 de junio de 1990"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "Inés Arango",
+    "lat": -0.910638157164156,
+    "lng": -76.91481789953117,
+    "fecha": "30 de julio de 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "Nuevo Paraíso",
+    "lat": -0.378942856579612,
+    "lng": -77.01349107301677,
+    "fecha": "28 de noviembre de 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "Taracoa",
+    "lat": -0.49549003080958626,
+    "lng": -76.77421114854546,
+    "fecha": "17 de octubre de 1991"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "San José de Guayusa",
+    "lat": -0.24577436939083386,
+    "lng": -77.07498771225464,
+    "fecha": "15 de octubre de 1975"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "San Luis de Armenia",
+    "lat": -0.4786244311386268,
+    "lng": -77.06767010540585,
+    "fecha": "20 de julio de 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Aguarico",
+    "parroquia": "Capitán Augusto Rivadeneira",
+    "lat": -0.6223896635209242,
+    "lng": -75.85805031785641,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Aguarico",
+    "parroquia": "Santa María de Huiririma",
+    "lat": -1.2237182126671853,
+    "lng": -78.51413059087238,
+    "fecha": "28 de enero de 2003"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Aguarico",
+    "parroquia": "Yasuní",
+    "lat": -0.6530260054482684,
+    "lng":  -76.07275341639873,
+    "fecha": "25 de julio de 1979"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Aguarico",
+    "parroquia": "Cononaco",
+    "lat": -0.4661345827357476,
+    "lng": -76.9892248409661,
+    "fecha": "19 de agosto de 1925"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "parroquia": "Enokanqui",
+    "lat": -0.2263377959780497,
+    "lng": -76.84933163320112,
+    "fecha": "9 de agosto de 1988"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "parroquia": "Pompeya",
+    "lat": -0.41468690129137975,
+    "lng":  -76.66387455861522,
+    "fecha": "8 de agosto de 1988"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "parroquia": "Rumipamba",
+    "lat": -0.08256599147951167,
+    "lng": -76.98644187850724,
+    "fecha": "31 de mayo de 1938"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "parroquia": "Tres de Noviembre",
+    "lat": -0.18719014149940127,
+    "lng": -76.91165470783378,
+    "fecha": "20 de julio de 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "parroquia": "San Sebastián del Coca",
+    "lat": -0.33908181298623485,
+    "lng": -77.00642415952514,
+    "fecha": "30 de septiembre de 1969"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Loreto",
+    "parroquia": "Ávila Huiruno",
+    "lat": -0.7174675154336084,
+    "lng": -77.34148946203692,
+    "fecha": "6 de Noviembre de 1995"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Loreto",
+    "parroquia": "Puerto Murialdo",
+    "lat": -0.6922473418841836,
+    "lng": -77.13413953320088,
+    "fecha": "26 de marzo de 1990"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Loreto",
+    "parroquia": "San José de Payamino",
+    "lat": -0.49629227211616134,
+    "lng": -77.2845837644006,
+    "fecha": "29 de diciembre de 1996"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Loreto",
+    "parroquia": "San José de Dahuano",
+    "lat": -0.7459790667048017,
+    "lng": -77.43288388882677,
+    "fecha": "23 de agosto de 1993"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Loreto",
+    "parroquia": "San Vicente de Huaticocha",
+    "lat": -0.7525127131249008,
+    "lng": -77.47346333320078,
+    "fecha": "17 de febrero de 1994"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "García Moreno",
+    "lat": -0.5239592822654101,
+    "lng": -77.01657238408451,
+    "fecha": "26 de marzo del año 1897"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "Francisco de Orellana",
+    "parroquia": "Guayusa",
+    "lat": -0.21406973422212483,
+    "lng": -77.06974611405138,
+    "fecha": "30 de octubre del 1998"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "parroquia": "San Carlos",
+    "lat": -0.3796862306743789,
+    "lng": -76.88448977757973,
+    "fecha": "9 de agosto 1988"
+  },
+  {
+    "provincia": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "parroquia": "Lago San Pedro",
+    "lat": -0.2384411007920488,
+    "lng": -76.9456899398728,
+    "fecha": "30 de Julio de 1998"
+  },
+   {
+    "provincia": "Napo",
+    "canton": "Tena",
+    "parroquia": "Ahuano",
+    "lat": -1.0504620890347995,
+    "lng": -77.5475653153445,
+    "fecha": "30 de abril de 1989"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Tena",
+    "parroquia": "Chontapunta",
+    "lat": -0.9146592407584038,
+    "lng": -77.36358330000026,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Tena",
+    "parroquia": "Pano",
+    "lat": -1.0474254429197012,
+    "lng": -77.86701060342595,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Tena",
+    "parroquia": "Puerto Misahuallí",
+    "lat": -1.030817462737207,
+    "lng":  -77.67369717747432,
+    "fecha": "18 de febrero de 1969"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Tena",
+    "parroquia": "Puerto Napo",
+    "lat": -0.9960612012862742,
+    "lng": -77.81364641534452,
+    "fecha": "14 de agosto de 1925"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Tena",
+    "parroquia": "Tálag",
+    "lat": -1.0650515524357034,
+    "lng": -77.90670711349162,
+    "fecha": "14 de junio de 1994"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Tena",
+    "parroquia": "San Juan de Muyuna",
+    "lat": -0.9781183636543337,
+    "lng": -77.85288418650838,
+    "fecha": "20 de enero de 2011"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Archidona",
+    "parroquia": "Cotundo",
+    "lat": -0.840753836583714,
+    "lng": -77.79617358902011,
+    "fecha": "1 de febrero de 1967"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Archidona",
+    "parroquia": "San Pablo de Ushpayacu",
+    "lat": -0.9323689516996606,
+    "lng": -77.77344445952512,
+    "fecha": "22 de abril de 1969"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Archidona",
+    "parroquia": "Hatun Sumaku",
+    "lat": -0.73862268523033,
+    "lng": -77.54040992883613,
+    "fecha": "13 junio del 2012"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Carlos Julio Arosemena Tola",
+    "parroquia": "Carlos Julio Arosemena Tola",
+    "lat": -1.1647943925976738,
+    "lng": -77.85542495609657,
+    "fecha": "18 de enero de 1963"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "El Chaco",
+    "parroquia": "Gonzalo Díaz de Pineda (El Bombón)",
+    "lat": -0.29655441223508316,
+    "lng": -77.75056195581936,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "El Chaco",
+    "parroquia": "Linares",
+    "lat": -0.3683493415817394,
+    "lng": -77.81102959021415,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "El Chaco",
+    "parroquia": "Oyacachi",
+    "lat": -0.2099827433676671,
+    "lng": -78.0779591113469,
+    "fecha": "9 de mayo de 1959"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "El Chaco",
+    "parroquia": "Santa Rosa",
+    "lat": -0.3124090691226284,
+    "lng": -77.7856027153445,
+    "fecha": "30 de abril de 1969"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "El Chaco",
+    "parroquia": "Sardinas",
+    "lat": -0.38429854541453085,
+    "lng": -77.83788665375093,
+    "fecha": "24 de abril de 1969"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Quijos",
+    "parroquia": "Baeza",
+    "lat": -0.46426076906366553,
+    "lng": -77.89028213008518,
+    "fecha": "28 de junio de 1955"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Quijos",
+    "parroquia": "Cosanga",
+    "lat": -0.5792957682866982,
+    "lng": -77.86702247358878,
+    "fecha": "10 de marzo de 1961"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Quijos",
+    "parroquia": "Cuyuja",
+    "lat": -0.41848606690028844,
+    "lng": -78.02985629504263,
+    "fecha": "7 de febrero de 1963"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Quijos",
+    "parroquia": "Papallacta",
+    "lat": -0.3775439563285521,
+    "lng": -78.14155735767224,
+    "fecha": "5 de enero de 1921"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Quijos",
+    "parroquia": "San Francisco de Borja",
+    "lat": -0.42391594353337386,
+    "lng": -77.84483521349163,
+    "fecha": "28 de febrero de 1952"
+  },
+  {
+    "provincia": "Napo",
+    "canton": "Quijos",
+    "parroquia": "Sumaco",
+    "lat": -0.7409358626037945,
+    "lng":  -77.53938097853491,
+    "fecha": "18 de septiembre de 1997"
+  },
+
+  {
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "San José de Morona",
+    "lat": -2.8816691764645608,
+    "lng": -77.66921426388467,
+    "fecha": "18 de octubre de 1991"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Fátima",
+    "lat": -1.4287673109582613,
+    "lng": -77.99855769087205,
+    "fecha": "14 de junio de 1961"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Montalvo (Andoas)",
+    "lat": -2.062853904037652,
+    "lng": -76.96413397737898,
+    "fecha": "18 de octubre de 1911"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Pomona",
+    "lat": -1.6803300613321543,
+    "lng": -77.88376233398277,
+    "fecha": "7 de septiembre de 1978"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Río Corrientes",
+    "lat": -2.2869973930455747,
+    "lng": -76.46931513238376,
+    "fecha": "5 de enero de 1921"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Río Tigre",
+    "lat": -1.487394446292364,
+    "lng": -77.99630743319963,
+    "fecha": "5 de enero de 1921"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Sarayacu",
+    "lat": -1.7322761184230289,
+    "lng": -77.4932183777726,
+    "fecha": "18 de octubre de 1911"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Simón Bolívar",
+    "lat": -1.7188635220833337,
+    "lng": -77.84574826018238,
+    "fecha": "22 de Mayo"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Tarqui",
+    "lat": -1.5694411516873776,
+    "lng": -77.94121116939347,
+    "fecha": "27 de febrero"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Teniente Hugo Ortiz",
+    "lat": -1.3727095031973657,
+    "lng": -77.95359960436376,
+    "fecha": "14 de Octubre"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "Veracruz",
+    "lat": -1.5084732724201575,
+    "lng": -77.93893402156088,
+    "fecha": "2 de julio"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Canelos",
+    "parroquia": "El Triunfo",
+    "lat": -1.4263349174908386,
+    "lng": -77.79636510822,
+    "fecha": "19 de noviembre de 1991"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Mera",
+    "parroquia": "Madre Tierra",
+    "lat": -1.6065710355919134,
+    "lng": -77.99764347244565,
+    "fecha": "19 de marzo de 1960"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Mera",
+    "parroquia": "Shell",
+    "lat": -1.499629470987343,
+    "lng": -78.06091873068901,
+    "fecha": "29 de diciembre de 1966"
+  },
+{
+    "provincia": "Pastaza",
+    "canton": "Santa Clara",
+    "parroquia": "San José",
+    "lat": -1.344884277526657,
+    "lng": -77.92153553319989,
+    "fecha": "24 de febrero de 2003"
+  },
+  {
+    "provincia": "Pastaza",
+    "canton": "Arajuno",
+    "parroquia": "Curaray",
+    "lat": -1.2451040398979496,
+    "lng": -76.72920608291527,
+    "fecha": "20 de octubre de 1970"
+  },
+
+  {
+    "provincia": "Morona Santiago",
+    "canton": "Macas",
+    "parroquia": "Alshi (9 de Octubre)",
+    "lat": -2.220797070104143,
+    "lng": -78.24910138273893,
+    "fecha": "26 de enero de 1962"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Macas",
+    "parroquia": "General Proaño",
+    "lat": -2.2661433297813103,
+    "lng": -78.13153608650836,
+    "fecha": "4 de abril de 1929"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Macas",
+    "parroquia": "San Isidro",
+    "lat": -2.2138109138416824,
+    "lng": -78.16642103882026,
+    "fecha": "6 de septiembre"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Macas",
+    "parroquia": "Sevilla Don Bosco",
+    "lat": -2.312557578442002,
+    "lng": -78.10219871349162,
+    "fecha": "28 de mayo de 1958"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Macas",
+    "parroquia": "Sinaí",
+    "lat": -2.0948966561742877,
+    "lng": -78.05232585748467,
+    "fecha": "29 de mayo"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Macas",
+    "parroquia": "Cuchaentza",
+    "lat": -2.1240477329736787,
+    "lng": -77.86405743319818,
+    "fecha": "21 de enero"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Macas",
+    "parroquia": "Río Blanco",
+    "lat": -2.3421713326366738,
+    "lng": -78.15679217658477,
+    "fecha": "28 de abril de 1993"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Gualaquiza",
+    "parroquia": "Amazonas",
+    "lat": -3.392855072163093,
+    "lng": -78.77706697273109,
+    "fecha": "17 de diciembre de 1951"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Gualaquiza",
+    "parroquia": "Bermejos",
+    "lat": -3.24471721748955,
+    "lng": -78.72653440621092,
+    "fecha": "17 de enero de 1955"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Gualaquiza",
+    "parroquia": "Bomboiza",
+    "lat": -3.4388670205882783,
+    "lng": -78.53879090435709,
+    "fecha": "16 de julio de 1952"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Gualaquiza",
+    "parroquia": "Chigüinda",
+    "lat": -3.2807317071078526,
+    "lng": -78.6985455612673,
+    "fecha": "29 de mayo"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Gualaquiza",
+    "parroquia": "El Rosario",
+    "lat": -3.284569008542003,
+    "lng": -78.64393812883611,
+    "fecha": "28 de mayo de 1852"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Gualaquiza",
+    "parroquia": "Nueva Tarqui",
+    "lat": -3.441445992352962,
+    "lng": -78.66375052523509,
+    "fecha": "9 de diciembre de 1961"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Gualaquiza",
+    "parroquia": "San Miguel de Cuyes",
+    "lat": -3.333033097433575,
+    "lng": -78.80004291970208,
+    "fecha": "11 de febrero de 1963"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Huamboya",
+    "parroquia": "Chigüaza",
+    "lat": -2.0471180602425463,
+    "lng": -77.98156387116387,
+    "fecha": "15 de diciembre de 2001"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Limón Indanza",
+    "parroquia": "Indanza",
+    "lat": -2.9603488703396375,
+    "lng": -78.43529927933812,
+    "fecha": "16 de enero de 1931"
+  },
+  {
+    "provincia": "Morona Santiago",
+    "canton": "Limón Indanza",
+    "parroquia": "Pan de Azúcar",
+    "lat": -3.0616239192020256,
+    "lng": -78.53287151758335,
+    "fecha": "19 de julio de 1957"
+  },
+
+{
+    "provincia": "Morona Santiago",
+    "canton": "Limón Indanza",
+    "parroquia": "San Miguel de Conchay",
+    "lat": -3.1221599032052265,
+    "lng": -78.43536141781857,
+    "fecha": "13 de septiembre de 1978"
+  },
+
+{
+    "provincia": "Morona Santiago",
+    "canton": "Limón Indanza",
+    "parroquia": "Santa Susana de Chiviaza",
+    "lat": -2.87990054253698,
+    "lng": -78.36028077236884,
+    "fecha": "25 de enero de 1951"
+  },
+
+{
+    "provincia": "Morona Santiago",
+    "canton": "Limón Indanza",
+    "parroquia": "Yunganza",
+    "lat": -2.859150723447312,
+    "lng": -78.36777291989308,
+    "fecha": "17 de junio de 1951"
+  },
+
+{
+    "provincia": "Morona Santiago",
+    "canton": "Limón Indanza",
+    "parroquia": "San Carlos de Limón",
+    "lat": -3.205273406996069,
+    "lng": -78.42968232790102,
+    "fecha": "14 de enero de 1970"
+  },
+  {
+    "provincia": "Morona Santiago",
+    "canton": "Palora",
+    "parroquia": "Arapicos (Santo Domingo de Arapicos)",
+    "lat": -1.858413348755043,
+    "lng": -77.94687719087112,
+    "fecha": "5 de enero de 1921"
+  },
+ {
+    "provincia": "Morona Santiago",
+    "canton": "Palora",
+    "parroquia": "Cumandá",
+    "lat": -1.4597070886287236,
+    "lng": -78.13683663134682,
+    "fecha": "28 de septiembre de 1961"
+  },
+ {
+    "provincia": "Morona Santiago",
+    "canton": "Palora",
+    "parroquia": "Sangay",
+    "lat": -1.7465287629908497,
+    "lng": -77.98557929023708,
+    "fecha": "6 de septiembre de 1967"
+  },
+ {
+    "provincia": "Morona Santiago",
+    "canton": "Palora",
+    "parroquia": "16 de Agosto",
+    "lat": -1.7378153166530523,
+    "lng": -77.91468782065343,
+    "fecha": "28 de abril de 1993"
+  },
+   {
+    "provincia": "Morona Santiago",
+    "canton": "San Juan Bosco",
+    "parroquia": "San Jacinto de Wakambeis",
+    "lat": -3.267931991290869,
+    "lng": -78.5094975309843,
+    "fecha": " 24 de agosto de 1994"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "San Juan Bosco",
+    "parroquia": "Santiago de Pananza",
+    "lat": -3.1547874075940032,
+    "lng": -78.48513489086669,
+    "fecha": "24 de noviembre de 1995"
+  },
+
+{
+    "provincia": "Morona Santiago",
+    "canton": "Sucúa",
+    "parroquia": "Asunción",
+    "lat": -2.4698639396675706,
+    "lng": -78.185130645495,
+    "fecha": "12 de marzo de 1969"
+  },
+
+{
+    "provincia": "Morona Santiago",
+    "canton": "Sucúa",
+    "parroquia": "Huambi",
+    "lat": -2.537320588619411,
+    "lng": -78.16429177486967,
+    "fecha": "17 de julio de 1941"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Sucúa",
+    "parroquia": "Santa Marianita de Jesús",
+    "lat": -2.419091259855664,
+    "lng": -78.15268323633038,
+    "fecha": "13 de agosto de 1990"
+  },
+  {
+    "provincia": "Morona Santiago",
+    "canton": "Santiago de Méndez",
+    "parroquia": "Copal",
+    "lat": -2.728752543822623,
+    "lng": -78.40975844177589,
+    "fecha": "5 de enero de 1929"
+  },
+   {
+    "provincia": "Morona Santiago",
+    "canton": "Santiago de Méndez",
+    "parroquia": "Chupianza",
+    "lat": -2.7314041791638894,
+    "lng": -78.31927858722797,
+    "fecha": "19 de noviembre de 1944"
+  },
  
+ {
+    "provincia": "Morona Santiago",
+    "canton": "Santiago de Méndez",
+    "parroquia": "San Luis del Acho",
+    "lat": -2.767249316922039,
+    "lng": -78.27900477239629,
+    "fecha": "20 de noviembre"
+  },
+ {
+    "provincia": "Morona Santiago",
+    "canton": "Santiago de Méndez",
+    "parroquia": "San Francisco de Chinimbimi",
+    "lat": -2.633538722807129,
+    "lng": -78.2671269840443,
+    "fecha": "9 de febrero"
+  },
+ {
+    "provincia": "Morona Santiago",
+    "canton": "Santiago de Méndez",
+    "parroquia": "Tayuza",
+    "lat": -2.6982760939974,
+    "lng": -78.23920373319629,
+    "fecha": "21 de junio de 1972"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Logroño",
+    "parroquia": "Yaupi",
+    "lat": -2.8355139669036302,
+    "lng": -77.93650544572708,
+    "fecha": "19 de agosto de 1925 "
+  },
+  {
+    "provincia": "Morona Santiago",
+    "canton": "Logroño",
+    "parroquia": "Shimpis",
+    "lat": -2.62426065841982,
+    "lng": -78.18459507503574,
+    "fecha": "22 de enero de 1997"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Taisha",
+    "parroquia": "Huasaga",
+    "lat": -2.4927750567549025,
+    "lng": -77.1911791110805,
+    "fecha": "20 de febrero de 1989"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Taisha",
+    "parroquia": "Macuma",
+    "lat": -2.147330450510567,
+    "lng": -77.69776773134515,
+    "fecha": "19 de agosto de 1972"
+  },
+  {
+    "provincia": "Morona Santiago",
+    "canton": "Taisha",
+    "parroquia": "Tuutinentza",
+    "lat": -2.534096549681343,
+    "lng": -77.47114303277598,
+    "fecha": "18 de marzo de 1994"
+  },
+{
+    "provincia": "Morona Santiago",
+    "canton": "Tiwintza",
+    "parroquia": "San José de Morona",
+    "lat": -2.8815513114031215,
+    "lng": -77.66909624232774,
+    "fecha": "2 de diciembre de 1991"
+  },
+ 
+ {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "parroquia": "Timbara",
+    "lat": -4.030635649450814,
+    "lng": -78.89925157116386,
+    "fecha": "25 de abril de 1955"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "parroquia": "Cumbaratza",
+    "lat": -3.993425244292794,
+    "lng":  -78.86634838465548,
+    "fecha": "25 de abril de 1955"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "parroquia": "Sabanilla",
+    "lat": -3.9656535902164682,
+    "lng": -79.05622623466726,
+    "fecha": "25 de abril de 1955"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "parroquia": "Imbana",
+    "lat": -3.8462210235352607,
+    "lng": -79.12183427929487,
+    "fecha": "14 de julio de 1960"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "parroquia": "Guadalupe",
+    "lat": -3.844462959740161,
+    "lng": -78.89064752630274,
+    "fecha": "28 de noviembre de 1967"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "parroquia": "San Carlos de las Minas",
+    "lat": -4.0214562492124495,
+    "lng": -78.82296434232774,
+    "fecha": "7 de enero de 1994"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Chinchipe",
+    "parroquia": "Chito",
+    "lat": -4.934877025468822,
+    "lng": -79.04133430152118,
+    "fecha": "29 de mayo de 1861"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Chinchipe",
+    "parroquia": "El Chorro",
+    "lat": -4.914203026221895,
+    "lng": -79.10509767069107,
+    "fecha": "25 de abril de 1955"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Chinchipe",
+    "parroquia": "La Chonta",
+    "lat": -4.948877849373282,
+    "lng": -79.09501269473961,
+    "fecha": "10 de enero de 1959"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Chinchipe",
+    "parroquia": "Pucapamba",
+    "lat": -4.944404763412492,
+    "lng": -79.11745703033255,
+    "fecha": "10 de enero de 1959"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Chinchipe",
+    "parroquia": "San Andrés",
+    "lat": -4.817173670015647,
+    "lng":  -79.28933760011819,
+    "fecha": "11 de marzo de 2005"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Yacuambi",
+    "parroquia": "La Paz",
+    "lat": -3.7008571329182973,
+    "lng": -78.89648076043599,
+    "fecha": "11 de diciembre de 1961"
+  },
+  {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Yacuambi",
+    "parroquia": "Tutupali",
+    "lat": -3.528994863380856,
+    "lng": -78.95028648730116,
+    "fecha": "26 de marzo de 1956"
+  },
+ {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Nangaritza",
+    "parroquia": "Guayzimi",
+    "lat": -4.048243654133793,
+    "lng": -78.6823654306858,
+    "fecha": "18 de diciembre de 1971"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Nangaritza",
+    "parroquia": "Nuevo Paraíso",
+    "lat": -4.3743223628904735,
+    "lng": -78.65981555581936,
+    "fecha": "2 de octubre de 2009"
+  },
+
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Nangaritza",
+    "parroquia": "Zurmi",
+    "lat": -4.101465672852568,
+    "lng": -78.66468748836125,
+    "fecha": "24 de septiembre de 1993"
+  },
+  {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Palanda",
+    "parroquia": "El Porvenir del Carmen",
+    "lat": -4.547163774029521,
+    "lng": -79.03397151534449,
+    "fecha": "16 de octubre de 1978"
+  },
+   {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Palanda",
+    "parroquia": "La Canela",
+    "lat": -4.613551695703273,
+    "lng": -78.95391365076568,
+    "fecha": "4 de diciembre de 2008"
+  },
+
+   {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Palanda",
+    "parroquia": "San Francisco del Vergel",
+    "lat": -4.676020206295906,
+    "lng": -79.04402608465548,
+    "fecha": "12 de marzo de 1987"
+  },
+ {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Palanda",
+    "parroquia": "Valladolid",
+    "lat": -4.650579681693542,
+    "lng": -79.13187948836126,
+    "fecha": "11 de febrero de 1963"
+  },
+
+ {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Paquisha",
+    "parroquia": "Bellavista",
+    "lat": -3.8696858873108293,
+    "lng": -78.67640768742021,
+    "fecha": "18 de septiembre de 2007"
+  },
+   {
+    "provincia": "Zamora Chinchipe",
+    "canton": "Paquisha",
+    "parroquia": "Nuevo Quito",
+    "lat": -3.9806529620364985,
+    "lng": -78.6490508663517,
+    "fecha": "18 de septiembre de 2007"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "El Pangui",
+    "parroquia": "El Guismi",
+    "lat": -3.5556470036383727,
+    "lng": -78.56335381534456,
+    "fecha": "5 de mayo de 1994"
+  },
+  {
+    "provincia": "Zamora Chinchipe",
+    "canton": "El Pangui",
+    "parroquia": "Pachicutza",
+    "lat": -3.668196208095556,
+    "lng": -78.61212206931098,
+    "fecha": "5 de mayo de 1994"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "El Pangui",
+    "parroquia": "Tundayme",
+    "lat": -3.5762305324667074,
+    "lng": -78.49043608307552,
+    "fecha": "13 de junio de 1994"
+  },
+{
+    "provincia": "Zamora Chinchipe",
+    "canton": "Centinela del Cóndor",
+    "parroquia": "Triunfo-Dorado",
+    "lat": -3.8956745185652863,
+    "lng": -78.77715716445832,
+    "fecha": "21 de noviembre de 2011"
+  },
+   {
+    "provincia": "Carchi",
+    "canton": "Tulcán",
+    "parroquia": "El Carmelo",
+    "lat": 0.6713372305919224,
+    "lng": -77.58989561163877,
+    "fecha": "1 de enero de 1919"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Tulcán",
+    "parroquia": "Julio Andrade",
+    "lat": 0.661068945951117,
+    "lng": -77.71848420792469,
+    "fecha": "13 de noviembre de 1929"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Tulcán",
+    "parroquia": "Maldonado",
+    "lat": 0.9127678731653548,
+    "lng": -78.10735719087617,
+    "fecha": "15 de octubre de 1909"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Tulcán",
+    "parroquia": "Pioter",
+    "lat": 0.6449575912835813,
+    "lng": -77.78424618650837,
+    "fecha": "23 de mayo de 1947"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Tulcán",
+    "parroquia": "Tobar Donoso",
+    "lat": 1.1915629783712607,
+    "lng": -78.50585375679992,
+    "fecha": "12 de mayo de 1942"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Tulcán",
+    "parroquia": "Tufiño",
+    "lat": 0.800358526038279,
+    "lng": -77.85560642528272,
+    "fecha": "6 de junio de 1935"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Tulcán",
+    "parroquia": "El Chical",
+    "lat": 0.9376630137315496,
+    "lng": -78.18823510000719,
+    "fecha": "24 de abril de 1991"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Tulcán",
+    "parroquia": "Santa Martha de Cuba",
+    "lat": 0.6386039694025932,
+    "lng": -77.75150516199618,
+    "fecha": "21 de marzo de 1994"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Bolívar",
+    "parroquia": "García Moreno",
+    "lat": 0.23458540659541696,
+    "lng": -78.62789956310803,
+    "fecha": "14 de junio de 1935"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Bolívar",
+    "parroquia": "Los Andes",
+    "lat": 0.4974664402008668,
+    "lng": -77.93796322883613,
+    "fecha": "24 de diciembre de 1880"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Bolívar",
+    "parroquia": "Monte Olivo",
+    "lat": 0.3884668289669397,
+    "lng":  -77.86294295767226,
+    "fecha": "9 de enero de 1941"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Bolívar",
+    "parroquia": "San Rafael",
+    "lat": 0.4322458768869233,
+    "lng":  -77.9176051399005,
+    "fecha": "9 de junio de 1990"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Bolívar",
+    "parroquia": "San Vicente de Pusir",
+    "lat": 0.49435109736985566,
+    "lng": -78.04715978193894,
+    "fecha": "26 septiembre 1951"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Espejo",
+    "parroquia": "El Goaltal",
+    "lat": 0.7991331585165125,
+    "lng": -78.16544060920089,
+    "fecha": "27 de diciembre de 1949"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Espejo",
+    "parroquia": "La Libertad",
+    "lat": 0.6538010868885575,
+    "lng": -77.94374934180634,
+    "fecha": "2 de enero de 1930"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Espejo",
+    "parroquia": "San Isidro",
+    "lat": 0.6006288107111017,
+    "lng":  -77.9848961153445,
+    "fecha": "12 de octubre de 1882"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Mira",
+    "parroquia": "Concepción",
+    "lat": 0.6056243929712197,
+    "lng": -78.1272543153445,
+    "fecha": "26 de noviembre de 1955"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Mira",
+    "parroquia": "Jijón y Caamaño",
+    "lat": 0.7761441597455313,
+    "lng": -78.26548263502082,
+    "fecha": "7 de abril de 1992"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Mira",
+    "parroquia": "Juan Montalvo",
+    "lat": 0.5502524384772813,
+    "lng":  -78.04099140441,
+    "fecha": "6 de junio de 1961"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Montúfar",
+    "parroquia": "Fernández Salvador",
+    "lat": 0.60102422140769,
+    "lng": -77.75163965767224,
+    "fecha": "26 de noviembre de 1955"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Montúfar",
+    "parroquia": "La Paz",
+    "lat": 0.5081498955962893,
+    "lng": -77.8669523981471,
+    "fecha": "20 de septiembre de 1943"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "Montúfar",
+    "parroquia": "Piartal",
+    "lat": 0.5670048071965103,
+    "lng": -77.77174910251198,
+    "fecha": "17 de febrero de 1995"
+  },
+  {
+    "provincia": "Carchi",
+    "canton": "San Pedro de Huaca",
+    "parroquia": "Mariscal Sucre",
+    "lat": 0.5964001596956786,
+    "lng": -77.73330249940923,
+    "fecha": "15 de noviembre de 1984"
+  },
+   {
+    "provincia": "Imbabura",
+    "canton": "Ibarra",
+    "parroquia": "Ambuquí",
+    "lat": 0.456347580550468,
+    "lng": -78.00398816882218,
+    "fecha": "28 de mayo de 1861"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Ibarra",
+    "parroquia": "Angochagua",
+    "lat": 0.24655994285610178,
+    "lng": -78.08423477278158,
+    "fecha": "15 de septiembre de 1861"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Ibarra",
+    "parroquia": "La Carolina",
+    "lat": 0.7469552156605758,
+    "lng": -78.24492124913671,
+    "fecha": "20 de octubre de 1995"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Ibarra",
+    "parroquia": "La Esperanza",
+    "lat": 0.300674300413135,
+    "lng": -78.12019119997566,
+    "fecha": "9 de julio de 1945"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Ibarra",
+    "parroquia": "Lita",
+    "lat": 0.8693371900323242,
+    "lng": -78.45140864418063,
+    "fecha": "13 de febrero de 1963"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Ibarra",
+    "parroquia": "Salinas",
+    "lat": 0.49482342464368695,
+    "lng": -78.12992787116387,
+    "fecha": "2 de marzo de 1968"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Ibarra",
+    "parroquia": "San Antonio",
+    "lat": 0.33322708712650334,
+    "lng": -78.17021369999999,
+    "fecha": "24 de junio de 1955"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Antonio Ante",
+    "parroquia": "Andrade Marín (Lourdes)",
+    "lat": 0.3225020243448185,
+    "lng":  -78.20658847402355,
+    "fecha": "22 de mayo de 1939"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Antonio Ante",
+    "parroquia": "Imbaya (San Luis de Cobuendo)",
+    "lat": 0.3689771719750247,
+    "lng": -78.15109454603352,
+    "fecha": "17 de abril de 1957"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Antonio Ante",
+    "parroquia": "San Francisco de Natabuela",
+    "lat": 0.3392834601733316,
+    "lng": -78.19318673984877,
+    "fecha": "5 de junio de 1945"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Cotacachi",
+    "parroquia": "Apuela",
+    "lat": 0.3579882779545757,
+    "lng": -78.51140238251205,
+    "fecha": "1 de febrero de 1950"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Cotacachi",
+    "parroquia": "García Moreno (Llurimagua)",
+    "lat": 0.2851524065615628,
+    "lng": -79.00057450472559,
+    "fecha": "12 de julio de 1946"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Cotacachi",
+    "parroquia": "Imantag",
+    "lat": 0.3772658901994591,
+    "lng": -78.25296971781596,
+    "fecha": "22 de julio de 1950"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Cotacachi",
+    "parroquia": "Peñaherrera",
+    "lat": 0.349729985819718,
+    "lng": -78.5359715584868,
+    "fecha": "12 de marzo de 1964"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Cotacachi",
+    "parroquia": "Plaza Gutiérrez (Calvario)",
+    "lat": 0.3500040467679642,
+    "lng":  -78.49263158129384,
+    "fecha": "5 de agosto de 1969"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Cotacachi",
+    "parroquia": "Quiroga",
+    "lat": 0.2833837459971165,
+    "lng": -78.28476479199743,
+    "fecha": "2 de diciembre de 1861"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Cotacachi",
+    "parroquia": "6 de Julio de Cuellaje",
+    "lat": 0.3985884858337631,
+    "lng": -78.52662835767225,
+    "fecha": "6 de julio de 1972"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Cotacachi",
+    "parroquia": "Vacas Galindo (El Churo)",
+    "lat": 0.3052407321690068,
+    "lng":  -78.56701522999862,
+    "fecha": "12 de diciembre de 1984"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "Dr. Miguel Egas Cabezas (Peguche)",
+    "lat": 0.24775344597697568,
+    "lng": -78.24680312883612,
+    "fecha": "17 de abril de 1990"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "Eugenio Espejo (Calpaquí)",
+    "lat": 0.2023913910848856,
+    "lng": -78.24784780583698,
+    "fecha": "25 de julio de 1994"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "González Suárez",
+    "lat": 0.18037344432622487,
+    "lng": -78.2049278376812,
+    "fecha": "13 de octubre de 1967"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "Pataquí",
+    "lat": 0.1753223121099456,
+    "lng": -78.36822481353964,
+    "fecha": "8 de septiembre de 1993"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "San José de Quichinche",
+    "lat": 0.23752038985029506,
+    "lng": -78.28869574418061,
+    "fecha": "20 de abril de 1956"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "San Juan de Ilumán",
+    "lat": 0.2831373543719905,
+    "lng": -78.2356131113454,
+    "fecha": "4 de junio de 1965"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "San Pablo",
+    "lat": 0.19679227164271496,
+    "lng": -78.1913640198174,
+    "fecha": "17 de junio de 1861"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "San Rafael",
+    "lat": 0.19309611794969092,
+    "lng": -78.22543275767224,
+    "fecha": "5 de junio de 1961"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Otavalo",
+    "parroquia": "Selva Alegre",
+    "lat": 0.2501250234617258,
+    "lng": -78.57513775378581,
+    "fecha": "14 de julio de 1992"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Pimampiro",
+    "parroquia": "Chugá",
+    "lat": 0.3848778928710967,
+    "lng": -77.90034360340955,
+    "fecha": "18 de enero de 1966"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Pimampiro",
+    "parroquia": "Mariano Acosta",
+    "lat": 0.2968178983298494,
+    "lng":  -77.98424390438348,
+    "fecha": "19 de abril de 1994"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Pimampiro",
+    "parroquia": "San Francisco de Sigsipamba",
+    "lat": 0.31846929627072457,
+    "lng": -77.91709643410057,
+    "fecha": "6 de julio de 1962"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Urcuquí",
+    "parroquia": "Cahuasquí",
+    "lat": 0.5172677569223855,
+    "lng":  -78.23316161934981,
+    "fecha": "24 de septiembre de 1943"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Urcuquí",
+    "parroquia": "Buenos Aires",
+    "lat": 0.6270800567739239,
+    "lng": -78.33800601807084,
+    "fecha": "12 de mayo de 1980"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Urcuquí",
+    "parroquia": "Pablo Arenas",
+    "lat": 0.5014168179568557,
+    "lng": -78.19398532022554,
+    "fecha": "26 de septiembre de 1935"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Urcuquí",
+    "parroquia": "San Blas",
+    "lat": 0.4137495707075895,
+    "lng": -78.20640139087331,
+    "fecha": "14 de abril de 1993"
+  },
+  {
+    "provincia": "Imbabura",
+    "canton": "Urcuquí",
+    "parroquia": "Tumbabiro",
+    "lat": 0.46237330616214356,
+    "lng": -78.18830588244757,
+    "fecha": "2 de julio de 1954"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Ayora",
+    "lat": 0.051703,
+    "lng": -78.101731,
+    "fecha": "20 de julio de 1986"
+  },
+
+
+   {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Ascázubi",
+    "lat": -0.08487609936133034,
+    "lng": -78.2921903223319,
+    "fecha": "21 de septiembre de 1913"
+  },
+
+   {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Cangahua",
+    "lat": -0.060840323404382196,
+    "lng": -78.16887505767225,
+    "fecha": "29 de octubre de 1790"
+  },
+
+   {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Santa Rosa de Cusubamba",
+    "lat": -0.04932469088541417,
+    "lng": -78.27375715952513,
+    "fecha": "6 de diciembre de 1944"
+  }, 
+  
+  {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Olmedo Pesillo",
+    "lat": 0.14022132009457267,
+    "lng": -78.07695466931098,
+    "fecha": "26 de septiembre de 1911"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Cayambe",
+    "parroquia": "Otón",
+    "lat": -0.025172582817082862,
+    "lng": 78.25978358836126,
+    "fecha": "3 de junio de 1851"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Alóag",
+    "lat": -0.46837418807077,
+    "lng": -78.58513627116388,
+    "fecha": "23 de julio de 1883"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Aloasí",
+    "lat": -0.5169401036212175,
+    "lng": -78.5807401,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Manuel Cornejo Astorga (Tandapi)",
+    "lat": -0.41619298821544376,
+    "lng": -78.79882352866167,
+    "fecha": "20 de enero de 1909"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Cutuglagua",
+    "lat": -0.36549572765141003,
+    "lng": -78.55054888650838,
+    "fecha": "25 de septiembre de 1950"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "El Chaupi",
+    "lat": -0.6018017245362571,
+    "lng":  -78.64240125246805,
+    "fecha": "23 de mayo de 1949"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Tambillo",
+    "lat": -0.40502745319252187,
+    "lng": -78.54479710839648,
+    "fecha": "23 de julio de 1883"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Mejía",
+    "parroquia": "Uyumbicho",
+    "lat": -0.382911259393723,
+    "lng": -78.52129378279471,
+    "fecha": "23 de julio de 1883"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "parroquia": "La Esperanza",
+    "lat": 0.041095390162753646,
+    "lng": -78.24928308650836,
+    "fecha": "17 de diciembre de 1900"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "parroquia": "Malchinguí",
+    "lat": 0.05782951878084622,
+    "lng": -78.33917933901691,
+    "fecha": "24 de julio de 1883"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "parroquia": "Tocachi",
+    "lat": 0.04511940731130756,
+    "lng": -78.28914027116386,
+    "fecha": "17 de mayo de 1851"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "parroquia": "Tupigachi",
+    "lat": 0.0770035746627236,
+    "lng": -78.18070019087344,
+    "fecha": "15 de mayo de 1947"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Alangasí",
+    "lat": -0.308052261352998,
+    "lng": -78.41363328134818,
+    "fecha": "2 de febrero de 1860"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Amaguaña",
+    "lat": -0.375629555653089,
+    "lng": -78.50497470431733,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Atahualpa Habaspamba",
+    "lat": 0.13370093196528426,
+    "lng": -78.37496261780903,
+    "fecha": "1 de agosto de 1894"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Calacalí",
+    "lat": -0.0006698521179629911,
+    "lng": -78.51380869082571,
+    "fecha": "14 de noviembre de 1952"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Calderón",
+    "lat": -0.11863331834395154,
+    "lng": -78.44580305980661,
+    "fecha": "9 de agosto de 1897"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Chavezpamba",
+    "lat": 0.12401200490108621,
+    "lng":  -78.40361986198964,
+    "fecha": "11 de noviembre de 1942"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Checa",
+    "lat": -0.12781357964314782,
+    "lng": -78.31280780617026,
+    "fecha": "24 de mayo de 1913"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Conocoto",
+    "lat": -0.2914916257673269,
+    "lng": -78.4776783331535,
+    "fecha": "20 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Cumbayá",
+    "lat": -0.20114085317289454,
+    "lng": -78.42841591966189,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "El Quinche",
+    "lat": -0.11086106800337675,
+    "lng": -78.29476020924267,
+    "fecha": "27 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Gualea",
+    "lat": 0.11140756275913634,
+    "lng": -78.74914138650837,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Guangopolo",
+    "lat": -0.2587025719238101,
+    "lng": -78.4527956532602,
+    "fecha": "11 de noviembre de 1953"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Guayllabamba",
+    "lat": -0.05891619269600206,
+    "lng": -78.34595394664518,
+    "fecha": "28 de mayo de 1868"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "La Merced",
+    "lat": -0.2914231544629873,
+    "lng": -78.39862781966185,
+    "fecha": "4 de mayo de 1964"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Llano Chico",
+    "lat": -0.12756878243382397,
+    "lng": -78.44405956777287,
+    "fecha": "5 de julio de 1944"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Lloa",
+    "lat": -0.24787825507706662,
+    "lng": -78.58269356508964,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Nanegal",
+    "lat": 0.13861684877770952,
+    "lng": -78.67613763315344,
+    "fecha": "29 de mayo de 1881"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Nanegalito",
+    "lat": 0.062258574440508765,
+    "lng": -78.68203563892195,
+    "fecha": "14 de noviembre de 1952"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Nayón",
+    "lat": -0.1563176254954732,
+    "lng": -78.4396043908257,
+    "fecha": "17 de junio de 1935"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Nono",
+    "lat": -0.06685242875032633,
+    "lng": -78.5767554188391,
+    "fecha": "13 de agosto de 1720"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Pacto",
+    "lat": 0.14174945267961905,
+    "lng": -78.76741249465252,
+    "fecha": "27 de marzo de 1936"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Perucho",
+    "lat": 0.11056701857490603,
+    "lng": -78.42358064664509,
+    "fecha": "25 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Pifo",
+    "lat": -0.22518652598427763,
+    "lng": -78.33735948897282,
+    "fecha": "30 de agosto de 1869"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Píntag",
+    "lat": -0.37147374158982116,
+    "lng": -78.37374803500636,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Pomasqui",
+    "lat": -0.054454565663100904,
+    "lng": -78.45600477548123,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Puéllaro",
+    "lat": 0.0672248980062422,
+    "lng": -78.40025756138144,
+    "fecha": "25 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Puembo",
+    "lat": -0.17692095142089712,
+    "lng": -78.35806126384247,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "San Antonio de Pichincha",
+    "lat": -0.008554865605100277,
+    "lng": -78.44794600431737,
+    "fecha": "8 de octubre de 1952"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "San José de Minas",
+    "lat": 0.17128423316275174,
+    "lng": -78.41079141966195,
+    "fecha": "14 de septiembre de 1870"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Tababela",
+    "lat": -0.18450072421024885,
+    "lng": -78.34535086198957,
+    "fecha": "13 de junio de 1952"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Tumbaco",
+    "lat": -0.21243980816351254,
+    "lng": -78.40510543315347,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Yaruquí",
+    "lat": -0.16220105277269553,
+    "lng": -78.3170300908258,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Zámbiza",
+    "lat": -0.14867081025496778,
+    "lng": -78.44138891780904,
+    "fecha": "29 de mayo de 1861"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Rumiñahui",
+    "parroquia": "Cotogchoa",
+    "lat": -0.36687589715835806,
+    "lng": -78.45392202284621,
+    "fecha": "31 de mayo de 1938"
+  },
+
+  {
+    "provincia": "Pichincha",
+    "canton": "Rumiñahui",
+    "parroquia": "Rumipamba",
+    "lat": -1.4215573542370379,
+    "lng": -78.63245167491009,
+    "fecha": "31 de mayo de 1938"
+  },
+
+   {
+    "provincia": "Pichincha",
+    "canton": "San Miguel de los Bancos",
+    "parroquia": "Mindo",
+    "lat": -0.05186677619696219,
+    "lng": -78.77472032811629,
+    "fecha": "31 de mayo de 1938"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Aláquez",
+    "lat": -0.8643213981604316,
+    "lng": -78.59557436451058,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Belisario Quevedo",
+    "lat": -0.9847674809151188,
+    "lng": -78.58370211785974,
+    "fecha": "6 de agosto de 1936"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Guaytacama",
+    "lat": -0.8243039118452612,
+    "lng": -78.64183444418063,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Joseguango Bajo",
+    "lat": -0.8182922174311293,
+    "lng": -78.59491489999999,
+    "fecha": "21 de septiembre de 1973"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Mulaló",
+    "lat": -0.7805485267191231,
+    "lng": -78.57524144232774,
+    "fecha": "22 de abril de 1897"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Once de Noviembre",
+    "lat": -0.9089644078353333,
+    "lng": -78.6737984523272,
+    "fecha": "8 de junio de 1939"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Poaló",
+    "lat": -0.8220393198332163,
+    "lng": -78.66827744342274,
+    "fecha": "5 de agosto de 1920"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "San Juan de Pastocalle",
+    "lat": -0.7274632398484394,
+    "lng": -78.63469649087304,
+    "fecha": "24 de junio de 1884"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "San Buenaventura",
+    "lat": -0.8961517608095996,
+    "lng": -78.61272758559866,
+    "fecha": "22 de abril de 1953"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Tanicuchí",
+    "lat": -0.7850782550110909,
+    "lng": -78.64497335013975,
+    "fecha": "10 de agosto de 1520"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Latacunga",
+    "parroquia": "Toacaso",
+    "lat": -0.7558152187438391,
+    "lng": -78.68672734418064,
+    "fecha": "13 de junio de 1645"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "La Maná",
+    "parroquia": "Guasaganda",
+    "lat": -0.79594572454772,
+    "lng": -79.15877711132146,
+    "fecha": "25 de mayo de 1976"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "La Maná",
+    "parroquia": "Pucayacu",
+    "lat": -0.7141524762824397,
+    "lng": -79.11448429318058,
+    "fecha": "7 de septiembre de 1949"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pangua",
+    "parroquia": "Moraspungo",
+    "lat": -1.1734164279947878,
+    "lng": -79.22274673815699,
+    "fecha": "31 de mayo de 1938"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pangua",
+    "parroquia": "Pinllopata",
+    "lat": -1.1432945285292109,
+    "lng": -79.02675628070422,
+    "fecha": "2 de septiembre de 1944"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pangua",
+    "parroquia": "Ramón Campaña",
+    "lat": -1.112751882967965,
+    "lng": -79.0885538822085,
+    "fecha": "31 de mayo de 1938"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pujilí",
+    "parroquia": "Angamarca",
+    "lat": -1.1183677093574949,
+    "lng": -78.93249444874708,
+    "fecha": "28 de agosto de 1852"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pujilí",
+    "parroquia": "Chugchilán",
+    "lat": -0.8000813385993611,
+    "lng": -78.92123119457875,
+    "fecha": "29 de septiembre de 1861"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pujilí",
+    "parroquia": "Guangaje",
+    "lat": -0.8637226848789737,
+    "lng": -78.84713028901997,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pujilí",
+    "parroquia": "Isinliví",
+    "lat": -0.7994805823246712,
+    "lng": -78.9210488043646,
+    "fecha": "11 de octubre de 1982"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pujilí",
+    "parroquia": "La Victoria",
+    "lat": -0.9256077964186926,
+    "lng": -78.68965365767225,
+    "fecha": "15 de mayo de 1936"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pujilí",
+    "parroquia": "Pilaló",
+    "lat": -0.9459244231461671,
+    "lng": -78.9899376033772,
+    "fecha": "14 de octubre de 1852"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pujilí",
+    "parroquia": "Tingo",
+    "lat": -0.9248204476053321,
+    "lng": -79.05187057849344,
+    "fecha": "10 de agosto de 1862"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Pujilí",
+    "parroquia": "Zumbahua",
+    "lat": -0.9613381071719852,
+    "lng": -78.89763773320047,
+    "fecha": "26 de junio de 1972"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Salcedo",
+    "parroquia": "Antonio José Holguín",
+    "lat": -1.097213790067676,
+    "lng": -78.60477619709296,
+    "fecha": "14 de diciembre de 1944"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Salcedo",
+    "parroquia": "Cusubamba",
+    "lat": -1.069403202284184,
+    "lng": -78.7006116043643,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Salcedo",
+    "parroquia": "Mulalillo",
+    "lat": -1.095532592666722,
+    "lng": -78.6275467283731,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Salcedo",
+    "parroquia": "MulliQuindil",
+    "lat": -1.0335890200024118,
+    "lng": -78.56590222456673,
+    "fecha": "15 de mayo de 1947"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Salcedo",
+    "parroquia": "Panzaleo",
+    "lat": -1.0660914143899514,
+    "lng": -78.5991963018529,
+    "fecha": "30 de agosto de 1869"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Saquisilí",
+    "parroquia": "Canchagua",
+    "lat": -0.8099449169646731,
+    "lng": -78.68502708650837,
+    "fecha": "3 de octubre de 1944"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Saquisilí",
+    "parroquia": "Chantilín",
+    "lat": -0.8482604209592114,
+    "lng": -78.64996213136021,
+    "fecha": "3 de octubre de 1944"
+  },
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Saquisilí",
+    "parroquia": "Cochapamba",
+    "lat": -0.836938150657675,
+    "lng": -78.75338960795128,
+    "fecha": "20 de diciembre de 1989"
+  },
+  
+  {
+    "provincia": "Cotopaxi",
+    "canton": "Sigchos",
+    "parroquia": "Las Pampas",
+    "lat": -0.4335502775689818,
+    "lng": -78.966265306632,
+    "fecha": "9 de noviembre de 1953"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Ambatillo",
+    "lat": -1.2308773715618957,
+    "lng": -78.65499370251112,
+    "fecha": "27 de agosto de 1955"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Atahualpa",
+    "lat": -1.2176844402726739,
+    "lng": -78.61105390279508,
+    "fecha": "22 de enero de 1940"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Augusto Martínez",
+    "lat": -1.2170357621141255,
+    "lng": -78.61945854130144,
+    "fecha": "13 de diciembre de 1939"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Constantino Fernández",
+    "lat": -1.1976448847297292,
+    "lng": -78.63416473068901,
+    "fecha": "28 de julio de 1938"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Cunchibamba",
+    "lat": -1.1348600040811216,
+    "lng": -78.58589549402548,
+    "fecha": "9 de noviembre de 1989"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Huachi Grande",
+    "lat": -1.3070555270366289,
+    "lng": -78.63704262883611,
+    "fecha": "29 de julio de 1957"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Izamba",
+    "lat": -1.227336978015069,
+    "lng": -78.58670962883613,
+    "fecha": "29 de mayo de 1860"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Juan B. Vela",
+    "lat": -1.3004388871334764,
+    "lng": -78.69424957301676,
+    "fecha": "17 de junio de 1931"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Montalvo",
+    "lat": -1.3293495919618752,
+    "lng": -78.62692558954679,
+    "fecha": "3 de mayo de 1901"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Pasa",
+    "lat": -1.2684185234592658,
+    "lng": -78.73187955767224,
+    "fecha": "20 de mayo de 1861"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Picaihua",
+    "lat": -1.2761164765115245,
+    "lng": -78.58553321163873,
+    "fecha": "14 de septiembre de 1872"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Pilahuin",
+    "lat": -1.2926202517921606,
+    "lng": -78.72719397301677,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Quisapincha",
+    "lat": -1.2330899939318114,
+    "lng": -78.68332091534451,
+    "fecha": "19 de mayo de 1861"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "San Bartolomé de Pinllo",
+    "lat": -1.2089034343916236,
+    "lng": -78.64862055221718,
+    "fecha": "9 de octubre de 1958"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "San Fernando",
+    "lat": -1.2651715542608368,
+    "lng": -78.74648587301675,
+    "fecha": "21 de julio de 1941"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Santa Rosa",
+    "lat": -1.3036818528488388,
+    "lng": -78.67454282977569,
+    "fecha": "25 de mayo de 1861"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Totoras",
+    "lat": -1.3042222262510832,
+    "lng": -78.60790120618259,
+    "fecha": "30 de agosto de 1869"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Ambato",
+    "parroquia": "Unamuncho",
+    "lat": -1.1599213275329077,
+    "lng": -78.60113050000001,
+    "fecha": "23 de noviembre de 1989"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Baños de Agua Santa",
+    "parroquia": "Lligua",
+    "lat": -1.39334586372663,
+    "lng": -78.44552248650838,
+    "fecha": "11 de septiembre de 1961"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Baños de Agua Santa",
+    "parroquia": "Río Negro",
+    "lat": -1.4089341771516388,
+    "lng": -78.19197749318351,
+    "fecha": "17 de octubre de 1950"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Baños de Agua Santa",
+    "parroquia": "Río Verde",
+    "lat": -1.4030842430965453,
+    "lng": -78.30037602145711,
+    "fecha": "11 de septiembre de 1961"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Baños de Agua Santa",
+    "parroquia": "Ulba",
+    "lat": -1.3943182072214224,
+    "lng": -78.39536417301674,
+    "fecha": "25 de agosto de 1961"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Mocha",
+    "parroquia": "Pinguilí",
+    "lat": -1.3852815860063679,
+    "lng": -78.62085354418063,
+    "fecha": "22 de octubre de 1987"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Patate",
+    "parroquia": "El Triunfo",
+    "lat": -1.296625099778195,
+    "lng": -78.40022420483622,
+    "fecha": "16 de junio de 1972"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Patate",
+    "parroquia": "Los Andes",
+    "lat": -1.2545784484670992,
+    "lng": -78.51445058465549,
+    "fecha": "28 de octubre de 1942"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Patate",
+    "parroquia": "Sucre",
+    "lat": -1.2639836492797907,
+    "lng":  -78.49478681349161,
+    "fecha": "26 de marzo de 1886"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Pelileo",
+    "parroquia": "Benítez (Pachanlica)",
+    "lat": -1.3337830400211514,
+    "lng": -78.5654057994768,
+    "fecha": "24 de septiembre de 1869"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Pelileo",
+    "parroquia": "Bolívar",
+    "lat": -1.3795780497510517,
+    "lng": -78.54294159182524,
+    "fecha": "16 de agosto de 1906"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Pelileo",
+    "parroquia": "Cotaló",
+    "lat": -1.4237436364023432,
+    "lng": -78.50926654232774,
+    "fecha": "17 de abril de 1884"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Pelileo",
+    "parroquia": "Chiquicha",
+    "lat": -1.3299228810940162,
+    "lng": -78.54274603068903,
+    "fecha": "12 de enero de 1940"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Pelileo",
+    "parroquia": "El Rosario (Rumichaca)",
+    "lat": -1.2933163202876996,
+    "lng": -78.56723434686126,
+    "fecha": "16 de abril de 1888"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Pelileo",
+    "parroquia": "García Moreno (Chumaqui)",
+    "lat": -1.319618195826088,
+    "lng": -78.5448301498966,
+    "fecha": "26 de marzo de 1897"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Pelileo",
+    "parroquia": "Huambaló (Guambaló)",
+    "lat": -1.387649786220987,
+    "lng": -78.53149677301676,
+    "fecha": "6 de marzo de 1863"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Pelileo",
+    "parroquia": "Salasaka",
+    "lat": -1.3195702104052045,
+    "lng": -78.57747805477825,
+    "fecha": "26 de junio de 1972"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Píllaro",
+    "parroquia": "Baquerizo Moreno",
+    "lat": -1.227510893415852,
+    "lng": -78.4991601846555,
+    "fecha": "5 de agosto de 1920"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Píllaro",
+    "parroquia": "Emilio María Terán",
+    "lat": -1.223739666680597,
+    "lng": -78.5141413153445,
+    "fecha": "3 de mayo de 1937"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Píllaro",
+    "parroquia": "Marcos Espinel",
+    "lat": -1.1736605683082633,
+    "lng": -78.52409611534449,
+    "fecha": "5 de diciembre de 1938"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Píllaro",
+    "parroquia": "Presidente Urbina",
+    "lat": -1.1452498127714592,
+    "lng": -78.55504544418064,
+    "fecha": "24 de noviembre de 1938"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Píllaro",
+    "parroquia": "San Andrés",
+    "lat": -1.133425094323636,
+    "lng": -78.5393361443105,
+    "fecha": "7 de julio de 1869"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Píllaro",
+    "parroquia": "San José de Poaló",
+    "lat": -1.0968846141255326,
+    "lng": -78.4860832750971,
+    "fecha": "5 de agosto de 1920"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Píllaro",
+    "parroquia": "San Miguelito",
+    "lat": -1.2031538588437694,
+    "lng": -78.53885132698323,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Quero",
+    "parroquia": "Rumipamba",
+    "lat": -1.4214206637878608,
+    "lng": -78.63240054232773,
+    "fecha": "12 de noviembre de 1987"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Quero",
+    "parroquia": "Yanayacu",
+    "lat": -1.421080458010099,
+    "lng": -78.6672422490291,
+    "fecha": "3 de septiembre de 1972"
+  },
+  {
+    "provincia": "Tungurahua",
+    "canton": "Tisaleo",
+    "parroquia": "Quinchicoto",
+    "lat": -1.3866884805927897,
+    "lng": -78.65713634418063,
+    "fecha": "13 de abril de 1992"
+  },
+
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Achupallas",
+    "lat": -2.2829993326626736,
+    "lng": -78.7680903846555,
+    "fecha": "22 de abril de 1897 "
+  },
+  
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Guasuntos",
+    "lat": -2.230696697543877,
+    "lng": -78.8122277744212,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Huigra",
+    "lat": -2.2885814161358584,
+    "lng": -78.98195754394361,
+    "fecha": "7 de mayo de 1907"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Multitud",
+    "lat": -2.099401774411219,
+    "lng": -78.99780281959097,
+    "fecha": "19 de diciembre de 1950"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Pistishí",
+    "lat": -2.250979017192339,
+    "lng": -78.8770585648392,
+    "fecha": "21 de mayo de 1941"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Pumallacta",
+    "lat": -2.188187087777353,
+    "lng": -78.8440054859332,
+    "fecha": "16 de julio de 1916"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Sevilla",
+    "lat": -2.271754091831329,
+    "lng": -78.82621019174799,
+    "fecha": "15 de agosto de 1915"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Sibambe",
+    "lat": -2.2257026934846227,
+    "lng": -78.89094042188707,
+    "fecha": "19 de diciembre de 1950"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Alausí",
+    "parroquia": "Tixán",
+    "lat": -2.1529583029814816,
+    "lng": -78.8026947389699,
+    "fecha": "11 de junio de 1861"
+  },
+  
+  {
+    "provincia": "Chimborazo",
+    "canton": "Colta",
+    "parroquia": "Columbe",
+    "lat": -1.8876384244189246,
+    "lng": -78.72314210299871,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Colta",
+    "parroquia": "Cañi",
+    "lat": -1.7992774117336492,
+    "lng": -78.98341193480465,
+    "fecha": "28 de agosto de 1921"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Colta",
+    "parroquia": "Juan de Velasco",
+    "lat": -1.8168242747091772,
+    "lng": -78.86909025426631,
+    "fecha": "4 de octubre de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Colta",
+    "parroquia": "Santiago de Quito",
+    "lat": -1.764100905831167,
+    "lng": -78.72738054206962,
+    "fecha": "16 de julio de 1982"
+  },
+  
+  {
+    "provincia": "Chimborazo",
+    "canton": "Chunchi",
+    "parroquia": "Capzol",
+    "lat": -2.311222024831894,
+    "lng": -78.923681393068,
+    "fecha": "7 de octubre de 1944"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Chunchi",
+    "parroquia": "Compud",
+    "lat": -2.344688602064683,
+    "lng": -78.94178296018066,
+    "fecha": "26 de septiembre de 1944"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Chunchi",
+    "parroquia": "Gonzol",
+    "lat": -2.2609489862019383,
+    "lng": -78.84627877727092,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Chunchi",
+    "parroquia": "Llagos",
+    "lat": -2.360649418392556,
+    "lng": -78.98316411110824,
+    "fecha": "17 de julio de 1945"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guamote",
+    "parroquia": "Cebadas",
+    "lat": -1.9065643947165019,
+    "lng":  -78.6421282218017,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guamote",
+    "parroquia": "Palmira",
+    "lat": -2.0788312701467797,
+    "lng": -78.73171362381001,
+    "fecha": "7 de agosto de 1946"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guano",
+    "parroquia": "Guanando",
+    "lat": -1.4998148981565675,
+    "lng": -78.52253143803023,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guano",
+    "parroquia": "Ilapo",
+    "lat": -1.5421415073736966,
+    "lng": -78.58749031080774,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guano",
+    "parroquia": "San Andrés",
+    "lat": -1.592822120266636,
+    "lng": -78.6991555083508,
+    "fecha": "30 de noviembre de 1563"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guano",
+    "parroquia": "San Gerardo de Pacaicaguan",
+    "lat": -1.6368443969570672,
+    "lng": -78.61581681747556,
+    "fecha": "2 de diciembre de 1944"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guano",
+    "parroquia": "San Isidro de Patulú",
+    "lat": -1.5834634438465656,
+    "lng": -78.6893072420727,
+    "fecha": "27 de enero de 1894"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guano",
+    "parroquia": "San José del Chazo",
+    "lat": -1.5297477741079126,
+    "lng": -78.55240525448788,
+    "fecha": "21 de enero de 1988"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guano",
+    "parroquia": "Santa Fé de Galán",
+    "lat": -1.6678864189888292,
+    "lng": -78.64740823175363,
+    "fecha": "21 de enero de 1988"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Guano",
+    "parroquia": "Valparaíso",
+    "lat": -1.572172297576212,
+    "lng": -78.5987702685874,
+    "fecha": "15 de agosto de 1988"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Penipe",
+    "parroquia": "Bilbao",
+    "lat": -1.4425320676013527,
+    "lng": -78.50196497116387,
+    "fecha": "12 de julio de 1995 "
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Penipe",
+    "parroquia": "El Altar",
+    "lat": -1.5291596232369942,
+    "lng": -78.5084095485441,
+    "fecha": "26 de marzo de 1865"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Penipe",
+    "parroquia": "Matus",
+    "lat": -1.5578552011957663,
+    "lng": -78.50337466461899,
+    "fecha": "2 de diciembre de 1944"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Penipe",
+    "parroquia": "Puela",
+    "lat": -1.5126362149415784,
+    "lng": -78.5104805674025,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Penipe",
+    "parroquia": "San Antonio de Bayushig",
+    "lat": -1.5494111619562536,
+    "lng": -78.51785957954078,
+    "fecha": "6 de diciembre de 1954"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Cacha",
+    "lat": -1.7101127861219563,
+    "lng": -78.71348684262209,
+    "fecha": "7 de noviembre de 1980"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Calpi",
+    "lat": -1.6458279334376225,
+    "lng": -78.74403177466716,
+    "fecha": "13 de noviembre de 1830"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Cubijíes",
+    "lat": -1.6435446804307245,
+    "lng": -78.58762423348273,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Flores",
+    "lat": -1.8145186728322253,
+    "lng": -78.64411042885034,
+    "fecha": "18 de diciembre de 1918"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Licán",
+    "lat": -1.650740413710891,
+    "lng": -78.7109330046959,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Licto",
+    "lat": -1.8039060728173004,
+    "lng": -78.60040177476185,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Pungalá",
+    "lat": -1.8195352008461196,
+    "lng": -78.59322366293392,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Punín",
+    "lat": -1.7657009539587387,
+    "lng": -78.65617717116388,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "Químiag",
+    "lat": -1.6585118047960443,
+    "lng": -78.5695395446622,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "San Juan",
+    "lat": -1.6340801860847392,
+    "lng":  -78.7817728153445,
+    "fecha": "27 de mayo de 1878"
+  },
+  {
+    "provincia": "Chimborazo",
+    "canton": "Riobamba",
+    "parroquia": "San Luis",
+    "lat": -1.707862056726607,
+    "lng": -78.6456440123011,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Guaranda",
+    "parroquia": "Facundo Vela",
+    "lat": -1.196279005596487,
+    "lng": -79.05537359188851,
+    "fecha": "19 de agosto de 1929"
+  },
+  
+  {
+    "provincia": "Bolívar",
+    "canton": "Guaranda",
+    "parroquia": "Salinas",
+    "lat": 0.4948019672730216,
+    "lng": -78.12986350251198,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Guaranda",
+    "parroquia": "San Simón (Yacoto)",
+    "lat": -1.6401194484535024,
+    "lng": -78.98898084871,
+    "fecha": "2 de agosto de 1885"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Guaranda",
+    "parroquia": "Santa Fé",
+    "lat": -1.6137601456311452,
+    "lng": -79.01297916895774,
+    "fecha": "23 de abril de 1884"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Guaranda",
+    "parroquia": "Simiátug",
+    "lat": -1.2912444025874659,
+    "lng": -78.95955459087227,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Guaranda",
+    "parroquia": "San Luis de Pambil",
+    "lat": -1.228624912281455,
+    "lng": -79.2403273616277,
+    "fecha": "23 de agosto de 1989"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Chillanes",
+    "parroquia": "San José del Tambo (Tambopamba)",
+    "lat": -1.9527723627601614,
+    "lng": -79.23360991892429,
+    "fecha": "17 de enero de 1947"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Chimbo",
+    "parroquia": "San José de Chimbo",
+    "lat": -1.6811805752352027,
+    "lng": -79.02844366171408,
+    "fecha": "3 de marzo de 1860"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Chimbo",
+    "parroquia": "Asunción (Asancoto)",
+    "lat": -1.6647899364926508,
+    "lng": -79.03940426203539,
+    "fecha": "3 de marzo de 1860"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Chimbo",
+    "parroquia": "Caluma",
+    "lat": -1.6221053134225742,
+    "lng": -79.25972150986563,
+    "fecha": "23 de abril de 1884"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Chimbo",
+    "parroquia": "Magdalena (Chapacoto)",
+    "lat": -1.6724137773918595,
+    "lng": -79.09932245752788,
+    "fecha": "3 de marzo de 1860"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Chimbo",
+    "parroquia": "San Sebastián",
+    "lat": -1.678439496765335,
+    "lng": -79.02805835583987,
+    "fecha": "7 de diciembre de 1900"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "Chimbo",
+    "parroquia": "Telimbela",
+    "lat": -1.646586410373687,
+    "lng": -79.16711449361951,
+    "fecha": "9 de agosto de 1860"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "San Miguel",
+    "parroquia": "Balsapamba",
+    "lat": -1.767164350090434,
+    "lng": -79.17990589662102,
+    "fecha": "23 de abril de 1884"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "San Miguel",
+    "parroquia": "Bilován",
+    "lat": -1.8076126171265994,
+    "lng": -79.1016997465237,
+    "fecha": "3 de marzo de 1860"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "San Miguel",
+    "parroquia": "Régulo de Mora",
+    "lat": -1.8759391990366778,
+    "lng": -79.18820260630741,
+    "fecha": "13 de julio de 1967"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "San Miguel",
+    "parroquia": "San Pablo (San Pablo de Atenas)",
+    "lat": -1.8201227695402944,
+    "lng": -79.06717189389911,
+    "fecha": "11 de enero de 1879"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "San Miguel",
+    "parroquia": "Santiago",
+    "lat": -1.7003694717209317,
+    "lng": -79.00503301721646,
+    "fecha": "24 de octubre de 1837"
+  },
+  {
+    "provincia": "Bolívar",
+    "canton": "San Miguel",
+    "parroquia": "San Vicente",
+    "lat": -1.716786473768666,
+    "lng": -79.01867703505211,
+    "fecha": "6 de octubre de 1978"
+  },
+  
+  {
+    "provincia": "Bolívar",
+    "canton": "Las Naves",
+    "parroquia": "Las Naves",
+    "lat": -1.2891739097712382,
+    "lng": -79.30327525924666,
+    "fecha": "25 de junio de 1968"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Chontamarca",
+    "lat": -2.4410793904409416,
+    "lng": -79.09380401635933,
+    "fecha": "28 de Noviembre de 1944"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Chorocopte",
+    "lat": -2.581483659004535,
+    "lng": -78.94724771534449,
+    "fecha": "6 de Noviembre de 1944"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Ducur",
+    "lat": -2.46238339586169,
+    "lng": -79.11303777243361,
+    "fecha": "16 de abril de 1996"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "General Morales",
+    "lat": -2.4073563494817463,
+    "lng":  -79.02333210035799,
+    "fecha": "30 de junio de 1925"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Gualleturo",
+    "lat": -2.5250382290939983,
+    "lng": -79.12925566018014,
+    "fecha": "8 de Septiembre de 1852"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Honorato Vásquez",
+    "lat": -2.5564559517806034,
+    "lng": -78.91562057549365,
+    "fecha": "14 de septiembre de 1935"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Ingapirca",
+    "lat": -2.5458989559822807,
+    "lng": -78.87578162474246,
+    "fecha": "1 de mayo de 1919"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Juncal",
+    "lat": -2.4779179035833523,
+    "lng": -78.97338873919166,
+    "fecha": "22 de noviembre de 1942"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "San Antonio",
+    "lat": -2.5142150510802517,
+    "lng":  -79.19096396924738,
+    "fecha": "18 de Agosto de 1952"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Ventura",
+    "lat": -2.247253754456911,
+    "lng": -79.12461298135287,
+    "fecha": "29 de Diciembre de 1993"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Cañar",
+    "parroquia": "Zhud",
+    "lat": -2.4600791347386206,
+    "lng": -79.00412417116388,
+    "fecha": "2 de febrero de 1955"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Azogues",
+    "parroquia": "Cojitambo",
+    "lat": -2.7592375556790767,
+    "lng": -78.88419147301676,
+    "fecha": "17 de abril de 1884"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Azogues",
+    "parroquia": "Guapán",
+    "lat": -2.7127869469596315,
+    "lng": -78.84790799999999,
+    "fecha": "5 de diciembre de 1948"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Azogues",
+    "parroquia": "Javier Loyola",
+    "lat": -2.797421630860524,
+    "lng": -78.86845632883613,
+    "fecha": "29 de octubre de 1920"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Azogues",
+    "parroquia": "Luis Cordero",
+    "lat": -2.743583952724152,
+    "lng":  -78.82536944232776,
+    "fecha": "20 de junio de 1917"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Azogues",
+    "parroquia": "Pindilig",
+    "lat": -2.620863000586563,
+    "lng": -78.68482864232774,
+    "fecha": "23 de febrero de 1858"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Azogues",
+    "parroquia": "Rivera",
+    "lat": -2.576365162360251,
+    "lng": -78.6482545031294,
+    "fecha": "10 de enero de 1910"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Azogues",
+    "parroquia": "San Miguel",
+    "lat": -2.799069081594026,
+    "lng": -78.83239747304206,
+    "fecha": " 9 de septiembre de 1852"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Azogues",
+    "parroquia": "Taday",
+    "lat": -2.640847319581986,
+    "lng": -78.69109868600616,
+    "fecha": "3 de octubre de 1787"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Biblián",
+    "parroquia": "Jerusalén",
+    "lat": -2.6932892592016198,
+    "lng": -78.93334033487791,
+    "fecha": "14 de junio de 1990"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Biblián",
+    "parroquia": "Nazón",
+    "lat": -2.702315612627531,
+    "lng": -78.90979532883613,
+    "fecha": "25 de enero de 1945"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Biblián",
+    "parroquia": "San Francisco de Sageo",
+    "lat": -2.72187231557337,
+    "lng": -78.87221402698323,
+    "fecha": " 5 de febrero de 1947"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "Biblián",
+    "parroquia": "Turupamba",
+    "lat": -2.7269014077155274,
+    "lng": -78.9133007574873,
+    "fecha": "23 de abril de 1945"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "La Troncal",
+    "parroquia": "Manuel J. Calle",
+    "lat": -2.356453204262996,
+    "lng": -79.39954620451383,
+    "fecha": "16 de noviembre de 1932"
+  },
+  {
+    "provincia": "Cañar",
+    "canton": "La Troncal",
+    "parroquia": "Pancho Negro",
+    "lat": -2.507118918912704,
+    "lng": -79.49534503914373,
+    "fecha": "22 de julio de 1961"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Camilo Ponce Enríquez",
+    "parroquia": "El Carmen de Pijilí",
+    "lat": -2.965053236272873,
+    "lng": -79.5227811791149,
+    "fecha": "13 de marzo de 1969"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Chordeleg",
+    "parroquia": "Delegsol",
+    "lat": -2.997099750440983,
+    "lng": -78.76291777515405,
+    "fecha": "27 de julio de 1994"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Chordeleg",
+    "parroquia": "La Unión",
+    "lat": -2.926029410748301,
+    "lng": -78.76424176714497,
+    "fecha": "27 de julio de 1994"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Chordeleg",
+    "parroquia": "Luis Cordero",
+    "lat": -2.8941241082394735,
+    "lng": -78.75078791539873,
+    "fecha": "22 de diciembre de 1993"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Chordeleg",
+    "parroquia": "San Martín de Puzhio",
+    "lat": -2.985270603679053,
+    "lng": -78.7591289330965,
+    "fecha": "27 de julio de 1994"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Baños",
+    "lat": -2.9226965835825442,
+    "lng": -79.06577194104487,
+    "fecha": "1 de septiembre de 1852"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Checa",
+    "lat": -2.804936469240036,
+    "lng": -78.99297502813393,
+    "fecha": "22 de abril de 1897"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Chiquintad",
+    "lat": -2.8129968901050892,
+    "lng": -79.00354670257204,
+    "fecha": "27 de abril de 1878"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Llacao",
+    "lat": -2.8663311792313,
+    "lng": -78.88537517396887,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Nulti",
+    "lat": -2.8677326766213698,
+    "lng": -78.92856395767225,
+    "fecha": "15 de septiembre de 1869"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Octavio Cordero Palacios",
+    "lat": -2.7881321805122004,
+    "lng": -78.9624627153445,
+    "fecha": "4 de agosto de 1854"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Paccha",
+    "lat": -2.8996991008632294,
+    "lng": -78.9353426088021,
+    "fecha": "12 de mayo de 1582"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Quingeo",
+    "lat": -3.030509768066468,
+    "lng":  -78.93259172883613,
+    "fecha": "8 de septiembre de 1852"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Ricaurte",
+    "lat": -2.8618151877833338,
+    "lng": -78.96391944961749,
+    "fecha": "25 de marzo de 1909"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "San Joaquín",
+    "lat": -2.895932772354748,
+    "lng": -79.05055456059486,
+    "fecha": "7 de febrero de 1945"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Santa Ana",
+    "lat": -2.9360323652070814,
+    "lng": -78.92109077403416,
+    "fecha": "27 de mayo de 1878"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Sayausí",
+    "lat": -2.8737715778107327,
+    "lng": -79.07342354232773,
+    "fecha": "28 de mayo de 1878"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Sidcay",
+    "lat": -2.8169886349879474,
+    "lng": -78.96415158836126,
+    "fecha": "1 de septiembre de 1852"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Sinincay",
+    "lat": -2.8500370264614077,
+    "lng": -79.01350315767226,
+    "fecha": "5 de febrero de 1853"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Tarqui",
+    "lat": -3.0142746921987027,
+    "lng": -79.03470521534449,
+    "fecha": "18 de octubre de 1915"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Turi",
+    "lat": -2.9232541471421802,
+    "lng": -79.01022844418063,
+    "fecha": "5 de febrero de 1853"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Cuenca",
+    "parroquia": "Victoria del Portete",
+    "lat": -3.0595617156236536,
+    "lng":  -79.06420914418064,
+    "fecha": "15 de octubre de 1944"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "El Pan",
+    "parroquia": "Amaluza",
+    "lat": -2.6086987279578953,
+    "lng": -78.56488591534449,
+    "fecha": "15 de noviembre de 1943"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "El Pan",
+    "parroquia": "Palmas",
+    "lat": -2.7180992370002133,
+    "lng": -78.63073336509096,
+    "fecha": "27 de abril de 1873"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "El Pan",
+    "parroquia": "San Vicente",
+    "lat": -2.811003213257451,
+    "lng": -78.67076983169821,
+    "fecha": "7 de agosto de 1992"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Girón",
+    "parroquia": "Asunción",
+    "lat": -3.2116180211287197,
+    "lng": -79.25881741970258,
+    "fecha": "8 de septiembre de 1852"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Girón",
+    "parroquia": "San Gerardo",
+    "lat": -3.135970256399743,
+    "lng": -79.20306929963088,
+    "fecha": "25 de enero de 1990"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Gualaceo",
+    "parroquia": "Daniel Córdova Toral",
+    "lat": -2.8743244750217682,
+    "lng": -78.74257560250659,
+    "fecha": "5 de febrero de 1937"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Gualaceo",
+    "parroquia": "Jadán",
+    "lat": -2.8885065415344524,
+    "lng": -78.87817297116386,
+    "fecha": "16 de diciembre de 1786"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Gualaceo",
+    "parroquia": "Mariano Moreno",
+    "lat": -2.8558833277691935,
+    "lng": -78.73111467116388,
+    "fecha": "1 de febrero de 1940"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Gualaceo",
+    "parroquia": "Remigio Crespo Toral",
+    "lat": -2.9151341262245287,
+    "lng": -78.75696298650837,
+    "fecha": "1 de febrero de 1940"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Gualaceo",
+    "parroquia": "Zhidmad",
+    "lat": -2.921731546895051,
+    "lng": -78.8762868153445,
+    "fecha": "24 de enero de 1958"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Gualaceo",
+    "parroquia": "San Juan",
+    "lat": -2.9663406923566793,
+    "lng": -78.81572492303897,
+    "fecha": "9 de agosto de 1836"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Nabón",
+    "parroquia": "Cochapata",
+    "lat": -3.388472370282498,
+    "lng": -79.08237973792296,
+    "fecha": "26 de mayo de 1897"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Nabón",
+    "parroquia": "El Progreso",
+    "lat": -3.3426116804384813,
+    "lng": -79.20445902627782,
+    "fecha": "28 de julio de 1961"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Nabón",
+    "parroquia": "Las Nieves",
+    "lat": -3.339861685894638,
+    "lng": -79.1157119845406,
+    "fecha": "28 de noviembre de 1889"
+  },
+
+  {
+    "provincia": "Azuay",
+    "canton": "Oña",
+    "parroquia": "Susudel",
+    "lat": -3.403199149153341,
+    "lng": -79.18607189060498,
+    "fecha": "24 de enero de 1997"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Paute",
+    "parroquia": "Dug Dug",
+    "lat": -2.793257939296441,
+    "lng": -78.76865826959451,
+    "fecha": "2 de febrero de 1990"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Paute",
+    "parroquia": "El Cabo",
+    "lat": -2.8527961875653123,
+    "lng": -78.77821623495164,
+    "fecha": "7 de septiembre de 1987"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Paute",
+    "parroquia": "Tomebamba",
+    "lat": -2.741491535775797,
+    "lng":  -78.68282872883613,
+    "fecha": "20 de enero de 1920"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Paute",
+    "parroquia": "Bulán",
+    "lat": -2.732860283972015,
+    "lng": -78.77550997116394,
+    "fecha": "25 de enero de 1940"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Paute",
+    "parroquia": "San Cristóbal",
+    "lat": -2.8291011470711096,
+    "lng": -78.83937157662346,
+    "fecha": "27 de febrero de 1860"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "San Fernando",
+    "parroquia": "Chumblín",
+    "lat": -3.130815590509212,
+    "lng": -79.24378397082481,
+    "fecha": "4 de diciembre de 1987"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Santa Isabel",
+    "parroquia": "Zhaglli",
+    "lat": -3.1719850776734253,
+    "lng":  -79.38628402883613,
+    "fecha": "17 de abril de 1884"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Santa Isabel",
+    "parroquia": "Abdón Calderón",
+    "lat": -3.3184093014148095,
+    "lng": -79.34481036512227,
+    "fecha": "20 de julio de 1922"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Santa Isabel",
+    "parroquia": "El Carmen de Pijilí",
+    "lat": -2.9649918938750934,
+    "lng": -79.52294987471875,
+    "fecha": "13 de marzo de 1969"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Santa Isabel",
+    "parroquia": "San Salvador de Cañaribamba",
+    "lat": -3.23497154413576,
+    "lng": -79.33824334853873,
+    "fecha": "5 de diciembre de 2011"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Sígsig",
+    "parroquia": "Jima",
+    "lat": -3.1922213171884195,
+    "lng": -78.95342081349163,
+    "fecha": "12 de noviembre de 1820"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Sígsig",
+    "parroquia": "Güel",
+    "lat": -3.014773452474305,
+    "lng": -78.76858437811529,
+    "fecha": "10 de enero de 1953"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Sígsig",
+    "parroquia": "Ludo",
+    "lat": -3.083801637111059,
+    "lng": -78.8909463007362,
+    "fecha": "10 de abril de 1863"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Sígsig",
+    "parroquia": "San Bartolomé",
+    "lat": -3.0078996908191016,
+    "lng": -78.8464252153445,
+    "fecha": "16 de abril de 1574"
+  },
+  {
+    "provincia": "Azuay",
+    "canton": "Sígsig",
+    "parroquia": "San José de Raranga",
+    "lat": -3.134539357117723,
+    "lng": -78.96630767301679,
+    "fecha": "19 de agosto de 1950"
+  },
   {
     "provincia": "Loja",
     "canton": "Loja",
@@ -641,976 +4628,936 @@
     "lng": -80.36725322238924,
     "fecha": "7 de julio de 2006"
   },
- {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Zamora",
-    "parroquia": "Timbara",
-    "lat": -4.030635649450814,
-    "lng": -78.89925157116386,
-    "fecha": "25 de abril de 1955"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Zamora",
-    "parroquia": "Cumbaratza",
-    "lat": -3.993425244292794,
-    "lng":  -78.86634838465548,
-    "fecha": "25 de abril de 1955"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Zamora",
-    "parroquia": "Sabanilla",
-    "lat": -3.9656535902164682,
-    "lng": -79.05622623466726,
-    "fecha": "25 de abril de 1955"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Zamora",
-    "parroquia": "Imbana",
-    "lat": -3.8462210235352607,
-    "lng": -79.12183427929487,
-    "fecha": "14 de julio de 1960"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Zamora",
-    "parroquia": "Guadalupe",
-    "lat": -3.844462959740161,
-    "lng": -78.89064752630274,
-    "fecha": "28 de noviembre de 1967"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Zamora",
-    "parroquia": "San Carlos de las Minas",
-    "lat": -4.0214562492124495,
-    "lng": -78.82296434232774,
-    "fecha": "7 de enero de 1994"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Chinchipe",
-    "parroquia": "Chito",
-    "lat": -4.934877025468822,
-    "lng": -79.04133430152118,
-    "fecha": "29 de mayo de 1861"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Chinchipe",
-    "parroquia": "El Chorro",
-    "lat": -4.914203026221895,
-    "lng": -79.10509767069107,
-    "fecha": "25 de abril de 1955"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Chinchipe",
-    "parroquia": "La Chonta",
-    "lat": -4.948877849373282,
-    "lng": -79.09501269473961,
-    "fecha": "10 de enero de 1959"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Chinchipe",
-    "parroquia": "Pucapamba",
-    "lat": -4.944404763412492,
-    "lng": -79.11745703033255,
-    "fecha": "10 de enero de 1959"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Chinchipe",
-    "parroquia": "San Andrés",
-    "lat": -4.817173670015647,
-    "lng":  -79.28933760011819,
-    "fecha": "11 de marzo de 2005"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Yacuambi",
-    "parroquia": "La Paz",
-    "lat": -3.7008571329182973,
-    "lng": -78.89648076043599,
-    "fecha": "11 de diciembre de 1961"
-  },
-  {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Yacuambi",
-    "parroquia": "Tutupali",
-    "lat": -3.528994863380856,
-    "lng": -78.95028648730116,
-    "fecha": "26 de marzo de 1956"
-  },
- {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Nangaritza",
-    "parroquia": "Guayzimi",
-    "lat": -4.048243654133793,
-    "lng": -78.6823654306858,
-    "fecha": "18 de diciembre de 1971"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Nangaritza",
-    "parroquia": "Nuevo Paraíso",
-    "lat": -4.3743223628904735,
-    "lng": -78.65981555581936,
-    "fecha": "2 de octubre de 2009"
-  },
-
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Nangaritza",
-    "parroquia": "Zurmi",
-    "lat": -4.101465672852568,
-    "lng": -78.66468748836125,
-    "fecha": "24 de septiembre de 1993"
-  },
-  {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Palanda",
-    "parroquia": "El Porvenir del Carmen",
-    "lat": -4.547163774029521,
-    "lng": -79.03397151534449,
-    "fecha": "16 de octubre de 1978"
-  },
-   {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Palanda",
-    "parroquia": "La Canela",
-    "lat": -4.613551695703273,
-    "lng": -78.95391365076568,
-    "fecha": "4 de diciembre de 2008"
-  },
-
-   {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Palanda",
-    "parroquia": "San Francisco del Vergel",
-    "lat": -4.676020206295906,
-    "lng": -79.04402608465548,
-    "fecha": "12 de marzo de 1987"
-  },
- {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Palanda",
-    "parroquia": "Valladolid",
-    "lat": -4.650579681693542,
-    "lng": -79.13187948836126,
-    "fecha": "11 de febrero de 1963"
-  },
-
- {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Paquisha",
-    "parroquia": "Bellavista",
-    "lat": -3.8696858873108293,
-    "lng": -78.67640768742021,
-    "fecha": "18 de septiembre de 2007"
-  },
-   {
-    "provincia": "Zamora Chinchipe",
-    "canton": "Paquisha",
-    "parroquia": "Nuevo Quito",
-    "lat": -3.9806529620364985,
-    "lng": -78.6490508663517,
-    "fecha": "18 de septiembre de 2007"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "El Pangui",
-    "parroquia": "El Guismi",
-    "lat": -3.5556470036383727,
-    "lng": -78.56335381534456,
-    "fecha": "5 de mayo de 1994"
-  },
-  {
-    "provincia": "Zamora Chinchipe",
-    "canton": "El Pangui",
-    "parroquia": "Pachicutza",
-    "lat": -3.668196208095556,
-    "lng": -78.61212206931098,
-    "fecha": "5 de mayo de 1994"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "ElPangui",
-    "parroquia": "Tundayme",
-    "lat": -3.5762305324667074,
-    "lng": -78.49043608307552,
-    "fecha": "13 de junio de 1994"
-  },
-{
-    "provincia": "Zamora Chinchipe",
-    "canton": "Centinela del Cóndor",
-    "parroquia": "Triunfo-Dorado",
-    "lat": -3.8956745185652863,
-    "lng": -78.77715716445832,
-    "fecha": "21 de noviembre de 2011"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Macas",
-    "parroquia": "Alshi (9 de Octubre)",
-    "lat": -2.220797070104143,
-    "lng": -78.24910138273893,
-    "fecha": "26 de enero de 1962"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Macas",
-    "parroquia": "General Proaño",
-    "lat": -2.2661433297813103,
-    "lng": -78.13153608650836,
-    "fecha": "4 de abril de 1929"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Macas",
-    "parroquia": "San Isidro",
-    "lat": -2.2138109138416824,
-    "lng": -78.16642103882026,
-    "fecha": "6 de septiembre"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Macas",
-    "parroquia": "Sevilla Don Bosco",
-    "lat": -2.312557578442002,
-    "lng": -78.10219871349162,
-    "fecha": "28 de mayo de 1958"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Macas",
-    "parroquia": "Sinaí",
-    "lat": -2.0948966561742877,
-    "lng": -78.05232585748467,
-    "fecha": "29 de mayo"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Macas",
-    "parroquia": "Cuchaentza",
-    "lat": -2.1240477329736787,
-    "lng": -77.86405743319818,
-    "fecha": "21 de enero"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Macas",
-    "parroquia": "Río Blanco",
-    "lat": -2.3421713326366738,
-    "lng": -78.15679217658477,
-    "fecha": "28 de abril de 1993"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Gualaquiza",
-    "parroquia": "Amazonas",
-    "lat": -3.392855072163093,
-    "lng": -78.77706697273109,
-    "fecha": "17 de diciembre de 1951"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Gualaquiza",
-    "parroquia": "Bermejos",
-    "lat": -3.24471721748955,
-    "lng": -78.72653440621092,
-    "fecha": "17 de enero de 1955"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Gualaquiza",
-    "parroquia": "Bomboiza",
-    "lat": -3.4388670205882783,
-    "lng": -78.53879090435709,
-    "fecha": "16 de julio de 1952"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Gualaquiza",
-    "parroquia": "Chigüinda",
-    "lat": -3.2807317071078526,
-    "lng": -78.6985455612673,
-    "fecha": "29 de mayo"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Gualaquiza",
-    "parroquia": "El Rosario",
-    "lat": -3.284569008542003,
-    "lng": -78.64393812883611,
-    "fecha": "28 de mayo de 1852"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Gualaquiza",
-    "parroquia": "Nueva Tarqui",
-    "lat": -3.441445992352962,
-    "lng": -78.66375052523509,
-    "fecha": "9 de diciembre de 1961"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Gualaquiza",
-    "parroquia": "San Miguel de Cuyes",
-    "lat": -3.333033097433575,
-    "lng": -78.80004291970208,
-    "fecha": "11 de febrero de 1963"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Huamboya",
-    "parroquia": "Chigüaza",
-    "lat": -2.0471180602425463,
-    "lng": -77.98156387116387,
-    "fecha": "15 de diciembre de 2001"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Limón Indanza",
-    "parroquia": "Indanza",
-    "lat": -2.9603488703396375,
-    "lng": -78.43529927933812,
-    "fecha": "16 de enero de 1931"
-  },
-  {
-    "provincia": "Morona Santiago",
-    "canton": "Limón Indanza",
-    "parroquia": "Pan de Azúcar",
-    "lat": -3.0616239192020256,
-    "lng": -78.53287151758335,
-    "fecha": "19 de julio de 1957"
-  },
-
-{
-    "provincia": "Morona Santiago",
-    "canton": "Limón Indanza",
-    "parroquia": "San Miguel de Conchay",
-    "lat": -3.1221599032052265,
-    "lng": -78.43536141781857,
-    "fecha": "13 de septiembre de 1978"
-  },
-
-{
-    "provincia": "Morona Santiago",
-    "canton": "Limón Indanza",
-    "parroquia": "Santa Susana de Chiviaza",
-    "lat": -2.87990054253698,
-    "lng": -78.36028077236884,
-    "fecha": "25 de enero de 1951"
-  },
-
-{
-    "provincia": "Morona Santiago",
-    "canton": "Limón Indanza",
-    "parroquia": "Yunganza",
-    "lat": -2.859150723447312,
-    "lng": -78.36777291989308,
-    "fecha": "17 de junio de 1951"
-  },
-
-{
-    "provincia": "Morona Santiago",
-    "canton": "Limón Indanza",
-    "parroquia": "San Carlos de Limón",
-    "lat": -3.205273406996069,
-    "lng": -78.42968232790102,
-    "fecha": "14 de enero de 1970"
-  },
-  {
-    "provincia": "Morona Santiago",
-    "canton": "Palora",
-    "parroquia": "Arapicos (Santo Domingo de Arapicos)",
-    "lat": -1.858413348755043,
-    "lng": -77.94687719087112,
-    "fecha": "5 de enero de 1921"
-  },
- {
-    "provincia": "Morona Santiago",
-    "canton": "Palora",
-    "parroquia": "Cumandá",
-    "lat": -1.4597070886287236,
-    "lng": -78.13683663134682,
-    "fecha": "28 de septiembre de 1961"
-  },
- {
-    "provincia": "Morona Santiago",
-    "canton": "Palora",
-    "parroquia": "Sangay",
-    "lat": -1.7465287629908497,
-    "lng": -77.98557929023708,
-    "fecha": "6 de septiembre de 1967"
-  },
- {
-    "provincia": "Morona Santiago",
-    "canton": "Palora",
-    "parroquia": "16 de Agosto",
-    "lat": -1.7378153166530523,
-    "lng": -77.91468782065343,
-    "fecha": "28 de abril de 1993"
-  },
-   {
-    "provincia": "Morona Santiago",
-    "canton": "San Juan Bosco",
-    "parroquia": "San Jacinto de Wakambeis",
-    "lat": -3.267931991290869,
-    "lng": -78.5094975309843,
-    "fecha": " 24 de agosto de 1994"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "San Juan Bosco",
-    "parroquia": "Santiago de Pananza",
-    "lat": -3.1547874075940032,
-    "lng": -78.48513489086669,
-    "fecha": "24 de noviembre de 1995"
-  },
-
-{
-    "provincia": "Morona Santiago",
-    "canton": "Sucúa",
-    "parroquia": "Asunción",
-    "lat": -2.4698639396675706,
-    "lng": -78.185130645495,
-    "fecha": "12 de marzo de 1969"
-  },
-
-{
-    "provincia": "Morona Santiago",
-    "canton": "Sucúa",
-    "parroquia": "Huambi",
-    "lat": -2.537320588619411,
-    "lng": -78.16429177486967,
-    "fecha": "17 de julio de 1941"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Sucúa",
-    "parroquia": "Santa Marianita de Jesús",
-    "lat": -2.419091259855664,
-    "lng": -78.15268323633038,
-    "fecha": "13 de agosto de 1990"
-  },
-  {
-    "provincia": "Morona Santiago",
-    "canton": "Santiago de Méndez",
-    "parroquia": "Copal",
-    "lat": -2.728752543822623,
-    "lng": -78.40975844177589,
-    "fecha": "5 de enero de 1929"
-  },
-   {
-    "provincia": "Morona Santiago",
-    "canton": "Santiago de Méndez",
-    "parroquia": "Chupianza",
-    "lat": -2.7314041791638894,
-    "lng": -78.31927858722797,
-    "fecha": "19 de noviembre de 1944"
-  },
- 
- {
-    "provincia": "Morona Santiago",
-    "canton": "Santiago de Méndez",
-    "parroquia": "San Luis del Acho",
-    "lat": -2.767249316922039,
-    "lng": -78.27900477239629,
-    "fecha": "20 de noviembre"
-  },
- {
-    "provincia": "Morona Santiago",
-    "canton": "Santiago de Méndez",
-    "parroquia": "San Francisco de Chinimbimi",
-    "lat": -2.633538722807129,
-    "lng": -78.2671269840443,
-    "fecha": "9 de febrero"
-  },
- {
-    "provincia": "Morona Santiago",
-    "canton": "Santiago de Méndez",
-    "parroquia": "Tayuza",
-    "lat": -2.6982760939974,
-    "lng": -78.23920373319629,
-    "fecha": "21 de junio de 1972"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Logroño",
-    "parroquia": "Yaupi",
-    "lat": -2.8355139669036302,
-    "lng": -77.93650544572708,
-    "fecha": "19 de agosto de 1925 "
-  },
-  {
-    "provincia": "Morona Santiago",
-    "canton": "Logroño",
-    "parroquia": "Shimpis",
-    "lat": -2.62426065841982,
-    "lng": -78.18459507503574,
-    "fecha": "22 de enero de 1997"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Taisha",
-    "parroquia": "Huasaga",
-    "lat": -2.4927750567549025,
-    "lng": -77.1911791110805,
-    "fecha": "20 de febrero de 1989"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Taisha",
-    "parroquia": "Macuma",
-    "lat": -2.147330450510567,
-    "lng": -77.69776773134515,
-    "fecha": "19 de agosto de 1972"
-  },
-  {
-    "provincia": "Morona Santiago",
-    "canton": "Taisha",
-    "parroquia": "Tuutinentza",
-    "lat": -2.534096549681343,
-    "lng": -77.47114303277598,
-    "fecha": "18 de marzo de 1994"
-  },
-{
-    "provincia": "Morona Santiago",
-    "canton": "Tiwintza",
-    "parroquia": "San José de Morona",
-    "lat": -2.8815513114031215,
-    "lng": -77.66909624232774,
-    "fecha": "2 de diciembre de 1991"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "San José de Morona",
-    "lat": -2.8816691764645608,
-    "lng": -77.66921426388467,
-    "fecha": "18 de octubre de 1911"
-  },
-  {
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Diez de Agosto (10 de Agosto)",
-    "lat": -1.4419463929530496,
-    "lng": -77.90420949397333,
-    "fecha": "29 de noviembre de 1967"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Fátima",
-    "lat": -1.4287673109582613,
-    "lng": -77.99855769087205,
-    "fecha": "14 de junio de 1961"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Montalvo (Andoas)",
-    "lat": -2.062853904037652,
-    "lng": -76.96413397737898,
-    "fecha": "18 de octubre de 1911"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Pomona",
-    "lat": -1.6803300613321543,
-    "lng": -77.88376233398277,
-    "fecha": "7 de septiembre de 1978"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Río Corrientes",
-    "lat": -2.2869973930455747,
-    "lng": -76.46931513238376,
-    "fecha": "5 de enero de 1921"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Río Tigre",
-    "lat": -1.487394446292364,
-    "lng": -77.99630743319963,
-    "fecha": "5 de enero de 1921"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Sarayacu",
-    "lat": -1.7322761184230289,
-    "lng": -77.4932183777726,
-    "fecha": "18 de octubre de 1911"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Simón Bolívar",
-    "lat": -1.7188635220833337,
-    "lng": -77.84574826018238,
-    "fecha": "22 de Mayo"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Tarqui",
-    "lat": -1.5694411516873776,
-    "lng": -77.94121116939347,
-    "fecha": "27 de febrero"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Teniente Hugo Ortiz",
-    "lat": -1.3727095031973657,
-    "lng": -77.95359960436376,
-    "fecha": "14 de Octubre"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "Veracruz",
-    "lat": -1.5084732724201575,
-    "lng": -77.93893402156088,
-    "fecha": "2 de julio"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Canelos",
-    "parroquia": "El Triunfo",
-    "lat": -1.4263349174908386,
-    "lng": -77.79636510822,
-    "fecha": "19 de noviembre de 1991"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Mera",
-    "parroquia": "Madre Tierra",
-    "lat": -1.6065710355919134,
-    "lng": -77.99764347244565,
-    "fecha": "19 de marzo de 1960"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Mera",
-    "parroquia": "Shell",
-    "lat": -1.499629470987343,
-    "lng": -78.06091873068901,
-    "fecha": "29 de diciembre de 1966"
-  },
-{
-    "provincia": "Pastaza",
-    "canton": "Santa Clara",
-    "parroquia": "San José",
-    "lat": -1.344884277526657,
-    "lng": -77.92153553319989,
-    "fecha": "24 de febrero de 2003"
-  },
-  {
-    "provincia": "Pastaza",
-    "canton": "Arajuno",
-    "parroquia": "Curaray",
-    "lat": -1.2451040398979496,
-    "lng": -76.72920608291527,
-    "fecha": "20 de octubre de 1970"
-  },
-  {
-    "provincia": "Orellana",
-    "canton": "El Coca",
-    "parroquia": "Alejandro Labaka",
-    "lat": -0.44248639239809023,
-    "lng": -76.61297372845345,
-    "fecha": "30 de julio de 1998"
-  },
-   {
-    "provincia": "Orellana",
-    "canton": "El Coca",
-    "parroquia": " Armenia (San Luis de Armenia)",
-    "lat": -0.47941335877363167,
-    "lng": -77.06921272156221,
-    "fecha": "29 de mayo de 1986"
-  },
-   {
-    "provincia": "Orellana",
-    "canton": "El Coca",
-    "parroquia": "Dayuma",
-    "lat": -0.6696974604340614,
-    "lng":  -76.88215843408547,
-    "fecha": "16 de junio de 1990"
-  },
-{
-    "provincia": "Orellana",
-    "canton": "Aguarico",
-    "parroquia": "Capitán Augusto Rivadeneira",
-    "lat": -0.6223360225063553,
-    "lng":  -75.85802886018415,
-    "fecha": "30 de abril de 1969"
-  },
-  {
-    "provincia": "Orellana",
-    "canton": "Aguarico",
-    "parroquia": "Cononaco",
-    "lat": -0.4297445573314127,
-    "lng":  -76.97430833397321,
-    "fecha": "19 de agosto de 1925"
-  },
-{
-    "provincia": "Sucumbíos",
-    "canton": "Lago Agrio",
-    "parroquia": "Dureno",
-    "lat": 0.052142128881476006,
-    "lng":  -76.70028859688614,
-    "fecha": "30 de abril de 1969"
-  },
-{
-    "provincia": "Sucumbíos",
-    "canton": "Lago Agrio",
-    "parroquia": "El Eno",
-    "lat": -0.06817391270275773,
-    "lng":  -76.88320158361898,
-    "fecha": "28 de octubre de 1991"
-  },
-{
-    "provincia": "Sucumbíos",
-    "canton": "Lago Agrio",
-    "parroquia": "General Farfán",
-    "lat": 0.20150900478622605,
-    "lng":  -76.77588048479147,
-    "fecha": "30 de abril de 1969"
-  },
-{
-    "provincia": "Sucumbíos",
-    "canton": "Sucumbíos",
-    "parroquia": "El Playón de San Francisco",
-    "lat": 0.6381735352406375,
-    "lng":  -77.62187632883612,
-    "fecha": "29 de enero de 1949"
-  },
-{
-    "provincia": "Sucumbíos",
-    "canton": "Sucumbíos",
-    "parroquia": "Rosa Florida",
-    "lat": 0.2966584173042808,
-    "lng":  -77.4566951153445,
-    "fecha": "30 de abril de 1969"
-  },
-  {
-    "provincia": "Napo",
-    "canton": "Tena",
-    "parroquia": "Ahuano",
-    "lat": -1.050580086392556,
-    "lng":  -77.54750094232773,
-    "fecha": "30 de abril de 1989"
-  },
-  {
-    "provincia": "Napo",
-    "canton": "Tena",
-    "parroquia": "Chontapunta",
-    "lat": -0.9147021506331041,
-    "lng":  -77.36365840185289,
-    "fecha": "30 de abril de 1969"
-  },
-{
-    "provincia": "Napo",
-    "canton": "Archidona",
-    "parroquia": "Cotundo",
-    "lat": -0.840989846403185,
-    "lng":   -77.79615212698323,
-    "fecha": "1 de febrero de 1967"
-  },
-{
-    "provincia": "Napo",
-    "canton": "Archidona",
-    "parroquia": "San Pablo de Ushpayacu",
-    "lat": -0.9324225887761939,
-    "lng":   -77.7734230018529,
-    "fecha": "29 de enero de 1969"
-  },
-  {
-    "provincia": "Carchi",
-    "canton": "Tulcán",
-    "parroquia": "El Carmelo",
-    "lat": 0.6712835900947026,
-    "lng":   -77.58994925581939,
-    "fecha": "11 de enero de 1919"
-  },
     {
-    "provincia": "Carchi",
-    "canton": "Tulcán",
-    "parroquia": "El Chical",
-    "lat": 0.9939179463980846,
-    "lng":   -78.27293143179647,
-    "fecha": "24 de abril de 1991"
-  },
-   {
-    "provincia": "Carchi",
-    "canton": "Bolívar",
-    "parroquia": "García Moreno",
-    "lat": 0.5592961149183064,
-    "lng":   -77.94989713541736,
-    "fecha": "14 de junio de 1935"
-  },
- {
-    "provincia": "Carchi",
-    "canton": "Bolívar",
-    "parroquia": "Los Andes",
-    "lat": 0.49749862549495655,
-    "lng":   -77.93798468650836,
-    "fecha": "1 de octubre de 1912"
-  },
-   {
-    "provincia": "Imbabura",
-    "canton": "Ibarra",
-    "parroquia": "Ambuquí",
-    "lat": 0.4475433697224616,
-    "lng":   -78.00525707552872,
-    "fecha": "19 de agosto de 1968"
-  },
- {
-    "provincia": "Imbabura",
-    "canton": "Ibarra",
-    "parroquia": "Angochagua",
-    "lat": 0.2475040716556201,
-    "lng":   -78.08432060341329,
-    "fecha": "28 de mayo de 1861"
-  },
-{
-    "provincia": "Imbabura",
-    "canton": "Antonio Ante",
-    "parroquia": "Andrade Marín (Lourdes)",
-    "lat": 0.3262974018746296,
-    "lng":   -78.20337477709056,
-    "fecha": "26 de noviembre de 1935"
-  },
-  {
-    "provincia": "Imbabura",
-    "canton": "Antonio Ante",
-    "parroquia": "Imbaya (San Luis de Cobuendo)",
-    "lat": 0.3690630008814459,
-    "lng":   -78.15096579999994,
-    "fecha": "23 de enero de 1945"
-  },
-   {
     "provincia": "Esmeraldas",
     "canton": "Esmeraldas",
     "parroquia": "Camarones",
-    "lat": 0.9644738272996314,
-    "lng":   -79.6271272350534,
-    "fecha": "31 de octubre de 1955"
+    "lat": 0.9797647955705752,
+    "lng": -79.56280911130766,
+    "fecha": "31 de Octubre de 1955"
   },
-   {
+  {
     "provincia": "Esmeraldas",
     "canton": "Esmeraldas",
     "parroquia": "Carlos Concha",
-    "lat": 0.7186409046290592,
-    "lng":   -79.68316161925966,
-    "fecha": "23 de enero de 1945"
+    "lat": 0.7123757530507295,
+    "lng": -79.68959892093577,
+    "fecha": "10 de Septiembre de 1955"
   },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "parroquia": "Chinca",
+    "lat": 0.7688983479520681,
+    "lng": -79.58367660339054,
+    "fecha": "19 de Marzo de 1948"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "parroquia": "Majua",
+    "lat": 0.7041127885455277,
+    "lng": -79.52883299999999,
+    "fecha": "13 de Mayo de 1961"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "parroquia": "San Mateo",
+    "lat": 0.8906233753985316,
+    "lng": -79.6311612846555,
+    "fecha": "30 de Junio de 1978"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "parroquia": "Tabiazo",
+    "lat": 0.8211307423138451,
+    "lng": -79.70321417258455,
+    "fecha": "18 de Febrero de 1941"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "parroquia": "Tachina",
+    "lat": 0.9643987370612862,
+    "lng": -79.62707358650837,
+    "fecha": "29 de Febrero de 1940"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "parroquia": "Vuelta Larga",
+    "lat": 0.8968222779603513,
+    "lng": -79.7006727153445,
+    "fecha": "21 de noviembre de 1955"
+  },
+  
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Atacames",
+    "parroquia": "La Unión",
+    "lat": 0.1431847165046451,
+    "lng": -79.40405812202653,
+    "fecha": "13 de noviembre de 1955"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Atacames",
+    "parroquia": "Súa",
+    "lat": 0.871995515452317,
+    "lng": -79.87654303426159,
+    "fecha": "24 de noviembre de 1955"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Atacames",
+    "parroquia": "Tonchigüe",
+    "lat": 0.8064042730516298,
+    "lng": -79.94038860628756,
+    "fecha": "21 de noviembre de 1955"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Atacames",
+    "parroquia": "Same",
+    "lat": 0.847200424592557,
+    "lng": -79.92217249337152,
+    "fecha": "21 de noviembre de 1955"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Atacames",
+    "parroquia": "Tonsupa",
+    "lat": 0.8871589529112096,
+    "lng": -79.81279167919685,
+    "fecha": "21 de Junio de 1996"
+  },
+
   {
     "provincia": "Esmeraldas",
     "canton": "Eloy Alfaro",
     "parroquia": "Anchayacu",
-    "lat": 0.9789897538244354,
-    "lng":   -79.05781081673432,
-    "fecha": "27 de octubre de 1958"
+    "lat": 0.9568580688939669,
+    "lng": -79.05910995640652,
+    "fecha": "21 de septiembre de 1958"
   },
   {
     "provincia": "Esmeraldas",
     "canton": "Eloy Alfaro",
     "parroquia": "Atahualpa",
-    "lat": 0.8554306023060605,
-    "lng":   -78.96810378856136,
+    "lat": 0.8581334178127202,
+    "lng": -78.97016465419654,
     "fecha": "31 de octubre de 1961"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Borbón",
+    "lat": 1.096622040433409,
+    "lng": -78.99139680990395,
+    "fecha": "12 de septiembre de 1938"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Colón Eloy del María",
+    "lat": 1.018319140138745,
+    "lng": -78.90829167101032,
+    "fecha": "14 de mayo de 1992"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "La Tola",
+    "lat": 1.1964150288752118,
+    "lng": -79.04750924131297,
+    "fecha": "29 de mayo de 1861"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Luis Vargas Torres",
+    "lat": 0.8759889199186979,
+    "lng": -78.79457666757709,
+    "fecha": "29 de mayo de 1961"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Maldonado",
+    "lat": 1.0665599345384678,
+    "lng": -78.91836811129991,
+    "fecha": "14 de agosto de 1922"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Pampanal de Bolívar",
+    "lat": 1.3615915502403213,
+    "lng": -78.89626720707312,
+    "fecha": "7 de noviembre de 1983"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "San Francisco de Onzole",
+    "lat": 0.8868299188422496,
+    "lng": -79.07839004017876,
+    "fecha": "12 de enero de 1944"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "San José de Cayapas",
+    "lat": 0.9357848454621202,
+    "lng": -78.94787238681803,
+    "fecha": "22 de abril de 1990"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Santo Domingo de Onzole",
+    "lat": 0.7986713047644904,
+    "lng":  -79.07083159223471,
+    "fecha": "14 de mayo de 1983"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Santa Lucía de las Peñas",
+    "lat": 1.094779098311352,
+    "lng": -79.16161554430012,
+    "fecha": "2 de agosto de 2011"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Selva Alegre",
+    "lat": 0.9341482291442278,
+    "lng":  -78.85966094200033,
+    "fecha": "26 de octubre de 1954"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Telembí",
+    "lat": 0.800645198602607,
+    "lng":  -78.93316413428661,
+    "fecha": "11 de febrero de 1983"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Eloy Alfaro",
+    "parroquia": "Timbiré",
+    "lat": 0.9615850684249766,
+    "lng": -78.86583782335829,
+    "fecha": "22 de abril de 1992"
+  },
+
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Muisne",
+    "parroquia": "Bolívar",
+    "lat": 0.4467728184797886,
+    "lng": -80.04353259401573,
+    "fecha": "31 de julio de 1991"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Muisne",
+    "parroquia": "Daule",
+    "lat": 0.40538565877338933,
+    "lng": -80.0129279924552,
+    "fecha": "6 de Enero de 1962"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Muisne",
+    "parroquia": "Galera",
+    "lat": 0.8166275650909146,
+    "lng": -80.04631161785625,
+    "fecha": "13 de Septiembre de 1940"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Muisne",
+    "parroquia": "Quingue",
+    "lat": 0.7172755320197599,
+    "lng": -80.09367572465445,
+    "fecha": "12 de Enero de 1952"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Muisne",
+    "parroquia": "Salima",
+    "lat": 0.3257734523185213,
+    "lng": -79.96326159587223,
+    "fecha": "3 de diciembre de 1962"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Muisne",
+    "parroquia": "San Francisco",
+    "lat": 0.6533504973610956,
+    "lng": -80.06597764773257,
+    "fecha": "3 de octubre de 1956"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Muisne",
+    "parroquia": "San Gregorio",
+    "lat": 0.611924817886468,
+    "lng": -80.02069791970922,
+    "fecha": "23 de Octubre de 1954"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Muisne",
+    "parroquia": "San José de Chamanga",
+    "lat": 0.26627994477955974,
+    "lng": -79.93299009229241,
+    "fecha": "23 de Octubre de 1954"
+  },
+
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Quinindé",
+    "parroquia": "Cube",
+    "lat": 0.5846116568158287,
+    "lng": -79.641140656086,
+    "fecha": "23 de octubre de 1954"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Quinindé",
+    "parroquia": "Chura",
+    "lat": 0.6059232111844787,
+    "lng": -79.48512710063066,
+    "fecha": "27 de agosto de 1955"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Quinindé",
+    "parroquia": "La Unión",
+    "lat": 0.13657445699926568,
+    "lng": -79.40277841467228,
+    "fecha": "22 de junio de 1992"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Quinindé",
+    "parroquia": "Malimpia",
+    "lat": 0.41537668487883705,
+    "lng": -79.42830153320101,
+    "fecha": "28 de diciembre de 1950"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Quinindé",
+    "parroquia": "Viche",
+    "lat": 0.6612291997978491,
+    "lng": -79.54316994382873,
+    "fecha": "18 de febrero de 1941"
+  },
+
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Rioverde",
+    "parroquia": "Chontaduro",
+    "lat": 0.9316991032276692,
+    "lng": -79.43780163449198,
+    "fecha": "28 de noviembre de 1956"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Rioverde",
+    "parroquia": "Chumundé",
+    "lat": 0.8344373782536095,
+    "lng":  -79.41840729649584,
+    "fecha": "9 de abril de 1954"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Rioverde",
+    "parroquia": "Lagarto",
+    "lat": 1.042854799242819,
+    "lng": -79.28031806321425,
+    "fecha": "28 de noviembre de 1956"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Rioverde",
+    "parroquia": "Montalvo",
+    "lat": 1.051277096296862,
+    "lng": -79.31167578978426,
+    "fecha": "14 de septiembre de 1905"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "Rioverde",
+    "parroquia": "Rocafuerte",
+    "lat": 1.065312696661379,
+    "lng": -79.37413402928007,
+    "fecha": "27 de agosto de 1955"
+  },
+
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "5 de Junio",
+    "lat": 0.9758904982535573,
+    "lng": -79.65112160301533,
+    "fecha": "26 de junio de 1956"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Alto Tambo",
+    "lat": 0.9126600062882272,
+    "lng": -78.54743858806381,
+    "fecha": "26 de octubre de 1954"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Ancón de Sardinas",
+    "lat": 1.4783126736119552,
+    "lng":  -78.98142017934269,
+    "fecha": "26 de octubre de 1995"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Carondelet",
+    "lat": 1.1256454128834892,
+    "lng": -78.76170188311747,
+    "fecha": "10 de marzo de 1943"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Concepción",
+    "lat": 1.03695306711441,
+    "lng": -78.82907855367897,
+    "fecha": "25 de julio de 1845"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Calderón",
+    "lat": 1.1791844566578789,
+    "lng": -78.7651545043641,
+    "fecha": "15 de septiembre de 1955"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Mataje",
+    "lat": 1.3616025954171926,
+    "lng": -78.71692961785537,
+    "fecha": "9 de abril de 1953"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "San Javier de Cachaví",
+    "lat": 1.0668039623049244,
+    "lng": -78.78144285803751,
+    "fecha": "23 de Septiembre de 1958"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Santa Rita",
+    "lat": 1.0990096178329325,
+    "lng": -78.7270501568958,
+    "fecha": "9 de Diciembre de 1968"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Tambillo",
+    "lat": 1.2641363611416319,
+    "lng": -78.88772959771917,
+    "fecha": "29 de Agosto de 1958"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Tululbí",
+    "lat": 1.1778181479772032,
+    "lng": -78.72955712863217,
+    "fecha": "16 de Septiembre de 1955"
+  },
+  {
+    "provincia": "Esmeraldas",
+    "canton": "San Lorenzo",
+    "parroquia": "Urbina",
+    "lat": 1.0410102297183075,
+    "lng": -78.76895854854496,
+    "fecha": "22 de marzo de 1978"
   },
    {
     "provincia": "Santo Domingo de los Tsáchilas",
     "canton": "Santo Domingo",
     "parroquia": "San José de Alluriquín",
-    "lat": -0.32215916934514105,
-    "lng":   78.99763991534451,
+    "lat": -0.32216989768581605,
+    "lng": -78.99759700436493,
     "fecha": "29 de enero de 1970"
   },
-   {
+  {
     "provincia": "Santo Domingo de los Tsáchilas",
     "canton": "Santo Domingo",
     "parroquia": "Luz de América",
-    "lat": -0.4052389000855629,
-    "lng":   -79.30014224418069,
-    "fecha": "2 de diciembre de 1993"
+    "lat": -0.4052067143829881, 
+    "lng": -79.30009932883613,
+    "fecha": "2 de Diciembre de 1993"
+  },
+  {
+    "provincia": "Santo Domingo de los Tsáchilas",
+    "canton": "Santo Domingo",
+    "parroquia": "Puerto Limón",
+    "lat": -0.3842450423280617, 
+    "lng": -79.37069605767226,
+    "fecha": "6 de septiembre de 1984"
+  },
+  {
+    "provincia": "Santo Domingo de los Tsáchilas",
+    "canton": "Santo Domingo",
+    "parroquia": "San Jacinto del Búa",
+    "lat": -0.14769525119641605, 
+    "lng": -79.39281925767226,
+    "fecha": "9 de noviembre de 1998"
+  },
+  {
+    "provincia": "Santo Domingo de los Tsáchilas",
+    "canton": "Santo Domingo",
+    "parroquia": "Valle Hermoso",
+    "lat": -0.08746733706377734, 
+    "lng": -79.27977552883613,
+    "fecha": "1 de agosto de 2000"
+  },
+  {
+    "provincia": "Santo Domingo de los Tsáchilas",
+    "canton": "Santo Domingo",
+    "parroquia": "El Esfuerzo",
+    "lat": -0.41663482853800343, 
+    "lng": -79.27657901970943,
+    "fecha": "15 de noviembre de 2002"
+  },
+  {
+    "provincia": "Santo Domingo de los Tsáchilas",
+    "canton": "Santo Domingo",
+    "parroquia": "Santa María del Toachi",
+    "lat": -0.6401724112883185, 
+    "lng": -79.23000863427741,
+    "fecha": "30 de Diciembre de 2002"
   },
   {
     "provincia": "Santo Domingo de los Tsáchilas",
     "canton": "La Concordia",
     "parroquia": "Monterrey",
-    "lat": -0.029421621470803693,
-    "lng":   -79.49565067486965,
+    "lat": -0.029432350305240766, 
+    "lng": -79.4955541153445,
     "fecha": "1 de noviembre de 2011"
   },
-   {
+  {
+    "provincia": "Santo Domingo de los Tsáchilas",
+    "canton": "La Concordia",
+    "parroquia": "La Villegas",
+    "lat": -0.05974729457008795, 
+    "lng": -79.4450240018529,
+    "fecha": "1 de noviembre de 2011"
+  },
+  {
     "provincia": "Santo Domingo de los Tsáchilas",
     "canton": "La Concordia",
     "parroquia": "Plan Piloto",
-    "lat": -0.07274686580214912,
-    "lng":   -79.39241045767226,
-    "fecha": "1 de noviembre de 2011"
-  },
-  
-   {
-    "provincia": "Santo Domingo de los Tsáchilas",
-    "canton": "La Concordia",
-    "parroquia": "La Villegas",
-    "lat": -0.05968292158994045,
-    "lng":   -79.4449918153445,
-    "fecha": "1 de noviembre de 2011"
-  },
-   {
-    "provincia": "Santo Domingo de los Tsáchilas",
-    "canton": "La Concordia",
-    "parroquia": "La Villegas",
-    "lat": -0.05968292158994045,
-    "lng":   -79.4449918153445,
+    "lat": -0.07276832345654538, 
+    "lng": -79.39241045767226,
     "fecha": "1 de noviembre de 2011"
   },
    {
     "provincia": "Manabí",
     "canton": "Portoviejo",
+    "parroquia": "Abdón Calderón",
+    "lat": -1.029962230973575,
+    "lng": -80.33927561923595,
+    "fecha": "3 de junio de 1909"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Portoviejo",
     "parroquia": "Alhajuela",
-    "lat": -1.052968951432429,
-    "lng":    -80.27980694418048,
+    "lat": -1.0530225865520941,
+    "lng": -80.27978548650836,
     "fecha": "24 de julio de 1937"
   },
   {
     "provincia": "Manabí",
     "canton": "Portoviejo",
-    "parroquia": "Calderón",
-    "lat": -1.0304713618996861,
-    "lng":    -80.3396772432003,
-    "fecha": "21 de mayo de 1909"
+    "parroquia": "Chirijos",
+    "lat": -1.0275320764661058,
+    "lng": -80.2415701153445,
+    "fecha": "7 de agosto de 1996"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Portoviejo",
+    "parroquia": "Crucita",
+    "lat": -0.8781798484929425,
+    "lng": -80.54254813068906,
+    "fecha": "24 de junio de 1978"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Portoviejo",
+    "parroquia": "Pueblo Nuevo",
+    "lat": -0.8758915380355511,
+    "lng": -80.18505042883612,
+    "fecha": "24 de febrero de 1953"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Portoviejo",
+    "parroquia": "Riochico",
+    "lat": -0.9950115923422617,
+    "lng": -80.41617448650837,
+    "fecha": "13 de mayo de 1861"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Portoviejo",
+    "parroquia": "San Plácido",
+    "lat": -1.063327933254179,
+    "lng": -80.24347837301677,
+    "fecha": "1 de diciembre de 1957"
   },
   {
     "provincia": "Manabí",
     "canton": "24 de Mayo",
     "parroquia": "Bellavista",
-    "lat": -1.3472045273915294,
-    "lng":    -80.28739565767225,
-    "fecha": "28 de octubre de 1892"
+    "lat": -1.3473053541096482,
+    "lng": -80.28741103875856,
+    "fecha": "28 de octubre de 1982"
   },
   {
     "provincia": "Manabí",
     "canton": "24 de Mayo",
     "parroquia": "Noboa",
-    "lat": -1.4082684002017634,
-    "lng":   -80.38235161919609,
+    "lat": -1.411088540348649,
+    "lng": -80.38988950908976,
     "fecha": "21 de octubre de 1921"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Bolívar",
+    "parroquia": "Membrillo",
+    "lat": -0.8466901288541313,
+    "lng": -79.92785256203686,
+    "fecha": "18 de enero de 1988"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Bolívar",
+    "parroquia": "Quiroga",
+    "lat": -0.8826624351183535,
+    "lng": -80.0976830262682,
+    "fecha": "29 de junio de 1956"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Chone",
+    "parroquia": "Boyacá",
+    "lat": -0.6976125702477988,
+    "lng": -80.11861731970926,
+    "fecha": "27 de julio de 1920"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Chone",
+    "parroquia": "Canuto",
+    "lat": -0.7991478163684274,
+    "lng": -80.12934949999999,
+    "fecha": "13 de agosto de 1862"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Chone",
+    "parroquia": "Convento",
+    "lat": -0.27624418917256427,
+    "lng": -80.03514615232132,
+    "fecha": "13 de diciembre de 1954"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Chone",
+    "parroquia": "Chibunga",
+    "lat": -0.290944974961723,
+    "lng": -80.00263065511703,
+    "fecha": "4 de agosto de 1988"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Chone",
+    "parroquia": "Eloy Alfaro",
+    "lat": -0.4558442151047436,
+    "lng": -80.14517317552878,
+    "fecha": "7 de junio de 1919"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Chone",
+    "parroquia": "Ricaurte",
+    "lat": -0.5828484206794657,
+    "lng": -80.04078659087314,
+    "fecha": "20 de septiembre de 1907"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "El Carmen",
+    "parroquia": "Santa María",
+    "lat": -0.6482626915824137,
+    "lng": -79.61124284571666,
+    "fecha": "23 de noviembre de 2018"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Flavio Alfaro",
+    "parroquia": "San Francisco de Novillo",
+    "lat": -0.20930796510095542,
+    "lng": -79.85441285358843,
+    "fecha": "7 de agosto de 1992"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Flavio Alfaro",
+    "parroquia": "Zapallo",
+    "lat": -0.44578368805410373,
+    "lng": -79.99523454051356,
+    "fecha": "6 de agosto de 1992"
+  },
+ 
+  {
+    "provincia": "Manabí",
+    "canton": "Jipijapa",
+    "parroquia": "Julcuy",
+    "lat": -1.4604241306141426,
+    "lng": -80.62502445818566,
+    "fecha": "4 de marzo de 1938"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Jipijapa",
+    "parroquia": "La Unión",
+    "lat": -1.4616274409460392,
+    "lng": -80.4358190620359,
+    "fecha": "18 de noviembre de 1988"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Jipijapa",
+    "parroquia": "Pedro Pablo Gómez",
+    "lat": -1.6243698869064633,
+    "lng": -80.56002595767225,
+    "fecha": "24 de octubre de 1917"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Jipijapa",
+    "parroquia": "Puerto Cayo",
+    "lat": -1.3436847793663687,
+    "lng": -80.73783899256047,
+    "fecha": "20 de abril de 1911"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Puerto López",
+    "parroquia": "Salango",
+    "lat": -1.592210906141862,
+    "lng": -80.84358458650838,
+    "fecha": "5 de agosto de 1996"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Puerto López",
+    "parroquia": "Machalilla",
+    "lat": -1.4760329536236432,
+    "lng": -80.76436710702713,
+    "fecha": "20 de marzo de 1878"
+  },
+ 
+  {
+    "provincia": "Manabí",
+    "canton": "Manta",
+    "parroquia": "San Lorenzo",
+    "lat": -1.0658201046505622,
+    "lng": -80.90668763065854,
+    "fecha": "10 de agosto de 1949"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Manta",
+    "parroquia": "Santa Marianita",
+    "lat": -0.989856108903368,
+    "lng": -80.84766020628904,
+    "fecha": "18 de noviembre de 1996"
+  },
+  
+  {
+    "provincia": "Manabí",
+    "canton": "Montecristi",
+    "parroquia": "La Pila",
+    "lat": -1.1058860634971401,
+    "lng": -80.58249399448063,
+    "fecha": "14 de octubre de 1996"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Olmedo",
+    "parroquia": "Olmedo (El Rosario)",
+    "lat": -1.051593611638234,
+    "lng": -79.81349564231724,
+    "fecha": "31 de julio de 1911"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Paján",
+    "parroquia": "Campozano",
+    "lat": -1.58815265629331,
+    "lng": -80.39732317116386,
+    "fecha": "22 de junio de 1988"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Paján",
+    "parroquia": "Guale",
+    "lat": -1.629833677303523,
+    "lng": "-80.23789647912746",
+    "fecha": "5 de noviembre de 1907"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Paján",
+    "parroquia": "Lascano",
+    "lat": -1.5310523818692074,
+    "lng": -80.22806025698267,
+    "fecha": "25 de enero de 1934"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Pedernales",
+    "parroquia": "Atahualpa",
+    "lat": -0.025580318775280327,
+    "lng": -79.9674931266553,
+    "fecha": "10 de enero de 1997"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Pedernales",
+    "parroquia": "Cojimíes",
+    "lat": 0.3667400578028919,
+    "lng": -80.03602116203724,
+    "fecha": "14 de diciembre de 1911"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Pichincha",
+    "parroquia": "Barraganete",
+    "lat": -1.0384301480269584,
+    "lng": -79.82761030711768,
+    "fecha": "24 de agosto de 1990"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Pichincha",
+    "parroquia": "San Sebastián",
+    "lat": -1.0376712878542957,
+    "lng": -80.01756810022033,
+    "fecha": "27 de septiembre de 1990"
+  },
+  
+  {
+    "provincia": "Manabí",
+    "canton": "San Vicente",
+    "parroquia": "Canoa",
+    "lat": -0.46378385082279744,
+    "lng": -80.45355284231275,
+    "fecha": "30 de noviembre de 1894"
+  },
+  
+  {
+    "provincia": "Manabí",
+    "canton": "Santa Ana",
+    "parroquia": "Ayacucho",
+    "lat": -1.1566607249684495,
+    "lng": -80.28729346654427,
+    "fecha": "14 de octubre de 1885"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Santa Ana",
+    "parroquia": "Honorato Vásquez",
+    "lat": -1.109762474965355,
+    "lng": -80.2233402410658,
+    "fecha": "21 de noviembre de 1938"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Santa Ana",
+    "parroquia": "La Unión",
+    "lat": -1.1883115358610519,
+    "lng": -80.15567186186098,
+    "fecha": "7 de diciembre de 1883"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Santa Ana",
+    "parroquia": "Lodana",
+    "lat": -1.1744356417865682,
+    "lng": -80.3879818153445,
+    "fecha": "1 de agosto de 1991"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Santa Ana",
+    "parroquia": "San Pablo de Pueblo Nuevo",
+    "lat": -1.2086843368812232,
+    "lng":  -80.06967000042073,
+    "fecha": "13 de junio de 1990"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Sucre",
+    "parroquia": "Charapotó",
+    "lat": -0.8353228231515583,
+    "lng": -80.48817409713136,
+    "fecha": "12 de marzo de 1535"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Sucre",
+    "parroquia": "Leonidas Plaza Gutiérrez",
+    "lat": -0.6232930034867838,
+    "lng": -80.42698507661534,
+    "fecha": "22 de octubre de 1932"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Tosagua",
+    "parroquia": "Bachillero",
+    "lat": -0.765470786682254,
+    "lng": -80.21349234418062,
+    "fecha": "28 de mayo de 1944"
+  },
+  {
+    "provincia": "Manabí",
+    "canton": "Tosagua",
+    "parroquia": "Angel Pedro Giler",
+    "lat": -0.8176706567430907,
+    "lng": -80.21556785952512,
+    "fecha": "10 de marzo de 1945"
   },
    {
     "provincia": "Los Ríos",
@@ -1621,522 +5568,781 @@
     "fecha": "4 de abril de 1884"
   },
   {
+    "provincia": "Guayas",
+    "canton": "Colimes",
+    "parroquia": "San Jacinto",
+    "lat": -1.6146386347680628,
+    "lng": -79.99477831349162,
+    "fecha": "3 de Julio de 2003"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Daule",
+    "parroquia": "Laurel",
+    "lat": -1.782862227169716,
+    "lng": -79.9105844153445,
+    "fecha": "12 de Noviembre de 1986"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Daule",
+    "parroquia": "Juan Bautista Aguirre",
+    "lat": -1.8760770921481695,
+    "lng": -79.8620381153445,
+    "fecha": "27 de Agosto de 1942"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Daule",
+    "parroquia": "Los Lojas",
+    "lat": -2.015045287153366,
+    "lng": -79.94117843319844,
+    "fecha": "12 de Septiembre de 1940"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Daule",
+    "parroquia": "Limonal",
+    "lat": -1.7931099991105492,
+    "lng": -80.00717722883613,
+    "fecha": "3 de Junio de 1988"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "El Empalme",
+    "parroquia": "El Rosario",
+    "lat": -1.0507495634898993,
+    "lng": -79.81374193794036,
+    "fecha": "27 de Agosto de 1992"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "El Empalme",
+    "parroquia": "La Guayas",
+    "lat": -0.9836577328322502,
+    "lng": -79.57217942177859,
+    "fecha": "7 de agosto de 1946"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Guayaquil",
+    "parroquia": "Juan Gómez Rendón",
+    "lat": -2.4069650965903535,
+    "lng": -80.36408096001387,
+    "fecha": "3 de Junio de 1928"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Guayaquil",
+    "parroquia": "El Morro",
+    "lat": -2.6334369823229014,
+    "lng":  -80.32783605578352,
+    "fecha": "9 de noviembre de 1855"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Guayaquil",
+    "parroquia": "Posorja",
+    "lat": -2.7060892300644586,
+    "lng": -80.24457817301676,
+    "fecha": "27 de junio de 1894"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Guayaquil",
+    "parroquia": "Puna",
+    "lat": -2.737880532303862,
+    "lng": -79.90908187367094,
+    "fecha": "13 de Octubre de 1835"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Guayaquil",
+    "parroquia": "Tenguel",
+    "lat": -2.994112145463156,
+    "lng": -79.78749096545121,
+    "fecha": "12 de Julio de 1893"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Milagro",
+    "parroquia": "Santa Rosa de Chobo",
+    "lat": -2.1392534009891997,
+    "lng": -79.59389267116387,
+    "fecha": "25 de Abril de 1892"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Milagro",
+    "parroquia": "Roberto Astudillo",
+    "lat": -2.183958152915795,
+    "lng": -79.51810601349162,
+    "fecha": "21 de Agosto de 1973"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Milagro",
+    "parroquia": "Mariscal Sucre",
+    "lat": -2.1114988471852194,
+    "lng": -79.50303679670299,
+    "fecha": "18 de Julio de 1933"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Naranjal",
+    "parroquia": "Jesús María",
+    "lat": -2.5623631317560918,
+    "lng": -79.5528658225114,
+    "fecha": "22 de Noviembre de 1960"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Naranjal",
+    "parroquia": "San Carlos",
+    "lat": -2.521879110133139,
+    "lng": -79.47425326203307,
+    "fecha": "13 de diciembre de 1960"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Naranjal",
+    "parroquia": "Santa Rosa de Flandes",
+    "lat": -2.6366178567678165,
+    "lng": -79.64673571296777,
+    "fecha": "13 de Diciembre de 1960"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Naranjal",
+    "parroquia": "Taura",
+    "lat": -2.3104721374046235,
+    "lng": -79.73162417116387,
+    "fecha": "27 de Mayo de 1878"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Pedro Carbo",
+    "parroquia": "Sabanilla",
+    "lat": -1.8318712518514535,
+    "lng":  -80.22500546365008,
+    "fecha": "7 de Agosto de 1992"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Pedro Carbo",
+    "parroquia": "Valle de la Virgen",
+    "lat": -1.7401151260694683,
+    "lng": -80.19591113530277,
+    "fecha": "19 de Diciembre de 1991"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Salitre",
+    "parroquia": "Junquillal",
+    "lat": -1.7143955358928489,
+    "lng": -79.86492976394848,
+    "fecha": "26 de Agosto de 1992"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Salitre",
+    "parroquia": "La Victoria",
+    "lat": -1.8359263382503723,
+    "lng": -79.83548529831015,
+    "fecha": "15 de Octubre de 1883"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Salitre",
+    "parroquia": "Vernaza",
+    "lat": -1.7622902976153934,
+    "lng":  -79.79029438832517,
+    "fecha": "15 de Febrero de 1941"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Samborondón",
+    "parroquia": "Tarifa",
+    "lat": -1.9775879619337562,
+    "lng": -79.75620285824895,
+    "fecha": "10 de Agosto de 1967"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "General Villamil (Playas)",
+    "parroquia": "General Villamil",
+    "lat": -2.628158923151501,
+    "lng": -80.38998543524178,
+    "fecha": "9 de marzo de 1910"
+  },
+
+  {
+    "provincia": "Guayas",
+    "canton": "Isidro Ayora",
+    "parroquia": "Isidro Ayora",
+    "lat": -1.8842496252585705,
+    "lng": -80.145223420031,
+    "fecha": "22 de noviembre de 1841"
+  },
+ 
+    {
+    "provincia": "Guayas",
+    "canton": "Yaguachi",
+    "parroquia": "Pedro J, Montero",
+    "lat": -2.1676199323366467,
+    "lng": -79.64785681785344,
+    "fecha": "11 de Julio de 1892"
+  },
+  {
+    "provincia": "Guayas",
+    "canton": "Yaguachi",
+    "parroquia": "Virgen de Fatima",
+    "lat": -2.239763610077554,
+    "lng": -79.63997432096103,
+    "fecha": "27 de Agosto de 1996"
+  },
+   {
+    "provincia": "Guayas",
+    "canton": "Yaguachi",
+    "parroquia": "Cone",
+    "lat": -2.167566328728569,
+    "lng": -79.64785681349161,
+    "fecha": "29 de Abril de 1884"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "Santa Elena",
+    "parroquia": "Ancón",
+    "lat": -2.324653614353255,
+    "lng": -80.85432654828625,
+    "fecha": "5 de Noviembre de 1911"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "Santa Elena",
+    "parroquia": "Atahualpa",
+    "lat": -2.314122586685788,
+    "lng": -80.77387335477373,
+    "fecha": "29 de noviembre de 1955"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "Santa Elena",
+    "parroquia": "Chanduy",
+    "lat": -2.4021350730423903,
+    "lng": -80.68049968650844,
+    "fecha": "29 de Mayo de 1861"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "Santa Elena",
+    "parroquia": "Colonche",
+    "lat": -2.021262434646274,
+    "lng": -80.66917281534451,
+    "fecha": "28 de Mayo de 1861"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "Santa Elena",
+    "parroquia": "Manglaralto",
+    "lat": -1.8498569118795458,
+    "lng": -80.74645502883612,
+    "fecha": "28 de Mayo de 1861"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "Santa Elena",
+    "parroquia": "Simón Bolívar",
+    "lat": -2.1834546924041693,
+    "lng": -80.35896062151991,
+    "fecha": "28 de Marzo de 1928"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "Salinas",
+    "parroquia": "Anconcito",
+    "lat": -2.318415560375251,
+    "lng": -80.88642481444882,
+    "fecha": "22 de Diciembre de 1937"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "Salinas",
+    "parroquia": "José Luis Tamayo",
+    "lat": -2.235384997401267,
+    "lng": -80.93223338244199,
+    "fecha": "22 de Diciembre de 1937"
+  },
+  {
+    "provincia": "Santa Elena",
+    "canton": "La Libertad",
+    "parroquia": "La Libertad",
+    "lat": -2.231247564435822,
+    "lng": -80.90110496067275,
+    "fecha": "5 de julio de 1960"
+  },
+
+  {
+    "provincia": "Los Ríos",
+    "canton": "Baba",
+    "parroquia": "Guare",
+    "lat": "",
+    "lng": "",
+    "fecha": ""
+  },
+  {
     "provincia": "Los Ríos",
     "canton": "Baba",
     "parroquia": "Isla del Bejucal",
     "lat": -1.677364068894078,
-    "lng":   -79.64341162489988,
-    "fecha": "23 de abril de 1884 "
+    "lng": -79.64341162489988,
+    "fecha": "23 de abril de 1884"
   },
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   {
-    "provincia": "Pichincha",
-    "canton": "Cayambe",
-    "parroquia": "Ayora",
-    "lat": 0.051703,
-    "lng": -78.101731,
-    "fecha": "20 de julio de 1986"
+    "provincia": "Los Ríos",
+    "canton": "Babahoyo",
+    "parroquia": "Caracol",
+    "lat": -1.8016724563205775,
+    "lng": -79.53479288441449,
+    "fecha": "20 de noviembre de 1542"
   },
-
-
-   {
-    "provincia": "Pichincha",
-    "canton": "Cayambe",
-    "parroquia": "Ascázubi",
-    "lat": -0.08487609936133034,
-    "lng": -78.2921903223319,
-    "fecha": "21 de septiembre de 1913"
-  },
-
-   {
-    "provincia": "Pichincha",
-    "canton": "Cayambe",
-    "parroquia": "Cangahua",
-    "lat": -0.060840323404382196,
-    "lng": -78.16887505767225,
-    "fecha": "29 de octubre de 1790"
-  },
-
-   {
-    "provincia": "Pichincha",
-    "canton": "Cayambe",
-    "parroquia": "Santa Rosa de Cusubamba",
-    "lat": -0.04932469088541417,
-    "lng": -78.27375715952513,
-    "fecha": "6 de diciembre de 1944"
-  }, 
-  
   {
-    "provincia": "Pichincha",
-    "canton": "Cayambe",
-    "parroquia": "Olmedo Pesillo",
-    "lat": 0.14022132009457267,
-    "lng": -78.07695466931098,
-    "fecha": "26 de septiembre de 1911"
+    "provincia": "Los Ríos",
+    "canton": "Babahoyo",
+    "parroquia": "Febres Cordero",
+    "lat": -1.9913936410848558,
+    "lng": -79.35524628397194,
+    "fecha": "14 de Mayo de 1936"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Cayambe",
-    "parroquia": "Otón",
-    "lat": -0.025172582817082862,
-    "lng": 78.25978358836126,
-    "fecha": "3 de junio de 1851"
+    "provincia": "Los Ríos",
+    "canton": "Babahoyo",
+    "parroquia": "La Unión",
+    "lat": -1.7054409701799045,
+    "lng": -79.39154655767226,
+    "fecha": "27 de Julio de 1994"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Mejía",
-    "parroquia": "Alóag",
-    "lat": -0.46837418807077,
-    "lng": -78.58513627116388,
-    "fecha": "23 de julio de 1883"
+    "provincia": "Los Ríos",
+    "canton": "Babahoyo",
+    "parroquia": "Pimocha",
+    "lat": -1.8354535400688692,
+    "lng": -79.60835162883613,
+    "fecha": "23 de junio de 1824"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Mejía",
-    "parroquia": "Aloasí",
-    "lat": -0.5169401036212175,
-    "lng": -78.5807401,
-    "fecha": "29 de mayo de 1861"
+    "provincia": "Los Ríos",
+    "canton": "Buena Fe",
+    "parroquia": "Patricia Pilar",
+    "lat": -0.5719923937932957,
+    "lng": -79.36925430436482,
+    "fecha": "20 de Noviembre de 1973"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Mejía",
-    "parroquia": "Manuel Cornejo Astorga (Tandapi)",
-    "lat": -0.41619298821544376,
-    "lng": -78.79882352866167,
-    "fecha": "20 de enero de 1909"
+    "provincia": "Los Ríos",
+    "canton": "Puebloviejo",
+    "parroquia": "Puerto Pechiche",
+    "lat": -1.425637064199789,
+    "lng": -79.56060177301677,
+    "fecha": "26 de Octubre de 1952"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Mejía",
-    "parroquia": "Cutuglagua",
-    "lat": -0.36549572765141003,
-    "lng": -78.55054888650838,
-    "fecha": "25 de septiembre de 1950"
+    "provincia": "Los Ríos",
+    "canton": "Puebloviejo",
+    "parroquia": "San Juan",
+    "lat": -1.54905723372463,
+    "lng":  -79.53356064093289,
+    "fecha": "17 de noviembre de 1846"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Mejía",
-    "parroquia": "El Chaupi",
-    "lat": -0.6018017245362571,
-    "lng":  -78.64240125246805,
-    "fecha": "23 de mayo de 1949"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Mejía",
-    "parroquia": "Tambillo",
-    "lat": -0.40502745319252187,
-    "lng": -78.54479710839648,
-    "fecha": "23 de julio de 1883"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Mejía",
-    "parroquia": "Uyumbicho",
-    "lat": -0.382911259393723,
-    "lng": -78.52129378279471,
-    "fecha": "23 de julio de 1883"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Pedro Moncayo",
+    "provincia": "Los Ríos",
+    "canton": "Quevedo",
     "parroquia": "La Esperanza",
-    "lat": 0.041095390162753646,
-    "lng": -78.24928308650836,
-    "fecha": "17 de diciembre de 1900"
+    "lat": -0.9599314485367172,
+    "lng": -79.4212065199267,
+    "fecha": "17 de Diciembre de 1900"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Pedro Moncayo",
-    "parroquia": "Malchinguí",
-    "lat": 0.05782951878084622,
-    "lng": -78.33917933901691,
-    "fecha": "24 de julio de 1883"
+    "provincia": "Los Ríos",
+    "canton": "Quevedo",
+    "parroquia": "San Carlos",
+    "lat": -1.1166754444656997,
+    "lng": -79.43388348651533,
+    "fecha": "2 de Julio de 1982"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Pedro Moncayo",
-    "parroquia": "Tocachi",
-    "lat": 0.04511940731130756,
-    "lng": -78.28914027116386,
-    "fecha": "17 de mayo de 1851"
+    "provincia": "Los Ríos",
+    "canton": "Urdaneta",
+    "parroquia": "Ricaurte",
+    "lat": -1.5702033046435577,
+    "lng": -79.46951298465551,
+    "fecha": "1 de octubre de 1898"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Pedro Moncayo",
-    "parroquia": "Tupigachi",
-    "lat": 0.0770035746627236,
-    "lng": -78.18070019087344,
-    "fecha": "15 de mayo de 1947"
+    "provincia": "Los Ríos",
+    "canton": "Ventanas",
+    "parroquia": "Zapotal",
+    "lat": -1.4458910031828682,
+    "lng":  -79.46182260332559,
+    "fecha": "12 de Octubre de 1852"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Alangasí",
-    "lat": -0.308052261352998,
-    "lng": -78.41363328134818,
-    "fecha": "2 de febrero de 1860"
+    "provincia": "Los Ríos",
+    "canton": "Ventanas",
+    "parroquia": "Los Ángeles",
+    "lat": -1.4213209505638322,
+    "lng": -79.37419706621229,
+    "fecha": "2 de Agosto de 2011"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Amaguaña",
-    "lat": -0.375629555653089,
-    "lng": -78.50497470431733,
+    "provincia": "Los Ríos",
+    "canton": "Ventanas",
+    "parroquia": "Chacarita",
+    "lat": -1.3637961382131936,
+    "lng": -79.37866087049039,
+    "fecha": "11 de Julio de 2011"
+  },
+  {
+    "provincia": "Los Ríos",
+    "canton": "Vinces",
+    "parroquia": "Antonio Sotomayor",
+    "lat": -1.63920961110501,
+    "lng": -79.80030535767226,
+    "fecha": "13 de enero de 1942"
+  },
+  {
+    "provincia": "Los Ríos",
+    "canton": "Buena Fe",
+    "parroquia": "San Jacinto de Buena Fe",
+    "lat": -0.8960448153623303,
+    "lng": -79.49011853190669,
+    "fecha": "20 de Noviembre de 1973"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Arenillas",
+    "parroquia": "Carcabón",
+    "lat": -3.624214349744759,
+    "lng": -80.18931163484733,
+    "fecha": "23 de Octubre de 1993"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Arenillas",
+    "parroquia": "Chacras",
+    "lat": -3.547756337188365,
+    "lng": -80.20261796349214,
+    "fecha": "17 de Octubre de 1884"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Arenillas",
+    "parroquia": "Palmales",
+    "lat": -3.66909318365729,
+    "lng": -80.10162894418063,
+    "fecha": "19 de Diciembre de 1994"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Arenillas",
+    "parroquia": "La Cuca",
+    "lat": -3.4958694287231222,
+    "lng": -80.06924450804506,
+    "fecha": "10 de marzo de 2017"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Atahualpa",
+    "parroquia": "Ayapamba",
+    "lat": -3.6107413266487622,
+    "lng": -79.6784318846555,
+    "fecha": "6 de Agosto de 1875"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Atahualpa",
+    "parroquia": "Cordoncillo",
+    "lat": -3.5902666639601035,
+    "lng": -79.6499115593206,
+    "fecha": "11 de Marzo de 1986"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Atahualpa",
+    "parroquia": "Milagro",
+    "lat": -2.13957399283925,
+    "lng": -79.5944687809233,
+    "fecha": "11 de Marzo de 1986"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Atahualpa",
+    "parroquia": "San José",
+    "lat": -3.6266605569054837,
+    "lng": -79.65534232275606,
+    "fecha": "14 de Julio de 1987"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Atahualpa",
+    "parroquia": "San Juan de Cerro Azul",
+    "lat": -3.470427044507687,
+    "lng": -79.7338452513966,
+    "fecha": "25 de Julio de 2001"
+  },
+  
+  {
+    "provincia": "El Oro",
+    "canton": "Balsas",
+    "parroquia": "Bella María",
+    "lat": -3.498488738451033,
+    "lng": -79.89162903785252,
+    "fecha": "7 de Agosto de 1992"
+  },
+ {
+    "provincia": "El Oro",
+    "canton": "El Guabo",
+    "parroquia": "Barbones",
+    "lat": -3.189029667810884,
+    "lng": -79.85303081534451,
+    "fecha": "15 de julio de 1950"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "El Guabo",
+    "parroquia": "Tendales",
+    "lat": -3.1208067593775093,
+    "lng": -79.84075401092849,
+    "fecha": "13 de Febrero de 1962"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "El Guabo",
+    "parroquia": "Río Bonito",
+    "lat": -3.106568481345173,
+    "lng": -79.7654457809497,
+    "fecha": "5 de diciembre de 2002"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "El Guabo",
+    "parroquia": "La Iberia",
+    "lat": -3.258902311692575,
+    "lng": -79.8694239666212,
+    "fecha": "13 de Abril de 1988"
+  },
+  
+  {
+    "provincia": "El Oro",
+    "canton": "Las Lajas",
+    "parroquia": "El Paraíso",
+    "lat": -3.776563278193313,
+    "lng": -80.02810029814711,
+    "fecha": "11 de Myo de 1990"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Las Lajas",
+    "parroquia": "La Libertad",
+    "lat": -3.847782865150641,
+    "lng": -80.10383656778355,
+    "fecha": "26 de Octubre de 1987"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Las Lajas",
+    "parroquia": "San Isidro",
+    "lat": -3.7370155887228473,
+    "lng": -80.00207406410614,
+    "fecha": "11 de Mayo de 1990"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Machala",
+    "parroquia": "El Retiro",
+    "lat": -3.380750090038457,
+    "lng":  -79.91148938418937,
+    "fecha": "27 de abril de 1988"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Marcabelí",
+    "parroquia": "El Ingenio",
+    "lat": -3.734667511164045,
+    "lng": -79.93082101920864,
+    "fecha": "28 de Diciembre de 1987"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Pasaje",
+    "parroquia": "Buenavista",
+    "lat": -3.8849911994603725,
+    "lng": -79.7181941220679,
+    "fecha": "23 de Abril de 1988"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Pasaje",
+    "parroquia": "Caña Quemada",
+    "lat": -3.2931834114204745,
+    "lng": -79.81873663109005,
+    "fecha": "8 de Mayo de 1989"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Pasaje",
+    "parroquia": "La Peaña",
+    "lat": -3.3142694910765944,
+    "lng": -79.85457867750549,
+    "fecha": "30 de Noviembre de 1956"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Pasaje",
+    "parroquia": "Uzhcurrumi",
+    "lat": -3.323459656694466,
+    "lng":  -79.59520190042167,
+    "fecha": "22 de Enero de 1971"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Pasaje",
+    "parroquia": "El Progreso",
+    "lat": -3.290945931322231,
+    "lng": -79.75979298745462,
+    "fecha": "2 de Abril de 1976"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Pasaje",
+    "parroquia": "Casacay",
+    "lat": -3.3220592839373104,
+    "lng": -79.72483114349367,
+    "fecha": "28 de Mayo de 1985"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Santa Rosa",
+    "parroquia": "Bella maría",
+    "lat": -3.4998126972123615,
+    "lng": -79.89115873064866,
+    "fecha": "7 de Agosto de 1922"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Santa Rosa",
+    "parroquia": "Jambelí",
+    "lat": -3.4408695972493066,
+    "lng":  -79.96151166083774,
+    "fecha": "25 de Julio de 1878"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Santa Rosa",
+    "parroquia": "La Avanzada",
+    "lat": -3.5362132821477656,
+    "lng": -79.95629503252059,
+    "fecha": "7 de Noviembre de 1952"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Santa Rosa",
+    "parroquia": "San Antonio",
+    "lat": -3.45925043521307,
+    "lng": -79.96671341526208,
+    "fecha": "8 de Agosto de 1958"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Santa Rosa",
+    "parroquia": "Torata",
+    "lat": -3.6002416048603623,
+    "lng": -79.88804093319247,
+    "fecha": "28 de Agosto de 1986"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Santa Rosa",
+    "parroquia": "Victoria",
+    "lat": -3.3694765188059184,
+    "lng": -79.85842217419662,
+    "fecha": "Sin registro oficial encontrado"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Arcapamba",
+    "lat": -3.6477865676729446,
+    "lng": -79.61703471135158,
+    "fecha": "7 de septiembre de 1984"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Abañín",
+    "lat": -3.3330932911818674,
+    "lng": -79.49785477224762,
+    "fecha": "10 de Octubre de 1956"
+  },
+  {
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Guanazán",
+    "lat": -3.4593887050213157,
+    "lng": -79.49196828465551,
     "fecha": "29 de mayo de 1861"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Atahualpa Habaspamba",
-    "lat": 0.13370093196528426,
-    "lng": -78.37496261780903,
-    "fecha": "1 de agosto de 1894"
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Güizhagüiña",
+    "lat": -3.6938405821707825,
+    "lng": -79.5518563153445,
+    "fecha": "1820 (fundación administrativa)"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Calacalí",
-    "lat": -0.0006698521179629911,
-    "lng": -78.51380869082571,
-    "fecha": "14 de noviembre de 1952"
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Huertas",
+    "lat": -3.6070624554574815,
+    "lng":  -79.63119073545943,
+    "fecha": "19 de octubre de 1948"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Calderón",
-    "lat": -0.11863331834395154,
-    "lng": -78.44580305980661,
-    "fecha": "9 de agosto de 1897"
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Malvas",
+    "lat": -3.6593478559686385,
+    "lng": -79.62763299836872,
+    "fecha": "6 de agosto de 1883"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Chavezpamba",
-    "lat": 0.12401200490108621,
-    "lng":  -78.40361986198964,
-    "fecha": "11 de noviembre de 1942"
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Muluncay",
+    "lat": -3.63629648282904,
+    "lng": -79.637583508635,
+    "fecha": "7 de septiembre de 1984"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Checa",
-    "lat": -0.12781357964314782,
-    "lng": -78.31280780617026,
-    "fecha": "24 de mayo de 1913"
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Salvias",
+    "lat": -3.611462971907993,
+    "lng": -79.55241993098934,
+    "fecha": "5 de noviembre de 1993"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Conocoto",
-    "lat": -0.2914916257673269,
-    "lng": -78.4776783331535,
-    "fecha": "20 de mayo de 1861"
+    "provincia": "El Oro",
+    "canton": "Zaruma",
+    "parroquia": "Sinsao",
+    "lat": -3.664390397542879,
+    "lng": -79.58319018992223,
+    "fecha": "10 de noviembre de 1993"
   },
-
   {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Cumbayá",
-    "lat": -0.20114085317289454,
-    "lng": -78.42841591966189,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "El Quinche",
-    "lat": -0.11086106800337675,
-    "lng": -78.29476020924267,
-    "fecha": "27 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Gualea",
-    "lat": 0.11140756275913634,
-    "lng": -78.74914138650837,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Guangopolo",
-    "lat": -0.2587025719238101,
-    "lng": -78.4527956532602,
-    "fecha": "11 de noviembre de 1953"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Guayllabamba",
-    "lat": -0.05891619269600206,
-    "lng": -78.34595394664518,
-    "fecha": "28 de mayo de 1868"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "La Merced",
-    "lat": -0.2914231544629873,
-    "lng": -78.39862781966185,
-    "fecha": "4 de mayo de 1964"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Llano Chico",
-    "lat": -0.12756878243382397,
-    "lng": -78.44405956777287,
-    "fecha": "5 de julio de 1944"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Lloa",
-    "lat": -0.24787825507706662,
-    "lng": -78.58269356508964,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Nanegal",
-    "lat": 0.13861684877770952,
-    "lng": -78.67613763315344,
-    "fecha": "29 de mayo de 1881"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Nanegalito",
-    "lat": 0.062258574440508765,
-    "lng": -78.68203563892195,
-    "fecha": "14 de noviembre de 1952"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Nayón",
-    "lat": -0.1563176254954732,
-    "lng": -78.4396043908257,
-    "fecha": "17 de junio de 1935"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Nono",
-    "lat": -0.06685242875032633,
-    "lng": -78.5767554188391,
-    "fecha": "13 de agosto de 1720"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Pacto",
-    "lat": 0.14174945267961905,
-    "lng": -78.76741249465252,
-    "fecha": "27 de marzo de 1936"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Perucho",
-    "lat": 0.11056701857490603,
-    "lng": -78.42358064664509,
-    "fecha": "25 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Pifo",
-    "lat": -0.22518652598427763,
-    "lng": -78.33735948897282,
-    "fecha": "30 de agosto de 1869"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Píntag",
-    "lat": -0.37147374158982116,
-    "lng": -78.37374803500636,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Pomasqui",
-    "lat": -0.054454565663100904,
-    "lng": -78.45600477548123,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Puéllaro",
-    "lat": 0.0672248980062422,
-    "lng": -78.40025756138144,
-    "fecha": "25 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Puembo",
-    "lat": -0.17692095142089712,
-    "lng": -78.35806126384247,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "San Antonio de Pichincha",
-    "lat": -0.008554865605100277,
-    "lng": -78.44794600431737,
-    "fecha": "8 de octubre de 1952"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "San José de Minas",
-    "lat": 0.17128423316275174,
-    "lng": -78.41079141966195,
-    "fecha": "14 de septiembre de 1870"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Tababela",
-    "lat": -0.18450072421024885,
-    "lng": -78.34535086198957,
-    "fecha": "13 de junio de 1952"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Tumbaco",
-    "lat": -0.21243980816351254,
-    "lng": -78.40510543315347,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Yaruquí",
-    "lat": -0.16220105277269553,
-    "lng": -78.3170300908258,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Quito",
-    "parroquia": "Zámbiza",
-    "lat": -0.14867081025496778,
-    "lng": -78.44138891780904,
-    "fecha": "29 de mayo de 1861"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Rumiñahui",
-    "parroquia": "Cotogchoa",
-    "lat": -0.36687589715835806,
-    "lng": -78.45392202284621,
-    "fecha": "31 de mayo de 1938"
-  },
-
-  {
-    "provincia": "Pichincha",
-    "canton": "Rumiñahui",
-    "parroquia": "Rumipamba",
-    "lat": -1.4215573542370379,
-    "lng": -78.63245167491009,
-    "fecha": "31 de mayo de 1938"
-  },
-
-   {
-    "provincia": "Pichincha",
-    "canton": "San Miguel de los Bancos",
-    "parroquia": "Mindo",
-    "lat": -0.05186677619696219,
-    "lng": -78.77472032811629,
-    "fecha": "31 de mayo de 1938"
-  }
-
-
+  "provincia": "Galápagos",
+  "parroquias": "La provincia de Galápagos no posee parroquias rurales debido a su régimen administrativo especial."
+}
 
 ]

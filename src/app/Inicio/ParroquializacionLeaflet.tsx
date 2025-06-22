@@ -43,6 +43,12 @@ export default function ParroquializacionLeaflet() {
   const [zoom, setZoom] = useState(6);
   const markerRef = useRef<L.Marker>(null);
 
+  // Solo montar el mapa en cliente
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   // Cargar datos
   useEffect(() => {
     fetch("/Data/parroquias.json")
@@ -112,36 +118,38 @@ export default function ParroquializacionLeaflet() {
         {/* Fecha de parroquialización */}
         {parroquiaSeleccionada && (
           <p className="mt-4 mb-4 text-lg text-center text-gray-800">
-            Fecha de parroquialización de <strong>{parroquiaSeleccionada.parroquia}</strong>:{" "}
+            Fecha de parroquialización de <strong>{parroquiaSeleccionada.parroquia}</strong>: {" "}
             <strong>{parroquiaSeleccionada.fecha}</strong>
           </p>
         )}
 
         {/* Mapa */}
         <div className="mt-4 border shadow-md h-[400px] relative z-10 overflow-hidden">
-          <MapContainer
-            center={coords}
-            zoom={zoom}
-            scrollWheelZoom={true}
-            className="w-full h-full rounded"
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
+          {isClient && (
+            <MapContainer
+              center={coords}
+              zoom={zoom}
+              scrollWheelZoom={true}
+              className="w-full h-full rounded"
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
 
-            {parroquiaSeleccionada && (
-              <>
-                <FlyToParroquia coords={coords} zoom={zoom} />
-                <Marker position={coords} icon={customIcon} ref={markerRef}>
-                  <Popup>
-                    <strong>{parroquiaSeleccionada.parroquia}</strong><br />
-                    Fecha: {parroquiaSeleccionada.fecha}
-                  </Popup>
-                </Marker>
-              </>
-            )}
-          </MapContainer>
+              {parroquiaSeleccionada && (
+                <>
+                  <FlyToParroquia coords={coords} zoom={zoom} />
+                  <Marker position={coords} icon={customIcon} ref={markerRef}>
+                    <Popup>
+                      <strong>{parroquiaSeleccionada.parroquia}</strong><br />
+                      Fecha: {parroquiaSeleccionada.fecha}
+                    </Popup>
+                  </Marker>
+                </>
+              )}
+            </MapContainer>
+          )}
         </div>
       </div>
     </section>

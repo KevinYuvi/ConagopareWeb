@@ -36,23 +36,23 @@ export default function Difunde() {
     <div className="text-gray-900 px-6 pt-3 pb-20">
 
       {/* Exposición de Fotos */}
-      <section id="expo-fotos" className="scroll-mt-24 max-w-5xl mx-auto mb-20">
-        <div className="text-center mb-10">
-          <h3 className="text-3xl font-bold text-gray-800 mb-4">
-            Territorios con voz
-          </h3>
-          <div className="space-y-4 text-center text-gray-600 text-lg leading-relaxed px-4 md:px-12">
-            <p>
-              “Esta exposición marca un hito: por primera vez, la inteligencia artificial generativa interpreta las percepciones de liderazgos parroquiales, elevando su sentir en formatos visuales diversos y lúdicos.
-            </p>
-            <p>
-              Cada imagen nace de testimonios reales para que lo descargues y lo difundas en redes sociales o lo imprimas para ubicar en espacios comunitarios visibles.
-            </p>
-            <p>
-              Una invitación a escuchar, conectar y actuar”.
-            </p>
-          </div>
-        </div>
+<section id="expo-fotos" className="scroll-mt-24 max-w-5xl mx-auto mb-20 font-[var(--font-baloo2)]">
+  <div className="text-center mb-10">
+    <h3 className="text-3xl font-bold text-gray-800 mb-4">
+      Territorios con voz
+    </h3>
+    <div className="space-y-4 text-center text-gray-600 text-lg leading-relaxed px-4 md:px-12">
+      <p>
+        Esta exposición marca un hito: por primera vez, la inteligencia artificial generativa interpreta las percepciones de los liderazgos parroquiales, elevando sus voces en formatos visuales creativos y lúdicos.
+      </p>
+      <p>
+        Cada imagen nace de testimonios reales, y está diseñada para ser descargada, compartida en redes sociales o impresa y colocada en espacios comunitarios visibles.
+      </p>
+      <p className="italic text-gray-500">
+        Es una invitación a escuchar, conectar y actuar desde el territorio.
+      </p>
+    </div>
+  </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
   {elementos.map((item, index) => (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect, FormEvent } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { videosMock, Video } from "@/data/videosMock";
 
 const VIDEOS_POR_PAGINA = 6;
@@ -10,8 +10,29 @@ export default function Entrevistas() {
   const [canton, setCanton] = useState("");
   const [parroquia, setParroquia] = useState("");
   const [pagina, setPagina] = useState(1);
-  const [filtrar, setFiltrar] = useState(false);
   const [videosAleatorios, setVideosAleatorios] = useState<Video[]>([]);
+  const [filtrar, setFiltrar] = useState(false);
+
+  useEffect(() => {
+    setCanton("");
+    setParroquia("");
+  }, [provincia]);
+
+  useEffect(() => {
+    setParroquia("");
+  }, [canton]);
+
+  useEffect(() => {
+    const copia = [...videosMock];
+    const aleatorios = copia.sort(() => 0.5 - Math.random()).slice(0, VIDEOS_POR_PAGINA);
+    setVideosAleatorios(aleatorios);
+  }, []);
+
+  // Lógica reactiva: activa el filtrado si hay al menos provincia
+  useEffect(() => {
+    setFiltrar(!!provincia);
+    setPagina(1);
+  }, [provincia, canton, parroquia]);
 
   const cantonesDisponibles = useMemo(() => {
     return [...new Set(videosMock.filter(v => v.provincia === provincia).map(v => v.canton))];
@@ -21,20 +42,13 @@ export default function Entrevistas() {
     return [...new Set(videosMock.filter(v => v.provincia === provincia && v.canton === canton).map(v => v.parroquia))];
   }, [provincia, canton]);
 
-  useEffect(() => {
-    const copia = [...videosMock];
-    const aleatorios = copia.sort(() => 0.5 - Math.random()).slice(0, VIDEOS_POR_PAGINA);
-    setVideosAleatorios(aleatorios);
-  }, []);
-
   const resultadosFiltrados = useMemo(() => {
-    if (!filtrar) return videosAleatorios;
-
-    return videosMock.filter((v) => {
-      const coincideProvincia = !provincia || v.provincia === provincia;
-      const coincideCanton = !canton || v.canton === canton;
-      const coincideParroquia = !parroquia || v.parroquia === parroquia;
-      return coincideProvincia && coincideCanton && coincideParroquia;
+    const fuente = filtrar ? videosMock : videosAleatorios;
+    return fuente.filter((v) => {
+      const matchProvincia = provincia ? v.provincia === provincia : true;
+      const matchCanton = canton ? v.canton === canton : true;
+      const matchParroquia = parroquia ? v.parroquia === parroquia : true;
+      return matchProvincia && matchCanton && matchParroquia;
     });
   }, [filtrar, provincia, canton, parroquia, videosAleatorios]);
 
@@ -45,11 +59,6 @@ export default function Entrevistas() {
     return resultadosFiltrados.slice(inicio, inicio + VIDEOS_POR_PAGINA);
   }, [pagina, resultadosFiltrados]);
 
-  const aplicarFiltros = () => {
-    setFiltrar(true);
-    setPagina(1);
-  };
-
   const quitarSelecciones = () => {
     setProvincia("");
     setCanton("");
@@ -58,22 +67,20 @@ export default function Entrevistas() {
     setPagina(1);
   };
 
-  const manejarEnvio = (e: FormEvent) => {
-    e.preventDefault();
-    aplicarFiltros();
-  };
-
   return (
-    <section className="max-w-6xl mx-auto px-4 py-8 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-        Entrevistas con Líderes Rurales
-      </h2>
-      <p className="text-gray-600 mb-6 text-sm">
-        Historias de quienes trabajan por el desarrollo de sus comunidades
-      </p>
+    <section className="max-w-6xl mx-auto px-4 py-4 text-center font-[var(--font-baloo2)]">
+  <h2 className="text-[clamp(1.75rem,5vw,2.75rem)] font-bold text-gray-800 leading-tight mb-2 tracking-tight">
+    Entrevistas con Líderes Rurales
+  </h2>
+  <p className="text-[clamp(0.9rem,2vw,1.1rem)] text-gray-700 mb-1 leading-snug">
+    Historias de quienes trabajan por el desarrollo de sus comunidades.
+  </p>
+  <p className="text-sm text-gray-500 max-w-3xl mx-auto mb-6 leading-snug">
+    Estas entrevistas fueron realizadas a presidentes y presidentas de los GAD parroquiales de todo el país.
+  </p>
 
-      {/* Formulario de filtros */}
-      <form onSubmit={manejarEnvio} className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
+
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
         <select className="border px-2 py-1 rounded" value={provincia} onChange={(e) => setProvincia(e.target.value)}>
           <option value="">Provincia</option>
           {[...new Set(videosMock.map(v => v.provincia))].map(p => (
@@ -96,22 +103,14 @@ export default function Entrevistas() {
         </select>
 
         <button
-          type="submit"
-          className="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"
-        >
-          Buscar
-        </button>
-
-        <button
           type="button"
           onClick={quitarSelecciones}
-          className="bg-gray-500 text-white px-4 py-1 rounded hover:bg-gray-600"
+          className="bg-gray-500 text-white px-4 py-1 rounded hover:bg-gray-600 md:col-span-2"
         >
           Quitar Selecciones
         </button>
-      </form>
+      </div>
 
-      {/* Resultados */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
         {videosPagina.map((video) => (
           <div key={video.id} className="bg-white rounded shadow overflow-hidden">
@@ -127,9 +126,12 @@ export default function Entrevistas() {
             </div>
           </div>
         ))}
+
+        {resultadosFiltrados.length === 0 && filtrar && (
+          <p className="text-gray-500 col-span-full">No se encontraron resultados.</p>
+        )}
       </div>
 
-      {/* Paginación */}
       {resultadosFiltrados.length > 0 && (
         <div className="flex justify-center items-center gap-4">
           <button

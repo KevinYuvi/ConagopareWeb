@@ -10,12 +10,12 @@ const MapaLeaflet = dynamic(() => import("./ParroquializacionLeaflet"), {
   ssr: false,
 });
 
-// Función de easing suave
+// Easing para conteo animado
 function easeOutExpo(x: number): number {
   return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
 }
 
-// Hook mejorado para animar conteo suavemente
+// Hook para conteo suave
 function useCountUp(target: number, duration: number = 1.5): number {
   const [count, setCount] = useState(0);
 
@@ -79,48 +79,73 @@ export default function Sections() {
   const countEntrevistas = useCountUp(isInView ? 193 : 0);
   const countMinutos = useCountUp(isInView ? 579 : 0);
 
+  const [showMap, setShowMap] = useState(false);
+
+  useEffect(() => {
+    setShowMap(true);
+  }, []);
+
   return (
     <>
-      {sections.map((section, index) => {
-        if (section.type === "cta") {
-          return (
-            <section key={index} className="flex flex-col md:flex-row w-full min-h-[600px] m-0 p-0">
-              <div className="w-full md:w-1/2 h-[300px] md:h-auto relative">
-                <Image
-                  src="/images/inicio/periodismo1.png"
-                  alt="Periodismo de Datos"
-                  fill
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="w-full md:w-1/2 bg-[#F3E5AB] relative flex items-center justify-center px-6 py-10 md:px-20 md:py-20 text-[#2E2E2E]">
-                <div className="absolute inset-0 bg-[radial-gradient(circle,_#8D6E6333_1px,_transparent_1px)] [background-size:18px_18px] opacity-20"></div>
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1 }}
-                  className="relative z-10 flex flex-col items-center md:items-start text-center md:text-left max-w-xl"
-                >
-                  <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-extrabold text-[#33691E] leading-snug mb-3">
-                    “Periodismo de datos
-                  </h2>
-                  <span className="bg-[#D67D3E] text-white text-[clamp(1rem,2vw,1.3rem)] font-semibold py-2 px-5 rounded-md mb-3 shadow-md inline-block">
-                    y comunicación transmedia
-                  </span>
-                  <h2 className="text-[clamp(1.8rem,3.5vw,3rem)] font-extrabold text-[#33691E] leading-snug mb-6">
-                    para la acción social”
-                  </h2>
-                  <a
-                    href="/Taller_Periodismo"
-                    className="bg-[#4CAF50] hover:bg-[#388E3C] text-white font-bold py-3 px-6 rounded shadow-md hover:shadow-lg transition duration-300 text-lg"
-                  >
-                    Taller de Periodismo
-                  </a>
-                </motion.div>
-              </div>
-            </section>
-          );
-        }
+     {sections.map((section, index) => {
+  if (section.type === "cta") {
+  return (
+    <motion.section
+    key={index}
+    className="relative w-full min-h-[500px] md:h-[80vh] overflow-hidden"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+  >
+    {/* Fondo */}
+    <Image
+      src="/images/inicio/periodismo3.png"
+      alt="Fondo Periodismo"
+      fill
+      className="object-cover object-center"
+      priority
+    />
+
+    {/* Logo */}
+    <div className="absolute top-[0%] md:top-[-12%] right-[5%] w-[280px] md:w-[660px] z-10">
+      <Image
+        src="/images/inicio/periodismo1.webp"
+        alt="Logo Periodismo"
+        width={800}
+        height={600}
+        className="w-full h-auto object-contain drop-shadow-lg"
+        priority
+      />
+    </div>
+
+    {/* Botón */}
+    <div className="absolute top-[75%] md:top-[85%] right-[5%] md:right-[7%] z-10">
+      <a
+        href="/Taller_Periodismo"
+        className="inline-flex items-center gap-2 bg-gradient-to-r from-[#43a047] to-[#66bb6a] hover:from-[#388e3c] hover:to-[#4caf50] text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 text-lg"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-5 h-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 10l4.553 2.276A1.5 1.5 0 0120 13.618v.764a1.5 1.5 0 01-.447 1.342L15 18M4 6h16M4 6v12"
+          />
+        </svg>
+        Taller de Periodismo
+      </a>
+    </div>
+  </motion.section>
+
+  );
+}
+
 
         return (
           <motion.section
@@ -209,12 +234,14 @@ export default function Sections() {
         </div>
       </section>
 
-      {/* Sección para el mapa */}
-      <section className="bg-white py-20">
-        <div className="max-w-screen-lg mx-auto px-4">
-          <MapaLeaflet />
-        </div>
-      </section>
+      {/* Sección del mapa protegida */}
+      {typeof window !== "undefined" && showMap && (
+  <section className="bg-white py-20">
+    <div className="max-w-screen-lg mx-auto px-4">
+      <MapaLeaflet />
+    </div>
+  </section>
+      )}
     </>
   );
 }
