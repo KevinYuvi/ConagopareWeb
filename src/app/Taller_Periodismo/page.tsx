@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+
 import { motion } from "framer-motion";
 
 const buttonClasses = {
@@ -150,6 +151,7 @@ const modulos = [
 ];
 
 export default function TallerPeriodismoPage() {
+  const [showForm, setShowForm] = useState(false);
   return (
     <div className="px-4 py-16 max-w-5xl mx-auto">
       <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
@@ -211,24 +213,40 @@ export default function TallerPeriodismoPage() {
         ))}
       </div>
 
-      <div className="mt-20">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
-          Evaluación final del taller
-        </h2>
-        <div className="w-full aspect-[4/3] max-w-3xl mx-auto">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScvKXAPZhNwaXX0kuyOToklYKzmIzZK8pceDu4yFjsWQiUE_g/viewform?embedded=true"
-            width="100%"
-            height="800"
-            frameBorder="0"
-            className="w-full rounded-xl border"
-            allowFullScreen
-            title="Formulario de evaluación"
-          >
-            Cargando…
-          </iframe>
-        </div>
+      
+
+      {/* Evaluación final con botón mostrar/ocultar */}
+      <div className="mt-20 text-center">
+        <button
+          onClick={() => setShowForm(!showForm)}
+          className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300"
+        >
+          {showForm ? "Ocultar formulario" : "Evaluar el taller"}
+        </button>
+
+        {showForm && (
+          <>
+            <h2 className="text-2xl font-bold text-center text-gray-800 mb-4 mt-12">
+              Evaluación final del taller
+            </h2>
+            <div className="w-full aspect-[4/3] max-w-3xl mx-auto">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScvKXAPZhNwaXX0kuyOToklYKzmIzZK8pceDu4yFjsWQiUE_g/viewform?embedded=true"
+                width="100%"
+                height="800"
+                frameBorder="0"
+                className="w-full rounded-xl border"
+                allowFullScreen
+                title="Formulario de evaluación"
+              >
+                Cargando…
+              </iframe>
+            </div>
+          </>
+        )}
       </div>
+
+
     </div>
   );
 }
