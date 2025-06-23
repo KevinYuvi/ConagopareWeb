@@ -29,6 +29,8 @@ const elementos: Elemento[] = [
 ];
 
 export default function Difunde() {
+  const [showForm2, setShowForm2] = useState(false);
+
   const [selectedItem, setSelectedItem] = useState<Elemento | null>(null);
 
   return (
@@ -175,6 +177,7 @@ export default function Difunde() {
 
       {/* Modal de visualización */}
       <AnimatePresence>
+        
         {selectedItem && (
           <motion.div
             className="fixed inset-0 bg-white/60 backdrop-blur-sm flex items-center justify-center z-50"
@@ -207,6 +210,38 @@ export default function Difunde() {
           </motion.div>
         )}
       </AnimatePresence>
+      <div className="mt-20 text-center">
+  <button
+    onClick={() => setShowForm2(!showForm2)}
+    className="bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition duration-300"
+  >
+    {showForm2 ? "Ocultar formulario" : "INSCRIPCIÓN TALLERES IDENTIDAD RURAL"}
+  </button>
+
+  {showForm2 && (
+    <>
+      <h2 className="text-2xl font-bold text-center text-gray-800 mb-4 mt-12">
+        Segundo formulario del taller
+      </h2>
+      <div className="w-full aspect-[4/3] max-w-3xl mx-auto">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScfcO9HF_6rrsNssy2qIRagbIY5U6ZGZM-OESjATlklIuKoag/viewform?embedded=true"
+          width="100%"
+          height="800"
+          frameBorder="0"
+          className="w-full rounded-xl border"
+          allowFullScreen
+          title="Segundo formulario"
+        >
+          Cargando…
+        </iframe>
+      </div>
+    </>
+  )}
+</div>
+
     </div>
+    
+    
   );
 }
