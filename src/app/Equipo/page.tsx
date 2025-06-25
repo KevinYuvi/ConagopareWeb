@@ -44,7 +44,7 @@ export default function EquipoPage() {
       redSocial: "",
     },
     {
-      nombre: "Duvard Esteban Cisneros",
+      nombre: "Duvard Cisneros",
       rol: "🛠️ Desarrollador Web",
       descripcion: `⭐ Estudiante de Ingeniería en Sistemas de Información, Universidad Central del Ecuador. Contribuidor al diseño y desarrollo de la plataforma web, definiendo su estructura, experiencia de usuario e interfaces en Figma y React.
       🧠 Su trabajo permite que los datos y voces del territorio sean accesibles a todo público a través de una interfaz intuitiva y coherente.
@@ -108,6 +108,7 @@ export default function EquipoPage() {
       </div>
 
       {/* Swiper de integrantes */}
+      <div className="mx-8">
       <Swiper
         spaceBetween={25}
         slidesPerView={1}
@@ -116,15 +117,14 @@ export default function EquipoPage() {
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          1124: { slidesPerView: 3 },
+          1552: { slidesPerView: 4 },
         }}
         modules={[Navigation]}
       >
         {equipo.map((persona, index) => (
           <SwiperSlide key={index} className="p-5">
             <div className="rounded-lg flex flex-col justify-between text-center hover:scale-105 transition-transform duration-300 gap-5">
-
-              {/* Imagen en forma de header */}
               <div className="relative w-full aspect-square">
                 <Image
                   src={`/images/equipo/${persona.imagen}`}
@@ -156,6 +156,7 @@ export default function EquipoPage() {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
 
       {/* Sección de Apoyos */}
       <section className="text-center">
