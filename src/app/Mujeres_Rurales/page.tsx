@@ -332,7 +332,7 @@ export default function MujeresRuralesPage() {
       </p>
       <div className="flex justify-center mb-6">
         <iframe
-          src="/docs/articulo_mujeres_presidentas.pdf"
+          src="Docs/articulo_mujeres_presidentas.pdf"
           width="794"
           height="600"
           className="rounded-md border shadow"
