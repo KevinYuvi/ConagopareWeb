@@ -20,12 +20,12 @@ type NavLink = LinkItem | LinkWithSubmenu;
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-const [submenuAbierto, setSubmenuAbierto] = useState<string | null>(null);
+  const [submenuAbierto, setSubmenuAbierto] = useState<string | null>(null);
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
 
-function closeAllSubmenus() {
-  setSubmenuAbierto(null);
-}
+  function closeAllSubmenus() {
+    setSubmenuAbierto(null);
+  }
 
 
   const links: NavLink[] = [
@@ -42,11 +42,6 @@ function closeAllSubmenus() {
           href: "/Voz_Rural#importancia",
           label: "¿Por qué su gobierno parroquial es importante para su comunidad? / ¿Cual sería su mensaje para el Ecuador?",
         },
-        /*{
-          href: "/Voz_Rural#mensaje",
-          label: "¿Cual sería su mensaje para el Ecuador?",
-        },
-        */
         {
           href: "/Datos_Curiosos#datos",
           label: "Datos Curiosos",
@@ -102,21 +97,21 @@ function closeAllSubmenus() {
               const isVozRural = link.label === "Voz Rural";
               const isDifunde = link.label === "Difunde";
               const isDatosCuriosos = link.label === "Datos Curiosos";
-const isOpen = submenuAbierto === link.label;
+              const isOpen = submenuAbierto === link.label;
 
               return (
                 <li
                   key={link.label}
                   className="relative group"
-onMouseEnter={() => {
-  if (closeTimeout.current) clearTimeout(closeTimeout.current);
-  setSubmenuAbierto(link.label);
-}}
-onMouseLeave={() => {
-  closeTimeout.current = setTimeout(() => {
-    setSubmenuAbierto(null);
-  }, 300);
-}}
+                  onMouseEnter={() => {
+                    if (closeTimeout.current) clearTimeout(closeTimeout.current);
+                    setSubmenuAbierto(link.label);
+                  }}
+                  onMouseLeave={() => {
+                    closeTimeout.current = setTimeout(() => {
+                      setSubmenuAbierto(null);
+                    }, 300);
+                  }}
                 >
                   <div>
                     <button
@@ -225,10 +220,10 @@ onMouseLeave={() => {
                           key={sublink.href}
                           href={sublink.href}
                           className="py-2 text-black hover:text-blue-800"
-                            onClick={() => {
-    setIsOpen(false);
-    setSubmenuAbierto(null);
-  }}
+                          onClick={() => {
+                            setIsOpen(false);
+                            setSubmenuAbierto(null);
+                          }}
                         >{sublink.label}
                         </Link>
                       ))}

@@ -330,14 +330,24 @@ export default function MujeresRuralesPage() {
       <p className="text-center max-w-3xl mx-auto mb-6">
         Este artículo analiza la participación de las mujeres como presidentas en los Gobiernos Parroquiales Rurales del Ecuador desde 2009 hasta 2023.
       </p>
-      <div className="flex justify-center mb-6">
-        <iframe
-          src="Docs/articulo_mujeres_presidentas.pdf"
-          width="794"
-          height="600"
-          className="rounded-md border shadow"
-        ></iframe>
-      </div>
+  <div className="hidden sm:block mb-6">
+    <iframe
+      src="Docs/articulo_mujeres_presidentas.pdf"
+      width="794"
+      height="600"
+      className="rounded-md border shadow flex mx-auto"
+    ></iframe>
+  </div>
+
+  {/* Div for mobile view */}
+  <div className="sm:hidden flex justify-center mb-6">
+    <a
+      href="Docs/articulo_mujeres_presidentas.pdf"
+      download
+      className="cursor-pointer transition-all bg-[#253e7c] text-white px-4 py-2 text-sm rounded-lg border-[#132655] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:opacity-50">
+      Descargar este artículo
+    </a>
+  </div>
     </div>
   );
 }
